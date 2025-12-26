@@ -4,9 +4,18 @@ import { MenuBar, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 // import { HoveredLink, MenuBar, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { HoverButton } from "@/components/ui/hoverbutton";
 import { cn } from "@/lib/utils";
-import { Phone, Menu, X, ChevronDown, ChevronRight, MapPin, FileText, BookOpen, PenTool } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, ChevronRight, MapPin, FileText, BookOpen, PenTool, Newspaper } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
+} from '@/components/ui/navigation-menu';
 
 export const HeroHeader = ({
     className,
@@ -17,6 +26,11 @@ export const HeroHeader = ({
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isBottomMenuOpen, setIsBottomMenuOpen] = useState(false);
     const [expandedSubmenu, setExpandedSubmenu] = useState(null);
+    const [activeMobileSection, setActiveMobileSection] = useState(null);
+
+    const toggleMobileSection = (section) => {
+        setActiveMobileSection(activeMobileSection === section ? null : section);
+    };
 
     useEffect(() => {
         let ticking = false;
@@ -52,25 +66,25 @@ export const HeroHeader = ({
             <div className={cn(
                 "absolute top-0 left-0 right-0 h-0 transition-all duration-500 ease-out overflow-hidden",
                 isScrolled
-                    ? "h-full bg-white shadow-lg opacity-100 "
+                    ? "h-full bg-white shadow-lg opacity-100"
                     : "h-0 bg-transparent opacity-0"
             )} />
 
             {/* Content container */}
             <div className="relative z-10">
-                <div className="w-full px-4 sm:px-6 py-3 sm:py-4">
-                    <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
+                <div className="w-full px-8 sm:px-12 py-3 sm:py-4">
+                    <div className="flex items-center justify-between w-full">
                         {/* Logo Section */}
                         <div className="flex items-center justify-start flex-shrink-0">
                             <Link href="/">
                                 <Image
-                                    src={isScrolled ? "/assets/logo1.png" : "/assets/logo2.png"}
-                                    width={100}
-                                    height={60}
+                                    src={"/assets/logo.png"}
+                                    width={800}
+                                    height={800}
                                     alt="Madhav Surfaces"
                                     className={cn(
                                         "transition-all duration-300 ease-in-out",
-                                        "h-12 w-auto sm:h-14 md:h-16 lg:h-18"
+                                        "h-10 w-auto sm:h-12 md:h-16"
                                     )}
                                     priority
                                 />
@@ -80,76 +94,136 @@ export const HeroHeader = ({
                         {/* Center Menu - Desktop Only */}
                         <div className="hidden lg:flex justify-center flex-1">
                             <MenuBar setActive={setActive} isScrolled={isScrolled}>
-                                <MenuItem setActive={setActive} active={active} item="Collections" isScrolled={isScrolled} hasDropdown={true} DropdownIcon={ChevronDown}>
-                                    <div className="text-sm grid grid-cols-2 gap-10 p-4">
-                                        <ProductItem
-                                            title="Bedrock"
-                                            href="/collection/bedrock"
-                                            src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=200&fit=crop"
-                                            description="Luxury natural stone surfaces for premium projects." />
-                                        <ProductItem
-                                            title="Pinnacle"
-                                            href="/collection/pinnacle"
-                                            src="https://res.cloudinary.com/dljiyumfx/image/upload/v1757604521/Midnight_Mist_Render_zbmfrd.jpg"
-                                            description="Elegant marble surfaces with timeless beauty." />
-                                        <ProductItem
-                                            title="Opulence"
-                                            href="/collection/opulence"
-                                            src="https://res.cloudinary.com/dljiyumfx/image/upload/c_crop,w_1080,h_560/v1757604522/Masseto_Render_wj376t.png"
-                                            description="Durable granite surfaces for modern spaces." />
-                                        <ProductItem
-                                            title="Serenity"
-                                            href="/collection/serenity"
-                                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=200&fit=crop"
-                                            description="Engineered quartz with superior performance." />
-                                        <ProductItem
-                                            title="Silicalite"
-                                            href="/collection/silicalite"
-                                            src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=200&fit=crop"
-                                            description="Engineered quartz with superior performance." />
-                                    </div>
-                                </MenuItem>
-                                {/* <MenuItem setActive={setActive} active={active} item="Applications" isScrolled={isScrolled} hasDropdown={true} DropdownIcon={ChevronDown}>
-                                    <div className="text-sm grid grid-cols-2 gap-10 p-4">
-                                        <ProductItem
-                                            title="Kitchen Countertops"
-                                            href="/applications/kitchen"
-                                            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=200&fit=crop"
-                                            description="Beautiful and durable kitchen surface solutions." />
-                                        <ProductItem
-                                            title="Bathroom Vanities"
-                                            href="/applications/bathroom"
-                                            src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=200&fit=crop"
-                                            description="Elegant bathroom countertop installations." />
-                                        <ProductItem
-                                            title="Commercial Spaces"
-                                            href="/applications/commercial"
-                                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=200&fit=crop"
-                                            description="Professional grade surfaces for businesses." />
-                                        <ProductItem
-                                            title="Flooring Solutions"
-                                            href="/applications/flooring"
-                                            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=200&fit=crop"
-                                            description="Premium stone flooring for all spaces." />
-                                    </div>
-                                </MenuItem> */}
-                                {/* <MenuItem setActive={setActive} active={active} item="Projects" isScrolled={isScrolled} hasDropdown={true} DropdownIcon={ChevronDown}>
-                                    <div className="flex flex-col space-y-4 text-sm">
-                                        <HoveredLink href="/projects/residential">Residential Projects</HoveredLink>
-                                        <HoveredLink href="/projects/commercial">Commercial Projects</HoveredLink>
-                                        <HoveredLink href="/projects/gallery">Project Gallery</HoveredLink>
-                                        <HoveredLink href="/projects/testimonials">Client Testimonials</HoveredLink>
-                                    </div>
-                                </MenuItem> */}
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                    <NavigationMenuList>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger>Know Us</NavigationMenuTrigger>
+                                            <NavigationMenuContent className="top-2">
+                                                <ul className="grid w-[200px] gap-4">
+                                                    <li>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/profile">Profile</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/technology">Technology</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-film">Corporate Film</Link>
+                                                        </NavigationMenuLink>
+                                                    </li>
+                                                </ul>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                    </NavigationMenuList>
+                                </NavigationMenu>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                    <NavigationMenuList>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger>Stone Slabs</NavigationMenuTrigger>
+                                            <NavigationMenuContent className="top-2">
+                                                <ul className="grid w-[200px] gap-4">
+                                                    <li>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/manufacturer-of-granite-india">Granite Slabs</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/granite-cutter-slabs-supplier">Granite Cutter Slabs</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/marble-sandstone-quartzite-exporter-supplier">Marble | Sandstone | Quartzite</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/marbles-and-granite-suppliers-in-india">Exotics & Exclusives</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="https://www.madhavquartz.com">Quartz</Link>
+                                                        </NavigationMenuLink>
+                                                    </li>
+                                                </ul>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                    </NavigationMenuList>
+                                </NavigationMenu>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                    <NavigationMenuList>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger>Stone Tiles</NavigationMenuTrigger>
+                                            <NavigationMenuContent className="top-2">
+                                                <ul className="grid w-[200px] gap-4">
+                                                    <li>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/granite-calibrated-tiles-in-india">Regular Tiles</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/granite-xl-tiles">XL Tiles</Link>
+                                                        </NavigationMenuLink>
+                                                    </li>
+                                                </ul>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                    </NavigationMenuList>
+                                </NavigationMenu>
+                                <Link href="/coverings-2023-event" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                    News & Events
+                                </Link>
 
-                                <Link href="/about-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                    <NavigationMenuList>
+                                        <NavigationMenuItem>
+                                            <NavigationMenuTrigger>Investors</NavigationMenuTrigger>
+                                            <NavigationMenuContent className="top-2">
+                                                <ul className="grid w-[200px] gap-4">
+                                                    <li>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/annual-report">Annual Report</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/shareholders-information">Shareholders Information</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/financial-results">Financial Results</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/unpaid-dividend">Unpaid Dividend</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-governance-report">Corporate Governance Report</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-announcements-board-meeting">Corporate Announcements - Board Meeting</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-announcements-eogm">Corporate Announcements - EOGM</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-announcements-notice-of-general-meetings">Corporate Announcements - Notice of General Meetings</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-announcements-outcome-of-agm">Corporate Announcements - Outcome Of AGM</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/corporate-announcements-postal-ballot">Corporate Announcements - Postal Ballot</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/code-of-conduct-and-policies">Code of Conduct and Policies</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/regulation-46-62-2">Regulation 46 & 62</Link>
+                                                        </NavigationMenuLink>
+                                                    </li>
+                                                </ul>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                    </NavigationMenuList>
+                                </NavigationMenu>
+                                {/* <Link href="/about-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
                                     About
+                                </Link> */}
+                                <Link href="/blog" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                    Blogs
                                 </Link>
                                 <Link href="/contact-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
                                     Contact
-                                </Link>
-                                <Link href="/blog" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
-                                    Blog
                                 </Link>
                             </MenuBar>
                         </div>
@@ -207,7 +281,7 @@ export const HeroHeader = ({
                     <div className="grid grid-cols-4 h-16 place-items-center">
                         {/* Collections with Submenu */}
                         <button
-                            onClick={() => toggleSubmenu('collections')}
+                            onClick={() => toggleSubmenu('menu')}
                             className={cn(
                                 "flex flex-col items-center justify-center p-2 text-xs transition-colors duration-200",
                                 expandedSubmenu === 'collections'
@@ -215,8 +289,8 @@ export const HeroHeader = ({
                                     : "text-gray-600 hover:text-black hover:bg-gray-50"
                             )}
                         >
-                            <BookOpen className="w-4 h-4 mb-1" />
-                            <span className="leading-none text-[10px]">Collections</span>
+                            <Menu className="w-4 h-4 mb-1" />
+                            <span className="leading-none text-[10px]">Menu</span>
                         </button>
 
                         {/* Applications with Submenu */}
@@ -248,12 +322,21 @@ export const HeroHeader = ({
                         </button> */}
 
                         {/* About */}
-                        <Link
+                        {/* <Link
                             href="/about-us"
                             className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
                         >
                             <FileText className="w-4 h-4 mb-1" />
                             <span className="leading-none text-[10px]">About</span>
+                        </Link> */}
+
+                        {/* News & Events */}
+                        <Link
+                            href="/news-events"
+                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+                        >
+                            <Newspaper className="w-4 h-4 mb-1" />
+                            <span className="leading-none text-[10px]">News & Events</span>
                         </Link>
 
                         {/* Contact */}
@@ -283,142 +366,107 @@ export const HeroHeader = ({
                             className="fixed bottom-16 left-0 right-0 bg-white rounded-t-2xl shadow-xl max-h-96 overflow-y-auto"
                             onClick={(e) => e.stopPropagation()}
                         >
-                            {/* Collections Submenu */}
-                            {expandedSubmenu === 'collections' && (
+                            {/* Menu */}
+                            {expandedSubmenu === 'menu' && (
                                 <>
                                     <div className="p-6 border-b border-gray-100">
-                                        <h3 className="font-semibold text-lg text-black">Collections</h3>
-                                        <p className="text-sm text-gray-500">Our Premium Stone Collections</p>
+                                        <h3 className="font-semibold text-lg text-black">Menu</h3>
                                     </div>
                                     <div className="p-4 space-y-2">
-                                        <Link
-                                            href="/collection/bedrock"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Bedrock</div>
-                                            <div className="text-sm text-gray-500">Luxury natural stone surfaces</div>
-                                        </Link>
-                                        <Link
-                                            href="/collection/pinnacle"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Pinnacle</div>
-                                            <div className="text-sm text-gray-500">Elegant marble surfaces</div>
-                                        </Link>
-                                        <Link
-                                            href="/collection/opulence"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Opulence</div>
-                                            <div className="text-sm text-gray-500">Durable granite surfaces</div>
-                                        </Link>
-                                        <Link
-                                            href="/collection/serenity"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Serenity</div>
-                                            <div className="text-sm text-gray-500">Engineered quartz</div>
-                                        </Link>
-                                        <Link
-                                            href="/collection/silicalite"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">SilicaLite</div>
-                                            <div className="text-sm text-gray-500">Superior performance quartz</div>
-                                        </Link>
-                                    </div>
-                                </>
-                            )}
+                                        {/* Know Us */}
+                                        <div className="border-b border-gray-100 last:border-0">
+                                            <button
+                                                onClick={() => toggleMobileSection('know-us')}
+                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                            >
+                                                <span>Know Us</span>
+                                                {activeMobileSection === 'know-us' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                                            </button>
 
-                            {/* Applications Submenu */}
-                            {expandedSubmenu === 'applications' && (
-                                <>
-                                    <div className="p-6 border-b border-gray-100">
-                                        <h3 className="font-semibold text-lg text-black">Applications</h3>
-                                        <p className="text-sm text-gray-500">Where Our Surfaces Excel</p>
-                                    </div>
-                                    <div className="p-4 space-y-2">
-                                        <Link
-                                            href="/applications/kitchen"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Kitchen Countertops</div>
-                                            <div className="text-sm text-gray-500">Beautiful kitchen solutions</div>
-                                        </Link>
-                                        <Link
-                                            href="/applications/bathroom"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Bathroom Vanities</div>
-                                            <div className="text-sm text-gray-500">Elegant bathroom installations</div>
-                                        </Link>
-                                        <Link
-                                            href="/applications/commercial"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Commercial Spaces</div>
-                                            <div className="text-sm text-gray-500">Professional grade surfaces</div>
-                                        </Link>
-                                        <Link
-                                            href="/applications/flooring"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Flooring Solutions</div>
-                                            <div className="text-sm text-gray-500">Premium stone flooring</div>
-                                        </Link>
-                                    </div>
-                                </>
-                            )}
+                                            {activeMobileSection === 'know-us' && (
+                                                <div className="space-y-1 pb-2">
+                                                    <Link href="/profile" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Profile</Link>
+                                                    <Link href="/technology" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Technology</Link>
+                                                    <Link href="/corporate-film" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Corporate Film</Link>
+                                                </div>
+                                            )}
+                                        </div>
 
-                            {/* Projects Submenu */}
-                            {expandedSubmenu === 'projects' && (
-                                <>
-                                    <div className="p-6 border-b border-gray-100">
-                                        <h3 className="font-semibold text-lg text-black">Projects</h3>
-                                        <p className="text-sm text-gray-500">Our Work & Portfolio</p>
-                                    </div>
-                                    <div className="p-4 space-y-2">
-                                        <Link
-                                            href="/projects/residential"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Residential Projects</div>
-                                            <div className="text-sm text-gray-500">Home installations</div>
-                                        </Link>
-                                        <Link
-                                            href="/projects/commercial"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Commercial Projects</div>
-                                            <div className="text-sm text-gray-500">Business installations</div>
-                                        </Link>
-                                        <Link
-                                            href="/projects/gallery"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Project Gallery</div>
-                                            <div className="text-sm text-gray-500">Visual showcase</div>
-                                        </Link>
-                                        <Link
-                                            href="/projects/testimonials"
-                                            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200"
-                                            onClick={() => setExpandedSubmenu(null)}
-                                        >
-                                            <div className="font-medium">Client Testimonials</div>
-                                            <div className="text-sm text-gray-500">Customer reviews</div>
-                                        </Link>
+                                        {/* Stone Slabs */}
+                                        <div className="border-b border-gray-100 last:border-0">
+                                            <button
+                                                onClick={() => toggleMobileSection('stone-slabs')}
+                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                            >
+                                                <span>Stone Slabs</span>
+                                                {activeMobileSection === 'stone-slabs' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                                            </button>
+
+                                            {activeMobileSection === 'stone-slabs' && (
+                                                <div className="space-y-1 pb-2">
+                                                    <Link href="/manufacturer-of-granite-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Granite Slabs</Link>
+                                                    <Link href="/granite-cutter-slabs-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Granite Cutter Slabs</Link>
+                                                    <Link href="/marble-sandstone-quartzite-exporter-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Marble | Sandstone | Quartzite</Link>
+                                                    <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Exotics & Exclusives</Link>
+                                                    <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Quartz</Link>
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        {/* Stone Tiles */}
+                                        <div className="border-b border-gray-100 last:border-0">
+                                            <button
+                                                onClick={() => toggleMobileSection('stone-tiles')}
+                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                            >
+                                                <span>Stone Tiles</span>
+                                                {activeMobileSection === 'stone-tiles' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                                            </button>
+
+                                            {activeMobileSection === 'stone-tiles' && (
+                                                <div className="space-y-1 pb-2">
+                                                    <Link href="/granite-calibrated-tiles-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Regular Tiles</Link>
+                                                    <Link href="/granite-xl-tiles" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">XL Tiles</Link>
+                                                </div>
+                                            )}
+                                        </div>
+
+
+                                        {/* Investors */}
+                                        <div className="border-b border-gray-100 last:border-0">
+                                            <button
+                                                onClick={() => toggleMobileSection('investors')}
+                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                            >
+                                                <span>Investors</span>
+                                                {activeMobileSection === 'investors' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                                            </button>
+
+                                            {activeMobileSection === 'investors' && (
+                                                <div className="space-y-1 pb-2">
+                                                    <Link href="/annual-report" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Annual Report</Link>
+                                                    <Link href="/shareholders-information" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Shareholders Information</Link>
+                                                    <Link href="/financial-results" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Financial Results</Link>
+                                                    <Link href="/unpaid-dividend" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Unpaid Dividend</Link>
+                                                    <Link href="/corporate-governance-report" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Corporate Governance Report</Link>
+
+                                                    {/* Corporate Announcements Nested Section */}
+                                                    <div className="px-4 py-1">
+                                                        <div className="font-semibold text-sm text-gray-500 uppercase px-4 py-1">Corporate Announcements</div>
+                                                        <div className="space-y-1">
+                                                            <Link href="/corporate-announcements-board-meeting" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Board Meeting</Link>
+                                                            <Link href="/corporate-announcements-eogm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">EOGM</Link>
+                                                            <Link href="/corporate-announcements-notice-of-general-meetings" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Notice of General Meetings</Link>
+                                                            <Link href="/corporate-announcements-outcome-of-agm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Outcome Of AGM</Link>
+                                                            <Link href="/corporate-announcements-postal-ballot" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Postal Ballot</Link>
+                                                        </div>
+                                                    </div>
+
+                                                    <Link href="/code-of-conduct-and-policies" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Code of Conduct and Policies</Link>
+                                                    <Link href="/regulation-46-62-2" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Regulation 46 & 62</Link>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 </>
                             )}

@@ -33,7 +33,7 @@ export default function AboutProcess() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-20 grid lg:grid-cols-2">
                     <div>
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-[#D4AF37]">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
                             Process
                         </span>
                         <h2 className="heading text-4xl leading-tight md:text-5xl lg:text-6xl">
@@ -51,7 +51,7 @@ export default function AboutProcess() {
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     {processes.map((step, index) => (
                         <div key={index} className="group flex flex-col h-full bg-white p-6 shadow-sm transition-all hover:shadow-lg">
-                            <div className="mb-4 text-4xl font-light text-neutral-200 group-hover:text-[#D4AF37]">{step.id}</div>
+                            <div className="mb-4 text-4xl font-light text-neutral-200 group-hover:text-primary">{step.id}</div>
                             <div className="mb-6 h-[200px] w-full overflow-hidden bg-neutral-100">
                                 {/* Image Placeholder */}
                                 <div className="h-full w-full bg-neutral-200 transition-transform duration-500 group-hover:scale-105" />

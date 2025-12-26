@@ -28,15 +28,15 @@ export default function AboutIntro() {
 
                         <ul className="mb-10 space-y-4 text-neutral-700">
                             <li className="flex items-center">
-                                <span className="mr-3 text-[#D4AF37]">›</span>
+                                <span className="mr-3 text-primary">›</span>
                                 High Quality Stone From Natural Mines
                             </li>
                             <li className="flex items-center">
-                                <span className="mr-3 text-[#D4AF37]">›</span>
+                                <span className="mr-3 text-primary">›</span>
                                 Durability Against Water And Fire
                             </li>
                             <li className="flex items-center">
-                                <span className="mr-3 text-[#D4AF37]">›</span>
+                                <span className="mr-3 text-primary">›</span>
                                 High Resistance Against Scratch
                             </li>
                         </ul>
@@ -63,7 +63,7 @@ export default function AboutIntro() {
 
                         {/* Centered Floating Badge */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center justify-center rounded-full bg-white p-10 shadow-2xl">
-                            <span className="text-5xl font-bold text-[#D4AF37]">25+</span>
+                            <span className="text-5xl font-bold text-primary">25+</span>
                             <span className="text-xs uppercase tracking-widest text-black">Years Of Experience</span>
                         </div>
                     </div>

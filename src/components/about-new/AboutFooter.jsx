@@ -22,7 +22,7 @@ export default function AboutFooter() {
                             placeholder="Your Email..."
                             className="w-full bg-transparent p-2 outline-none focus:ring-0"
                         />
-                        <button className="rounded-full bg-[#D4AF37] p-2 text-white hover:bg-[#b5952f]">
+                        <button className="rounded-full bg-primary p-2 text-white hover:bg-[#b5952f]">
                             <ArrowLeft className="h-4 w-4 rotate-180" />
                         </button>
                     </div>

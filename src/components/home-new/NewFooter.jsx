@@ -20,7 +20,7 @@ export default function NewFooter() {
                     </div>
 
                     <div>
-                        <h4 className="mb-6 text-sm font-bold uppercase tracking-widest text-[#D4AF37]">Quick Links</h4>
+                        <h4 className="mb-6 text-sm font-bold uppercase tracking-widest text-primary">Quick Links</h4>
                         <ul className="space-y-4 text-neutral-400">
                             <li><a href="#" className="hover:text-white">Home</a></li>
                             <li><a href="#" className="hover:text-white">About Us</a></li>
@@ -31,7 +31,7 @@ export default function NewFooter() {
                     </div>
 
                     <div>
-                        <h4 className="mb-6 text-sm font-bold uppercase tracking-widest text-[#D4AF37]">Services</h4>
+                        <h4 className="mb-6 text-sm font-bold uppercase tracking-widest text-primary">Services</h4>
                         <ul className="space-y-4 text-neutral-400">
                             <li><a href="#" className="hover:text-white">Stone Supply</a></li>
                             <li><a href="#" className="hover:text-white">Custom Cutting</a></li>
@@ -41,7 +41,7 @@ export default function NewFooter() {
                     </div>
 
                     <div>
-                        <h4 className="mb-6 text-sm font-bold uppercase tracking-widest text-[#D4AF37]">Contact</h4>
+                        <h4 className="mb-6 text-sm font-bold uppercase tracking-widest text-primary">Contact</h4>
                         <ul className="space-y-4 text-neutral-400">
                             <li>123 Stone Avenue, Marble City,</li>
                             <li>India, 313001</li>

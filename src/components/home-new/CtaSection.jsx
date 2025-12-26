@@ -11,7 +11,7 @@ export default function CtaSection() {
                 <p className="mx-auto mb-10 max-w-2xl text-lg text-neutral-500">
                     Transform your space with the timeless elegance of natural stone. Let's discuss your vision and bring it to life.
                 </p>
-                <Button className="rounded-none bg-black px-10 py-8 text-lg text-white hover:bg-[#D4AF37] hover:text-black">
+                <Button className="rounded-none bg-black px-10 py-8 text-lg text-white hover:bg-primary hover:text-black">
                     Get A Quote
                 </Button>
             </div>

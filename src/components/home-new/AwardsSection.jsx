@@ -36,7 +36,7 @@ export default function AwardsSection() {
                             {awards.map((award, index) => (
                                 <div key={index} className="group flex items-center justify-between py-6 transition-colors hover:bg-neutral-50">
                                     <div>
-                                        <h3 className="mb-1 text-lg font-medium group-hover:text-[#D4AF37]">{award.title}</h3>
+                                        <h3 className="mb-1 text-lg font-medium group-hover:text-primary">{award.title}</h3>
                                         <p className="text-sm text-neutral-500">{award.organization}</p>
                                     </div>
                                     <span className="text-sm font-bold text-neutral-400 group-hover:text-black">{award.year}</span>

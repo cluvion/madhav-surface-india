@@ -30,7 +30,7 @@ export default function ServicesSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-16 flex flex-col justify-between md:flex-row md:items-end">
                     <div>
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-[#D4AF37]">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
                             Our Services
                         </span>
                         <h2 className="heading text-4xl leading-tight md:text-5xl">
@@ -39,7 +39,7 @@ export default function ServicesSection() {
                         </h2>
                     </div>
                     <div className="mt-6 md:mt-0">
-                        <button className="flex items-center gap-2 border-b border-black pb-1 text-sm font-medium uppercase tracking-wider hover:text-[#D4AF37] hover:border-[#D4AF37] transition-colors">
+                        <button className="flex items-center gap-2 border-b border-black pb-1 text-sm font-medium uppercase tracking-wider hover:text-primary hover:border-[#D4AF37] transition-colors">
                             View All Services <ArrowUpRight className="h-4 w-4" />
                         </button>
                     </div>
@@ -52,10 +52,10 @@ export default function ServicesSection() {
                             className="group relative border border-neutral-200 bg-white p-8 transition-all hover:border-[#D4AF37] hover:shadow-lg"
                         >
                             <div className="mb-6 flex items-start justify-between">
-                                <span className="text-4xl font-light text-neutral-300 group-hover:text-[#D4AF37]">
+                                <span className="text-4xl font-light text-neutral-300 group-hover:text-primary">
                                     {service.icon}
                                 </span>
-                                <ArrowUpRight className="h-6 w-6 text-neutral-300 transition-colors group-hover:text-[#D4AF37]" />
+                                <ArrowUpRight className="h-6 w-6 text-neutral-300 transition-colors group-hover:text-primary" />
                             </div>
                             <div className="mb-4 h-[200px] w-full overflow-hidden bg-neutral-100">
                                 {/* Image placeholder */}

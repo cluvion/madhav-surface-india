@@ -1,63 +1,86 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
     return (
-        <section className="bg-white py-20 text-black md:py-32">
+        <section className="bg-white py-20 text-black md:py-32 overflow-hidden">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+                <div className="flex flex-col lg:flex-row gap-16 items-center">
+
                     {/* Left Content */}
-                    <div className="flex flex-col justify-center">
-                        <span className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                            About Us
-                        </span>
-                        <h2 className="heading mb-8 text-4xl leading-tight md:text-5xl lg:text-6xl">
-                            Marble Supplier & <br />
-                            <span className="text-stone-500">Natural Stone Project</span>
-                        </h2>
-                        <p className="mb-8 text-lg font-light leading-relaxed text-neutral-600">
-                            We provide the highest quality marble and stone solutions for your residential and commercial projects. With decades of experience, we source the finest materials from around the world.
-                        </p>
-                        <ul className="mb-10 space-y-4 text-neutral-700">
-                            <li className="flex items-center">
-                                <span className="mr-3 flex h-2 w-2 rounded-full bg-[#D4AF37]" />
-                                Premium Quality Materials
-                            </li>
-                            <li className="flex items-center">
-                                <span className="mr-3 flex h-2 w-2 rounded-full bg-[#D4AF37]" />
-                                Expert Craftsmanship
-                            </li>
-                            <li className="flex items-center">
-                                <span className="mr-3 flex h-2 w-2 rounded-full bg-[#D4AF37]" />
-                                Global Sourcing Network
-                            </li>
-                        </ul>
-                        <div>
-                            <Button className="rounded-none bg-black px-8 py-6 text-white hover:bg-neutral-800">
-                                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    <div className="w-full lg:w-2/3 space-y-4 md:space-y-8">
+                        <div className="text-center md:text-left">
+                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                                <span className="mr-2 text-lg">¬</span> OUR ABOUT US
+                            </span>
+                            <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
+                                Tap Into India&apos;s Prime
+                                <span className="text-primary "> Manufacturers And Exporters Of Natural Stones</span>
+                            </h2>
+                        </div>
+
+
+                        <div className="space-y-6 md:space-y-8 flex flex-col items-center md:items-start">
+                            <p className="text-justify">
+                                With 35 years of excellence in the field of Natural Stone Industry. We are known as the prominent marble and granite suppliers in India and all over the world. Madhav Marbles and Granite Ltd has emerged as the leading processor and exporter of natural stones. The company has extensively expanded itself among top architects, interior designers, and distinctive homeowners seeking outstanding natural stone products. We are an innovative company, established in 1989 to yield unmatched quality and unique design marbles and granites to mark an extensive global presence in the countries like North America, South America, Canada, Europe, Australia, South Africa, Russia, and the Far East. The company operates its Granite Division from South India (Salem, Tamil Nadu), known for its rich reserves for metamorphosed granite. In conformity with its commitment to excellence, the company has installed the most sophisticated and environment-friendly granite processing machinery imported from Italy. If you are looking for the finest collection of natural stone, Madhav Marble & Granite Ltd serves as the clear leader for exporting naturally beautiful stone surfaces.
+                            </p>
+
+                            {/* <ul className="space-y-3">
+                                    {[
+                                        "High Gloss Finish for Added Shine",
+                                        "Durability Against Wear and Tear",
+                                        "Slip-Resistant When Honed"
+                                    ].map((item, index) => (
+                                        <li key={index} className="flex items-center text-sm font-semibold text-gray-800">
+                                            <span className="w-1.5 h-1.5 bg-black mr-3 shrink-0" /> {item}
+                                        </li>
+                                    ))}
+                                </ul> */}
+
+                            <Button className="rounded-none px-8 py-6 text-xs uppercase tracking-widest text-white hover:bg-neutral-800">
+                                More About Us <ArrowUpRight className="ml-2 h-4 w-4" />
                             </Button>
                         </div>
+
                     </div>
 
-                    {/* Right Images */}
-                    <div className="relative">
-                        <div className="relative h-[600px] w-full overflow-hidden bg-neutral-100">
-                            {/* Main image placeholder */}
-                            <div className="h-full w-full object-cover bg-neutral-200" />
-                        </div>
+                    {/* Right Visuals */}
+                    <div className="w-full lg:w-1/2 relative">
+                        <div className="grid md:grid-cols-2 gap-8 items-end">
+                            {/* Left part of right side - Stats & Grid */}
+                            <div className="space-y-8">
+                                <div className="md:absolute md:inset-0 md:top-44 md:left-13 text-center md:text-left">
+                                    <div className="flex items-baseline justify-center md:justify-start text-primary leading-none gap-2">
+                                        <span className="text-[150px] font-bold tracking-tight">35</span>
+                                        <span className="text-[150px] font-bold">+</span>
+                                    </div>
+                                    <p className="font-semibold text-lg text-black mt-[-10px] ml-2">Years Of Experience</p>
+                                </div>
 
-                        {/* Floating Stats Card */}
-                        <div className="absolute -bottom-10 -left-10 z-10 bg-white p-8 shadow-2xl md:left-10">
-                            <div className="flex items-baseline">
-                                <span className="text-6xl font-bold text-[#D4AF37]">25</span>
-                                <span className="ml-1 text-4xl font-bold text-[#D4AF37]">+</span>
+                                {/* Stone Texture Grid */}
+                                <div className="md:absolute inset-0 md:top-90 grid grid-cols-4 h-39 md:h-52 md:w-108 z-1">
+                                    {[...Array(8)].map((_, i) => (
+                                        <div key={i} className="aspect-square bg-gray-100 relative overflow-hidden">
+                                            <div className={`w-full h-full opacity-60 ${i % 2 === 0 ? 'bg-stone-200' : 'bg-stone-300'}`} />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                            <p className="mt-2 text-sm font-medium uppercase tracking-wider text-black">
-                                Years of <br /> Experience
-                            </p>
+
+                            {/* Right part of right side - Hero Image */}
+                            <div className="relative h-[500px] w-full">
+                                <Image
+                                    src="/assets/bg.webp"
+                                    alt="Luxury Marble Interior"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

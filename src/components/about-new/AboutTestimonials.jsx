@@ -33,7 +33,7 @@ export default function AboutTestimonials() {
             <div className="container relative z-10 mx-auto px-4 md:px-6">
                 <div className="mb-20 grid lg:grid-cols-2 lg:gap-20">
                     <div className="lg:col-start-2">
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-[#D4AF37]">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
                             Testimonials
                         </span>
                         <h2 className="heading text-4xl leading-tight md:text-5xl lg:text-6xl">
@@ -60,7 +60,7 @@ export default function AboutTestimonials() {
                                 </div>
                             </div>
                             <p className="mb-6 text-sm leading-relaxed text-neutral-600">"{item.text}"</p>
-                            <div className="flex gap-1 text-[#D4AF37]">
+                            <div className="flex gap-1 text-primary">
                                 {[...Array(5)].map((_, i) => (
                                     <Star key={i} className="h-4 w-4 fill-current" />
                                 ))}

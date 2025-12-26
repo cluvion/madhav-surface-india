@@ -29,7 +29,7 @@ export default function CollectionSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-12 flex flex-col items-start justify-between md:flex-row md:items-end">
                     <div className="max-w-xl">
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-[#D4AF37]">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
                             Collection
                         </span>
                         <h2 className="heading text-4xl leading-tight md:text-5xl lg:text-6xl">
@@ -69,7 +69,7 @@ export default function CollectionSection() {
 
                                     <div className="absolute bottom-0 left-0 w-full p-6 translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
                                         <h3 className="text-xl font-medium text-white">{item.name}</h3>
-                                        <p className="text-sm text-[#D4AF37]">View Collection</p>
+                                        <p className="text-sm text-primary">View Collection</p>
                                     </div>
                                 </div>
                             </div>

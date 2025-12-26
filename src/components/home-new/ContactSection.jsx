@@ -12,7 +12,7 @@ export default function ContactSection() {
             <div className="container relative z-10 mx-auto px-4 md:px-6">
                 <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
                     <div>
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-[#D4AF37]">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
                             Contact Us
                         </span>
                         <h2 className="heading mb-6 text-4xl leading-tight md:text-5xl lg:text-6xl">
@@ -49,7 +49,7 @@ export default function ContactSection() {
                                 <label className="text-xs font-bold uppercase tracking-wider text-neutral-500">Message</label>
                                 <Textarea className="min-h-[100px] border-0 border-b border-neutral-200 px-0 rounded-none resize-none focus-visible:ring-0 focus-visible:border-black" placeholder="How can we help you?" />
                             </div>
-                            <Button className="w-full rounded-none bg-black py-6 text-white hover:bg-[#D4AF37] hover:text-black">
+                            <Button className="w-full rounded-none bg-black py-6 text-white hover:bg-primary hover:text-black">
                                 Send Message
                             </Button>
                         </form>

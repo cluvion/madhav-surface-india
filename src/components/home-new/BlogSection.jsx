@@ -50,15 +50,15 @@ export default function BlogSection() {
                             <div className="mb-6 overflow-hidden bg-neutral-100">
                                 <div className="aspect-[3/2] w-full bg-neutral-200 transition-transform duration-700 group-hover:scale-110" />
                             </div>
-                            <div className="mb-3 flex items-center space-x-4 text-xs font-bold uppercase tracking-widest text-[#D4AF37]">
+                            <div className="mb-3 flex items-center space-x-4 text-xs font-bold uppercase tracking-widest text-primary">
                                 <span>{post.category}</span>
                                 <span className="text-neutral-300">|</span>
                                 <span className="text-neutral-400">{post.date}</span>
                             </div>
-                            <h3 className="mb-4 text-xl font-medium leading-snug group-hover:text-[#D4AF37]">
+                            <h3 className="mb-4 text-xl font-medium leading-snug group-hover:text-primary">
                                 {post.title}
                             </h3>
-                            <span className="flex items-center text-sm font-bold uppercase tracking-wider underline decoration-neutral-300 underline-offset-4 transition-colors group-hover:text-[#D4AF37] group-hover:decoration-[#D4AF37]">
+                            <span className="flex items-center text-sm font-bold uppercase tracking-wider underline decoration-neutral-300 underline-offset-4 transition-colors group-hover:text-primary group-hover:decoration-[#D4AF37]">
                                 Read More <ArrowUpRight className="ml-1 h-3 w-3" />
                             </span>
                         </div>

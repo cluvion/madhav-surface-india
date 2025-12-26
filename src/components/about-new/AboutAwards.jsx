@@ -40,8 +40,8 @@ export default function AboutAwards() {
                         <div className="border-t border-neutral-200">
                             {awards.map((award, index) => (
                                 <div key={index} className="group flex flex-col justify-between border-b border-neutral-200 py-6 transition-all hover:bg-neutral-50 md:flex-row md:items-center">
-                                    <span className="mb-2 w-48 text-xs font-bold uppercase tracking-widest text-[#D4AF37] md:mb-0">{award.category}</span>
-                                    <span className="flex-1 text-lg font-medium group-hover:text-[#D4AF37]">{award.title}</span>
+                                    <span className="mb-2 w-48 text-xs font-bold uppercase tracking-widest text-primary md:mb-0">{award.category}</span>
+                                    <span className="flex-1 text-lg font-medium group-hover:text-primary">{award.title}</span>
                                     <span className="mt-2 text-sm font-bold text-neutral-400 group-hover:text-black md:mt-0">{award.year}</span>
                                 </div>
                             ))}

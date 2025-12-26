@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
             <div className="container relative z-10 mx-auto px-4 md:px-6">
                 <div className="mb-20 grid gap-12 lg:grid-cols-2 lg:items-center">
                     <div className="lg:col-start-2">
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-[#D4AF37]">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
                             Testimonials
                         </span>
                         <h2 className="heading text-4xl leading-tight md:text-5xl">

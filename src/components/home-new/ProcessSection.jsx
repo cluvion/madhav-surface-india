@@ -35,7 +35,7 @@ export default function ProcessSection() {
                             Process
                         </span>
                         <h2 className="heading mb-12 text-4xl leading-tight md:text-5xl">
-                            The Value Is In The <span className="text-[#D4AF37]">Process</span> <br />
+                            The Value Is In The <span className="text-primary">Process</span> <br />
                             For Exceptional.
                         </h2>
 

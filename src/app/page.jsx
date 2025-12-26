@@ -29,9 +29,9 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <StatsSection />
-      <ProcessSection />
+      {/* <ProcessSection /> */}
       <CollectionSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
 
       {/* Visual Break / CTA Section */}
       <section className="bg-white py-20 text-center md:py-32">
@@ -42,7 +42,7 @@ export default function Home() {
           <p className="mx-auto mb-10 max-w-2xl text-lg text-neutral-500">
             Transform your space with the timeless elegance of natural stone. Let's discuss your vision and bring it to life.
           </p>
-          <button className="rounded-none bg-black px-10 py-8 text-lg text-white hover:bg-[#D4AF37] hover:text-black transition-colors">
+          <button className="rounded-none bg-black px-10 py-8 text-lg text-white hover:bg-primary hover:text-black transition-colors">
             Get A Quote
           </button>
         </div>
