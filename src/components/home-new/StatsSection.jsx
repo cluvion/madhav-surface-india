@@ -1,32 +1,95 @@
+"use client"
 import React from "react";
+import {
+    Video
+} from "@/components/ui/video";
+import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { motion } from "motion/react";
+import AnimatedNumber from "@/components/ui/animated-number";
 
 export default function StatsSection() {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const stats = [
+        {
+            number: 35,
+            suffix: "+",
+            label: "Years of Experience",
+            description: "Crafting premium surfaces with unmatched expertise"
+        },
+        {
+            number: 50,
+            suffix: "+",
+            label: "Countries Served",
+            description: "Global reach with local craftsmanship"
+        },
+        {
+            number: 500,
+            suffix: "+",
+            label: "Stone Varieties",
+            description: "Curated collection from world's finest quarries"
+        }
+    ];
     return (
-        <section className="relative overflow-hidden bg-black py-32 text-white">
+        <section className="my-5 md:my-8 lg:my-10 bg-black ">
             {/* Background Image/Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                {/* Huge Text Background */}
-                <h2 className="select-none text-[15vw] font-bold leading-none text-white/10" style={{ fontFamily: 'var(--font-heading)' }}>
-                    Marble &
-                </h2>
-            </div>
-            <div className="absolute inset-0 bg-[url('/images/stats-bg.jpg')] bg-fixed bg-cover bg-center opacity-40 mix-blend-overlay" />
+            {/* <div className="absolute inset-0 bg-[url('/assets/bg.webp')]  h-full w-full bg-center opacity-100" /> */}
 
+            <div className="relative">
+                <Image
+                    src="/assets/video-bg.png"
+                    alt="Hero Background"
+                    width={1920}
+                    height={1080}
+                    className="object-cover aspect-[16/8]"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/60" />
 
-            <div className="container relative z-10 mx-auto px-4 md:px-6">
-                <div className="grid grid-cols-1 gap-12 text-center md:grid-cols-3">
-                    <div className="border-r border-white/20 last:border-0 md:px-12">
-                        <div className="mb-2 text-6xl font-light md:text-7xl">100<span className="text-primary">+</span></div>
-                        <p className="text-sm uppercase tracking-widest text-neutral-400">Projects Completed</p>
-                    </div>
-                    <div className="border-r border-white/20 last:border-0 md:px-12">
-                        <div className="mb-2 text-6xl font-light md:text-7xl">230<span className="text-primary">+</span></div>
-                        <p className="text-sm uppercase tracking-widest text-neutral-400">Happy Clients</p>
-                    </div>
-                    <div className="border-r border-white/20 last:border-0 md:px-12">
-                        <div className="mb-2 text-6xl font-light md:text-7xl">25<span className="text-primary">+</span></div>
-                        <p className="text-sm uppercase tracking-widest text-neutral-400">Industry Awards</p>
-                    </div>
+                <div className="absolute top-[-340] flex items-center justify-center w-full h-full ">
+                    <h2 className="select-none text-[13vw] font-bold leading-none bg-clip-text text-transparent bg-gradient-to-b from-white/90 via-white/50 to-black/30">
+                        Marble & Tiles
+                    </h2>
+                </div>
+                <div className="absolute top-0 bottom-0 left-0 right-0">
+                    <Video />
+                </div>
+
+                {/* Stats Grid */}
+                <div ref={ref} className="relative z-10 grid grid-cols-3 divide-x divide-white/30 max-w-7xl mx-auto">
+                    {/* <div className="grid md:grid-cols-3 gap-8 mb-16"> */}
+                    {stats.map((stat, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={inView ? { opacity: 1, y: 0 } : {}}
+                            transition={{ duration: 0.8, delay: index * 0.2 }}
+                            className="text-center group"
+                        >
+                            <div className=" p-4 sm:p-6 md:p-8 ">
+                                <div className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold text-primary mb-2 sm:mb-3 md:mb-4'>
+                                    <AnimatedNumber
+                                        springOptions={{
+                                            bounce: 0,
+                                            duration: 3000,
+                                        }}
+                                        value={inView ? stat.number : 0}
+                                    />
+                                    <span>{stat.suffix}</span>
+                                </div>
+                                <h3 className="text-sm sm:text-base md:text-xl text-white mb-3">
+                                    {stat.label}
+                                </h3>
+                                {/* <p className="text-muted-foreground leading-relaxed">
+                  {stat.description}
+                </p> */}
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>

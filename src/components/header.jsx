@@ -163,9 +163,6 @@ export const HeroHeader = ({
                                         </NavigationMenuItem>
                                     </NavigationMenuList>
                                 </NavigationMenu>
-                                <Link href="/coverings-2023-event" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
-                                    News & Events
-                                </Link>
 
                                 <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
                                     <NavigationMenuList>
@@ -216,6 +213,9 @@ export const HeroHeader = ({
                                         </NavigationMenuItem>
                                     </NavigationMenuList>
                                 </NavigationMenu>
+                                <Link href="/coverings-2023-event" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                    News & Events
+                                </Link>
                                 {/* <Link href="/about-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
                                     About
                                 </Link> */}
@@ -407,7 +407,7 @@ export const HeroHeader = ({
                                                     <Link href="/manufacturer-of-granite-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Granite Slabs</Link>
                                                     <Link href="/granite-cutter-slabs-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Granite Cutter Slabs</Link>
                                                     <Link href="/marble-sandstone-quartzite-exporter-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Marble | Sandstone | Quartzite</Link>
-                                                    <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Exotics & Exclusives</Link>
+                                                    <Link href="/marbles-and-granite-suppliers-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Exotics & Exclusives</Link>
                                                     <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Quartz</Link>
                                                 </div>
                                             )}

@@ -1,73 +1,114 @@
+"use client"
 import React from "react";
-import { Check } from "lucide-react";
+import Section from "@/components/section";
+import {
+    Award,
+    Globe2,
+    Users2,
+    Factory,
+    ShieldCheck,
+    Gem,
+} from "lucide-react";
+import { Process } from "@/components/Process";
+import Image from "next/image";
 
-const steps = [
+const points = [
     {
-        id: "01",
-        title: "Stone Block Processing",
-        description: "Raw blocks are carefully selected and processed to ensure the highest quality extraction."
+        number: 1,
+        icon: Award,
+        title: "35 YEARS OF EXPERIENCE",
+        subtitle: "Legacy of Excellence",
+        description:
+            "With over three decades of mastery in the stone industry, Madhav Surfaces has built an enduring reputation for quality, reliability, and craftsmanship.",
+        image: "/assets/Step5.png",
     },
     {
-        id: "02",
-        title: "Slab Treatment",
-        description: "Advanced treatments are applied to enhance durability and reveal the stone's natural beauty."
+        number: 2,
+        icon: Users2,
+        title: "MOST SATISFIED CLIENTELE",
+        subtitle: "Trusted by Architects & Builders",
+        description:
+            "We’ve earned the confidence of leading architects, designers, and construction firms through our commitment to precision, innovation, and customer satisfaction.",
+        image: "/assets/Step6.png",
     },
     {
-        id: "03",
-        title: "Stone Slab Polishing",
-        description: "State-of-the-art polishing techniques to achieve the perfect finish, from honed to high-gloss."
+        number: 3,
+        icon: Globe2,
+        title: "GLOBAL EXPORTS IN 40+ COUNTRIES",
+        subtitle: "Proudly Representing Indian Craftsmanship",
+        description:
+            "From India to the world, our premium marble and granite are exported across 40+ countries, bringing natural beauty to luxury spaces globally.",
+        image: "/assets/Step4.png",
     },
     {
-        id: "04",
-        title: "Cut Sized Slabs",
-        description: "Precision cutting to your exact specifications, ready for installation in your masterpiece."
-    }
+        number: 5,
+        icon: ShieldCheck,
+        title: "QUALITY YOU CAN TRUST",
+        subtitle: "Certified, Tested, and Reliable",
+        description:
+            "Every slab passes rigorous quality checks for durability, color consistency, and finish to ensure only the finest products reach our clients.",
+        image: "/assets/Step7.png",
+    },
+    // {
+    //     number: 4,
+    //     icon: Factory,
+    //     title: "STATE-OF-THE-ART FACILITIES",
+    //     subtitle: "Technology Meets Craftsmanship",
+    //     description:
+    //         "Our advanced manufacturing units are equipped with modern Italian machinery ensuring precision cutting, flawless polishing, and sustainable processing.",
+    //     image: "/assets/Step_4.png",
+    // },
+    // {
+    //     number: 6,
+    //     icon: Gem,
+    //     title: "DIVERSE COLLECTIONS",
+    //     subtitle: "Nature’s Best, Curated for You",
+    //     description:
+    //         "From elegant marbles to robust granites and quartz surfaces, we offer a curated portfolio tailored for every design and architectural vision.",
+    //     image: "/assets/Step_6.png",
+    // },
 ];
 
 export default function ProcessSection() {
     return (
-        <section className="bg-white py-20 md:py-32">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
-                    {/* Left Content */}
-                    <div>
-                        <span className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                            Process
+        <Section>
+            <div className="flex items-center justify-around space-y-8 md:space-y-16">
+                {/* Header Section */}
+                {/* <div className="absolute -bottom-20 -right-10 w-2/3 md:w-1/2 lg:w-[60%] z-20">
+                        <img
+                            src="/assets/stones/stone1.png"
+                            alt="Stone Slab 1"
+                            className="w-full h-auto object-contain drop-shadow-xl transform rotate-[-10deg] translate-y-10"
+                        />
+                    </div> */}
+                <div className="w-1/3">
+                    <Image
+                        src="/assets/stones/stone1.png"
+                        alt="Stone Slab 2"
+                        width={1000}
+                        height={600}
+                        className="w-full h-64 object-contain drop-shadow-2xl"
+                    />
+                </div>
+                <div className="w-2/3">
+                    <div className="text-center text-balance md:text-left">
+                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                            <span className="mr-2 text-lg text-primary">¬</span> OUR ABOUT US
                         </span>
-                        <h2 className="heading mb-12 text-4xl leading-tight md:text-5xl">
-                            The Value Is In The <span className="text-primary">Process</span> <br />
-                            For Exceptional.
+                        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
+                            What Makes Us The Best
+                            <span className="text-primary "> Marble and Granite Suppliers?</span>
                         </h2>
-
-                        <div className="space-y-8">
-                            {steps.map((step, index) => (
-                                <div key={index} className="flex gap-6">
-                                    <div className="flex-shrink-0">
-                                        <div className="flex h-12 w-12 items-center justify-center bg-black text-white font-serif text-xl border border-[#D4AF37]">
-                                            {step.id}
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h3 className="mb-2 text-xl font-medium text-black">{step.title}</h3>
-                                        <p className="text-neutral-500">{step.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Right Image */}
-                    <div className="relative">
-                        <div className="aspect-[4/5] w-full overflow-hidden bg-neutral-100 shadow-2xl">
-                            {/* Placeholder for process image */}
-                            <div className="h-full w-full bg-neutral-200" />
-                        </div>
-                        {/* Decorative elements */}
-                        <div className="absolute -bottom-6 -right-6 h-32 w-32 border-2 border-[#D4AF37] opacity-20" />
-                        <div className="absolute -top-6 -left-6 h-32 w-32 border-2 border-black opacity-10" />
                     </div>
                 </div>
             </div>
-        </section>
+            <div className="relative">
+                <Process
+                    steps={points}
+                    autoPlayInterval={4000}
+                // imageHeight="h-[500px]"
+                />
+            </div>
+        </Section>
     );
 }

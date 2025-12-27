@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import ComprehensiveFooter from "@/components/comprehensive-footer";
 // import NavbarDemo from "@/components/header1";
 import FloatingContact from "@/components/floating-contact";
-import CustomCursor from "@/components/custom-cursor";
+// import CustomCursor from "@/components/custom-cursor";
 import { generateMetadata as generateSEOMetadata, generateOrganizationSchema } from "@/lib/seo";
 import Script from "next/script";
 
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <HeroHeader />
         <FloatingContact />
         {/* <NavbarDemo/> */}

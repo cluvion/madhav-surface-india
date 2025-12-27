@@ -18,7 +18,7 @@ export default function HeroSection() {
                 className="object-cover"
                 priority
             /> */}
-            <div className="relative z-10 flex h-full flex-col justify-center px-4 md:px-8">
+            <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}

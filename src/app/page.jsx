@@ -10,7 +10,7 @@ import TestimonialsSection from "@/components/home-new/TestimonialsSection";
 import AwardsSection from "@/components/home-new/AwardsSection";
 import ContactSection from "@/components/home-new/ContactSection";
 import BlogSection from "@/components/home-new/BlogSection";
-import NewFooter from "@/components/home-new/NewFooter";
+import ProductSection from "@/components/home-new/ProductSection";
 
 import { generateMetadata as generateSEOMetadata, pageMetadata } from "@/lib/seo";
 
@@ -27,27 +27,12 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <StatsSection />
-      {/* <ProcessSection /> */}
+      <ProcessSection />
       <CollectionSection />
       {/* <ProjectsSection /> */}
-
-      {/* Visual Break / CTA Section */}
-      <section className="bg-white py-20 text-center md:py-32">
-        <div className="container mx-auto px-4">
-          <h2 className="heading mb-8 text-5xl md:text-7xl lg:text-8xl">
-            Ready To Start?
-          </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-neutral-500">
-            Transform your space with the timeless elegance of natural stone. Let's discuss your vision and bring it to life.
-          </p>
-          <button className="rounded-none bg-black px-10 py-8 text-lg text-white hover:bg-primary hover:text-black transition-colors">
-            Get A Quote
-          </button>
-        </div>
-      </section>
-
+      <ProductSection />
       <TestimonialsSection />
       <AwardsSection />
       <ContactSection />
