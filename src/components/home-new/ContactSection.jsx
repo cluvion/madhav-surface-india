@@ -2,55 +2,85 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
 
 export default function ContactSection() {
     return (
-        <section className="relative bg-neutral-900 py-20 text-white md:py-32">
+        <section className="relative py-10 md:py-16 lg:py-20 mb-5 md:mb-8 lg:mb-10">
             {/* Background Image */}
-            <div className="absolute inset-0 bg-[url('/images/contact-bg.jpg')] bg-cover bg-center opacity-30" />
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/assets/video-bg.png"
+                    alt="Background"
+                    fill
+                    className="object-cover brightness-40"
+                    priority
+                />
+            </div>
 
             <div className="container relative z-10 mx-auto px-4 md:px-6">
-                <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-                    <div>
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
-                            Contact Us
-                        </span>
-                        <h2 className="heading mb-6 text-4xl leading-tight md:text-5xl lg:text-6xl">
-                            Have Questions <br />
-                            Get In Touch
+                <div className="grid gap-12 lg:grid-cols-2 items-end">
+                    {/* Left Side Content */}
+                    <div className="max-w-xl">
+                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-background">
+                            Come as You are And we Will Take Care of the Rest
                         </h2>
-                        <p className="mb-8 max-w-md text-neutral-400">
-                            Reach out to our experts for consultation on your next project. We are here to help you choose the perfect stone.
-                        </p>
-
-                        <div className="space-y-4 text-sm tracking-widest text-white">
-                            <p>INFO@MADHAVSURFACES.COM</p>
-                            <p>+91 123 456 7890</p>
-                        </div>
                     </div>
 
-                    <div className="bg-white p-8 text-black md:p-12">
-                        <form className="space-y-6">
-                            <div className="grid gap-6 md:grid-cols-2">
+                    {/* Right Side Form */}
+                    <div className="bg-white p-8 md:p-12 lg:p-16 text-black shadow-lg mx-auto w-full max-w-xl lg:max-w-none">
+                        <div className="text-center md:text-left text-balance">
+                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                                <span className="mr-2 text-lg text-primary">¬</span> COMMON QUESTIONS
+                            </span>
+                            <h2 className="text-[1.6rem] md:text-5xl leading-[1.1] font-bold text-black">
+                                Have Questions?
+                                <span className="text-primary "> GET IN TOUCH</span>
+                            </h2>
+                        </div>
+
+                        <form className="space-y-8 mt-8 md:mt-16">
+                            <div className="grid gap-8 md:grid-cols-2">
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold uppercase tracking-wider text-neutral-500">First Name</label>
-                                    <Input className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black" placeholder="John" />
+                                    <Input
+                                        className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black placeholder:text-neutral-400 font-light"
+                                        placeholder="Enter your name"
+                                    />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold uppercase tracking-wider text-neutral-500">Last Name</label>
-                                    <Input className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black" placeholder="Doe" />
+                                    <Input
+                                        className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black placeholder:text-neutral-400 font-light"
+                                        type="email"
+                                        placeholder="Enter your email"
+                                    />
                                 </div>
                             </div>
-                            <div className="space-y-2">
-                                <label className="text-xs font-bold uppercase tracking-wider text-neutral-500">Email Address</label>
-                                <Input className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black" type="email" placeholder="john@example.com" />
+
+                            <div className="grid gap-8 md:grid-cols-2">
+                                <div className="space-y-2">
+                                    <Input
+                                        className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black placeholder:text-neutral-400 font-light"
+                                        type="tel"
+                                        placeholder="Enter your number"
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <Input
+                                        className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-black placeholder:text-neutral-400 font-light"
+                                        placeholder="Project scope"
+                                    />
+                                </div>
                             </div>
+
                             <div className="space-y-2">
-                                <label className="text-xs font-bold uppercase tracking-wider text-neutral-500">Message</label>
-                                <Textarea className="min-h-[100px] border-0 border-b border-neutral-200 px-0 rounded-none resize-none focus-visible:ring-0 focus-visible:border-black" placeholder="How can we help you?" />
+                                <Textarea
+                                    className="min-h-[50px] border-0 border-b border-neutral-200 px-0 rounded-none resize-none focus-visible:ring-0 focus-visible:border-black placeholder:text-neutral-400 font-light"
+                                    placeholder="Your message here"
+                                />
                             </div>
-                            <Button className="w-full rounded-none bg-black py-6 text-white hover:bg-primary hover:text-black">
-                                Send Message
+
+                            <Button>
+                                SEND MESSAGE
                             </Button>
                         </form>
                     </div>

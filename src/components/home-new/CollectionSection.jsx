@@ -42,6 +42,7 @@ export default function CollectionSection() {
                         <Button
                             variant="outline"
                             size="icon"
+                            arrow={false}
                             onClick={scrollPrev}
                             className="rounded-full border-neutral-700 bg-transparent text-white hover:bg-white hover:text-black"
                         >
@@ -50,6 +51,7 @@ export default function CollectionSection() {
                         <Button
                             variant="outline"
                             size="icon"
+                            arrow={false}
                             onClick={scrollNext}
                             className="rounded-full border-neutral-700 bg-transparent text-white hover:bg-white hover:text-black"
                         >
@@ -70,8 +72,9 @@ export default function CollectionSection() {
                                         fill
                                         className="object-cover"
                                     />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-30" />
 
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-70" />
 
                                     <div className="absolute bottom-0 left-0 w-full p-6 translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
                                         <h3 className="text-xl font-medium text-white">{item.name}</h3>

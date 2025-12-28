@@ -34,10 +34,9 @@ export default function Home() {
       {/* <ProjectsSection /> */}
       <ProductSection />
       <TestimonialsSection />
-      <AwardsSection />
+      {/* <AwardsSection /> */}
       <ContactSection />
       <BlogSection />
-      {/* <NewFooter /> */}
     </>
   );
 }

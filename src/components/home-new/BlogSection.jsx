@@ -1,45 +1,49 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import Section from "@/components/section";
 
 const posts = [
     {
-        category: "Design",
-        date: "Dec 12, 2024",
-        title: "How to Choose the Right Stone Tile For...",
-        image: "/images/blog-1.jpg"
+        tags: ["KITCHEN", "MARBLE"],
+        date: "September 15, 2025",
+        comments: "0 comments",
+        title: "Using Marble in Kitchen Design: Elegant and...",
+        image: "/assets/Step6.png"
     },
     {
-        category: "Architecture",
-        date: "Nov 28, 2024",
-        title: "Adding Majestic to Interiors With Elegant...",
-        image: "/images/blog-2.jpg"
+        tags: ["BATHROOM", "TILES"],
+        date: "September 15, 2025",
+        comments: "0 comments",
+        title: "Top 5 Bathroom Tile Options for a Stylish...",
+        image: "/assets/Step5.png"
     },
     {
-        category: "Trends",
-        date: "Oct 15, 2024",
-        title: "The Timeless Use Of Marble Art In Modern...",
-        image: "/images/blog-3.jpg"
+        tags: ["MARBLE", "TILES"],
+        date: "September 15, 2025",
+        comments: "0 comments",
+        title: "Mixing Marble and Mosaic Tiles: The Perfect...",
+        image: "/assets/Step7.png"
     }
 ];
 
 export default function BlogSection() {
     return (
-        <section className="bg-white py-20 text-black md:py-32">
+        <Section>
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-12 flex flex-col justify-between md:flex-row md:items-end">
-                    <div>
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                            News
+                    <div className="text-center md:text-left max-w-3xl">
+                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                            <span className="mr-2 text-lg text-primary">¬</span> RECENT BLOG
                         </span>
-                        <h2 className="heading text-4xl leading-tight md:text-5xl">
-                            Stay Informed With Latest <br />
-                            News And Insights
+                        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
+                            Stay Informed With Latest
+                            <span className="text-primary "> News And Insights</span>
                         </h2>
                     </div>
-                    <div className="mt-6 md:mt-0">
-                        <Button variant="outline" className="rounded-none border-black text-black hover:bg-black hover:text-white">
-                            View All News
+                    <div className="mt-6 md:mt-0 mb-0 md:mb-2">
+                        <Button>
+                            BROWSE ALL
                         </Button>
                     </div>
                 </div>
@@ -47,24 +51,35 @@ export default function BlogSection() {
                 <div className="grid gap-8 md:grid-cols-3">
                     {posts.map((post, index) => (
                         <div key={index} className="group cursor-pointer">
-                            <div className="mb-6 overflow-hidden bg-neutral-100">
-                                <div className="aspect-[3/2] w-full bg-neutral-200 transition-transform duration-700 group-hover:scale-110" />
+                            <div className="mb-6 overflow-hidden">
+                                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                                    {/* Note: In a real Next.js app, use Image component. Using div for placeholder match if Image not configured */}
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                </div>
                             </div>
-                            <div className="mb-3 flex items-center space-x-4 text-xs font-bold uppercase tracking-widest text-primary">
-                                <span>{post.category}</span>
-                                <span className="text-neutral-300">|</span>
-                                <span className="text-neutral-400">{post.date}</span>
+                            <div className="mb-4 flex flex-wrap gap-2">
+                                {post.tags.map((tag, i) => (
+                                    <span key={i} className="bg-[#C5A25D] px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+                                        {tag}
+                                    </span>
+                                ))}
                             </div>
-                            <h3 className="mb-4 text-xl font-medium leading-snug group-hover:text-primary">
+                            <h3 className="mb-3 text-2xl font-bold leading-tight group-hover:text-[#C5A25D] transition-colors duration-300">
                                 {post.title}
                             </h3>
-                            <span className="flex items-center text-sm font-bold uppercase tracking-wider underline decoration-neutral-300 underline-offset-4 transition-colors group-hover:text-primary group-hover:decoration-[#D4AF37]">
-                                Read More <ArrowUpRight className="ml-1 h-3 w-3" />
-                            </span>
+                            <div className="flex items-center space-x-2 text-xs text-neutral-400">
+                                <span>{post.date}</span>
+                                <span>•</span>
+                                <span>{post.comments}</span>
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </section>
+        </Section>
     );
 }

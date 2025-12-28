@@ -8,9 +8,9 @@ export default function ProductCard({ product, onQuickView }) {
     return (
         <motion.div
             layoutId={`product-card-${product.id}`}
-            className="group flex flex-col relative overflow-hidden"
+            className="flex flex-col relative overflow-hidden"
         >
-            <div className="relative aspect-square overflow-hidden mb-2">
+            <div className="group relative aspect-square overflow-hidden mb-2">
                 <Image
                     src={product.image}
                     alt={product.name}
@@ -20,12 +20,13 @@ export default function ProductCard({ product, onQuickView }) {
                 {/* Quick View Overlay (Desktop) */}
                 <div className="hidden lg:flex absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 justify-center">
                     <Button
+                        arrow={false}
                         size="icon"
                         variant="secondary"
-                        className="rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground"
+                        className="p-6 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground"
                         onClick={() => onQuickView(product)}
                     >
-                        <Eye className="w-5 h-5" />
+                        <Eye className="w-5 h-5 cursor-pointer" />
                     </Button>
                 </div>
             </div>
@@ -37,8 +38,8 @@ export default function ProductCard({ product, onQuickView }) {
             </div>
 
             {/* Buttons Row */}
-            <div className="flex gap-2 justify-center px-2 pb-2">
-                <Button asChild variant="outline" size="sm" className="w-full text-xs h-9">
+            <div className="flex gap-2 justify-center pt-4">
+                <Button asChild className="w-full" variant="secondary">
                     <Link href={`/products/${product.id}`}>
                         View Details
                     </Link>

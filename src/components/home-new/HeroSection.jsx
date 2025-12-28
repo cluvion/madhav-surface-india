@@ -41,22 +41,12 @@ export default function HeroSection() {
                         Discover the finest collection of natural stones, crafted to elevate your living spaces with timeless elegance and superior quality.
                     </p>
 
-                    <div className="flex flex-wrap gap-4">
                         <Button
-                            size="lg"
-                            className="group rounded-none bg-primary px-8 py-6 text-black hover:bg-white hover:text-black"
+                            // size="lg"
+                            // className="group rounded-none bg-primary px-8 py-6 text-black hover:bg-white hover:text-black"
                         >
                             Explore Collection
-                            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                         </Button>
-                        {/* <Button
-                            variant="outline"
-                            size="lg"
-                            className="rounded-none border-white px-8 py-6 text-white hover:bg-white hover:text-black"
-                        >
-                            View Projects
-                        </Button> */}
-                    </div>
                 </motion.div>
             </div>
         </section>

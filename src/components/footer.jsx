@@ -5,105 +5,93 @@ import { AnimatedLink } from '@/components/ui/line-animation'
 
 const links = [
     {
-        group: 'Collections',
+        group: 'Know Us',
         items: [
             {
-                title: 'Bedrock',
-                href: '/collection/bedrock',
+                title: 'Profile',
+                href: '/profile',
             },
             {
-                title: 'Pinnacle',
-                href: '/collection/pinnacle',
+                title: 'Technology',
+                href: '/technology',
             },
             {
-                title: 'Opulence',
-                href: '/collection/opulence',
+                title: 'Corporate Film',
+                href: '/corporate-film',
             },
             {
-                title: 'Serenity',
-                href: '/collection/serenity',
+                title: 'News & Events',
+                href: '/news-events',
             },
             {
-                title: 'Silicalite',
-                href: '/collection/silicalite',
+                title: 'Blogs',
+                href: '/blog',
             },
-        ],
-    },
-    // {
-    //     group: 'Applications',
-    //     items: [
-    //         {
-    //             title: 'Kitchen Countertops',
-    //             href: '/applications/kitchen',
-    //         },
-    //         {
-    //             title: 'Bathroom Vanities',
-    //             href: '/applications/bathroom',
-    //         },
-    //         {
-    //             title: 'Wall Cladding',
-    //             href: '/applications/walls',
-    //         },
-    //         {
-    //             title: 'Flooring',
-    //             href: '/applications/flooring',
-    //         },
-    //         {
-    //             title: 'Commercial Spaces',
-    //             href: '/applications/commercial',
-    //         },
-    //     ],
-    // },
-    {
-        group: 'Company',
-        items: [
-            {
-                title: 'About Us',
-                href: '/about-us',
-            },
-            // {
-            //     title: 'Our Story',
-            //     href: '/about#story',
-            // },
-            // {
-            //     title: 'Projects',
-            //     href: '/projects',
-            // },
-            // {
-            //     title: 'Careers',
-            //     href: '/careers',
-            // },
             {
                 title: 'Contact',
                 href: '/contact-us',
             },
+        ],
+    },
+    {
+        group: 'Stone Slabs',
+        items: [
             {
-                title: 'Blog',
-                href: '/blog',
+                title: 'Granite Slabs',
+                href: '/manufacturer-of-granite-india',
+            },
+            {
+                title: 'Granite Cutter Slabs',
+                href: '/granite-cutter-slabs-supplier',
+            },
+            {
+                title: 'Marble | Sandstone | Quartzite',
+                href: '/marble-sandstone-quartzite-exporter-supplier',
+            },
+            {
+                title: 'Exotics & Exclusives',
+                href: '/marbles-and-granite-suppliers-in-india',
+            },
+            {
+                title: 'Quartz',
+                href: 'https://www.madhavquartz.com',
             },
         ],
     },
-    // {
-    //     group: 'Support',
-    //     items: [
-    //         {
-    //             title: 'Installation Guide',
-    //             href: '/support/installation',
-    //         },
-    //         {
-    //             title: 'Care & Maintenance',
-    //             href: '/support/maintenance',
-    //         },
-    //         {
-    //             title: 'Warranty',
-    //             href: '/support/warranty',
-    //         },
-    //         {
-    //             title: 'Technical Support',
-    //             href: '/support/technical',
-    //         },
-    //     ],
-    // },
+    {
+        group: 'Stone Tiles',
+        items: [
+            {
+                title: 'Regular Tiles',
+                href: '/granite-calibrated-tiles-in-india',
+            },
+            {
+                title: 'XL Tiles',
+                href: '/granite-xl-tiles',
+            },
+        ],
+    },
+    {
+        group: 'Contact Us',
+        items: [
+            {
+                title: '1st Floor, Mumal Towers, 16 Saheli Marg,Udaipur – 313 001, Rajasthan, India',
+                href: 'https://maps.app.goo.gl/HeiSwFk5y6CwE4dD9',
+            },
+            {
+                title: '+91 8875023456',
+                href: 'tel:+918875023456',
+            },
+            // {
+            //     title: 'WhatsApp Us',
+            //     href: 'https://wa.me/+918875023456',
+            // },
+            // {
+            //     title: 'Get Directions',
+            //     href: 'https://maps.app.goo.gl/8ie5mXgK7WGLnWef9',
+            // },
+        ],
+    },
 ]
 
 export default function Footer() {
@@ -117,10 +105,10 @@ export default function Footer() {
                             aria-label="go home"
                             className="block size-fit">
                             <Image
-                                src="/assets/logo2.png"
+                                src="/assets/logo.png"
                                 alt="Logo"
-                                width={100}
-                                height={100}
+                                width={1000}
+                                height={1000}
                                 className="h-24 sm:h-32 lg:h-40 w-auto"
                             />
                         </Link>

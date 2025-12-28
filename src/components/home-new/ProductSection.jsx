@@ -62,7 +62,7 @@ export default function ProductSection() {
 
             {/* View All Button */}
             <div className="mt-12 text-center">
-                <Button asChild size="lg" className="rounded-full px-8">
+                <Button asChild >
                     <Link href="/products">View All Products</Link>
                 </Button>
             </div>

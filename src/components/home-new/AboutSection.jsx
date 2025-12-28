@@ -37,8 +37,8 @@ export default function AboutSection() {
                                     ))}
                                 </ul> */}
 
-                        <Button className="rounded-none px-8 py-6 text-xs uppercase tracking-widest text-white hover:bg-neutral-800">
-                            More About Us <ArrowUpRight className="ml-2 h-4 w-4" />
+                        <Button>
+                            More About Us
                         </Button>
                     </div>
 

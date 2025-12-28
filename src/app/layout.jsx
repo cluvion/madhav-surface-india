@@ -1,7 +1,7 @@
 import "./globals.css";
 import { HeroHeader } from "@/components/header";
 import Footer from "@/components/footer";
-import ComprehensiveFooter from "@/components/comprehensive-footer";
+import NewFooter from "@/components/home-new/NewFooter";
 // import NavbarDemo from "@/components/header1";
 import FloatingContact from "@/components/floating-contact";
 // import CustomCursor from "@/components/custom-cursor";
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         {/* <NavbarDemo/> */}
         {children}
         <Footer />
-        {/* <ComprehensiveFooter /> */}
+        {/* <NewFooter /> */}
       </body>
     </html>
   );

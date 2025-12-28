@@ -72,7 +72,7 @@ const points = [
 export default function ProcessSection() {
     return (
         <Section>
-            <div className="flex items-center justify-around space-y-8 md:space-y-16">
+            <div className="flex items-center justify-around">
                 {/* Header Section */}
                 {/* <div className="absolute -bottom-20 -right-10 w-2/3 md:w-1/2 lg:w-[60%] z-20">
                         <img
@@ -102,7 +102,7 @@ export default function ProcessSection() {
                     </div>
                 </div>
             </div>
-            <div className="relative">
+            <div className="relative mt-8 md:mt-16">
                 <Process
                     steps={points}
                     autoPlayInterval={4000}
