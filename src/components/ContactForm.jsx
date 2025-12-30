@@ -9,13 +9,14 @@ import { Label } from './ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select'
 import { Textarea } from './ui/textarea'
 import CountryCode from './ui/country-code'
+import { Button } from './ui/button'
 
 const initialFormData = {
   name: '',
   email: '',
   phone: '',
-  countryCode: '+968',
-  category: '',
+  countryCode: '+91',
+  projectScope: '',
   message: ''
 }
 
@@ -34,7 +35,7 @@ const ContactForm = () => {
     formDataPayload.append('entry.554263998', `${formData.countryCode}`)
     formDataPayload.append('entry.1603549671', `${formData.phone}`)
     formDataPayload.append('entry.1780075820', formData.message)
-    formDataPayload.append('entry.1568563042', formData.category)
+    formDataPayload.append('entry.1568563042', formData.projectScope)
 
     try {
       await fetch(formUrl, {
@@ -72,65 +73,58 @@ const ContactForm = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
       onSubmit={handleSubmit}
-      className="border border-primary rounded-2xl p-6 space-y-6"
+      className="space-y-6" // Removed border and padding for clean look
     >
+      <div className="space-y-4">
+        <div>
+          <h3 className="text-3xl md:text-5xl font-bold text-foreground">How Can We Help You ?</h3>
+          <p className="text-sm md:text-base text-foreground/50 mt-2 md:mt-4">Your email address will not be published. Required fields are marked *</p>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="name" className="text-sm font-medium text-gray-700">Name</Label>
+          {/* <Label htmlFor="name" className="text-sm font-medium text-gray-700">Name*</Label> */}
           <Input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20"
+            className="text-foreground border-neutral-200 focus:border-primary px-4 py-6 rounded-none"
             required
-            placeholder="Enter your name"
+            placeholder="Name*"
           />
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email</Label>
+          {/* <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email*</Label> */}
           <Input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20"
+            className="text-foreground border-neutral-200 focus:border-primary px-4 py-6 rounded-none"
             required
-            placeholder="Enter your email"
+            placeholder="Email*"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="category" className="text-sm font-medium text-gray-700">Category</Label>
-          <Select value={formData.category} onValueChange={(value) => setFormData(prev => ({ ...prev, category: value }))} required>
-            <SelectTrigger className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20 w-full">
-              <SelectValue placeholder="Select Category" />
-            </SelectTrigger>
-            <SelectContent className="bg-white border-border">
-              <SelectItem value="Home owner" className="text-foreground">Home owner</SelectItem>
-              <SelectItem value="Architect" className="text-foreground">Architect</SelectItem>
-              <SelectItem value="Interior Designer" className="text-foreground">Interior Designer</SelectItem>
-              <SelectItem value="Distributor" className="text-foreground">Distributor</SelectItem>
-              <SelectItem value="Builder" className="text-foreground">Builder</SelectItem>
-              <SelectItem value="Others" className="text-foreground">Others</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-
-        <div className="space-y-2">
-          <Label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</Label>
+          {/* <Label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</Label> */}
           <div className="flex gap-2">
+            {/* CountryCode styling might need separate adjustment if it has fixed styles */}
             <CountryCode
               value={formData.countryCode}
               onChange={handleCountryCodeChange}
               label=""
               placeholder="Code"
               contentClassName=""
+              // className="shrink-0"
+              buttonClassName="rounded-none h-full"
             />
             <Input
               type="tel"
@@ -138,35 +132,55 @@ const ContactForm = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20"
-              placeholder="Enter phone number"
+              className="text-foreground border-neutral-200 focus:border-primary px-4 py-6 rounded-none w-full"
+              placeholder="Phone Number"
               required
             />
           </div>
         </div>
+
+        <div className="space-y-2">
+          {/* <Label htmlFor="projectScope" className="text-sm font-medium text-gray-700">Project Scope</Label> */}
+          {/* Note: Select trigger styling needs to match Input */}
+          <Select value={formData.projectScope} onValueChange={(value) => setFormData(prev => ({ ...prev, projectScope: value }))} required>
+            <SelectTrigger className="text-foreground/50 border-neutral-200 focus:border-primary px-4 py-6 rounded-none w-full">
+              <SelectValue placeholder="Project Scope" />
+            </SelectTrigger>
+            <SelectContent className="bg-white border-neutral-200">
+              <SelectItem value="Home owner" className="text-foreground">Home owner</SelectItem>
+              <SelectItem value="Architect" className="text-foreground">Architect</SelectItem>
+              <SelectItem value="Interior Designer" className="text-foreground">Interior Designer</SelectItem>
+              <SelectItem value="Distributor" className="text-foreground">Distributor</SelectItem>
+              <SelectItem value="Builder" className="text-foreground">Builder</SelectItem>
+              <SelectItem value="Others" className="text-foreground">Other</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="message" className="text-sm font-medium text-gray-700">Message</Label>
+        {/* <Label htmlFor="message" className="text-sm font-medium text-gray-700">Message</Label> */}
         <Textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          // rows={6}
-          className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20 h-54"
+          className="text-foreground border-neutral-200 focus:border-primary px-4 py-4 rounded-none min-h-[150px] resize-none"
           required
-          placeholder="Enter your message"
+          placeholder="Write Your Message.."
         />
       </div>
-
-      <HoverButton
-        text='Send Message'
-        onClick={handleSubmit}
-        width='w-full'
-        variant='black'
-      >
-      </HoverButton>
+      <div className="flex justify-center lg:justify-start">
+        <Button
+          text='SEND MESSAGE'
+          onClick={handleSubmit}
+        // width='w-[200px]'
+        // variant='black' // You might want to change this to primary/dark based on design
+        // className="rounded-none font-bold text-sm tracking-wider"
+        >
+          Send Message
+        </Button>
+      </div>
     </motion.form>
   )
 }

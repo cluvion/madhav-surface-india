@@ -75,7 +75,7 @@ const links = [
         group: 'Contact Us',
         items: [
             {
-                title: '1st Floor, Mumal Towers, 16 Saheli Marg,Udaipur – 313 001, Rajasthan, India',
+                title: '1st Floor, Mumal Towers, 16 Saheli Marg, Udaipur 313001, Rajasthan, India',
                 href: 'https://maps.app.goo.gl/HeiSwFk5y6CwE4dD9',
             },
             {
@@ -99,7 +99,7 @@ export default function Footer() {
         <footer className="border-b bg-black pt-8 sm:pt-12 lg:pt-16 ">
             <div className="mx-auto px-4 sm:px-8 lg:px-16">
                 <div className="grid gap-8 sm:gap-10 lg:gap-12 md:grid-cols-5">
-                    <div className="md:col-span-2 space-y-4 sm:space-y-6">
+                    <div className="md:col-span-2 space-y-4 sm:space-y-6 flex flex-col items-center md:items-start text-center md:text-left">
                         <Link
                             href="/"
                             aria-label="go home"
@@ -112,14 +112,14 @@ export default function Footer() {
                                 className="h-24 sm:h-32 lg:h-40 w-auto"
                             />
                         </Link>
-                        <p className="text-white text-sm  md:max-w-lg">Madhav Surfaces Crafting a Contemporary Renaissance in Stone</p>
+                        <p className="text-white text-sm  md:max-w-lg">The company operates its Granite Division from South India(Salem, Tamil Nadu). The Region known for its rich reserves of metamorphosed granite.</p>
                     </div>
 
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 md:col-span-3">
                         {links.map((link, index) => (
                             <div
                                 key={index}
-                                className="space-y-3 sm:space-y-4 text-sm">
+                                className="space-y-3 sm:space-y-4 text-sm text-center md:text-left">
                                 <h3 className="text-white font-medium text-sm sm:text-base">{link.group}</h3>
                                 <ul className="space-y-2 sm:space-y-3 text-muted-foreground">
                                     {link.items.map((item) => (
@@ -134,8 +134,9 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-                <div className="mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
-                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first"> {new Date().getFullYear()} Madhav Surfaces, All rights reserved</span>
+                <div className="lg:mt-12 flex flex-wrap items-end justify-center md:justify-between gap-6 border-t py-6">
+                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">Copyright © {new Date().getFullYear()} Madhav Marbles and Granites Ltd. All rights reserved. Powered by <Link href="https://cluvion.com" target="_blank" className="text-primary font-bold">Cluvion</Link>
+                    </span>
                     <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
                         {/* <Link
                             href="#"
@@ -155,7 +156,7 @@ export default function Footer() {
                             </svg>
                         </Link> */}
                         <Link
-                            href="https://www.linkedin.com/company/madhav-quartz/"
+                            href="https://www.linkedin.com/company/madhav-marble-and-granite-ltd-india"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
@@ -172,7 +173,7 @@ export default function Footer() {
                             </svg>
                         </Link>
                         <Link
-                            href="https://www.facebook.com/madhavquartz/"
+                            href="https://www.facebook.com/madhavmarbles/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Facebook"
@@ -211,7 +212,7 @@ export default function Footer() {
                             </svg>
                         </Link> */}
                         <Link
-                            href="https://www.instagram.com/madhavquartz/"
+                            href="https://www.instagram.com/madhavmarbles/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"

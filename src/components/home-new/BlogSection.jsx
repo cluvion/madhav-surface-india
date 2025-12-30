@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Section from "@/components/section";
 
 const posts = [
     {
@@ -29,7 +28,7 @@ const posts = [
 
 export default function BlogSection() {
     return (
-        <Section>
+        <section className="pt-8 md:pt-12 lg:pt-14 pb-16 md:pb-24 lg:pb-28">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-12 flex flex-col justify-between md:flex-row md:items-end">
                     <div className="text-center md:text-left max-w-3xl">
@@ -41,7 +40,7 @@ export default function BlogSection() {
                             <span className="text-primary "> News And Insights</span>
                         </h2>
                     </div>
-                    <div className="mt-6 md:mt-0 mb-0 md:mb-2">
+                    <div className="mt-6 md:mt-0 mb-0 md:mb-2 flex justify-center lg:justify-start">
                         <Button>
                             BROWSE ALL
                         </Button>
@@ -54,9 +53,10 @@ export default function BlogSection() {
                             <div className="mb-6 overflow-hidden">
                                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                                     {/* Note: In a real Next.js app, use Image component. Using div for placeholder match if Image not configured */}
-                                    <img
+                                    <Image
                                         src={post.image}
                                         alt={post.title}
+                                        fill
                                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
                                 </div>
@@ -80,6 +80,6 @@ export default function BlogSection() {
                     ))}
                 </div>
             </div>
-        </Section>
+        </section>
     );
 }

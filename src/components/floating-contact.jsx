@@ -9,7 +9,10 @@ const FloatingContact = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isFormOpen, setIsFormOpen] = useState(false);
 
+    const [mounted, setMounted] = useState(false);
+
     useEffect(() => {
+        setMounted(true);
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             // Show button after scrolling 200px
@@ -22,8 +25,10 @@ const FloatingContact = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    if (!mounted) return null;
+
     const handleWhatsApp = () => {
-        window.open('https://wa.me/+96896456778', '_blank');
+        window.open('https://wa.me/+918875023456', '_blank');
     };
 
     const handleSampleOrder = () => {
@@ -32,7 +37,7 @@ const FloatingContact = () => {
 
     return (
         <>
-            <div className="fixed bottom-10 md:bottom-5 z-50 right-5 flex flex-col gap-3">
+            <div className="fixed bottom-14 md:bottom-10 z-50 right-5 flex flex-col gap-3">
                 <AnimatePresence>
                     {isVisible && (
                         <>
@@ -41,7 +46,7 @@ const FloatingContact = () => {
                                 whileTap={{ scale: 0.9 }}
                                 whileHover={{ scale: 1.1 }}
                                 onClick={handleSampleOrder}
-                                className="bg-gradient-to-r from-primary to-primary/80 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer"
+                                className="bg-primary p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer"
                                 aria-label="Order Samples"
                                 initial={{ opacity: 0, scale: 0.8, y: 20 }}
                                 animate={{ opacity: 1, scale: 1, y: -10 }}

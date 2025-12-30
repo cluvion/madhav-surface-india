@@ -3,7 +3,7 @@ export function AnimatedLink({ href, children, className = "" }) {
     return (
         <Link
             href={href}
-            className={`relative block transition-colors w-fit group ${className}`}
+            className={`relative block transition-colors w-full lg:w-fit group  text-center md:text-left ${className}`}
         >
             <span>{children}</span>
             <span

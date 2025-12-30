@@ -26,9 +26,13 @@ export default function HeroSection() {
                     className="max-w-6xl"
                 >
                     <div className="mb-6 flex items-center space-x-2">
-                        <div className="h-[1px] w-12 bg-primary" />
-                        <span className="text-sm font-medium uppercase tracking-widest text-primary">
+                        {/* <div className="h-[1px] w-12 bg-primary" /> */}
+                        {/* <span className="text-sm font-medium uppercase tracking-widest text-primary">
                             Premium Stone Collection
+                        </span> */}
+                        <span className="mr-2 pl-2 text-lg text-white">¬</span>
+                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary">
+                             Premium Stone Collection
                         </span>
                     </div>
 

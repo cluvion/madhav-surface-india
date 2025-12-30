@@ -1,12 +1,22 @@
+"use client"
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { motion } from "motion/react";
+import AnimatedNumber from "@/components/ui/animated-number";
 
 export default function AboutSection() {
+
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
-        <section className="pt-10 md:pt-16 lg:pt-20 pb-5 md:pb-8 lg:pb-10 container mx-auto px-4 md:px-6">
-            <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <section className="pt-16 md:pt-24 lg:pt-28 pb-8 md:pb-12 lg:pb-14 container mx-auto px-4 md:px-6">
+            <div className="flex flex-col lg:flex-row gap-4 md:gap-16  items-center">
                 {/* Left Content */}
                 <div className="w-full lg:w-2/3 space-y-4 md:space-y-8">
                     <div className="text-center md:text-left">
@@ -37,7 +47,7 @@ export default function AboutSection() {
                                     ))}
                                 </ul> */}
 
-                        <Button>
+                        <Button variant={"secondary"}>
                             More About Us
                         </Button>
                     </div>
@@ -50,16 +60,23 @@ export default function AboutSection() {
                         {/* Left part of right side - Stats & Grid */}
                         <div className="space-y-8">
                             <div className="md:absolute md:inset-0 md:top-41 md:left-13 text-center md:text-left">
-                                <div className="flex items-baseline justify-center md:justify-start text-primary leading-none gap-2">
-                                    <span className="text-[150px] font-bold tracking-tight">35</span>
+                                <div ref={ref} className="flex items-baseline justify-center md:justify-start text-primary leading-none gap-2 text-[150px] font-bold tracking-tight">
+                                    <AnimatedNumber
+                                        springOptions={{
+                                            bounce: 0,
+                                            duration: 3000,
+                                        }}
+                                        value={inView ? 35 : 0}
+                                    />
+                                    {/* <span className="text-[150px] font-bold tracking-tight">35</span> */}
                                     <span className="text-[150px] font-bold">+</span>
                                 </div>
                                 <p className="font-semibold text-lg text-black mt-[-10px] ml-2">Years Of Experience</p>
                             </div>
 
                             {/* Stone Texture Grid */}
-                            <div className="md:absolute inset-0 md:top-87 grid grid-cols-4 h-39 md:h-52 md:w-108 z-1">
-                                <div className="aspect-video w-80 h-full md:w-108 bg-gray-100 relative overflow-hidden">
+                            <div className="md:absolute inset-0 md:top-87 flex justify-center md:grid md:grid-cols-4 h-39 md:h-52 md:w-108 z-1">
+                                <div className="aspect-video w-80 h-full md:w-108 bg-gray-100 relative overflow-hidden mx-auto md:mx-0">
                                     <Image
                                         src="/assets/stones/about2.png"
                                         alt="Luxury Marble Interior"

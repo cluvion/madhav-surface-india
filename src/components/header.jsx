@@ -232,7 +232,7 @@ export const HeroHeader = ({
                         <div className="flex items-center justify-end space-x-5 md:space-x-6 flex-shrink-0">
                             {/* Phone Number */}
                             <a
-                                href="tel:+96894866789"
+                                href="tel:+918875023456"
                                 className={cn(
                                     "flex items-center rounded-lg transition-all duration-300 hover:scale-110",
                                     isScrolled ? "text-black" : "text-white"
@@ -243,7 +243,7 @@ export const HeroHeader = ({
 
                             {/* Location / Where to Buy */}
                             <a
-                                href="https://maps.app.goo.gl/8ie5mXgK7WGLnWef9"
+                                href="https://maps.app.goo.gl/HeiSwFk5y6CwE4dD9"
                                 target="_blank"
                                 className={cn(
                                     "flex items-center rounded-lg transition-all duration-300 hover:scale-110",
@@ -255,7 +255,7 @@ export const HeroHeader = ({
 
                             {/* WhatsApp Button */}
                             <a
-                                href="https://wa.me/+96896456778"
+                                href="https://wa.me/+918875023456"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={cn(

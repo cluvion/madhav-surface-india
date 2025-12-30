@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
     }, [currentIndex, testimonials.length]);
 
     return (
-        <section className="py-10 md:py-16 lg:py-20  bg-primary/80 ">
+        <section className="mt-8 md:mt-12 lg:mt-14 py-8 md:py-12 lg:py-14 bg-primary/80 ">
             {/* Background Text */}
             {/* <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
                 <span className="block text-[20vw] font-bold text-neutral-50" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -69,7 +69,7 @@ export default function TestimonialsSection() {
 
             <div className="container relative z-10 mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-around">
-                    <div className="w-1/3">
+                    <div className="w-1/3 hidden lg:block">
                         <Image
                             src="/assets/stones/stone2.png"
                             alt="Stone Slab 2"
@@ -78,7 +78,7 @@ export default function TestimonialsSection() {
                             className="w-full h-50 object-contain drop-shadow-2xl"
                         />
                     </div>
-                    <div className="w-2/3">
+                    <div className="lg:w-2/3">
                         <div className="text-center md:text-left">
                             <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4 text-foreground">
                                 <span className="mr-2 text-lg text-primary-foreground">¬</span> OUR TESTIMONIALS
@@ -94,7 +94,7 @@ export default function TestimonialsSection() {
                 {/* Testimonials Carousel */}
                 <div className="relative max-w-5xl mx-auto mt-8 md:mt-16">
                     {/* Main Testimonial Display */}
-                    <div className="bg-primary/50 backdrop-blur-sm rounded-2xl p-2 md:p-4  border border-primary-foreground/20">
+                    <div className="bg-primary/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-primary-foreground/20">
                         <div className="text-center space-y-6">
                             {/* Animated Testimonial Content */}
                             <div className="min-h-[150px] md:min-h-[200px] flex flex-col justify-center">

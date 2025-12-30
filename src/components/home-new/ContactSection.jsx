@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ContactSection() {
     return (
-        <section className="relative py-10 md:py-16 lg:py-20 mb-5 md:mb-8 lg:mb-10">
+        <section className="relative py-8 md:py-12 lg:py-14 mb-8 md:mb-12 lg:mb-14">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -22,7 +22,7 @@ export default function ContactSection() {
                 <div className="grid gap-12 lg:grid-cols-2 items-end">
                     {/* Left Side Content */}
                     <div className="max-w-xl">
-                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-background">
+                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-background text-center lg:text-left">
                             Come as You are And we Will Take Care of the Rest
                         </h2>
                     </div>
@@ -78,10 +78,11 @@ export default function ContactSection() {
                                     placeholder="Your message here"
                                 />
                             </div>
-
-                            <Button>
-                                SEND MESSAGE
-                            </Button>
+                            <div className="flex justify-center lg:justify-start">
+                                <Button>
+                                    SEND MESSAGE
+                                </Button>
+                            </div>
                         </form>
                     </div>
                 </div>

@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Process } from "@/components/Process";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const points = [
     {
@@ -81,7 +82,13 @@ export default function ProcessSection() {
                             className="w-full h-auto object-contain drop-shadow-xl transform rotate-[-10deg] translate-y-10"
                         />
                     </div> */}
-                <div className="w-1/3">
+                <motion.div
+                    className="w-1/3 hidden lg:block"
+                    initial={{ opacity: 0, scale: 0.4 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
                     <Image
                         src="/assets/stones/stone1.png"
                         alt="Stone Slab 2"
@@ -89,9 +96,9 @@ export default function ProcessSection() {
                         height={600}
                         className="w-full h-64 object-contain drop-shadow-2xl"
                     />
-                </div>
-                <div className="w-2/3">
-                    <div className="text-center text-balance md:text-left">
+                </motion.div>
+                <div className="w-full lg:w-2/3">
+                    <div className="text-center lg:text-balance md:text-left">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                             <span className="mr-2 text-lg text-primary">¬</span> OUR ABOUT US
                         </span>

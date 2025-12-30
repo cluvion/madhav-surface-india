@@ -11,8 +11,10 @@ import AwardsSection from "@/components/home-new/AwardsSection";
 import ContactSection from "@/components/home-new/ContactSection";
 import BlogSection from "@/components/home-new/BlogSection";
 import ProductSection from "@/components/home-new/ProductSection";
+import StoneOverlays from "@/components/home-new/StoneOverlays";
 
 import { generateMetadata as generateSEOMetadata, pageMetadata } from "@/lib/seo";
+import VideoSection from "@/components/home-new/VideoSection";
 
 export const metadata = generateSEOMetadata({
   title: pageMetadata.home.title,
@@ -24,10 +26,12 @@ export const metadata = generateSEOMetadata({
 
 export default function Home() {
   return (
-    <>
+    <main className="relative w-full overflow-hidden">
+      {/* <StoneOverlays /> */}
       <HeroSection />
       <AboutSection />
       {/* <ServicesSection /> */}
+      <VideoSection/>
       <StatsSection />
       <ProcessSection />
       <CollectionSection />
@@ -37,6 +41,6 @@ export default function Home() {
       {/* <AwardsSection /> */}
       <ContactSection />
       <BlogSection />
-    </>
+    </main>
   );
 }

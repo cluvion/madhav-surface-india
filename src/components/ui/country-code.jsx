@@ -262,12 +262,12 @@ export default function CountryCode({ value, onChange, className = "", label = "
             {label && <Label htmlFor={id}>{label}</Label>}
             <Popover open={open} onOpenChange={setOpen} >
                 <PopoverTrigger asChild>
-                    <Button
+                    <button
                         id={id}
                         variant="outline"
                         role="combobox"
                         aria-expanded={open}
-                        className={`bg-white border-input w-full justify-between px-3 font-normal outline-offset-0 outline-none focus-visible:outline-[3px] ${buttonClassName}`}
+                        className={`border border-foreground/10 shadow-xs w-full px-3 font-normal flex flex-nowrap items-center ${buttonClassName}`}
                     >
                         {value ? (
                             <span className="flex min-w-0 items-center gap-2">
@@ -287,10 +287,10 @@ export default function CountryCode({ value, onChange, className = "", label = "
                         )}
                         <ChevronDownIcon
                             size={16}
-                            className="text-foreground/30 shrink-0"
+                            className="text-foreground/30 shrink-0 ml-2"
                             aria-hidden="true"
                         />
-                    </Button>
+                    </button>
                 </PopoverTrigger>
                 <PopoverContent
                     className={`border-input w-full min-w-[var(--radix-popper-anchor-width)] p-0 ${contentClassName}`}
@@ -329,4 +329,3 @@ export default function CountryCode({ value, onChange, className = "", label = "
         </div>
     )
 }
-

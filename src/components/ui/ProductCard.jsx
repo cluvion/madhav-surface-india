@@ -46,9 +46,10 @@ export default function ProductCard({ product, onQuickView }) {
                 </Button>
                 {/* Quick View Button (Mobile/Tablet Only) */}
                 <Button
-                    variant="outline"
-                    size="icon"
-                    className="lg:hidden shrink-0 h-9 w-9"
+                    // variant="outline"
+                    // size="icon"
+                    arrow={false}
+                    className="lg:hidden shrink-0 h-full w-9"
                     onClick={() => onQuickView(product)}
                 >
                     <Eye className="w-4 h-4" />

@@ -1,7 +1,7 @@
 
 function Section({ children, className }) {
     return (
-        <section className={`${className || 'py-5 md:py-8 lg:py-10 container mx-auto px-4 md:px-6'} overflow-hidden`}>
+        <section className={`${className || 'py-8 md:py-12 lg:py-14  container mx-auto px-4 md:px-6'} overflow-hidden`}>
             {children}
         </section>
     )
