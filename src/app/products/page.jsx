@@ -46,18 +46,18 @@ export default function ProductsPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://res.cloudinary.com/dljiyumfx/image/upload/v1753857232/Masseto_Close_up_2_tudvmm.jpg"
+                        src="/assets/Step4.png"
                         alt="Background"
                         className="w-full h-full object-cover"
                         fill
                     />
                     {/* Optional overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-black/30 bg-opacity-30"></div>
+                    <div className="absolute inset-0 bg-black/80"></div>
                 </div>
 
                 <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
                     <h1
-                        className="heading font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none text-white"
+                        className="heading font-bold tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  text-white"
                     >
                         Products
                     </h1>

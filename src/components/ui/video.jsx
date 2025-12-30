@@ -132,7 +132,7 @@ export const Video = () => {
         }}
         onClick={() => setShowVideoPopOver(true)}
         // className="md:size-45 size-25 cursor-none">
-        className="md:w-64 md:h-64 w-32 h-32 cursor-none rounded-full overflow-hidden flex items-center justify-center bg-black">
+        className="md:w-64 md:h-64 w-32 h-32 cursor-none rounded-full overflow-hidden">
         <motion.div
           style={{ x, y, opacity }}
           className="relative z-20 flex w-fit select-none items-center justify-center text-sm text-white mix-blend-exclusion">
