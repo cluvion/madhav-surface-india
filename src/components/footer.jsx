@@ -21,7 +21,7 @@ const links = [
             },
             {
                 title: 'News & Events',
-                href: '/news-events',
+                href: '/coverings-2023-event',
             },
             {
                 title: 'Blogs',

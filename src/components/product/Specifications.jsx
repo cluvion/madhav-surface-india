@@ -83,7 +83,6 @@ const Specifications = ({ product }) => {
   return (
     <Section>
       <div className="relative">
-
         <div className="text-center md:text-left">
           <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
             Technical 
@@ -142,14 +141,14 @@ const Specifications = ({ product }) => {
 
           {/* Content Area */}
           <div
-            className="flex-1 min-h-[400px]"
+            className="flex-1"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
             {activeTab === 'edge-profiles' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <h3 className="text-2xl font-light text-black mb-8">Available Edge Profiles</h3>
+                {/* <h3 className="text-2xl font-light text-black mb-8">Available Edge Profiles</h3> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {['Standard Edge', 'Beveled Edge', 'Bullnose Edge', 'Ogee Edge'].map((edge, index) => (
                     <div key={index} className="group p-6 bg-white border border-zinc-200 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
@@ -163,7 +162,7 @@ const Specifications = ({ product }) => {
 
             {activeTab === 'care' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <h3 className="text-2xl font-light text-black mb-8">Care & Maintenance</h3>
+                {/* <h3 className="text-2xl font-light text-black mb-8">Care & Maintenance</h3> */}
                 <div className="prose prose-zinc max-w-none">
                   <div className="grid gap-6">
                     <div className="flex items-start gap-4 p-4 hover:bg-zinc-50 transition-colors rounded-lg">
@@ -189,7 +188,7 @@ const Specifications = ({ product }) => {
 
             {activeTab === 'size-finish' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <h3 className="text-2xl font-light text-black mb-8">Size & Finish Availability</h3>
+                {/* <h3 className="text-2xl font-light text-black mb-8">Size & Finish Availability</h3> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                   <div>
                     <h4 className="font-medium text-lg text-black mb-6 flex items-center gap-3">

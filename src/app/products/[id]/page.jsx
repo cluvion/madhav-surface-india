@@ -1,16 +1,8 @@
 "use client";
-import React from 'react';
 import { useParams } from 'next/navigation';
 import { mockProducts } from '@/data/mockProducts';
-import HeroSection from '@/components/product/HeroSection';
 import ProductSection from '@/components/product/ProductSection';
-import ImageGallery from '@/components/product/ImageGallery';
-import KeyHighlights from '@/components/product/KeyHighlights';
 import Specifications from '@/components/product/Specifications';
-import Applications from '@/components/product/Applications';
-import CollectionSlider from '@/components/product/CollectionSlider';
-import StickyCTA from '@/components/product/StickyCTA';
-import { HomeIcon } from "lucide-react"
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -22,6 +14,8 @@ import {
 import Image from "next/image"
 import Section from '@/components/section';
 import CtaSection from '@/components/page/CtaSection';
+import ProductCard from "@/components/ui/ProductCard";
+import { useState } from "react";
 
 // import { generateMetadata as generateSEOMetadata, generateProductSchema, generateBreadcrumbSchema } from "@/lib/seo";
 
@@ -30,6 +24,7 @@ const ProductPage = () => {
     const params = useParams();
     const productId = parseInt(params.id);
     const product = mockProducts.find(p => p.id === productId);
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     if (!product) {
         return (
@@ -44,7 +39,6 @@ const ProductPage = () => {
 
     return (
         <div className="overflow-hidden">
-
             <div className="relative h-[45vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
@@ -83,19 +77,33 @@ const ProductPage = () => {
                     </div>
                 </div>
             </div>
+
             {/* Product Section in visible container to allow 3D effect */}
             <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6">
                 <ProductSection product={product} />
             </div>
+            
             <Specifications product={product} />
-            <Section>
-                {/* <ImageGallery product={product} /> */}
 
-                <KeyHighlights />
-                <CollectionSlider currentProduct={product} products={mockProducts} />
-                {/* <Applications product={product} /> */}
-                {/* <StickyCTA /> */}
+            <Section>
+                {/* Section Header */}
+                <div className="text-center md:text-left">
+                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
+                        Related
+                        <span className="text-primary "> Products</span>
+                    </h2>
+                </div>
+
+                {/* Project Carousel Section */}
+                <div className="relative mt-8 md:mt-16">
+                    <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {mockProducts.map((product) => (
+                            <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
+                        ))}
+                    </div>
+                </div>
             </Section>
+
             <CtaSection />
         </div>
 

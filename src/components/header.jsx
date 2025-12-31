@@ -332,7 +332,7 @@ export const HeroHeader = ({
 
                         {/* News & Events */}
                         <Link
-                            href="/news-events"
+                            href="/coverings-2023-event"
                             className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
                         >
                             <Newspaper className="w-4 h-4 mb-1" />

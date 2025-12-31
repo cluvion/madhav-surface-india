@@ -27,25 +27,28 @@ export default function ApplicationsGridSection({ title, items }) {
                 <h2 className="text-2xl md:text-3xl font-bold mb-8">
                     {title}
                 </h2>
-
                 <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 md:gap-12">
                     {items.map((item, index) => {
                         const IconComponent = iconMap[item.iconName] || Table;
-
                         return (
-                            <div key={index} className="flex flex-col items-center gap-4 group text-center">
-                                <div className="bg-white p-6 rounded-2xl shadow-sm border border-neutral-100 group-hover:shadow-md transition-all duration-300 w-24 h-24 flex items-center justify-center">
-                                    <IconComponent
-                                        strokeWidth={1.5}
-                                        className="w-10 h-10 text-primary group-hover:scale-110 transition-transform duration-300"
-                                    />
-                                </div>
-                                <h3 className="text-xl font-medium text-black max-w-[150px] leading-tight">
-                                    {item.label}
-                                </h3>
+                        <div
+                            key={index}
+                            className="bg-white p-4 sm:p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
+                        >
+                            <div className="flex justify-center mb-3 sm:mb-4">
+                                {/* <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
+                                    {React.cloneElement(item.icon, { className: "w-6 h-6 sm:w-8 sm:h-8 " + item.icon.props.className })}
+                                </div> */}
+                                <IconComponent
+                                    strokeWidth={1.5}
+                                    className="w-10 h-10 text-primary group-hover:scale-110 transition-transform duration-300"
+                                />
                             </div>
-                        );
-                    })}
+                            <h3 className="font-medium text-foreground mb-2 text-sm sm:text-base">
+                                {item.label}
+                            </h3>
+                        </div>
+                    )})}
                 </div>
             </div>
         </section>

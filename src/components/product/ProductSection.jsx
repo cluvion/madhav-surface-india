@@ -59,7 +59,7 @@ const ProductSection = ({ product }) => {
         </div>
         {/* Right: Product Info */}
         <div className="space-y-4 md:space-y-6">
-          <div className="div">
+          <div className="text-center md:text-left">
             <h1 className="heading text-3xl sm:text-4xl lg:text-5xl font-medium text-gray-900 mb-3 lg:mb-6">
               {product.name}
             </h1>
@@ -70,9 +70,9 @@ const ProductSection = ({ product }) => {
 
           {/* Finish Options */}
           {product.finishes && product.finishes.length > 1 && (
-            <div className="space-y-3">
+            <div className="space-y-3 text-center md:text-left">
               <h4 className="text-lg sm:text-xl text-gray-800 font-medium">Available Finishes:</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {product.finishes.map((finish, index) => (
                   <button
                     key={index}
@@ -93,8 +93,8 @@ const ProductSection = ({ product }) => {
             <Button variant={"secondary"}>
               Order Sample
             </Button>
-            <Link href={"/contact-us"}>
-              <Button>
+            <Link href={"/contact-us"} className="w-full">
+              <Button className={"w-full"}>
                 Contact to Buy
               </Button>
             </Link>
