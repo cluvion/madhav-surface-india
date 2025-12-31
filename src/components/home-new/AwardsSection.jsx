@@ -24,7 +24,7 @@ export default function AwardsSection() {
 
                     {/* Right Content */}
                     <div className="lg:pl-12">
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-foreground/50">
                             Achievement
                         </span>
                         <h2 className="heading mb-12 text-4xl leading-tight md:text-5xl">
@@ -37,7 +37,7 @@ export default function AwardsSection() {
                                 <div key={index} className="group flex items-center justify-between py-6 transition-colors hover:bg-neutral-50">
                                     <div>
                                         <h3 className="mb-1 text-lg font-medium group-hover:text-primary">{award.title}</h3>
-                                        <p className="text-sm text-neutral-500">{award.organization}</p>
+                                        <p className="text-sm text-foreground/50">{award.organization}</p>
                                     </div>
                                     <span className="text-sm font-bold text-neutral-400 group-hover:text-black">{award.year}</span>
                                 </div>

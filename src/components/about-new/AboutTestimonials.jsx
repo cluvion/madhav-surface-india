@@ -39,7 +39,7 @@ export default function AboutTestimonials() {
                         <h2 className="heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                             Client Feedback And <br />Success Stories
                         </h2>
-                        <p className="mt-6 text-neutral-500">
+                        <p className="mt-6 text-foreground/50">
                             Exceptional Service, Unbeatable Quality. <br />
                             Your Trusted Choice!
                         </p>

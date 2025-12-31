@@ -16,7 +16,7 @@ const Applications = ({ product }) => {
               <button
                 key={app}
                 onClick={() => setActiveApp(app)}
-                className={`px-6 py-2 rounded-md font-medium transition-colors ${activeApp === app ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${activeApp === app ? 'bg-black text-white' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 {app}
               </button>

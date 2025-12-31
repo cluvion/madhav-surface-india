@@ -2,7 +2,7 @@
 import Section from '@/components/section'
 import Image from 'next/image';
 import PageHeader from '@/components/pageheader'
-import Carousel from '@/components/Carousel'
+import Carousel from '@/components/page/Carousel'
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,

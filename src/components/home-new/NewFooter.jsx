@@ -51,7 +51,7 @@ export default function NewFooter() {
                     </div>
                 </div>
 
-                <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-500">
+                <div className="border-t border-neutral-800 pt-8 text-center text-sm text-foreground/50">
                     <p>&copy; {new Date().getFullYear()} Madhav Surfaces. All rights reserved.</p>
                 </div>
             </div>

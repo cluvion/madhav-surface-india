@@ -21,7 +21,7 @@ export default function AboutAwards() {
 
                         <div className="mt-8 max-w-sm">
                             <h3 className="mb-4 text-2xl font-bold leading-tight"> Enhance Your Space With Timeless Elegance!</h3>
-                            <p className="text-sm leading-relaxed text-neutral-500">
+                            <p className="text-sm leading-relaxed text-foreground/50">
                                 We offer quality stone product for the heart of the home and select the best for your life work to enhance your living projects.
                             </p>
                         </div>
@@ -29,7 +29,7 @@ export default function AboutAwards() {
 
                     {/* Right List */}
                     <div className="lg:pt-20">
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-foreground/50">
                             Awards & Recognition
                         </span>
                         <h2 className="heading mb-16 text-4xl leading-tight md:text-5xl">

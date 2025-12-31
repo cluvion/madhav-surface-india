@@ -9,7 +9,7 @@ export default function AboutIntro() {
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
                     {/* Left Content */}
                     <div className="flex flex-col justify-center">
-                        <span className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                        <span className="mb-4 text-sm font-semibold uppercase tracking-widest text-foreground/50">
                             About Us
                         </span>
                         <h2 className="heading mb-8 text-4xl leading-tight md:text-5xl lg:text-6xl">

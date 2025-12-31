@@ -7,7 +7,7 @@ export default function ProjectsSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-12 flex flex-col justify-between md:flex-row md:items-end">
                     <div>
-                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                        <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-foreground/50">
                             Unique
                         </span>
                         <h2 className="heading text-4xl leading-tight md:text-5xl">
@@ -33,7 +33,7 @@ export default function ProjectsSection() {
                             <div className="flex items-center justify-between border-b border-neutral-200 pb-4 transition-colors group-hover:border-[#D4AF37]">
                                 <div>
                                     <h3 className="text-lg font-medium">Luxury Villa {item}</h3>
-                                    <p className="text-sm text-neutral-500">Residential</p>
+                                    <p className="text-sm text-foreground/50">Residential</p>
                                 </div>
                                 <span className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 text-neutral-400 opacity-0 transition-all group-hover:opacity-100">
                                     →

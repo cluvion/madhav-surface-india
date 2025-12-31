@@ -136,7 +136,7 @@ export const HeroHeader = ({
                                                             <Link href="/marbles-and-granite-suppliers-in-india">Exotics & Exclusives</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
-                                                            <Link href="https://www.madhavquartz.com">Quartz</Link>
+                                                            <Link target="_blank" href="https://www.madhavquartz.com">Quartz</Link>
                                                         </NavigationMenuLink>
                                                     </li>
                                                 </ul>

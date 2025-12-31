@@ -1,10 +1,16 @@
 "use client";
-
-import { use, useState, useEffect } from "react";
-import { mockProducts } from "@/data/mockProducts";
-import Section from "@/components/section";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import React from 'react';
+import { useParams } from 'next/navigation';
+import { mockProducts } from '@/data/mockProducts';
+import HeroSection from '@/components/product/HeroSection';
+import ProductSection from '@/components/product/ProductSection';
+import ImageGallery from '@/components/product/ImageGallery';
+import KeyHighlights from '@/components/product/KeyHighlights';
+import Specifications from '@/components/product/Specifications';
+import Applications from '@/components/product/Applications';
+import CollectionSlider from '@/components/product/CollectionSlider';
+import StickyCTA from '@/components/product/StickyCTA';
+import { HomeIcon } from "lucide-react"
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -12,45 +18,49 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { motion } from "framer-motion";
+} from "@/components/ui/breadcrumb"
+import Image from "next/image"
+import Section from '@/components/section';
+import CtaSection from '@/components/page/CtaSection';
 
-export default function ProductDetailPage({ params }) {
-    // Unwrap params using React.use()
-    const unwrappedParams = use(params);
-    const { id } = unwrappedParams;
-    const [product, setProduct] = useState(null);
+// import { generateMetadata as generateSEOMetadata, generateProductSchema, generateBreadcrumbSchema } from "@/lib/seo";
 
-    useEffect(() => {
-        if (id) {
-            const foundProduct = mockProducts.find((p) => p.id === parseInt(id));
-            setProduct(foundProduct);
-        }
-    }, [id]);
+// Main Product Page Component
+const ProductPage = () => {
+    const params = useParams();
+    const productId = parseInt(params.id);
+    const product = mockProducts.find(p => p.id === productId);
 
     if (!product) {
-        return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+        return (
+            <div className="min-h-screen flex items-center justify-center">
+                <div className="text-center">
+                    <h1 className="text-2xl font-bold text-gray-900 mb-4">Product Not Found</h1>
+                    <p className="text-gray-600">The requested product could not be found.</p>
+                </div>
+            </div>
+        );
     }
 
     return (
-        <div className="min-h-screen bg-background">
-            {/* Header Section */}
+        <div className="overflow-hidden">
+
             <div className="relative h-[45vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://res.cloudinary.com/dljiyumfx/image/upload/v1753857232/Masseto_Close_up_2_tudvmm.jpg"
+                        src={product.image}
                         alt="Background"
                         className="w-full h-full object-cover"
                         fill
                     />
                     {/* Optional overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-black/30 bg-opacity-30"></div>
+                    <div className="absolute inset-0 bg-black/80"></div>
                 </div>
 
-                <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
+                <div className="hero-content relative z-10 text-center max-w-7xl mx-auto px-6 space-y-4">
                     <h1
-                        className="heading font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none text-white"
+                        className="heading font-bold tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none text-white"
                     >
                         {product.name}
                     </h1>
@@ -73,63 +83,23 @@ export default function ProductDetailPage({ params }) {
                     </div>
                 </div>
             </div>
+            {/* Product Section in visible container to allow 3D effect */}
+            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6">
+                <ProductSection product={product} />
+            </div>
+            <Specifications product={product} />
+            <Section>
+                {/* <ImageGallery product={product} /> */}
 
-            <Section className="py-12 md:py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                    {/* Image */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="relative aspect-square rounded-2xl overflow-hidden bg-secondary/20"
-                    >
-                        <Image
-                            src={product.image}
-                            alt={product.name}
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-                    </motion.div>
-
-                    {/* Content */}
-                    <div className="space-y-8">
-                        <div>
-                            <span className="text-sm font-medium text-primary tracking-wider uppercase">{product.category}</span>
-                            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-4">{product.name}</h1>
-                            <p className="text-foreground/80 text-lg leading-relaxed">
-                                Elevate your space with the timeless elegance of {product.name}. This premium surface solution offers unmatched durability and aesthetic appeal, making it the perfect choice for luxury interiors and architectural statements.
-                            </p>
-                        </div>
-
-                        <div className="space-y-6 pt-6 border-t border-border">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div>
-                                    <h4 className="font-medium text-foreground">Finish</h4>
-                                    <p className="text-muted-foreground">Polished / Honed</p>
-                                </div>
-                                <div>
-                                    <h4 className="font-medium text-foreground">Thickness</h4>
-                                    <p className="text-muted-foreground">18mm, 20mm</p>
-                                </div>
-                                <div>
-                                    <h4 className="font-medium text-foreground">Application</h4>
-                                    <p className="text-muted-foreground">Flooring, Walls, Countertops</p>
-                                </div>
-                                <div>
-                                    <h4 className="font-medium text-foreground">Origin</h4>
-                                    <p className="text-muted-foreground">Imported</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex gap-4 pt-6">
-                            <Button size="lg" className="w-full md:w-auto px-8">Enquire Now</Button>
-                            <Button size="lg" variant="outline" className="w-full md:w-auto px-8">Download Catalogue</Button>
-                        </div>
-                    </div>
-                </div>
+                <KeyHighlights />
+                <CollectionSlider currentProduct={product} products={mockProducts} />
+                {/* <Applications product={product} /> */}
+                {/* <StickyCTA /> */}
             </Section>
+            <CtaSection />
         </div>
+
     );
-}
+};
+
+export default ProductPage;

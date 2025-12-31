@@ -6,7 +6,7 @@ export default function AboutFooter() {
     return (
         <section className="bg-white py-20 text-center">
             <div className="container mx-auto px-4 md:px-6">
-                <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-foreground/50">
                     Contact In Touch Us
                 </span>
                 <h2 className="heading mb-8 text-4xl leading-tight md:text-5xl lg:text-7xl">

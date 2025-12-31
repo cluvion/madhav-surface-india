@@ -1,29 +1,23 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Download, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import Heading from '@/components/heading';
+import Section from '../section';
 const Specifications = ({ product }) => {
-  const [activeTab, setActiveTab] = useState('specifications');
+  const [activeTab, setActiveTab] = useState('size-finish');
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
   const tabsContainerRef = useRef(null);
 
   const tabs = [
-    { id: 'specifications', label: 'Specifications' },
+    { id: 'size-finish', label: 'Specifications' },
     { id: 'edge-profiles', label: 'Edge Profiles' },
     { id: 'care', label: 'Care & Maintenance' },
-    { id: 'size-finish', label: 'Size/Finish Availability' },
-    // { id: 'caesarstone-icon', label: 'Caesarstone ICON' }
   ];
 
   // Organize product specifications into structured data
   const getSpecificationData = () => {
     return {
-      collection: product.collection || 'Premium Collection',
-      material: product.material || 'Fusion',
-      application: product.application || 'Indoor',
-      colorGroup: product.colorGroup || 'Whites',
-      pattern: product.pattern || 'Veined',
-      range: product.range || 'Premium'
+      // Basic fallback if needed, but mostly unused now
     };
   };
 
@@ -43,17 +37,17 @@ const Specifications = ({ product }) => {
 
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
-    
+
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
 
     const currentIndex = tabs.findIndex(tab => tab.id === activeTab);
-    
+
     if (isLeftSwipe && currentIndex < tabs.length - 1) {
       setActiveTab(tabs[currentIndex + 1].id);
     }
-    
+
     if (isRightSwipe && currentIndex > 0) {
       setActiveTab(tabs[currentIndex - 1].id);
     }
@@ -87,19 +81,24 @@ const Specifications = ({ product }) => {
   };
 
   return (
-    <section className="py-6 pt-12 md:pt-20 md:py-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <Section>
+      <div className="relative">
 
-        <Heading title="Technical Details" />
+        <div className="text-center md:text-left">
+          <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
+            Technical 
+            <span className="text-primary "> Specifications</span>
+          </h2>
+        </div>
 
         {/* Mobile Horizontal Tabs - Only visible on small screens */}
-        <div className="lg:hidden mb-0">
-          <div className="bg-gray-50 rounded-t-lg overflow-hidden">
-            <div 
+        <div className="lg:hidden my-8">
+          <div className="border-b border-zinc-200">
+            <div
               ref={tabsContainerRef}
               className="overflow-x-auto"
-              style={{ 
-                scrollbarWidth: 'none', 
+              style={{
+                scrollbarWidth: 'none',
                 msOverflowStyle: 'none'
               }}
             >
@@ -109,11 +108,10 @@ const Specifications = ({ product }) => {
                     key={tab.id}
                     data-tab={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`flex-shrink-0 px-4 py-3 text-sm font-medium transition-all duration-200 whitespace-nowrap border-b-2 ${
-                      activeTab === tab.id
-                        ? 'bg-white text-gray-900 border-b-red-600'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100 border-b-transparent'
-                    }`}
+                    className={`flex-shrink-0 px-6 py-3 text-sm font-medium transition-all duration-200 whitespace-nowrap border-b-2 ${activeTab === tab.id
+                      ? 'text-black border-primary'
+                      : 'text-foreground/50 hover:text-black border-transparent'
+                      }`}
                   >
                     {tab.label}
                   </button>
@@ -123,77 +121,40 @@ const Specifications = ({ product }) => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-0">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 lg:mt-16">
           {/* Left Sidebar - Tabs (Desktop Only) */}
-          <div className="hidden lg:block lg:w-64 flex-shrink-0">
-            <div className="bg-muted-foreground rounded-l-lg overflow-hidden">
+          <div className="hidden lg:block lg:w-72 flex-shrink-0">
+            <div className="flex flex-col gap-2">
               {tabs.map((tab, index) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`w-full text-left px-6 py-4 transition-colors border-b border-gray-200 last:border-b-0 ${activeTab === tab.id
-                    ? 'bg-white text-gray-900 border-l-4 border-l-red-600'
-                    : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                  className={`w-full text-left px-6 py-4 transition-all duration-300 border-l-2 text-lg ${activeTab === tab.id
+                    ? 'border-primary text-black font-medium pl-8 bg-zinc-50/50'
+                    : 'border-transparent text-foreground/50 hover:text-black hover:pl-8'
                     }`}
                 >
-                  <span className="font-medium">{tab.label}</span>
+                  {tab.label}
                 </button>
               ))}
             </div>
           </div>
 
           {/* Content Area */}
-          <div 
-            className="flex-1 bg-muted-foreground rounded-b-lg lg:rounded-l-none lg:rounded-r-lg p-6 lg:p-12"
+          <div
+            className="flex-1 min-h-[400px]"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
-            {activeTab === 'specifications' && (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-900 uppercase tracking-wide mb-2">Collection</h4>
-                    <p className="text-gray-600 font-medium">{specs.collection}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-900 uppercase tracking-wide mb-2">Color Group</h4>
-                    <p className="text-gray-600 font-medium">{specs.colorGroup}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-900 uppercase tracking-wide mb-2">Material</h4>
-                    <p className="text-gray-600 font-medium">{specs.material}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-900 uppercase tracking-wide mb-2">Pattern</h4>
-                    <p className="text-gray-600 font-medium">{specs.pattern}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-900 uppercase tracking-wide mb-2">Application</h4>
-                    <p className="text-gray-600 font-medium">{specs.application}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-900 uppercase tracking-wide mb-2">Range</h4>
-                    <p className="text-gray-600 font-medium">{specs.range}</p>
-                  </div>
-                </div>
-              </div>
-            )}
-
             {activeTab === 'edge-profiles' && (
-              <div className="space-y-6">
-                <h3 className="text-xl font-medium text-gray-900 mb-6">Available Edge Profiles</h3>
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <h3 className="text-2xl font-light text-black mb-8">Available Edge Profiles</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {['Standard Edge', 'Beveled Edge', 'Bullnose Edge', 'Ogee Edge'].map((edge, index) => (
-                    <div key={index} className="p-4 bg-white rounded-lg border border-gray-200">
-                      <h4 className="font-medium text-gray-900 mb-2">{edge}</h4>
-                      <p className="text-sm text-gray-600">Professional finishing available</p>
+                    <div key={index} className="group p-6 bg-white border border-zinc-200 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
+                      <h4 className="font-medium text-lg text-black mb-2 group-hover:text-primary transition-colors">{edge}</h4>
+                      <p className="text-sm text-foreground/50">Professional finishing available</p>
                     </div>
                   ))}
                 </div>
@@ -201,65 +162,71 @@ const Specifications = ({ product }) => {
             )}
 
             {activeTab === 'care' && (
-              <div className="space-y-6">
-                <h3 className="text-xl font-medium text-gray-900 mb-6">Care & Maintenance</h3>
-                <div className="prose prose-gray max-w-none">
-                  <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span>Clean with mild soap and water for daily maintenance</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span>Avoid abrasive cleaners and scouring pads</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span>Use cutting boards to prevent scratches</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span>Wipe spills immediately to prevent staining</span>
-                    </li>
-                  </ul>
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <h3 className="text-2xl font-light text-black mb-8">Care & Maintenance</h3>
+                <div className="prose prose-zinc max-w-none">
+                  <div className="grid gap-6">
+                    <div className="flex items-start gap-4 p-4 hover:bg-zinc-50 transition-colors rounded-lg">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2.5 flex-shrink-0"></span>
+                      <p className="text-foreground/50 leading-relaxed">Clean with mild soap and water for daily maintenance to keep the surface looking pristine.</p>
+                    </div>
+                    <div className="flex items-start gap-4 p-4 hover:bg-zinc-50 transition-colors rounded-lg">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2.5 flex-shrink-0"></span>
+                      <p className="text-foreground/50 leading-relaxed">Avoid abrasive cleaners and scouring pads that might dull the polished finish over time.</p>
+                    </div>
+                    <div className="flex items-start gap-4 p-4 hover:bg-zinc-50 transition-colors rounded-lg">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2.5 flex-shrink-0"></span>
+                      <p className="text-foreground/50 leading-relaxed">Use cutting boards to prevent scratches, although the surface is highly durable.</p>
+                    </div>
+                    <div className="flex items-start gap-4 p-4 hover:bg-zinc-50 transition-colors rounded-lg">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2.5 flex-shrink-0"></span>
+                      <p className="text-foreground/50 leading-relaxed">Wipe spills immediately to prevent staining, ensuring long-lasting beauty.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
 
             {activeTab === 'size-finish' && (
-              <div className="space-y-6">
-                <h3 className="text-xl font-medium text-gray-900 mb-6">Size & Finish Availability</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <h3 className="text-2xl font-light text-black mb-8">Size & Finish Availability</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                   <div>
-                    <h4 className="font-medium text-gray-900 mb-4">Available Sizes</h4>
-                    <div className="space-y-2">
+                    <h4 className="font-medium text-lg text-black mb-6 flex items-center gap-3">
+                      <span className="w-8 h-[1px] bg-primary"></span>
+                      Available Sizes
+                    </h4>
+                    <div className="space-y-4">
                       {product.specifications?.sizes ? (
                         Array.isArray(product.specifications.sizes) ?
                           product.specifications.sizes.map((size, index) => (
-                            <p key={index} className="text-gray-700">{size}</p>
+                            <p key={index} className="text-foreground/50 py-3 border-b border-zinc-200">{size}</p>
                           )) :
-                          <p className="text-gray-700">{product.specifications.sizes}</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">{product.specifications.sizes}</p>
                       ) : (
                         <>
-                          <p className="text-gray-700">3000mm × 1400mm</p>
-                          <p className="text-gray-700">3000mm × 1200mm</p>
-                          <p className="text-gray-700">2400mm × 1200mm</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">3000mm × 1400mm</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">3000mm × 1200mm</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">2400mm × 1200mm</p>
                         </>
                       )}
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900 mb-4">Available Finishes</h4>
-                    <div className="space-y-2">
+                    <h4 className="font-medium text-lg text-black mb-6 flex items-center gap-3">
+                      <span className="w-8 h-[1px] bg-primary"></span>
+                      Available Finishes
+                    </h4>
+                    <div className="space-y-4">
                       {product.finishes && product.finishes.length > 0 ? (
                         product.finishes.map((finish, index) => (
-                          <p key={index} className="text-gray-700 capitalize">{finish}</p>
+                          <p key={index} className="text-foreground/50 py-3 border-b border-zinc-200 capitalize">{finish}</p>
                         ))
                       ) : (
                         <>
-                          <p className="text-gray-700">Polished</p>
-                          <p className="text-gray-700">Honed</p>
-                          <p className="text-gray-700">Textured</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">Polished</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">Honed</p>
+                          <p className="text-foreground/50 py-3 border-b border-zinc-200">Textured</p>
                         </>
                       )}
                     </div>
@@ -267,65 +234,10 @@ const Specifications = ({ product }) => {
                 </div>
               </div>
             )}
-
-            {/* {activeTab === 'caesarstone-icon' && (
-              <div className="space-y-6">
-                <h3 className="text-xl font-medium text-gray-900 mb-6">Caesarstone ICON</h3>
-                <div className="bg-white rounded-lg p-6 border border-gray-200">
-                  <p className="text-gray-700 mb-4">
-                    This product is part of our premium ICON collection, featuring advanced technology and superior performance characteristics.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-medium text-gray-900 mb-2">Key Features</h4>
-                      <ul className="space-y-1 text-gray-700">
-                        <li>• Enhanced durability</li>
-                        <li>• Superior stain resistance</li>
-                        <li>• Low maintenance</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-gray-900 mb-2">Certifications</h4>
-                      <ul className="space-y-1 text-gray-700">
-                        <li>• NSF Certified</li>
-                        <li>• GREENGUARD Gold</li>
-                        <li>• ISO 9001</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )} */}
-
-            {/* Download Section */}
-            {/* <div className="mt-12 pt-8 border-t border-gray-200">
-              <h4 className="text-lg font-medium text-gray-900 mb-6">Downloads</h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {[
-                  { name: 'Technical Data Sheet', size: '2.3 MB' },
-                  { name: 'Installation Guidelines', size: '1.8 MB' },
-                  { name: 'Care & Maintenance Guide', size: '1.2 MB' }
-                ].map((file, index) => (
-                  <button
-                    key={index}
-                    className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-red-300 hover:shadow-sm transition-all duration-200 group"
-                  >
-                    <div className="flex items-center space-x-3">
-                      <Download className="w-5 h-5 text-red-600 group-hover:text-red-700" />
-                      <div className="text-left">
-                        <p className="font-medium text-gray-900 text-sm">{file.name}</p>
-                        <p className="text-xs text-muted-foreground0">{file.size}</p>
-                      </div>
-                    </div>
-                    <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-gray-600" />
-                  </button>
-                ))}
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

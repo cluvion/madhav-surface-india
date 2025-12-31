@@ -20,15 +20,15 @@ export default function MassiveStats() {
                     <div className="grid grid-cols-1 gap-12 text-center md:grid-cols-3">
                         <div className="flex flex-col items-center">
                             <div className="mb-2 text-5xl font-bold md:text-6xl">100<span className="text-sm align-top">+</span></div>
-                            <p className="max-w-[150px] text-xs font-semibold uppercase tracking-widest text-neutral-500">Projects Completed</p>
+                            <p className="max-w-[150px] text-xs font-semibold uppercase tracking-widest text-foreground/50">Projects Completed</p>
                         </div>
                         <div className="flex flex-col items-center border-l border-r border-neutral-200">
                             <div className="mb-2 text-5xl font-bold md:text-6xl">230<span className="text-sm align-top">+</span></div>
-                            <p className="max-w-[150px] text-xs font-semibold uppercase tracking-widest text-neutral-500">Satisfied Clients</p>
+                            <p className="max-w-[150px] text-xs font-semibold uppercase tracking-widest text-foreground/50">Satisfied Clients</p>
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="mb-2 text-5xl font-bold md:text-6xl">25<span className="text-sm align-top">+</span></div>
-                            <p className="max-w-[150px] text-xs font-semibold uppercase tracking-widest text-neutral-500">Years Of Experience</p>
+                            <p className="max-w-[150px] text-xs font-semibold uppercase tracking-widest text-foreground/50">Years Of Experience</p>
                         </div>
                     </div>
                 </div>

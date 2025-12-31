@@ -25,7 +25,7 @@ export default function PageHeader({ title, src, path }) {
                     <div className="absolute inset-0 bg-black/80"></div>
                 </div>
 
-                <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
+                <div className="hero-content relative z-10 text-center max-w-7xl mx-auto px-6 space-y-4">
                     <h1
                         className="heading font-bold tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none text-white"
                     >

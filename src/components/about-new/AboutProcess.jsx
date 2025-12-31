@@ -40,7 +40,7 @@ export default function AboutProcess() {
                             The Value Is In The Process <br />
                             For Exceptional.
                         </h2>
-                        <p className="mt-6 max-w-lg text-neutral-500">
+                        <p className="mt-6 max-w-lg text-foreground/50">
                             From the moment marble emerges from the earth to when it enters your space,
                             Madhav Surfaces maintains the highest standard of meticulous safety measures.
                             We care about the entire process.
@@ -57,7 +57,7 @@ export default function AboutProcess() {
                                 <div className="h-full w-full bg-neutral-200 transition-transform duration-500 group-hover:scale-105" />
                             </div>
                             <h3 className="mb-3 text-xl font-medium">{step.title}</h3>
-                            <p className="text-sm leading-relaxed text-neutral-500">{step.description}</p>
+                            <p className="text-sm leading-relaxed text-foreground/50">{step.description}</p>
                         </div>
                     ))}
                 </div>

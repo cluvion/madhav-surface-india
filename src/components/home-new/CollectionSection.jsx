@@ -119,7 +119,7 @@ export default function CollectionSection() {
                             key={index}
                             className={cn(
                                 "h-3 w-3 transition-colors duration-300",
-                                index === selectedIndex ? "bg-primary" : "bg-neutral-700 hover:bg-neutral-500"
+                                index === selectedIndex ? "bg-primary" : "bg-neutral-700 hover:bg-foreground/50"
                             )}
                             onClick={() => scrollTo(index)}
                             aria-label={`Go to slide ${index + 1}`}

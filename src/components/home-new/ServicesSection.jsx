@@ -62,7 +62,7 @@ export default function ServicesSection() {
                                 <div className="h-full w-full bg-neutral-200 transition-transform duration-500 group-hover:scale-110" />
                             </div>
                             <h3 className="mb-3 text-xl font-medium">{service.title}</h3>
-                            <p className="text-sm leading-relaxed text-neutral-500">
+                            <p className="text-sm leading-relaxed text-foreground/50">
                                 {service.description}
                             </p>
                         </div>
