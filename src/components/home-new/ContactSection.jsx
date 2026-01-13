@@ -18,7 +18,7 @@ export default function ContactSection() {
                 />
             </div>
 
-            <div className="container relative z-10 mx-auto px-4 md:px-6">
+            <div className="container relative z-9 mx-auto px-4 md:px-6">
                 <div className="grid gap-12 lg:grid-cols-2 items-end">
                     {/* Left Side Content */}
                     <div className="max-w-xl">

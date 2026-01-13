@@ -27,7 +27,7 @@ export const metadata = generateSEOMetadata({
 export default function Home() {
   return (
     <main className="relative w-full overflow-hidden">
-      {/* <StoneOverlays /> */}
+      <StoneOverlays />
       <HeroSection />
       <AboutSection />
       {/* <ServicesSection /> */}

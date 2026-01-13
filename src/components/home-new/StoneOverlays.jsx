@@ -13,14 +13,14 @@ export default function StoneOverlays() {
     // Parallax transforms
     // Parallax transforms
     const y1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, -200]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [0, 480]);
     const y3 = useTransform(scrollYProgress, [0, 1], [0, -150]);
     const y4 = useTransform(scrollYProgress, [0, 1], [0, -300]);
 
     const x1 = useTransform(scrollYProgress, [0, 1], [0, 100]);
-    const x2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
-    const x3 = useTransform(scrollYProgress, [0, 1], [0, 50]);
-    const x4 = useTransform(scrollYProgress, [0, 1], [0, -50]);
+    const x2 = useTransform(scrollYProgress, [0, 1], [0, -900]);
+    const x3 = useTransform(scrollYProgress, [0, 1], [0, 500]);
+    const x4 = useTransform(scrollYProgress, [0, 1], [1000, -100]);
 
     const rotate1 = useTransform(scrollYProgress, [0, 1], [0, 45]);
     const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -45]);
@@ -73,7 +73,7 @@ export default function StoneOverlays() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="absolute top-[68%] left-[-8%] w-[350px] "
+                className="absolute top-[55%] left-[-8%] w-[250px] "
             >
                 <Image
                     src="/assets/stones/stone5.png"
@@ -91,7 +91,7 @@ export default function StoneOverlays() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="absolute top-[90%] right-[-2%] w-[200px] "
+                className="absolute top-[90%] right-[-2%] w-[300px] "
             >
                 <Image
                     src="/assets/stones/stone6.png"

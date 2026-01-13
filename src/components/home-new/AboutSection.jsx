@@ -59,7 +59,7 @@ export default function AboutSection() {
                     <div className="grid md:grid-cols-2 gap-8 items-end">
                         {/* Left part of right side - Stats & Grid */}
                         <div className="space-y-8">
-                            <div className="md:absolute md:inset-0 md:top-41 md:left-13 text-center md:text-left">
+                            <div className="md:absolute md:inset-0 md:top-41 text-center md:text-left">
                                 <div ref={ref} className="flex items-baseline justify-center md:justify-start text-primary leading-none gap-2 text-[150px] font-bold tracking-tight">
                                     <AnimatedNumber
                                         springOptions={{
