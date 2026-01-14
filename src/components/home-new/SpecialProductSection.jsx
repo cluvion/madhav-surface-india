@@ -3,8 +3,6 @@ import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowDown } from "lucide-react";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const SpecialProductSectionData = [
@@ -70,12 +68,12 @@ export default function SpecialProductSection() {
                                 {SpecialProductSectionData.map((item) => (
                                     <div key={item.id} className="flex-[0_0_50%] md:flex-[0_0_28%] lg:flex-[0_0_18%] min-w-0 pl-4 relative group select-none">
                                         <Link href={item.href} className="block w-full h-full">
-                                            <div className="aspect-square relative overflow-hidden bg-white/5 border border-white/10">
-                                                <Image
+                                            <div className="aspect-[1/1] relative overflow-hidden bg-white/5 border border-white/10">
+                                                <img
                                                     src={item.image}
                                                     alt={item.name}
-                                                    fill
-                                                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                                    
+                                                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
                                             </div>
