@@ -6,14 +6,14 @@ import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 
 const SpecialProductSectionData = [
-    { id: 1, name: "Dione White", image: "/assets/step5.png", href: "/products/dione-white" },
-    { id: 2, name: "Limestone", image: "/assets/step6.png", href: "/products/limestone" },
-    { id: 3, name: "Marble Aretusa", image: "/assets/step7.png", href: "/products/marble-aretusa" },
-    { id: 4, name: "Quartz", image: "/assets/step5.png", href: "/products/quartz" },
-    { id: 5, name: "Dione Spider", image: "/assets/step6.png", href: "/products/dione-spider" },
-    { id: 6, name: "Travertine", image: "/assets/step7.png", href: "/products/travertine" },
-    { id: 7, name: "Dione Nuvolato", image: "/assets/step5.png", href: "/products/dione-nuvolato" },
-    { id: 8, name: "Granite", image: "/assets/step6.png", href: "/products/granite" },
+    { id: 1, name: "Dione White", image: "/assets/Step5.png", href: "/products/dione-white" },
+    { id: 2, name: "Limestone", image: "/assets/Step6.png", href: "/products/limestone" },
+    { id: 3, name: "Marble Aretusa", image: "/assets/Step7.png", href: "/products/marble-aretusa" },
+    { id: 4, name: "Quartz", image: "/assets/Step5.png", href: "/products/quartz" },
+    { id: 5, name: "Dione Spider", image: "/assets/Step6.png", href: "/products/dione-spider" },
+    { id: 6, name: "Travertine", image: "/assets/Step7.png", href: "/products/travertine" },
+    { id: 7, name: "Dione Nuvolato", image: "/assets/Step5.png", href: "/products/dione-nuvolato" },
+    { id: 8, name: "Granite", image: "/assets/Step6.png", href: "/products/granite" },
 ];
 
 export default function SpecialProductSection() {
@@ -72,7 +72,6 @@ export default function SpecialProductSection() {
                                                 <img
                                                     src={item.image}
                                                     alt={item.name}
-                                                    
                                                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
