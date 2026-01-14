@@ -283,7 +283,7 @@ const ProductExplorer = () => {
                   setSearchTerm("");
                   setCurrentPage(1);
                 }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-800 hover:text-black"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-800 hover:text-foreground"
               >
                 <X className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
@@ -297,14 +297,14 @@ const ProductExplorer = () => {
               <div className="hidden md:flex items-center gap-2 bg-gray-100 rounded-lg p-1">
                 <button
                   onClick={() => setFilterMode("sidebar")}
-                  className={`px-3 py-1 rounded text-sm transition-colors ${filterMode === "sidebar" ? "bg-white shadow-sm" : "text-black"
+                  className={`px-3 py-1 rounded text-sm transition-colors ${filterMode === "sidebar" ? "bg-white shadow-sm" : "text-foreground"
                     }`}
                 >
                   Sidebar
                 </button>
                 <button
                   onClick={() => setFilterMode("dropdown")}
-                  className={`px-3 py-1 rounded text-sm transition-colors ${filterMode === "dropdown" ? "bg-white shadow-sm" : "text-black"
+                  className={`px-3 py-1 rounded text-sm transition-colors ${filterMode === "dropdown" ? "bg-white shadow-sm" : "text-foreground"
                     }`}
                 >
                   Dropdown
@@ -334,7 +334,7 @@ const ProductExplorer = () => {
               {activeFilterCount > 0 && (
                 <button
                   onClick={clearFilters}
-                  className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-black border border-black rounded-lg hover:bg-black/10 transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-foreground border border-black rounded-lg hover:bg-foreground/10 transition-colors"
                 >
                   <X className="w-4 h-4" />
                   Clear All ({activeFilterCount})
@@ -380,7 +380,7 @@ const ProductExplorer = () => {
           <div className={filterMode === "sidebar" && isMdScreen ? "md:col-span-3" : ""}>
             {/* Results Info */}
             <div className="mb-6 flex items-center justify-between">
-              <div className="text-sm text-black">
+              <div className="text-sm text-foreground">
                 Showing {displayedProducts.length} of {filteredProducts.length} stones
                 {currentPage > 1 && (
                   <span className="ml-2 text-xs text-gray-500">
@@ -459,12 +459,12 @@ const ProductExplorer = () => {
                         <h3 className="text-sm sm:text-lg lg:text-xl font-medium text-gray-900 flex-1 min-w-0">
                           {product.name}
                         </h3>
-                        <span className="text-xs bg-gray-100 text-black px-2 py-1 rounded-full flex-shrink-0">
+                        <span className="text-xs bg-gray-100 text-foreground px-2 py-1 rounded-full flex-shrink-0">
                           {product.collection}
                         </span>
                       </div>
 
-                      <p className="font-light text-black text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+                      <p className="font-light text-foreground text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
                         {product.description}
                       </p>
 
@@ -541,7 +541,7 @@ const ProductExplorer = () => {
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                   No stones found
                 </h3>
-                <p className="text-black mb-4 text-sm sm:text-base">
+                <p className="text-foreground mb-4 text-sm sm:text-base">
                   Try adjusting your filters or search term
                 </p>
                 {(activeFilterCount > 0 || searchTerm) && (
@@ -565,7 +565,7 @@ const ProductExplorer = () => {
                 animate={{ opacity: 1 }}
                 className="text-center mt-8 p-4 bg-gray-50 rounded-xl"
               >
-                <p className="text-xs sm:text-sm text-black">
+                <p className="text-xs sm:text-sm text-foreground">
                   🎉 You've viewed all {filteredProducts.length} matching stones!
                 </p>
               </motion.div>

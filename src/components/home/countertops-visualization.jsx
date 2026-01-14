@@ -87,7 +87,7 @@ const CountertopsVisualization = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 viewport={{ once: true }}
-                                className="text-base sm:text-lg lg:text-xl font-light text-black leading-relaxed"
+                                className="text-base sm:text-lg lg:text-xl font-light text-foreground leading-relaxed"
                             >
                                 Discover user-friendly tools that will help you browse our collections, samples and visualize colors that arouse your curiosity, and select your perfect countertops.
                             </motion.p>
@@ -110,15 +110,15 @@ const CountertopsVisualization = () => {
                                         className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-5 lg:py-6 flex items-center justify-between text-left cursor-pointer"
                                     >
                                         <div className="flex items-center gap-3 sm:gap-4">
-                                            {title === "Get in Touch" && <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-black" />}
-                                            {title === "Order Sample" && <Package className="w-5 h-5 sm:w-6 sm:h-6 text-black" />}
-                                            <span className="heading text-xl sm:text-2xl lg:text-3xl font-normal text-black">{title}</span>
+                                            {title === "Get in Touch" && <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />}
+                                            {title === "Order Sample" && <Package className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />}
+                                            <span className="heading text-xl sm:text-2xl lg:text-3xl font-normal text-foreground">{title}</span>
                                         </div>
                                         <motion.div
                                             animate={{ rotate: activeDropdown === title ? 180 : 0 }}
                                             transition={{ duration: 0.3 }}
                                         >
-                                            <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
+                                            <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />
                                         </motion.div>
                                     </button>
 
@@ -145,7 +145,7 @@ const CountertopsVisualization = () => {
                                                 }}
                                                 className="flex flex-col items-start space-y-4"
                                             >
-                                                <p className="text-base sm:text-lg font-light text-black leading-relaxed">{data.description}</p>
+                                                <p className="text-base sm:text-lg font-light text-foreground leading-relaxed">{data.description}</p>
                                                 <HoverButton
                                                     variant={data.buttonVariant}
                                                     text={data.buttonText}

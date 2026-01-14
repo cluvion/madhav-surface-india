@@ -102,9 +102,9 @@ export default function ProcessSection() {
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                             <span className="mr-2 text-lg text-primary">¬</span> OUR ABOUT US
                         </span>
-                        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
-                            What Makes Us The Best
-                            <span className="text-primary "> Marble and Granite Suppliers?</span>
+                        <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+                            What Makes Us The Best Marble and Granite Suppliers?
+                            {/* <span className="text-primary "> Marble and Granite Suppliers?</span> */}
                         </h2>
                     </div>
                 </div>

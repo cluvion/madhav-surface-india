@@ -23,7 +23,7 @@ export default function TableSection({
 }) {
     return (
         <section className="mt-8 md:mt-16">
-            <h2 className="text-xl md:text-3xl font-bold mb-6 text-center md:text-left">
+            <h2 className="heading font-thin text-xl md:text-4xl mb-6 text-center md:text-left">
                 {title}
             </h2>
 
@@ -44,7 +44,7 @@ export default function TableSection({
                         </tr>
                         {/* Dimensions available header */}
                         <tr className="block md:table-row border-b  border-neutral-200 bg-white">
-                            <th colSpan="2" className="block md:table-cell p-3 text-center font-bold text-black bg-neutral-100 uppercase text-sm tracking-wider">
+                            <th colSpan="2" className="block md:table-cell p-3 text-center font-bold text-foreground bg-neutral-100 uppercase text-sm tracking-wider">
                                 Dimensions available
                             </th>
                         </tr>
@@ -75,7 +75,7 @@ export default function TableSection({
             {(footerTitle || footerDescription) && (
                 <div className="mt-16 text-center md:text-left">
                     {footerTitle && (
-                        <h3 className="text-2xl md:text-3xl font-bold mb-6">
+                        <h3 className="heading font-thin text-2xl md:text-4xl mb-6">
                             {footerTitle}
                         </h3>
                     )}

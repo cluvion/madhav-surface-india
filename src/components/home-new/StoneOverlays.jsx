@@ -20,7 +20,7 @@ export default function StoneOverlays() {
     const x1 = useTransform(scrollYProgress, [0, 1], [0, 100]);
     const x2 = useTransform(scrollYProgress, [0, 1], [0, -900]);
     const x3 = useTransform(scrollYProgress, [0, 1], [0, 500]);
-    const x4 = useTransform(scrollYProgress, [0, 1], [1000, -100]);
+    const x4 = useTransform(scrollYProgress, [0, 1], [1000, -200]);
 
     const rotate1 = useTransform(scrollYProgress, [0, 1], [0, 45]);
     const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -45]);
@@ -91,7 +91,7 @@ export default function StoneOverlays() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="absolute top-[90%] right-[-2%] w-[300px] "
+                className="absolute top-[82%] right-[-2%] w-[300px] "
             >
                 <Image
                     src="/assets/stones/stone6.png"

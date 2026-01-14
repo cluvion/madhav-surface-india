@@ -31,9 +31,9 @@ export default function GraniteCalibratedTilesInIndia() {
                     <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                         <span className="mr-2 text-lg text-primary">¬</span> TILE
                     </span>
-                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-5xl">
-                        Granite Calibrated
-                        <span className="text-primary "> Tiles</span>
+                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
+                        Granite Calibrated Tiles
+                        {/* <span className="text-primary "> </span> */}
                     </h2>
                     <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
                         <p>Granite is one of the most durable natural stones, renowned for its hardness, durability, and timeless reflective appearance. Calibrated <a className="text-primary" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/"><strong>granite tiles</strong></a> have become the industry standard, with precise sizing ensured through the calibration process. These tiles deliver a sophisticated, luxurious, and elegant aesthetic for both floors and walls, offering the authentic look of natural granite stone. Perfect for both indoor and outdoor applications, including kitchens, restrooms, living areas, and commercial spaces, calibrated granite tiles are scratch-resistant, highly durable, and built to last, reducing wear and tear. At Madhav Marbles, one of the top marble manufacturers in India, we offer a wide range of calibrated granite tiles in various sizes, designs, and styles to meet your project requirements. Explore our premium collection today and <a className="text-primary" href="https://www.madhavmarbles.com/contact-us/"><strong>find the perfect granite tiles</strong></a> to enhance your space.</p>

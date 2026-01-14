@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { HoverButton } from './hoverbutton';
 import SampleOrderForm from "@/components/ui/sample-order-form";
 import { getCollectionTileProducts } from '@/constants/collectionTiles';
+import Link from 'next/link';
+import { Button } from './button';
 
 const Card = ({
     i,
@@ -30,7 +32,7 @@ const Card = ({
     return (
         <div
             ref={container}
-            className='h-screen flex items-center justify-center sticky top-18 md:top-25'
+            className='h-screen flex items-center justify-center sticky top-18 md:top-24'
             style={{
                 backgroundImage: `url(${color})`,
                 backgroundSize: 'cover',
@@ -39,7 +41,7 @@ const Card = ({
             }}
         >
             {/* Background overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-foreground/20" />
 
             {/* Counter - top right on mobile, bottom center on desktop */}
             <div className='absolute top-4 right-4 md:bottom-32 md:left-1/2 md:transform md:-translate-x-1/2 md:top-auto md:right-auto z-10'>
@@ -64,17 +66,21 @@ const Card = ({
                     </div>
 
                     {/* Button only shows on desktop */}
-                    <div className='flex-col hidden md:block space-y-2 '>
-                        <HoverButton
-                            href={`/product/${id}`}
-                            text='More Details'
-                            variant='transparent'
-                        />
-                        <HoverButton
-                            variant="black"
-                            text="Order Sample"
+                    <div className='hidden md:flex flex-col space-y-2 '>
+                        <Button
+                            asChild
+                            variant='secondary'
+                            className="w-full max-w-56"
+                        >
+                            <Link href={`/product/${id}`}>More Details</Link>
+                        </Button>
+                        <Button
+                            variant="primary"
                             onClick={onOpenSample}
-                        />
+                            className="w-full max-w-56"
+                        >
+                            Order Sample
+                        </Button>
                     </div>
                 </div>
 
@@ -92,7 +98,7 @@ const Card = ({
                                 className='object-cover rounded-lg drop-shadow-2xl drop-shadow-black/55 '
                                 loading="lazy"
                             />
-                            <div className="absolute inset-0 bg-black/5" />
+                            <div className="absolute inset-0 bg-foreground/5" />
                         </motion.div>
                     </div>
                 </div>

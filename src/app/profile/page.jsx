@@ -48,9 +48,8 @@ const Profile = () => {
                     <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                         <span className="mr-2 text-lg text-primary">¬</span> OUR LEGACY
                     </span>
-                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-3xl">
-                        Crafting Excellence in
-                        <span className="text-primary "> Stone Since 1989</span>
+                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-3xl">
+                        Crafting Excellence in Stone Since 1989
                     </h2>
                     <div className="flex flex-col space-y-4 mt-8">
                         <p className="text-foreground/50 text-sm md:text-base leading-relaxed">

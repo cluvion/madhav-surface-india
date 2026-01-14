@@ -6,7 +6,7 @@ const CollectionSlider = () => {
     <Section>
       {/* Section Header */}
       <div className="text-center md:text-left">
-        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
+        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-foreground">
           Related
           <span className="text-primary "> Products</span>
         </h2>

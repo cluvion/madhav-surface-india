@@ -15,6 +15,7 @@ import StoneOverlays from "@/components/home-new/StoneOverlays";
 
 import { generateMetadata as generateSEOMetadata, pageMetadata } from "@/lib/seo";
 import VideoSection from "@/components/home-new/VideoSection";
+import SpecialProductSection from "@/components/home-new/SpecialProductSection";
 
 export const metadata = generateSEOMetadata({
   title: pageMetadata.home.title,
@@ -27,18 +28,19 @@ export const metadata = generateSEOMetadata({
 export default function Home() {
   return (
     <main className="relative w-full overflow-hidden">
-      <StoneOverlays />
+      {/* <StoneOverlays /> */}
       <HeroSection />
       <AboutSection />
       {/* <ServicesSection /> */}
       <VideoSection/>
       <StatsSection />
       <ProcessSection />
-      <CollectionSection />
+      <SpecialProductSection />
       {/* <ProjectsSection /> */}
       <ProductSection />
+      <CollectionSection />
       <TestimonialsSection />
-      {/* <AwardsSection /> */}
+      {/* <AwardsSection /> */} 
       <ContactSection />
       <BlogSection />
     </main>

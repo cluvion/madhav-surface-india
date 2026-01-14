@@ -121,7 +121,7 @@ const Carousel = ({ images }) => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={() => setSelectedId(null)}
-                            className="absolute inset-0 bg-black/80 backdrop-blur-sm cursor-pointer"
+                            className="absolute inset-0 bg-foreground/80 backdrop-blur-sm cursor-pointer"
                         />
 
                         {/* Expanded Card */}

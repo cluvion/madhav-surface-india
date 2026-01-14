@@ -197,7 +197,7 @@ export default function HeroSection() {
                 </video>
 
                 {/* Video Overlay */}
-                <div className="absolute inset-0 bg-black/30" />
+                <div className="absolute inset-0 bg-foreground/30" />
             </div>
 
             {/* Content Overlay */}
@@ -250,7 +250,7 @@ export default function HeroSection() {
                         {/* <Button
                             size="lg"
                             variant="outline"
-                            className="border-white bg-transparent text-white hover:bg-white hover:text-black"
+                            className="border-white bg-transparent text-white hover:bg-white hover:text-foreground"
                         >
                             {currentVideo.buttonText}
                             <ArrowRight className="ml-2 h-4 w-4" />
@@ -285,7 +285,7 @@ export default function HeroSection() {
                         },
                     }}
                 >
-                    <div className="absolute inset-0 bg-black/10 backdrop-blur" />
+                    <div className="absolute inset-0 bg-foreground/10 backdrop-blur" />
                 </AnimatedGroup>
                 <AnimatedGroup
                     variants={{
@@ -300,7 +300,7 @@ export default function HeroSection() {
                         ...transitionVariants,
                     }}
                 >
-                    <div className="backdrop-blur-sm bg-black/10 border-t border-white/20 relative">
+                    <div className="backdrop-blur-sm bg-foreground/10 border-t border-white/20 relative">
                         {/* Progress Bar */}
                         <div className="relative w-full h-0.5 bg-white/20 overflow-hidden">
                             <div

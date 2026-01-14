@@ -20,7 +20,7 @@ function Video({ collection }) {
                     >
                         <source src={collection.heroVideo} type="video/mp4" />
                     </video>
-                    <div className="absolute inset-0 bg-black/10" />
+                    <div className="absolute inset-0 bg-foreground/10" />
                 </div>
             </motion.div>
         )

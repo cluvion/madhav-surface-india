@@ -102,7 +102,7 @@ export default function HeroSection() {
                 </video>
 
                 {/* Video Overlay */}
-                <div className="absolute inset-0 bg-black/30" />
+                <div className="absolute inset-0 bg-foreground/30" />
             </div>
 
             {/* Content Overlay */}
@@ -138,7 +138,7 @@ export default function HeroSection() {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="border-white bg-transparent text-white hover:bg-white hover:text-black"
+                            className="border-white bg-transparent text-white hover:bg-white hover:text-foreground"
                         >
                             {currentVideo.buttonText}
                             <ArrowRight className="ml-2 h-4 w-4" />
@@ -150,7 +150,7 @@ export default function HeroSection() {
 
             {/* Video Timeline Cards - Full Width Bottom */}
             {/* <div className="absolute bottom-0 left-0 right-0 z-30">
-                <div className="backdrop-blur-md bg-black/10 border-t border-white/10 relative">
+                <div className="backdrop-blur-md bg-foreground/10 border-t border-white/10 relative">
                     Progress Bar
                     <div className="absolute top-0 left-0 right-0 h-0.5 bg-white/20">
                         <div 
@@ -216,7 +216,7 @@ export default function HeroSection() {
                 </div>
             </div> */}
             <div className="absolute bottom-0 left-0 right-0 z-30">
-                <div className="backdrop-blur-md bg-black/10 border-t border-white/20 relative">
+                <div className="backdrop-blur-md bg-foreground/10 border-t border-white/20 relative">
                     {/* Progress Bar */}
                     {/* <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-white/20">
                         <div 

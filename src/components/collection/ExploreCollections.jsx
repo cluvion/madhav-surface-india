@@ -188,7 +188,7 @@ const ExploreCollections = ({ currentCollection, allCollections }) => {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? 'bg-black w-6' : 'bg-gray-300'
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? 'bg-foreground w-6' : 'bg-gray-300'
                     }`}
                 />
               ))}

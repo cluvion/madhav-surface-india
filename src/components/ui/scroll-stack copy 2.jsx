@@ -38,7 +38,7 @@ const Card = ({
         >
             {/* Background overlay for better text readability */}
 
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-foreground/20" />
             {/* <div className='absolute inset-0 bg-white/20'></div> */}
 
             <motion.div
@@ -74,7 +74,7 @@ const Card = ({
                                 className='object-cover rounded-lg drop-shadow-2xl'
                                 loading="lazy"
                             />
-                            <div className="absolute inset-0 bg-black/5" />
+                            <div className="absolute inset-0 bg-foreground/5" />
                         </motion.div>
                     </div>
                 </div>

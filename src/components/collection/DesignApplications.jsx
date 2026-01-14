@@ -112,7 +112,7 @@ const DesignApplications = ({ collection, products }) => {
                       <span className="text-gray-500">No image available</span>
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-black/50" />
+                  <div className="absolute inset-0 bg-foreground/50" />
                 </motion.div>
 
                 {/* Content Overlay */}
@@ -170,7 +170,7 @@ const DesignApplications = ({ collection, products }) => {
 
                     {/* CTA Button */}
                     <motion.button
-                      className="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300"
+                      className="px-8 py-4 bg-white text-foreground font-semibold rounded-full hover:bg-gray-100 transition-all duration-300"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}

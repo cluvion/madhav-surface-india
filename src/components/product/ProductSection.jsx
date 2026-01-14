@@ -94,7 +94,10 @@ const ProductSection = ({ product }) => {
               Order Sample
             </Button>
             <Link href={"/contact-us"} className="w-full">
-              <Button className={"w-full"}>
+              <Button 
+              variant={"primary"}
+              className={"w-full sm:w-auto"}
+              >
                 Contact to Buy
               </Button>
             </Link>

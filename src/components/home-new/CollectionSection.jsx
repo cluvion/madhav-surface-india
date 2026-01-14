@@ -53,16 +53,16 @@ export default function CollectionSection() {
     );
 
     return (
-        <section className="my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14 bg-black">
+        <section className="my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14 bg-foreground">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col items-start justify-between md:flex-row md:items-end">
                     <div className="text-center text-balance md:text-left md:max-w-2xl">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4 text-white">
                             <span className="mr-2 text-lg text-primary">¬</span> OUR STONE COLLECTION
                         </span>
-                        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-white">
-                            Explore Our Premium
-                            <span className="text-primary "> Stone Collections</span>
+                        <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-white">
+                            Explore Our Premium Stone Collections
+                            {/* <span className="text-primary "> Stone Collections</span> */}
                         </h2>
                     </div>
                     <div className="space-x-4 hidden lg:block">
@@ -71,7 +71,7 @@ export default function CollectionSection() {
                             size="icon"
                             arrow={false}
                             onClick={scrollPrev}
-                            className="cursor-pointer rounded-full border-neutral-700 bg-transparent text-white hover:bg-white hover:text-black transition-colors duration-700"
+                            className="cursor-pointer rounded-full border-neutral-700 bg-transparent text-white hover:bg-white hover:text-foreground transition-colors duration-700"
                         >
                             <ArrowLeft className="h-5 w-5 cursor-pointer " />
                         </Button>
@@ -80,7 +80,7 @@ export default function CollectionSection() {
                             size="icon"
                             arrow={false}
                             onClick={scrollNext}
-                            className="cursor-pointer rounded-full border-neutral-700 bg-transparent text-white hover:bg-white hover:text-black transition-colors duration-700"
+                            className="cursor-pointer rounded-full border-neutral-700 bg-transparent text-white hover:bg-white hover:text-foreground transition-colors duration-700"
                         >
                             <ArrowRight className="h-5 w-5 cursor-pointer " />
                         </Button>

@@ -23,9 +23,9 @@ export default function AboutSection() {
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                             <span className="mr-2 text-lg text-primary">¬</span> OUR ABOUT US
                         </span>
-                        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
-                            Tap Into India&apos;s Prime
-                            <span className="text-primary "> Manufacturers And Exporters Of Natural Stones</span>
+                        <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground">
+                            Tap Into India&apos;s Prime Manufacturers And Exporters Of Natural Stones
+                            {/* <span className="text-primary "> Manufacturers And Exporters Of Natural Stones</span> */}
                         </h2>
                     </div>
 
@@ -42,7 +42,7 @@ export default function AboutSection() {
                                         "Slip-Resistant When Honed"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-center text-sm font-semibold text-gray-800">
-                                            <span className="w-1.5 h-1.5 bg-black mr-3 shrink-0" /> {item}
+                                            <span className="w-1.5 h-1.5 bg-foreground mr-3 shrink-0" /> {item}
                                         </li>
                                     ))}
                                 </ul> */}
@@ -60,7 +60,7 @@ export default function AboutSection() {
                         {/* Left part of right side - Stats & Grid */}
                         <div className="space-y-8">
                             <div className="md:absolute md:inset-0 md:top-41 text-center md:text-left">
-                                <div ref={ref} className="flex items-baseline justify-center md:justify-start text-primary leading-none gap-2 text-[150px] font-bold tracking-tight">
+                                <div ref={ref} className="flex items-baseline justify-center md:justify-start text-primary leading-none gap-2 text-[140px] font-bold tracking-tight">
                                     <AnimatedNumber
                                         springOptions={{
                                             bounce: 0,
@@ -69,9 +69,9 @@ export default function AboutSection() {
                                         value={inView ? 35 : 0}
                                     />
                                     {/* <span className="text-[150px] font-bold tracking-tight">35</span> */}
-                                    <span className="text-[150px] font-bold">+</span>
+                                    <span className="text-[140px] font-bold">+</span>
                                 </div>
-                                <p className="font-semibold text-lg text-black mt-[-10px] ml-2">Years Of Experience</p>
+                                <p className="font-semibold text-lg text-foreground mt-[-10px] ml-2">Years Of Experience</p>
                             </div>
 
                             {/* Stone Texture Grid */}
@@ -90,7 +90,7 @@ export default function AboutSection() {
                         {/* Right part of right side - Hero Image */}
                         <div className="relative h-[500px] w-full">
                             <Image
-                                src="/assets/bg.webp"
+                                src="/assets/collection/granite-cutter-slabs.png"
                                 alt="Luxury Marble Interior"
                                 fill
                                 className="object-cover"

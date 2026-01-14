@@ -24,7 +24,7 @@ export default function ApplicationsGridSection({ title, items }) {
     return (
         <section className="mt-8 md:mt-16">
             <div className="text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold mb-8">
+                <h2 className="heading font-thin text-2xl md:text-4xl mb-8">
                     {title}
                 </h2>
                 <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 md:gap-12">

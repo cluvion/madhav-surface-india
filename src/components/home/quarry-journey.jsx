@@ -117,7 +117,7 @@ const QuarryJourney = () => {
                     <h3 className="text-lg font-medium text-foreground mb-1">
                       {step.title}
                     </h3>
-                    <p className="text-black text-sm mb-3 leading-relaxed font-light">
+                    <p className="text-foreground text-sm mb-3 leading-relaxed font-light">
                       {step.description}
                     </p>
 
@@ -197,7 +197,7 @@ const QuarryJourney = () => {
                   <h3 className="text-xl font-medium text-foreground mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-black text-sm mb-4 leading-relaxed font-light">
+                  <p className="text-foreground text-sm mb-4 leading-relaxed font-light">
                     {step.description}
                   </p>
 

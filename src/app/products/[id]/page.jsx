@@ -49,7 +49,7 @@ const ProductPage = () => {
                         fill
                     />
                     {/* Optional overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-black/80"></div>
+                    <div className="absolute inset-0 bg-foreground/80"></div>
                 </div>
 
                 <div className="hero-content relative z-10 text-center max-w-7xl mx-auto px-6 space-y-4">
@@ -82,15 +82,14 @@ const ProductPage = () => {
             <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6">
                 <ProductSection product={product} />
             </div>
-            
+
             <Specifications product={product} />
 
             <Section>
                 {/* Section Header */}
                 <div className="text-center md:text-left">
-                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
-                        Related
-                        <span className="text-primary "> Products</span>
+                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+                        Related Products
                     </h2>
                 </div>
 

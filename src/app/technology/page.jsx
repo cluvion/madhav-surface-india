@@ -36,9 +36,8 @@ export default function Technology() {
                     <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                         <span className="mr-2 text-lg text-primary">¬</span> GLOBAL OPERATIONS
                     </span>
-                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-4xl">
-                        Supplying the World with
-                        <span className="text-primary "> India&apos;s Finest Stone Surfaces</span>
+                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
+                        Supplying the World with India&apos;s Finest Stone Surfaces
                     </h2>
                     <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed">
                         <p>

@@ -96,7 +96,7 @@ const links = [
 
 export default function Footer() {
     return (
-        <footer className="border-b bg-black pt-8 sm:pt-12 lg:pt-16 ">
+        <footer className="border-b bg-foreground pt-8 sm:pt-12 lg:pt-16 ">
             <div className="mx-auto px-4 sm:px-8 lg:px-16">
                 <div className="grid gap-8 sm:gap-10 lg:gap-12 md:grid-cols-5">
                     <div className="md:col-span-2 space-y-4 sm:space-y-6 flex flex-col items-center md:items-start text-center md:text-left">

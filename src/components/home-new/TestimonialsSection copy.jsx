@@ -59,8 +59,7 @@ export default function TestimonialsSection() {
     }, [currentIndex, testimonials.length]);
 
     return (
-        // <section className="my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14 bg-foreground">
-        <Section>
+        <section className="my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14 bg-primary/80 ">
             {/* Background Text */}
             {/* <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
                 <span className="block text-[20vw] font-bold text-neutral-50" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -81,10 +80,10 @@ export default function TestimonialsSection() {
                     </div>
                     <div className="lg:w-2/3">
                         <div className="text-center md:text-left">
-                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                                <span className="mr-2 text-lg text-primary">¬</span> OUR TESTIMONIALS
+                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4 text-foreground">
+                                <span className="mr-2 text-lg text-primary-foreground">¬</span> OUR TESTIMONIALS
                             </span>
-                            <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+                            <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-primary-foreground">
                                 Here&apos;s What warm words our clients say
                                 {/* <span className="text-primary "> Testimonials</span> */}
                             </h2>
@@ -95,7 +94,7 @@ export default function TestimonialsSection() {
                 {/* Testimonials Carousel */}
                 <div className="relative max-w-5xl mx-auto mt-8 md:mt-16">
                     {/* Main Testimonial Display */}
-                    <div className="bg-primary backdrop-blur-sm rounded-2xl p-4 md:p-8 border-2 border-foreground/10">
+                    <div className="bg-primary/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-primary-foreground/20">
                         <div className="text-center space-y-6">
                             {/* Animated Testimonial Content */}
                             <div className="min-h-[150px] md:min-h-[200px] flex flex-col justify-center">
@@ -154,7 +153,7 @@ export default function TestimonialsSection() {
                                         if (timeoutRef.current) clearTimeout(timeoutRef.current);
                                         setCurrentIndex(i);
                                     }}
-                                    className="bg-foreground cursor-pointer relative block overflow-hidden hover:bg-primary/60"
+                                    className="bg-foreground/20 cursor-pointer relative block overflow-hidden hover:bg-foreground/30"
                                     style={{
                                         minWidth: CIRCLE_SIZE,
                                         maxWidth: BAR_WIDTH,
@@ -168,7 +167,7 @@ export default function TestimonialsSection() {
                                             animate={{ width: "100%" }}
                                             exit={{ width: 0 }}
                                             transition={{ duration: DURATION / 1000, ease: "linear" }}
-                                            className="bg-primary absolute top-0 left-0 h-full rounded-full"
+                                            className="bg-primary-foreground absolute top-0 left-0 h-full rounded-lg"
                                         />
                                     )}
                                 </motion.button>
@@ -177,6 +176,6 @@ export default function TestimonialsSection() {
                     </div>
                 </div>
             </div>
-        </Section>
+        </section>
     );
 }

@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { 
-    Menu, 
-    FileText, 
-    BookOpen, 
-    Scale, 
-    Eye, 
+import {
+    Menu,
+    FileText,
+    BookOpen,
+    Scale,
+    Eye,
     MapPin,
-    X 
+    X
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -59,7 +59,7 @@ const MobileBottomNav = () => {
                 <div className="grid grid-cols-4 h-16">
                     {navItems.map((item) => {
                         const IconComponent = item.icon;
-                        
+
                         if (item.action) {
                             return (
                                 <button
@@ -68,8 +68,8 @@ const MobileBottomNav = () => {
                                     className={cn(
                                         "flex flex-col items-center justify-center p-2 text-xs transition-colors duration-200",
                                         isMenuOpen && item.id === "menu"
-                                            ? "bg-black text-white"
-                                            : "text-gray-600 hover:text-black hover:bg-gray-50"
+                                            ? "bg-foreground text-white"
+                                            : "text-gray-600 hover:text-foreground hover:bg-gray-50"
                                     )}
                                 >
                                     {isMenuOpen && item.id === "menu" ? (
@@ -86,7 +86,7 @@ const MobileBottomNav = () => {
                             <Link
                                 key={item.id}
                                 href={item.href}
-                                className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+                                className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-foreground hover:bg-gray-50 transition-colors duration-200"
                             >
                                 <IconComponent className="w-5 h-5 mb-1" />
                                 <span className="leading-none">{item.label}</span>
@@ -98,8 +98,8 @@ const MobileBottomNav = () => {
 
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="fixed inset-0 z-40 bg-black/50 sm:hidden" onClick={() => setIsMenuOpen(false)}>
-                    <div 
+                <div className="fixed inset-0 z-40 bg-foreground/50 sm:hidden" onClick={() => setIsMenuOpen(false)}>
+                    <div
                         className="fixed bottom-16 left-0 right-0 bg-white rounded-t-2xl shadow-xl max-h-96 overflow-y-auto"
                         onClick={(e) => e.stopPropagation()}
                     >
@@ -114,7 +114,7 @@ const MobileBottomNav = () => {
                                     className="h-10 w-auto"
                                 />
                                 <div>
-                                    <h3 className="font-semibold text-lg text-black">Madhav Surfaces</h3>
+                                    <h3 className="font-semibold text-lg text-foreground">Madhav Surfaces</h3>
                                     <p className="text-sm text-gray-500">Premium Stone Solutions</p>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@ const MobileBottomNav = () => {
                                 <Link
                                     key={link.label}
                                     href={link.href}
-                                    className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-black rounded-lg transition-colors duration-200 font-medium"
+                                    className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-foreground rounded-lg transition-colors duration-200 font-medium"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {link.label}
@@ -138,7 +138,7 @@ const MobileBottomNav = () => {
                         <div className="p-4 border-t border-gray-100 bg-gray-50">
                             <a
                                 href="tel:+1234567890"
-                                className="flex items-center justify-center space-x-2 px-4 py-3 bg-black text-white rounded-lg font-medium"
+                                className="flex items-center justify-center space-x-2 px-4 py-3 bg-foreground text-white rounded-lg font-medium"
                             >
                                 <span>Call Us Now</span>
                             </a>

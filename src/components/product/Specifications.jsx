@@ -84,9 +84,8 @@ const Specifications = ({ product }) => {
     <Section>
       <div className="relative">
         <div className="text-center md:text-left">
-          <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
-            Technical 
-            <span className="text-primary "> Specifications</span>
+          <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+            Technical Specifications
           </h2>
         </div>
 
@@ -108,8 +107,8 @@ const Specifications = ({ product }) => {
                     data-tab={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex-shrink-0 px-6 py-3 text-sm font-medium transition-all duration-200 whitespace-nowrap border-b-2 ${activeTab === tab.id
-                      ? 'text-black border-primary'
-                      : 'text-foreground/50 hover:text-black border-transparent'
+                      ? 'text-foreground border-primary'
+                      : 'text-foreground/50 hover:text-foreground border-transparent'
                       }`}
                   >
                     {tab.label}
@@ -129,8 +128,8 @@ const Specifications = ({ product }) => {
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`w-full text-left px-6 py-4 transition-all duration-300 border-l-2 text-lg ${activeTab === tab.id
-                    ? 'border-primary text-black font-medium pl-8 bg-zinc-50/50'
-                    : 'border-transparent text-foreground/50 hover:text-black hover:pl-8'
+                    ? 'border-primary text-foreground font-medium pl-8 bg-zinc-50/50'
+                    : 'border-transparent text-foreground/50 hover:text-foreground hover:pl-8'
                     }`}
                 >
                   {tab.label}
@@ -148,11 +147,11 @@ const Specifications = ({ product }) => {
           >
             {activeTab === 'edge-profiles' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                {/* <h3 className="text-2xl font-light text-black mb-8">Available Edge Profiles</h3> */}
+                {/* <h3 className="text-2xl font-light text-foreground mb-8">Available Edge Profiles</h3> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {['Standard Edge', 'Beveled Edge', 'Bullnose Edge', 'Ogee Edge'].map((edge, index) => (
                     <div key={index} className="group p-6 bg-white border border-zinc-200 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
-                      <h4 className="font-medium text-lg text-black mb-2 group-hover:text-primary transition-colors">{edge}</h4>
+                      <h4 className="font-medium text-lg text-foreground mb-2 group-hover:text-primary transition-colors">{edge}</h4>
                       <p className="text-sm text-foreground/50">Professional finishing available</p>
                     </div>
                   ))}
@@ -162,7 +161,7 @@ const Specifications = ({ product }) => {
 
             {activeTab === 'care' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                {/* <h3 className="text-2xl font-light text-black mb-8">Care & Maintenance</h3> */}
+                {/* <h3 className="text-2xl font-light text-foreground mb-8">Care & Maintenance</h3> */}
                 <div className="prose prose-zinc max-w-none">
                   <div className="grid gap-6">
                     <div className="flex items-start gap-4 p-4 hover:bg-zinc-50 transition-colors rounded-lg">
@@ -188,10 +187,10 @@ const Specifications = ({ product }) => {
 
             {activeTab === 'size-finish' && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                {/* <h3 className="text-2xl font-light text-black mb-8">Size & Finish Availability</h3> */}
+                {/* <h3 className="text-2xl font-light text-foreground mb-8">Size & Finish Availability</h3> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                   <div>
-                    <h4 className="font-medium text-lg text-black mb-6 flex items-center gap-3">
+                    <h4 className="font-medium text-lg text-foreground mb-6 flex items-center gap-3">
                       <span className="w-8 h-[1px] bg-primary"></span>
                       Available Sizes
                     </h4>
@@ -212,7 +211,7 @@ const Specifications = ({ product }) => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg text-black mb-6 flex items-center gap-3">
+                    <h4 className="font-medium text-lg text-foreground mb-6 flex items-center gap-3">
                       <span className="w-8 h-[1px] bg-primary"></span>
                       Available Finishes
                     </h4>

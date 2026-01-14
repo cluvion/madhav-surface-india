@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function ProjectsSection() {
     return (
-        <section className="bg-white py-20 text-black md:py-32">
+        <section className="bg-white py-20 text-foreground md:py-32">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-12 flex flex-col justify-between md:flex-row md:items-end">
                     <div>
@@ -17,7 +17,7 @@ export default function ProjectsSection() {
                     </div>
 
                     <div className="mt-6 md:mt-0">
-                        <Button variant="outline" className="rounded-none border-black text-black hover:bg-black hover:text-white">
+                        <Button variant="outline" className="rounded-none border-black text-foreground hover:bg-foreground hover:text-white">
                             View All Projects
                         </Button>
                     </div>

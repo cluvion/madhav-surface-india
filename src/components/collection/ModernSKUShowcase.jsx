@@ -130,7 +130,7 @@ const ModernSKUShowcase = ({ products, collection }) => {
                   <motion.button
                     className="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
                     initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ 
+                    animate={{
                       opacity: hoveredProduct === product.id ? 1 : 0,
                       scale: hoveredProduct === product.id ? 1 : 0.8
                     }}
@@ -163,11 +163,10 @@ const ModernSKUShowcase = ({ products, collection }) => {
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className={`w-3 h-3 ${
-                            i < Math.floor(product.rating)
+                          className={`w-3 h-3 ${i < Math.floor(product.rating)
                               ? 'text-yellow-400 fill-current'
                               : 'text-gray-300'
-                          }`}
+                            }`}
                         />
                       ))}
                       <span className="text-xs text-gray-600 ml-1">({product.reviews || 0})</span>
@@ -176,7 +175,7 @@ const ModernSKUShowcase = ({ products, collection }) => {
 
                   {/* Order Sample Button */}
                   <motion.button
-                    className="w-full bg-black text-white py-3 rounded-xl font-medium hover:bg-gray-800 transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-foreground text-white py-3 rounded-xl font-medium hover:bg-gray-800 transition-all duration-300 flex items-center justify-center gap-2"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -231,7 +230,7 @@ const ModernSKUShowcase = ({ products, collection }) => {
                                   <span className="text-gray-500 text-sm">No image available</span>
                                 </div>
                               )}
-                              
+
                               {/* Labels */}
                               <div className="absolute top-2 left-2">
                                 {product.isNew && (
@@ -248,8 +247,8 @@ const ModernSKUShowcase = ({ products, collection }) => {
                                 {product.name}
                               </h3>
                               <p className="text-xs text-gray-600 mb-2">{product.materialType || product.category}</p>
-                              
-                              <button className="w-full bg-black text-white py-2 rounded-lg text-xs font-medium hover:bg-gray-800 transition-colors">
+
+                              <button className="w-full bg-foreground text-white py-2 rounded-lg text-xs font-medium hover:bg-gray-800 transition-colors">
                                 Order Sample
                               </button>
                             </div>
@@ -285,9 +284,8 @@ const ModernSKUShowcase = ({ products, collection }) => {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? 'bg-black w-6' : 'bg-gray-300'
-                }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-foreground w-6' : 'bg-gray-300'
+                  }`}
               />
             ))}
           </div>
@@ -309,7 +307,7 @@ const ModernSKUShowcase = ({ products, collection }) => {
               transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
             >
               <motion.div
-                className="h-full bg-black rounded-full"
+                className="h-full bg-foreground rounded-full"
                 initial={{ x: "-100%" }}
                 animate={{ x: "100%" }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}

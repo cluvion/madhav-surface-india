@@ -9,7 +9,7 @@ export default function ParagraphSection({ title, p1, p2, p3, src, alt }) {
                 {/* Left Content */}
                 <div className="w-full lg:w-3/5 space-y-6 text-center md:text-left">
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                        <h2 className="heading font-thin text-2xl md:text-4xl mb-6">
                             {title}
                         </h2>
                         <div className="space-y-4 text-justify text-foreground/50 text-sm md:text-base leading-relaxed ">

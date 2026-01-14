@@ -44,7 +44,7 @@ const Contact = () => {
             fill
           />
           {/* Optional overlay for better text contrast */}
-          <div className="absolute inset-0 bg-black/80"></div>
+          <div className="absolute inset-0 bg-foreground/80"></div>
         </div>
 
         <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
@@ -75,9 +75,8 @@ const Contact = () => {
           <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
             <span className="mr-2 text-lg text-primary">¬</span> GET IN TOUCH
           </span>
-          <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-4xl">
-            Need Any
-            <span className="text-primary "> Marble & Tiles Services Help?</span>
+          <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
+            Need Any Marble & Tiles Services Help?
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 md:gap-16 mt-8">
             <p className="text-foreground/50 text-sm md:text-base max-w-xl leading-relaxed">
@@ -127,9 +126,8 @@ const Contact = () => {
           <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
             <span className="mr-2 text-lg text-primary">¬</span> HAVE ANY QUESTIONS?
           </span>
-          <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-4xl">
-            Frequently
-            <span className="text-primary"> Asked Questions</span>
+          <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
+            Frequently Asked Questions
           </h2>
         </div>
         <div className="mt-4 md:mt-8">

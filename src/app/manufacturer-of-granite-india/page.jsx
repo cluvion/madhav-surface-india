@@ -7,6 +7,7 @@ import TableSection from '@/components/page/TableSection';
 import CtaSection from '@/components/page/CtaSection';
 import { mockProducts } from '@/data/mockProducts';
 import ProductCard from "@/components/ui/ProductCard";
+import ScrollStack from '@/components/ui/scroll-stack';
 
 
 // export const metadata = generateSEOMetadata({
@@ -22,32 +23,52 @@ export default function ManufacturerOfGraniteIndia() {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     return (
-        <div className="min-h-screen overflow-hidden">
+        <div className="min-h-screen">
 
             <PageHeader title="Granite Slabs" path="Granite Slabs" src="/assets/Step7.png" />
-
-            <Section>
-                {/* Top Text Section */}
-                <div className="text-center md:text-left">
+            {/* Top Text Section */}
+            {/* <div className="flex justify-between gap-24 items-center py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6">
+                <div className="max-w-3xl text-center md:text-left">
                     <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                         <span className="mr-2 text-lg text-primary">¬</span> MANUFACTURING EXCELLENCE
                     </span>
-                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-4xl">
-                        Best Granite
-                        <span className="text-primary "> Supplier and Manufacturer</span>
+                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
+                        Best Granite Supplier and Manufacturer
                     </h2>
                     <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
                         <p><strong>Granite</strong> is undoubtedly the premier choice of builders and designers across nations. It is used extensively because of its beauty, toughness, and durability. With India offering over 120 available granite colors, the versatility is unmatched. <strong><a className="text-primary" href="https://www.madhavmarbles.com/">Madhav Marbles and Granites</a></strong> Ltd. is a leading granite supplier with a range of quality granite collections that stays alive over the years. We are one of the best suppliers of granite in India, and pride ourselves for providing outstanding <a className="text-primary" href="https://www.madhavmarbles.com/granite-calibrated-tiles-in-india/"><strong>Calibrated Granite Tiles</strong></a>, <a className="text-primary" href="https://www.madhavmarbles.com/granite-xl-tiles/"><strong>Granite XL Tiles</strong></a>, and other natural stones. </p>
                     </div>
                 </div>
+                <div className="hidden md:block aspect-video">
+                    <img
+                        src="/assets/Step7.png"
+                        alt=""
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+            </div> */}
+            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
+                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                    <span className="mr-2 text-lg text-primary">¬</span> GRANITE COLLECTION
+                </span>
+                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
+                    Best Granite Supplier and Manufacturer
+                </h2>
+                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
+                    <p><strong>Granite</strong> is undoubtedly the premier choice of builders and designers across nations. It is used extensively because of its beauty, toughness, and durability. With India offering over 120 available granite colors, the versatility is unmatched. <strong><a className="text-primary" href="https://www.madhavmarbles.com/">Madhav Marbles and Granites</a></strong> Ltd. is a leading granite supplier with a range of quality granite collections that stays alive over the years. We are one of the best suppliers of granite in India, and pride ourselves for providing outstanding <a className="text-primary" href="https://www.madhavmarbles.com/granite-calibrated-tiles-in-india/"><strong>Calibrated Granite Tiles</strong></a>, <a className="text-primary" href="https://www.madhavmarbles.com/granite-xl-tiles/"><strong>Granite XL Tiles</strong></a>, and other natural stones. </p>
+                </div>
+            </div>
 
+            {/* ScrollStack Section */}
+            <ScrollStack products={mockProducts} />
+
+            <Section>
                 {/* Project Carousel Section */}
-                <div className="relative mt-8 md:mt-16">
-                    <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
-                        {mockProducts.map((product) => (
-                            <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
-                        ))}
-                    </div>
+                {/* <div className="relative mt-8 md:mt-16"> */}
+                <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
+                    {mockProducts.map((product) => (
+                        <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
+                    ))}
                 </div>
                 <ParagraphSection
                     title="Madhav Marbles and Granites - Leading Granite Supplier in India"

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ContactSection() {
     return (
-        <section className="relative py-8 md:py-12 lg:py-14 mb-8 md:mb-12 lg:mb-14">
+        <section className="relative my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -22,20 +22,20 @@ export default function ContactSection() {
                 <div className="grid gap-12 lg:grid-cols-2 items-end">
                     {/* Left Side Content */}
                     <div className="max-w-xl">
-                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-background text-center lg:text-left">
+                        <h2 className="heading font-thin text-4xl md:text-5xl lg:text-7xl text-background text-center lg:text-left">
                             Come as You are And we Will Take Care of the Rest
                         </h2>
                     </div>
 
                     {/* Right Side Form */}
-                    <div className="bg-white p-8 md:p-12 lg:p-16 text-black shadow-lg mx-auto w-full max-w-xl lg:max-w-none">
+                    <div className="bg-white p-8 md:p-12 lg:p-16 text-foreground shadow-lg mx-auto w-full max-w-xl lg:max-w-none">
                         <div className="text-center md:text-left text-balance">
                             <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                                 <span className="mr-2 text-lg text-primary">¬</span> COMMON QUESTIONS
                             </span>
-                            <h2 className="text-[1.6rem] md:text-5xl leading-[1.1] font-bold text-black">
-                                Have Questions?
-                                <span className="text-primary "> GET IN TOUCH</span>
+                            <h2 className="heading font-thin text-[1.6rem] md:text-5xl leading-[1.1] text-foreground">
+                                Have Questions? GET IN TOUCH
+                                {/* <span className="text-primary "> GET IN TOUCH</span> */}
                             </h2>
                         </div>
 

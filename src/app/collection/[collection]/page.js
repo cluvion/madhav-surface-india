@@ -162,7 +162,7 @@ const CollectionPage = ({ params }) => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Collection Not Found</h1>
           <p className="text-xl text-gray-600 mb-8">The requested collection does not exist.</p>
           <button
-            className="px-6 py-3 bg-black text-white rounded-xl font-medium hover:bg-gray-800 transition-colors"
+            className="px-6 py-3 bg-foreground text-white rounded-xl font-medium hover:bg-gray-800 transition-colors"
             onClick={() => window.location.href = '/'}
           >
             Return Home
@@ -175,11 +175,11 @@ const CollectionPage = ({ params }) => {
   return (
     <div className="min-h-screen ">
       {/* Hero Section */}
-      <HeroSection
+      {/* <HeroSection
         collection={collectionData}
         onBrowseProducts={scrollToProducts}
         onGetQuote={() => console.log("Get Quote clicked")}
-      />
+      /> */}
 
       {/* Collection Story Section */}
       <div data-light-bg>

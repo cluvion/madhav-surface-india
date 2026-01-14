@@ -35,9 +35,9 @@ export default function BlogSection() {
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                             <span className="mr-2 text-lg text-primary">¬</span> RECENT BLOG
                         </span>
-                        <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black">
-                            Stay Informed With Latest
-                            <span className="text-primary "> News And Insights</span>
+                        <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+                            Stay Informed With Latest News And Insights
+                            {/* <span className="text-primary "> News And Insights</span> */}
                         </h2>
                     </div>
                     <div className="mt-6 md:mt-0 mb-0 md:mb-2 flex justify-center lg:justify-start">
@@ -63,12 +63,12 @@ export default function BlogSection() {
                             </div>
                             <div className="mb-4 flex flex-wrap gap-2">
                                 {post.tags.map((tag, i) => (
-                                    <span key={i} className="bg-[#C5A25D] px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+                                    <span key={i} className="bg-primary px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
                                         {tag}
                                     </span>
                                 ))}
                             </div>
-                            <h3 className="mb-3 text-2xl font-bold leading-tight group-hover:text-[#C5A25D] transition-colors duration-300">
+                            <h3 className="mb-3 text-2xl font-bold leading-tight group-hover:text-primary transition-colors duration-300">
                                 {post.title}
                             </h3>
                             <div className="flex items-center space-x-2 text-xs text-neutral-400">

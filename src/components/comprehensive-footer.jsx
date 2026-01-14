@@ -70,7 +70,7 @@ const ComprehensiveFooter = () => {
   ];
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-foreground text-white">
       {/* Newsletter Section */}
       {/* <div className="border-b border-gray-800">
         <div className="container mx-auto px-4 py-12">

@@ -52,7 +52,7 @@ export default function ProductsPage() {
                         fill
                     />
                     {/* Optional overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-black/80"></div>
+                    <div className="absolute inset-0 bg-foreground/80"></div>
                 </div>
 
                 <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
@@ -80,30 +80,30 @@ export default function ProductsPage() {
             <Section >
                 {/* Controls */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
-                        <Select value={sortOption} onValueChange={setSortOption}>
-                            <SelectTrigger className="w-[180px] bg-transparent border-border/50">
-                                <SelectValue placeholder="Sort by" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="popularity">Sort by popularity</SelectItem>
-                                <SelectItem value="name-asc">Sort by Name (A-Z)</SelectItem>
-                                <SelectItem value="name-desc">Sort by Name (Z-A)</SelectItem>
-                            </SelectContent>
-                        </Select>
+                    <Select value={sortOption} onValueChange={setSortOption}>
+                        <SelectTrigger className="w-[180px] bg-transparent border-border/50">
+                            <SelectValue placeholder="Sort by" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="popularity">Sort by popularity</SelectItem>
+                            <SelectItem value="name-asc">Sort by Name (A-Z)</SelectItem>
+                            <SelectItem value="name-desc">Sort by Name (Z-A)</SelectItem>
+                        </SelectContent>
+                    </Select>
 
-                        <div className="relative w-full md:w-108">
-                            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/50" />
-                            <Input
-                                placeholder="Search products..."
-                                className="pl-9 bg-transparent border-border/50 focus-visible:ring-primary"
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                            />
-                        </div>
-                        <div className="flex items-center gap-4 text-foreground/50">
-                            <span className="text-sm">
-                                Showing 1-{Math.min(sortedProducts.length, sortedProducts.length)} of {sortedProducts.length} results
-                            </span>
+                    <div className="relative w-full md:w-108">
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/50" />
+                        <Input
+                            placeholder="Search products..."
+                            className="pl-9 bg-transparent border-border/50 focus-visible:ring-primary"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                    </div>
+                    <div className="flex items-center gap-4 text-foreground/50">
+                        <span className="text-sm">
+                            Showing 1-{Math.min(sortedProducts.length, sortedProducts.length)} of {sortedProducts.length} results
+                        </span>
                     </div>
 
                 </div>
@@ -129,7 +129,7 @@ export default function ProductsPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/60 backdrop-blur-sm p-4"
                         onClick={() => setSelectedProduct(null)}
                     >
                         <motion.div
@@ -138,7 +138,7 @@ export default function ProductsPage() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button
-                                className="absolute top-4 right-4 z-10 p-2 bg-black/20 rounded-full hover:bg-black/40 text-white transition-colors"
+                                className="absolute top-4 right-4 z-10 p-2 bg-foreground/20 rounded-full hover:bg-foreground/40 text-white transition-colors"
                                 onClick={() => setSelectedProduct(null)}
                             >
                                 <X className="w-5 h-5" />

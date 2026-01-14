@@ -204,7 +204,7 @@ const ApplicationShowcase = () => {
               whileTap={{ scale: 0.95 }}
               className={`flex items-center gap-1 sm:gap-3 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-medium transition-all duration-300 whitespace-nowrap text-sm sm:text-base min-w-fit ${activeTab === key
                 ? "bg-primary text-primary-foreground shadow-lg"
-                : "bg-muted-foreground text-black hover:bg-muted-foreground/90 hover:text-black"
+                : "bg-muted-foreground text-foreground hover:bg-muted-foreground/90 hover:text-foreground"
                 }`}
             >
               <app.icon className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -261,14 +261,14 @@ const ApplicationShowcase = () => {
                   </div> */}
 
                   {/* Stone Badge */}
-                  <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-4 left-4 bg-foreground/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
                     {project.stone}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                  <h4 className="text-xl font-medium text-black/90 mb-2">
+                  <h4 className="text-xl font-medium text-foreground/90 mb-2">
                     {project.title}
                   </h4>
                   {/* <p className="text-gray-300 text-sm mb-4">
@@ -280,7 +280,7 @@ const ApplicationShowcase = () => {
                     {project.features.map((feature, idx) => (
                       <span
                         key={idx}
-                        className="bg-black/90 text-white px-3 py-1 rounded text-xs"
+                        className="bg-foreground/90 text-white px-3 py-1 rounded text-xs"
                       >
                         {feature}
                       </span>

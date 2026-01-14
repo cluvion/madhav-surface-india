@@ -38,7 +38,7 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}>
         <motion.p
           transition={{ duration: 0.3 }}
-          className={`hover:opacity-[0.9] transition-colors duration-300 font-medium select-none ${isScrolled ? "text-black" : "text-white"
+          className={`hover:opacity-[0.9] transition-colors duration-300 font-medium select-none ${isScrolled ? "text-foreground" : "text-white"
             }`}>
           {item}
         </motion.p>
@@ -46,7 +46,7 @@ export const MenuItem = ({
           <motion.div
             animate={{ rotate: active === item ? 180 : 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className={`transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}>
+            className={`transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-white"}`}>
             <DropdownIcon className="w-4 h-4" />
           </motion.div>
         )}
@@ -120,7 +120,7 @@ export const ProductItem = ({
         alt={title}
         className="shrink-0 rounded-md shadow-2xl" />
       <div className="flex flex-col items-center justify-center">
-        <h4 className="text-xl  mb-1 text-black">
+        <h4 className="text-xl  mb-1 text-foreground">
           {title}
         </h4>
         {/* <p className="font-light text-gray-600 text-sm max-w-[10rem]">
@@ -138,7 +138,7 @@ export const HoveredLink = ({
   return (
     (<a
       {...rest}
-      className="text-gray-600 hover:text-black transition-colors duration-200">
+      className="text-gray-600 hover:text-foreground transition-colors duration-200">
       {children}
     </a>)
   );

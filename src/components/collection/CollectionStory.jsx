@@ -194,7 +194,7 @@ const CollectionStory = ({ collection }) => {
               >
                 <source src={collection.conceptVideo} type="video/mp4" />
               </video>
-              <div className="absolute inset-0 bg-black/20" />
+              <div className="absolute inset-0 bg-foreground/20" />
             </div>
           </motion.div>
         )} */}

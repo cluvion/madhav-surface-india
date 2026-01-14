@@ -22,7 +22,7 @@ export default function PageHeader({ title, src, path }) {
                         fill
                     />
                     {/* Optional overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-black/80"></div>
+                    <div className="absolute inset-0 bg-foreground/80"></div>
                 </div>
 
                 <div className="hero-content relative z-10 text-center max-w-7xl mx-auto px-6 space-y-4">

@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function AboutHero() {
     return (
-        <section className="relative h-[60vh] min-h-[400px] w-full bg-black text-white">
+        <section className="relative h-[60vh] min-h-[400px] w-full bg-foreground text-white">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 bg-[url('/images/about-hero-bg.jpg')] bg-cover bg-center opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />

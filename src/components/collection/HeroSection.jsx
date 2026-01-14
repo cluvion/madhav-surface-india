@@ -31,7 +31,7 @@ const HeroSection = ({ collection, onBrowseProducts, onGetQuote }) => {
           </div>
         )}
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-foreground/30" />
       </div>
 
       {/* Content */}
@@ -66,7 +66,7 @@ const HeroSection = ({ collection, onBrowseProducts, onGetQuote }) => {
           >
             <motion.button
               onClick={onBrowseProducts}
-              className="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 min-w-[200px]"
+              className="px-8 py-4 bg-white text-foreground font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 min-w-[200px]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -75,7 +75,7 @@ const HeroSection = ({ collection, onBrowseProducts, onGetQuote }) => {
 
             <motion.button
               onClick={onGetQuote}
-              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300 min-w-[200px]"
+              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-foreground transition-all duration-300 min-w-[200px]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

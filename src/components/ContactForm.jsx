@@ -77,7 +77,7 @@ const ContactForm = () => {
     >
       <div className="space-y-4">
         <div>
-          <h3 className="text-3xl md:text-5xl font-bold text-foreground">How Can We Help You ?</h3>
+          <h3 className="heading font-thin text-3xl md:text-5xl text-foreground">How Can We Help You ?</h3>
           <p className="text-sm md:text-base text-foreground/50 mt-2 md:mt-4">Your email address will not be published. Required fields are marked *</p>
         </div>
       </div>

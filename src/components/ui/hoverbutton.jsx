@@ -14,28 +14,28 @@ export function HoverButton({
 }) {
     const variants = {
         white: {
-            base: "bg-white text-black  text-black border-white",
+            base: "bg-white text-foreground  text-foreground border-white",
             hoverText: "text-white",
-            expandBg: "bg-black",
-            dotBg: "bg-black"
+            expandBg: "bg-foreground",
+            dotBg: "bg-foreground"
         },
         black: {
-            base: "bg-black text-white  text-black border-black",
-            hoverText: "text-black",
+            base: "bg-foreground text-white  text-foreground border-black",
+            hoverText: "text-foreground",
             expandBg: "bg-white",
             dotBg: "bg-white"
         },
         transparent: {
-            base: "bg-transparent text-white text-black border-white ",
-            hoverText: "text-black",
+            base: "bg-transparent text-white text-foreground border-white ",
+            hoverText: "text-foreground",
             expandBg: "bg-white",
             dotBg: "bg-transparent"
         },
         transparentBlack: {
-            base: "bg-transparent text-black text-black border-black ",
+            base: "bg-transparent text-foreground text-foreground border-black ",
             hoverText: "text-white",
-            expandBg: "bg-black",
-            dotBg: "bg-black"
+            expandBg: "bg-foreground",
+            dotBg: "bg-foreground"
         }
     };
 

@@ -33,12 +33,14 @@
 
 :root {
   --background: oklch(1.0000 0 0);
-  --foreground: oklch(0.0847 0 0);
+  --foreground: #262525;
+  /* --foreground: #80011f; */
   --card: oklch(0.9911 0 0);
   --card-foreground: oklch(0.0847 0 0);
   --popover: oklch(1.0000 0 0);
   --popover-foreground: oklch(0.0847 0 0);
-  --primary: #BA9A67;
+  /* --primary: #BA9A67; */
+  --primary: #cda52f;
   /* --primary: oklch(0.5210 0.2138 29.2339); */
   --primary-foreground: oklch(1.0000 0 0);
   --secondary: oklch(0.9612 0 0);
@@ -72,10 +74,12 @@
   --sidebar-border: oklch(0.9219 0 0);
   /* --sidebar-ring: oklch(0.6280 0.2577 29.2339); */
   --sidebar-ring: oklch(0.0847 0 0);
-  --font-sans: "Vend Sans", sans-serif;
+  /* --font-sans: "Vend Sans", sans-serif; */
+  --font-sans: "neue-frutiger-world", sans-serif;
   --font-serif: serif;
   --font-mono: IBM Plex Mono, monospace;
-  --font-heading: "Vend Sans", sans-serif;
+  --font-heading: "bennet-banner", serif;
+  /* --font-heading: "Vend Sans", sans-serif; */
   --radius: 0.5rem;
   --shadow-2xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.03);
   --shadow-xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.03);

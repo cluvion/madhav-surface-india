@@ -10,7 +10,7 @@ const awards = [
 
 export default function AboutAwards() {
     return (
-        <section className="bg-white py-20 text-black md:py-32">
+        <section className="bg-white py-20 text-foreground md:py-32">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-20">
                     {/* Left Content */}
@@ -42,7 +42,7 @@ export default function AboutAwards() {
                                 <div key={index} className="group flex flex-col justify-between border-b border-neutral-200 py-6 transition-all hover:bg-neutral-50 md:flex-row md:items-center">
                                     <span className="mb-2 w-48 text-xs font-bold uppercase tracking-widest text-primary md:mb-0">{award.category}</span>
                                     <span className="flex-1 text-lg font-medium group-hover:text-primary">{award.title}</span>
-                                    <span className="mt-2 text-sm font-bold text-neutral-400 group-hover:text-black md:mt-0">{award.year}</span>
+                                    <span className="mt-2 text-sm font-bold text-neutral-400 group-hover:text-foreground md:mt-0">{award.year}</span>
                                 </div>
                             ))}
                         </div>

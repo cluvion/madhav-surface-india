@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutIntro() {
     return (
-        <section className="bg-white py-20 text-black md:py-32">
+        <section className="bg-white py-20 text-foreground md:py-32">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
                     {/* Left Content */}
@@ -41,7 +41,7 @@ export default function AboutIntro() {
                             </li>
                         </ul>
                         <div>
-                            <Button className="rounded-none bg-black px-8 py-6 text-white hover:bg-neutral-800">
+                            <Button className="rounded-none bg-foreground px-8 py-6 text-white hover:bg-neutral-800">
                                 Who We Are <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
                         </div>
@@ -64,7 +64,7 @@ export default function AboutIntro() {
                         {/* Centered Floating Badge */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center justify-center rounded-full bg-white p-10 shadow-2xl">
                             <span className="text-5xl font-bold text-primary">25+</span>
-                            <span className="text-xs uppercase tracking-widest text-black">Years Of Experience</span>
+                            <span className="text-xs uppercase tracking-widest text-foreground">Years Of Experience</span>
                         </div>
                     </div>
                 </div>

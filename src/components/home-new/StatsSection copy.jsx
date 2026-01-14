@@ -35,7 +35,7 @@ export default function StatsSection() {
         }
     ];
     return (
-        <section className="my-8 md:my-12 lg:my-14 bg-black ">
+        <section className="my-8 md:my-12 lg:my-14 bg-foreground ">
             {/* Background Image/Text Overlay */}
             {/* <div className="absolute inset-0 bg-[url('/assets/bg.webp')]  h-full w-full bg-center opacity-100" /> */}
 

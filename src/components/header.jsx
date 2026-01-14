@@ -94,7 +94,7 @@ export const HeroHeader = ({
                         {/* Center Menu - Desktop Only */}
                         <div className="hidden lg:flex justify-center flex-1">
                             <MenuBar setActive={setActive} isScrolled={isScrolled}>
-                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-foreground" : "text-white"}`}>
                                     <NavigationMenuList>
                                         <NavigationMenuItem>
                                             <NavigationMenuTrigger>Know Us</NavigationMenuTrigger>
@@ -116,7 +116,7 @@ export const HeroHeader = ({
                                         </NavigationMenuItem>
                                     </NavigationMenuList>
                                 </NavigationMenu>
-                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-foreground" : "text-white"}`}>
                                     <NavigationMenuList>
                                         <NavigationMenuItem>
                                             <NavigationMenuTrigger>Stone Slabs</NavigationMenuTrigger>
@@ -144,7 +144,7 @@ export const HeroHeader = ({
                                         </NavigationMenuItem>
                                     </NavigationMenuList>
                                 </NavigationMenu>
-                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-foreground" : "text-white"}`}>
                                     <NavigationMenuList>
                                         <NavigationMenuItem>
                                             <NavigationMenuTrigger>Stone Tiles</NavigationMenuTrigger>
@@ -164,7 +164,7 @@ export const HeroHeader = ({
                                     </NavigationMenuList>
                                 </NavigationMenu>
 
-                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-black" : "text-white"}`}>
+                                <NavigationMenu viewport={false} className={`${isScrolled ? "text-foreground" : "text-white"}`}>
                                     <NavigationMenuList>
                                         <NavigationMenuItem>
                                             <NavigationMenuTrigger>Investors</NavigationMenuTrigger>
@@ -213,16 +213,16 @@ export const HeroHeader = ({
                                         </NavigationMenuItem>
                                     </NavigationMenuList>
                                 </NavigationMenu>
-                                <Link href="/coverings-2023-event" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                <Link href="/coverings-2023-event" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     News & Events
                                 </Link>
-                                {/* <Link href="/about-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                {/* <Link href="/about-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     About
                                 </Link> */}
-                                <Link href="/blog" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                <Link href="/blog" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     Blogs
                                 </Link>
-                                <Link href="/contact-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-black" : "text-white"}`}>
+                                <Link href="/contact-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     Contact
                                 </Link>
                             </MenuBar>
@@ -235,7 +235,7 @@ export const HeroHeader = ({
                                 href="tel:+918875023456"
                                 className={cn(
                                     "flex items-center rounded-lg transition-all duration-300 hover:scale-110",
-                                    isScrolled ? "text-black" : "text-white"
+                                    isScrolled ? "text-foreground" : "text-white"
                                 )}
                             >
                                 <Phone className="w-6 h-6 md:w-7 md:h-7" />
@@ -247,7 +247,7 @@ export const HeroHeader = ({
                                 target="_blank"
                                 className={cn(
                                     "flex items-center rounded-lg transition-all duration-300 hover:scale-110",
-                                    isScrolled ? "text-black" : "text-white"
+                                    isScrolled ? "text-foreground" : "text-white"
                                 )}
                             >
                                 <MapPin className="w-6 h-6 md:w-7 md:h-7" />
@@ -260,7 +260,7 @@ export const HeroHeader = ({
                                 rel="noopener noreferrer"
                                 className={cn(
                                     "flex items-center rounded-lg transition-all duration-300 hover:scale-110",
-                                    isScrolled ? "text-black" : "text-white"
+                                    isScrolled ? "text-foreground" : "text-white"
                                 )}
                                 aria-label="Contact on WhatsApp"
                             >
@@ -285,8 +285,8 @@ export const HeroHeader = ({
                             className={cn(
                                 "flex flex-col items-center justify-center p-2 text-xs transition-colors duration-200",
                                 expandedSubmenu === 'collections'
-                                    ? "bg-black text-white"
-                                    : "text-gray-600 hover:text-black hover:bg-gray-50"
+                                    ? "bg-foreground text-white"
+                                    : "text-gray-600 hover:text-foreground hover:bg-gray-50"
                             )}
                         >
                             <Menu className="w-4 h-4 mb-1" />
@@ -299,8 +299,8 @@ export const HeroHeader = ({
                             className={cn(
                                 "flex flex-col items-center justify-center p-2 text-xs transition-colors duration-200",
                                 expandedSubmenu === 'applications'
-                                    ? "bg-black text-white"
-                                    : "text-gray-600 hover:text-black hover:bg-gray-50"
+                                    ? "bg-foreground text-white"
+                                    : "text-gray-600 hover:text-foreground hover:bg-gray-50"
                             )}
                         >
                             <FileText className="w-4 h-4 mb-1" />
@@ -313,8 +313,8 @@ export const HeroHeader = ({
                             className={cn(
                                 "flex flex-col items-center justify-center p-2 text-xs transition-colors duration-200",
                                 expandedSubmenu === 'projects'
-                                    ? "bg-black text-white"
-                                    : "text-gray-600 hover:text-black hover:bg-gray-50"
+                                    ? "bg-foreground text-white"
+                                    : "text-gray-600 hover:text-foreground hover:bg-gray-50"
                             )}
                         >
                             <Menu className="w-4 h-4 mb-1" />
@@ -324,7 +324,7 @@ export const HeroHeader = ({
                         {/* About */}
                         {/* <Link
                             href="/about-us"
-                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-foreground hover:bg-gray-50 transition-colors duration-200"
                         >
                             <FileText className="w-4 h-4 mb-1" />
                             <span className="leading-none text-[10px]">About</span>
@@ -333,7 +333,7 @@ export const HeroHeader = ({
                         {/* News & Events */}
                         <Link
                             href="/coverings-2023-event"
-                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-foreground hover:bg-gray-50 transition-colors duration-200"
                         >
                             <Newspaper className="w-4 h-4 mb-1" />
                             <span className="leading-none text-[10px]">News & Events</span>
@@ -342,7 +342,7 @@ export const HeroHeader = ({
                         {/* Contact */}
                         <Link
                             href="/contact-us"
-                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-foreground hover:bg-gray-50 transition-colors duration-200"
                         >
                             <MapPin className="w-4 h-4 mb-1" />
                             <span className="leading-none text-[10px]">Contact</span>
@@ -351,7 +351,7 @@ export const HeroHeader = ({
                         {/* Blog */}
                         <Link
                             href="/blog"
-                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+                            className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-foreground hover:bg-gray-50 transition-colors duration-200"
                         >
                             <PenTool className="w-4 h-4 mb-1" />
                             <span className="leading-none text-[10px]">Blog</span>
@@ -361,7 +361,7 @@ export const HeroHeader = ({
 
                 {/* Mobile Submenu Overlays */}
                 {expandedSubmenu && (
-                    <div className="fixed inset-0 z-40 bg-black/50 lg:hidden" onClick={() => setExpandedSubmenu(null)}>
+                    <div className="fixed inset-0 z-40 bg-foreground/50 lg:hidden" onClick={() => setExpandedSubmenu(null)}>
                         <div
                             className="fixed bottom-16 left-0 right-0 bg-white rounded-t-2xl shadow-xl max-h-96 overflow-y-auto"
                             onClick={(e) => e.stopPropagation()}
@@ -370,14 +370,14 @@ export const HeroHeader = ({
                             {expandedSubmenu === 'menu' && (
                                 <>
                                     <div className="p-6 border-b border-gray-100">
-                                        <h3 className="font-semibold text-lg text-black">Menu</h3>
+                                        <h3 className="font-semibold text-lg text-foreground">Menu</h3>
                                     </div>
                                     <div className="p-4 space-y-2">
                                         {/* Know Us */}
                                         <div className="border-b border-gray-100 last:border-0">
                                             <button
                                                 onClick={() => toggleMobileSection('know-us')}
-                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                                className="flex items-center justify-between w-full px-4 py-3 text-foreground font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
                                             >
                                                 <span>Know Us</span>
                                                 {activeMobileSection === 'know-us' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
@@ -385,9 +385,9 @@ export const HeroHeader = ({
 
                                             {activeMobileSection === 'know-us' && (
                                                 <div className="space-y-1 pb-2">
-                                                    <Link href="/profile" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Profile</Link>
-                                                    <Link href="/technology" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Technology</Link>
-                                                    <Link href="/corporate-film" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Corporate Film</Link>
+                                                    <Link href="/profile" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Profile</Link>
+                                                    <Link href="/technology" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Technology</Link>
+                                                    <Link href="/corporate-film" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Corporate Film</Link>
                                                 </div>
                                             )}
                                         </div>
@@ -396,7 +396,7 @@ export const HeroHeader = ({
                                         <div className="border-b border-gray-100 last:border-0">
                                             <button
                                                 onClick={() => toggleMobileSection('stone-slabs')}
-                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                                className="flex items-center justify-between w-full px-4 py-3 text-foreground font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
                                             >
                                                 <span>Stone Slabs</span>
                                                 {activeMobileSection === 'stone-slabs' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
@@ -404,11 +404,11 @@ export const HeroHeader = ({
 
                                             {activeMobileSection === 'stone-slabs' && (
                                                 <div className="space-y-1 pb-2">
-                                                    <Link href="/manufacturer-of-granite-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Granite Slabs</Link>
-                                                    <Link href="/granite-cutter-slabs-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Granite Cutter Slabs</Link>
-                                                    <Link href="/marble-sandstone-quartzite-exporter-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Marble | Sandstone | Quartzite</Link>
-                                                    <Link href="/marbles-and-granite-suppliers-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Exotics & Exclusives</Link>
-                                                    <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Quartz</Link>
+                                                    <Link href="/manufacturer-of-granite-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite Slabs</Link>
+                                                    <Link href="/granite-cutter-slabs-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite Cutter Slabs</Link>
+                                                    <Link href="/marble-sandstone-quartzite-exporter-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Marble | Sandstone | Quartzite</Link>
+                                                    <Link href="/marbles-and-granite-suppliers-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Exotics & Exclusives</Link>
+                                                    <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Quartz</Link>
                                                 </div>
                                             )}
                                         </div>
@@ -417,7 +417,7 @@ export const HeroHeader = ({
                                         <div className="border-b border-gray-100 last:border-0">
                                             <button
                                                 onClick={() => toggleMobileSection('stone-tiles')}
-                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                                className="flex items-center justify-between w-full px-4 py-3 text-foreground font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
                                             >
                                                 <span>Stone Tiles</span>
                                                 {activeMobileSection === 'stone-tiles' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
@@ -425,8 +425,8 @@ export const HeroHeader = ({
 
                                             {activeMobileSection === 'stone-tiles' && (
                                                 <div className="space-y-1 pb-2">
-                                                    <Link href="/granite-calibrated-tiles-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Regular Tiles</Link>
-                                                    <Link href="/granite-xl-tiles" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">XL Tiles</Link>
+                                                    <Link href="/granite-calibrated-tiles-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Regular Tiles</Link>
+                                                    <Link href="/granite-xl-tiles" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">XL Tiles</Link>
                                                 </div>
                                             )}
                                         </div>
@@ -436,7 +436,7 @@ export const HeroHeader = ({
                                         <div className="border-b border-gray-100 last:border-0">
                                             <button
                                                 onClick={() => toggleMobileSection('investors')}
-                                                className="flex items-center justify-between w-full px-4 py-3 text-black font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
+                                                className="flex items-center justify-between w-full px-4 py-3 text-foreground font-semibold text-sm uppercase tracking-wider hover:bg-gray-50 rounded-lg transition-colors"
                                             >
                                                 <span>Investors</span>
                                                 {activeMobileSection === 'investors' ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
@@ -444,26 +444,26 @@ export const HeroHeader = ({
 
                                             {activeMobileSection === 'investors' && (
                                                 <div className="space-y-1 pb-2">
-                                                    <Link href="/annual-report" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Annual Report</Link>
-                                                    <Link href="/shareholders-information" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Shareholders Information</Link>
-                                                    <Link href="/financial-results" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Financial Results</Link>
-                                                    <Link href="/unpaid-dividend" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Unpaid Dividend</Link>
-                                                    <Link href="/corporate-governance-report" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Corporate Governance Report</Link>
+                                                    <Link href="/annual-report" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Annual Report</Link>
+                                                    <Link href="/shareholders-information" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Shareholders Information</Link>
+                                                    <Link href="/financial-results" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Financial Results</Link>
+                                                    <Link href="/unpaid-dividend" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Unpaid Dividend</Link>
+                                                    <Link href="/corporate-governance-report" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Corporate Governance Report</Link>
 
                                                     {/* Corporate Announcements Nested Section */}
                                                     <div className="px-4 py-1">
                                                         <div className="font-semibold text-sm text-gray-500 uppercase px-4 py-1">Corporate Announcements</div>
                                                         <div className="space-y-1">
-                                                            <Link href="/corporate-announcements-board-meeting" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Board Meeting</Link>
-                                                            <Link href="/corporate-announcements-eogm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">EOGM</Link>
-                                                            <Link href="/corporate-announcements-notice-of-general-meetings" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Notice of General Meetings</Link>
-                                                            <Link href="/corporate-announcements-outcome-of-agm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Outcome Of AGM</Link>
-                                                            <Link href="/corporate-announcements-postal-ballot" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Postal Ballot</Link>
+                                                            <Link href="/corporate-announcements-board-meeting" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Board Meeting</Link>
+                                                            <Link href="/corporate-announcements-eogm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">EOGM</Link>
+                                                            <Link href="/corporate-announcements-notice-of-general-meetings" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Notice of General Meetings</Link>
+                                                            <Link href="/corporate-announcements-outcome-of-agm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Outcome Of AGM</Link>
+                                                            <Link href="/corporate-announcements-postal-ballot" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Postal Ballot</Link>
                                                         </div>
                                                     </div>
 
-                                                    <Link href="/code-of-conduct-and-policies" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Code of Conduct and Policies</Link>
-                                                    <Link href="/regulation-46-62-2" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-50 rounded-lg transition-colors">Regulation 46 & 62</Link>
+                                                    <Link href="/code-of-conduct-and-policies" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Code of Conduct and Policies</Link>
+                                                    <Link href="/regulation-46-62-2" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Regulation 46 & 62</Link>
                                                 </div>
                                             )}
                                         </div>

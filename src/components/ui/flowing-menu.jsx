@@ -60,7 +60,7 @@ function MenuItem({ link, text, image }) {
 
   const repeatedMarqueeContent = Array.from({ length: 7 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className="hidden md:block text-black/90 uppercase font-semibold text-[4vh] leading-[1.2] p-[1vh_1vw_0] w-3xs">
+      <span className="hidden md:block text-foreground/90 uppercase font-semibold text-[4vh] leading-[1.2] p-[1vh_1vw_0] w-3xs">
         {text}
       </span>
       <div
@@ -73,7 +73,7 @@ function MenuItem({ link, text, image }) {
   return (
     <div className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_#fff]" ref={itemRef}>
       <a
-        className=" heading font-thin flex items-center justify-center h-full relative cursor-pointer uppercase no-underline text-black text-[4vh] focus:text-black focus-visible:text-white"
+        className=" heading font-thin flex items-center justify-center h-full relative cursor-pointer uppercase no-underline text-foreground text-[4vh] focus:text-foreground focus-visible:text-white"
         href={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

@@ -116,11 +116,10 @@ const TechnicalSpecs = ({ collection, products }) => {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
-                      activeTab === tab.id
-                        ? 'bg-black text-white shadow-md'
+                    className={`px-4 py-3 rounded-lg font-medium transition-all duration-300 ${activeTab === tab.id
+                        ? 'bg-foreground text-white shadow-md'
                         : 'text-gray-600 hover:bg-gray-100'
-                    }`}
+                      }`}
                   >
                     {tab.label}
                   </button>
@@ -150,11 +149,10 @@ const TechnicalSpecs = ({ collection, products }) => {
                           <tr key={index} className="border-t border-gray-100">
                             <td className="px-6 py-4 font-medium text-gray-900">{size.dimension}</td>
                             <td className="px-6 py-4">
-                              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                                size.availability === 'Standard' ? 'bg-green-100 text-green-800' :
-                                size.availability === 'Premium' ? 'bg-blue-100 text-blue-800' :
-                                'bg-orange-100 text-orange-800'
-                              }`}>
+                              <span className={`px-3 py-1 rounded-full text-sm font-medium ${size.availability === 'Standard' ? 'bg-green-100 text-green-800' :
+                                  size.availability === 'Premium' ? 'bg-blue-100 text-blue-800' :
+                                    'bg-orange-100 text-orange-800'
+                                }`}>
                                 {size.availability}
                               </span>
                             </td>
@@ -219,10 +217,9 @@ const TechnicalSpecs = ({ collection, products }) => {
                           <tr key={index} className="border-t border-gray-100">
                             <td className="px-6 py-4 font-medium text-gray-900">{app.area}</td>
                             <td className="px-6 py-4">
-                              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                                app.suitability === 'Excellent' ? 'bg-green-100 text-green-800' :
-                                'bg-blue-100 text-blue-800'
-                              }`}>
+                              <span className={`px-3 py-1 rounded-full text-sm font-medium ${app.suitability === 'Excellent' ? 'bg-green-100 text-green-800' :
+                                  'bg-blue-100 text-blue-800'
+                                }`}>
                                 {app.suitability}
                               </span>
                             </td>

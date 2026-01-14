@@ -74,7 +74,7 @@ export default function ProductSection() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/60 backdrop-blur-sm p-4"
                         onClick={() => setSelectedProduct(null)}
                     >
                         <motion.div
@@ -83,7 +83,7 @@ export default function ProductSection() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button
-                                className="absolute top-4 right-4 z-10 p-2 bg-black/20 rounded-full hover:bg-black/40 text-white transition-colors"
+                                className="absolute top-4 right-4 z-10 p-2 bg-foreground/20 rounded-full hover:bg-foreground/40 text-white transition-colors"
                                 onClick={() => setSelectedProduct(null)}
                             >
                                 <X className="w-5 h-5" />

@@ -8,6 +8,7 @@ import { useState } from "react";
 import Image from "next/image";
 import CtaSection from "@/components/page/CtaSection";
 import ParagraphSection from '@/components/page/ParagraphSection';
+import ScrollStack from '@/components/ui/scroll-stack';
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,
@@ -25,24 +26,25 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
 
             <PageHeader title="Marble | Sandstone | Quartzite" path="Marble | Sandstone | Quartzite" src="/assets/Step7.png" />
 
-            <Section>
-                {/* Top Text Section */}
-                <div className="text-center md:text-left">
-                    <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                        <span className="mr-2 text-lg text-primary">¬</span> MARBLE DIVISION
-                    </span>
-                    <h2 className="text-[1.6rem] md:text-[4rem] leading-[1.1] font-bold text-black max-w-5xl">
-                        Welcome To India&apos;s Leading Marble Supplier
-                        <span className="text-primary "> Madhav Marble</span>
-                    </h2>
-                    <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                        <p>Madhav Marbles and Granite Ltd is a renowned Indian marble manufacturer &amp; supplier. We offer a wide range of marbles in various colors, textures, and patterns, crafted with precision and exceptional quality. From <strong><a className="text-primary" href="https://www.madhavmarbles.com/brown-fantasy-marble/">Brown Fantasy</a></strong> to <strong><a className="text-primary" href="https://www.madhavmarbles.com/white-dunes-marble/">White Dunes</a></strong>, we are the leading marble suppliers in India, exporting extensively to the USA and Europe.</p>
-                        <p>Our extensive assortment of marble comes in different forms and finishes. We have established a strong reputation in the industry as the top choice for marble manufacturing and supply. Whether it’s large-scale projects or individual requirements, we cater to clients’ unique styles and preferences. Choose Madhav Marbles for superior quality and customer satisfaction in the marble industry.</p>
-                        <h3 className="text-xl md:text-3xl font-bold text-black">Exclusive Marble, Sandstone, and Quartzite Collection From Leading Marble Suppliers</h3>
-                        <p>With the prime marble supplier in India, our global clientele always expects the unparalleled &amp; finest quality of stone solutions. Following are some of the popular marbles, sandstone, and quartzites that are processed at our state-of-the-art manufacturing unit on a large scale:</p>
-                    </div>
+            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
+                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                    <span className="mr-2 text-lg text-primary">¬</span> MARBLE DIVISION
+                </span>
+                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
+                    Welcome To India&apos;s Leading Marble Supplier Madhav Marble
+                    {/* <span className="text-primary "> Madhav Marble</span> */}
+                </h2>
+                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
+                    <p>Madhav Marbles and Granite Ltd is a renowned Indian marble manufacturer &amp; supplier. We offer a wide range of marbles in various colors, textures, and patterns, crafted with precision and exceptional quality. From <strong><a className="text-primary" href="https://www.madhavmarbles.com/brown-fantasy-marble/">Brown Fantasy</a></strong> to <strong><a className="text-primary" href="https://www.madhavmarbles.com/white-dunes-marble/">White Dunes</a></strong>, we are the leading marble suppliers in India, exporting extensively to the USA and Europe.</p>
+                    <p>Our extensive assortment of marble comes in different forms and finishes. We have established a strong reputation in the industry as the top choice for marble manufacturing and supply. Whether it’s large-scale projects or individual requirements, we cater to clients’ unique styles and preferences. Choose Madhav Marbles for superior quality and customer satisfaction in the marble industry.</p>
+                    <h3 className="heading font-thin text-xl md:text-4xl text-foreground">Exclusive Marble, Sandstone, and Quartzite Collection From Leading Marble Suppliers</h3>
+                    <p>With the prime marble supplier in India, our global clientele always expects the unparalleled &amp; finest quality of stone solutions. Following are some of the popular marbles, sandstone, and quartzites that are processed at our state-of-the-art manufacturing unit on a large scale:</p>
                 </div>
+            </div>
 
+            <ScrollStack products={mockProducts} />
+
+            <Section>
                 {/* Project Carousel Section */}
                 <div className="relative mt-8 md:mt-16">
                     <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
@@ -53,7 +55,7 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                 </div>
 
                 <div className="mt-8 md:mt-16 text-center md:text-left space-y-4">
-                    <h2 className="text-xl md:text-3xl font-bold text-black">
+                    <h2 className="heading font-thin text-xl md:text-4xl text-foreground">
                         Madhav Marble - A Top-Notch Wholesale Marble Supplier in India
                     </h2>
                     <div className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
@@ -74,7 +76,7 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                 />
 
                 <div className="mt-8 md:mt-16 text-center md:text-left">
-                    <h2 className="text-[1.6rem] md:text-3xl font-bold text-black mb-4">
+                    <h2 className="heading font-thin text-xl md:text-4xl text-foreground mb-4">
                         Application Areas of Marble
                     </h2>
                     <p className="text-foreground/50 text-sm md:text-base leading-relaxed mb-8 text-justify">
@@ -86,7 +88,7 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                                 <Image src="/assets/Step5.png" alt="Kitchen Countertops" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-black">Kitchen Countertops</h3>
+                                <h3 className="text-2xl font-bold text-foreground">Kitchen Countertops</h3>
                                 <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
                                     Marble countertops come in a variety of colors, patterns & veins ranging from white to brown and add a distinct character to your space. Also, the longevity and the sense of additional value make marble the best choice for countertops. Get them today from the leading marble supplier – Madhav Marble
                                 </p>
@@ -97,7 +99,7 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                                 <Image src="/assets/Step5.png" alt="Flooring" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-black">Flooring</h3>
+                                <h3 className="text-2xl font-bold text-foreground">Flooring</h3>
                                 <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
                                     None of us can deny the natural & elegant appeal of marble flooring. From light-colored floors to dark-colored floor options, Madhav Marble has got everything of the best quality.
                                 </p>
@@ -108,7 +110,7 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                                 <Image src="/assets/Step5.png" alt="Wall Cladding" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-black">Wall Cladding</h3>
+                                <h3 className="text-2xl font-bold text-foreground">Wall Cladding</h3>
                                 <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
                                     Apart from its distinguished appearance, it is highly durable making marble as a wall cladding an excellent choice.
                                 </p>
@@ -119,7 +121,7 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                                 <Image src="/assets/Step4.png" alt="Vanity Tops" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-black">Vanity Tops</h3>
+                                <h3 className="text-2xl font-bold text-foreground">Vanity Tops</h3>
                                 <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
                                     Marble is a fairly popular material for vanity tops in residential apartments as well as in commercial projects. With a variety of shades available &amp; dynamic surface patterns in the form of waves, flecks &amp; streaks, the stone of Madhav Marble collectively exhibits elegance and naturality.
                                 </p>
@@ -136,6 +138,6 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                 />
             </Section>
             <CtaSection />
-        </div>
+        </div >
     )
 }
