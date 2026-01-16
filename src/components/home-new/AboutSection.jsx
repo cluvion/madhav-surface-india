@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { motion } from "motion/react";
 import AnimatedNumber from "@/components/ui/animated-number";
+import Link from "next/link";
 
 export default function AboutSection() {
 
@@ -46,10 +47,11 @@ export default function AboutSection() {
                                         </li>
                                     ))}
                                 </ul> */}
-
+<Link href="/contact-us">
                         <Button variant={"secondary"}>
-                            More About Us
+                            Contact Us
                         </Button>
+                        </Link>
                     </div>
 
                 </div>

@@ -14,7 +14,7 @@ const buttonVariants = cva(
         outline:
           "border bg-background shadow-xs  ",
         primary: "rounded-none bg-primary px-6 py-4 text-xs font-bold uppercase tracking-widest text-white hover:bg-foreground transition-colors duration-700 ease-in-out w-auto cursor-pointer ",
-        secondary: "rounded-none bg-foreground px-6 py-4 text-xs font-bold uppercase tracking-widest text-white hover:bg-primary transition-colors duration-700 ease-in-out w-auto cursor-pointer ",
+        secondary: "rounded-none cursor-pointer bg-foreground px-6 py-4 text-xs font-bold uppercase tracking-widest text-white hover:bg-primary transition-colors duration-700 ease-in-out w-auto cursor-pointer ",
         link: "text-primary underline-offset-4 hover:underline cursor-pointer",
       },
       size: {
@@ -46,6 +46,7 @@ function Button({
       className={cn(buttonVariants({ variant, size, className }),"group")}>
       <Comp
         data-slot="button"
+        className="cursor-pointer"
         {...props}
       >
         {props.children}
