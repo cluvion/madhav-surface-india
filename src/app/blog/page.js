@@ -22,13 +22,13 @@ export default async function BlogPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dljiyumfx/image/upload/v1753857232/Masseto_Close_up_2_tudvmm.jpg"
+            src="/assets/Step7.png"
             alt="Background"
             className="w-full h-full object-cover"
             fill
           />
           {/* Optional overlay for better text contrast */}
-          <div className="absolute inset-0 bg-black/30 bg-opacity-30"></div>
+          <div className="absolute inset-0 bg-black/80"></div>
         </div>
 
         <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6">
