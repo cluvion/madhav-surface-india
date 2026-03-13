@@ -2,11 +2,13 @@
 import Section from '@/components/section'
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
-import { mockProducts } from "@/data/mockProducts";
+import { collectionTiles } from "@/constants/collectionTiles";
 import { useState } from "react";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import ApplicationsGridSection from "@/components/page/ApplicationsGridSection";
 import CtaSection from '@/components/page/CtaSection';
+
+const pageProducts = collectionTiles['regular-tiles'];
 
 
 // export const metadata = generateSEOMetadata({
@@ -42,8 +44,8 @@ export default function GraniteCalibratedTilesInIndia() {
 
                 {/* Project Carousel Section */}
                 <div className="relative mt-8 md:mt-16">
-                    <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {mockProducts.map((product) => (
+                    <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {pageProducts.map((product) => (
                             <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                         ))}
                     </div>

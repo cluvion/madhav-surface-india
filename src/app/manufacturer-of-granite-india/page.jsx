@@ -5,9 +5,11 @@ import { useState } from "react";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import TableSection from '@/components/page/TableSection';
 import CtaSection from '@/components/page/CtaSection';
-import { mockProducts } from '@/data/mockProducts';
+import { collectionTiles } from "@/constants/collectionTiles";
 import ProductCard from "@/components/ui/ProductCard";
 import ScrollStack from '@/components/ui/scroll-stack';
+
+const pageProducts = collectionTiles['granite-slabs'];
 
 
 // export const metadata = generateSEOMetadata({
@@ -60,13 +62,13 @@ export default function ManufacturerOfGraniteIndia() {
             </div>
 
             {/* ScrollStack Section */}
-            <ScrollStack products={mockProducts} />
+            <ScrollStack products={pageProducts} />
 
             <Section>
                 {/* Project Carousel Section */}
                 {/* <div className="relative mt-8 md:mt-16"> */}
                 <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
-                    {mockProducts.map((product) => (
+                    {pageProducts.map((product) => (
                         <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                     ))}
                 </div>

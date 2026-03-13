@@ -21,7 +21,8 @@ const points = [
         subtitle: "Legacy of Excellence",
         description:
             "With over three decades of mastery in the stone industry, Madhav Surfaces has built an enduring reputation for quality, reliability, and craftsmanship.",
-        image: "/assets/Step5.png",
+        // image: "/assets/Step5.png",
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/home-webp/IMG_6682.webp",
     },
     {
         number: 2,

@@ -1,9 +1,5 @@
 "use client"
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 export default function HeroSection() {
     return (
@@ -18,7 +14,7 @@ export default function HeroSection() {
                 fill
                 className="object-cover"
                 priority
-            /> */}
+             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" /> */}
             {/* <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

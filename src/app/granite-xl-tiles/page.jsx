@@ -2,8 +2,9 @@
 import Section from '@/components/section'
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
-import { mockProducts } from "@/data/mockProducts";
+import { products } from "@/constants/index";
 import { useState } from "react";
+import Image from "next/image";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import ApplicationsGridSection from "@/components/page/ApplicationsGridSection";
 import CtaSection from '@/components/page/CtaSection';
@@ -16,6 +17,46 @@ import CtaSection from '@/components/page/CtaSection';
 //     url: "/profile",
 //     type: "website"
 // });
+
+const img = [
+    {
+        id: 1,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/BLACK%20GALAXY%201200%20X%20600.webp",
+    },
+    {
+        id: 2,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/CASPIAN%20WHITE%201200%20X%20600.webp",
+    },
+    {
+        id: 3,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/COLOMBO%20JUPRANA%201200%20x%20600.webp",
+    },
+    {
+        id: 4,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/IMPERIAL%20WHITE%201200%20X%20600.webp",
+    },
+    {
+        id: 5,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/IVORY%20BROWN%201200%20X%20600.webp",
+    },
+    {
+        id: 6,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/KASHMIR%20CREAM%201200%20X%20600.webp",
+    },
+    {
+        id: 7,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/MEERA%20WHITE%201200%20X%20600.webp",
+    },
+    {
+        id: 8,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/STEEL%20GREY%20GIANO%201200%20X%20600.webp",
+    },
+    {
+        id: 9,
+        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/VISCOUNT%20WHITE%201200%20X%20600.webp",
+    },
+];
+
 
 export default function GraniteCalibratedTilesInIndia() {
     const [selectedProduct, setSelectedProduct] = useState(null);
@@ -39,6 +80,21 @@ export default function GraniteCalibratedTilesInIndia() {
                         <p>Granite XL tiles are an excellent way to bring the look of natural granite to your space. These Large Granite tiles imitate the pattern of natural stone, leading to adding an air of authenticity to your space. Being the top Granite tiles supplier and exporter we aim to provide versatile and stylish options that best fit flooring and wall cladding panels. We carry a wide selection of granite XL tiles available in four different finishes: Polished, Honed, Flamed, and Leather. These tiles create a luxurious and high-end look that is perfect for any home or commercial space. Madhav Marbles and Granites Ltd is one of the leading Granite tiles suppliers, manufacturers, and exporters of natural stone tiles in India that supply Large granite tiles in the dimensions of 1200*600 mm. With a wide variety of colors, textures, and patterns to choose from, our calibrated granite XL tiles are a perfect fit for any space. If you are looking for high-quality and durable granite tiles, then we have the best to serve you.</p>
                         <h3 className="heading font-thin text-xl md:text-4xl text-foreground">Exquisite Large Granite Tiles Collection</h3>
                         <p>Find a diverse collection of exclusive granite XL tiles readily available to export by the leading Granite tiles Suppliers and Exporters. Browse through our range of granite tiles and find the perfect one for your requirements.</p>
+                        <div className="relative mt-8 md:mt-16">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+                                {img.map((image) => (
+                                    <div key={image.id} className="relative aspect-square w-full">
+                                        <Image
+                                            src={image.image}
+                                            alt={`Image ${image.id}`}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                                    </div>
+                                ))}
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 

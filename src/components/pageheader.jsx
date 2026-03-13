@@ -20,7 +20,7 @@ export default function PageHeader({ title, src, path }) {
                         alt="Background"
                         className="w-full h-full object-cover"
                         fill
-                    />
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     {/* Optional overlay for better text contrast */}
                     <div className="absolute inset-0 bg-black/80"></div>
                 </div>

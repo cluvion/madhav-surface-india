@@ -65,7 +65,7 @@ function MenuItem({ link, text, image }) {
       </span>
       <div
         className="w-[120px] md:w-[200px] h-[7vh] my-[2em] mx-[1vw] md:mx-[2vw] p-[1em_0] rounded-[50px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url("${image}")` }}
       />
     </React.Fragment>
   ));

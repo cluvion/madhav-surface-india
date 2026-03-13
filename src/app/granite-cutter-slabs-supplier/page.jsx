@@ -2,7 +2,7 @@
 import Section from '@/components/section'
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
-import { mockProducts } from "@/data/mockProducts";
+import { products } from "@/constants/index";
 import { useState } from "react";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import ApplicationsGridSection from "@/components/page/ApplicationsGridSection";
@@ -39,14 +39,14 @@ export default function GraniteCutterSlabsSupplier() {
                 </div>
             </div>
 
-            <ScrollStack products={mockProducts} />
+            <ScrollStack products={products} />
 
             <Section>
 
 
 
                 <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {mockProducts.map((product) => (
+                    {products.map((product) => (
                         <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                     ))}
                 </div>

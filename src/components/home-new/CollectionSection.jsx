@@ -98,7 +98,7 @@ export default function CollectionSection() {
                                         alt={item.name}
                                         fill
                                         className="object-cover"
-                                    />
+                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-30" />
 
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-70" />

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { mockProducts } from "@/data/mockProducts";
+import { products } from "@/constants/index";
 import ProductCard from "@/components/ui/ProductCard";
 import { Search, LayoutGrid, List, Eye, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -29,7 +29,7 @@ export default function ProductsPage() {
     const [sortOption, setSortOption] = useState("popularity");
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = mockProducts.filter((product) =>
+    const filteredProducts = products.filter((product) =>
         product.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
@@ -50,9 +50,10 @@ export default function ProductsPage() {
                         alt="Background"
                         className="w-full h-full object-cover"
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     {/* Optional overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-foreground/80"></div>
+                    <div className="absolute inset-0 bg-black/80"></div>
                 </div>
 
                 <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
@@ -150,7 +151,7 @@ export default function ProductsPage() {
                                     alt={selectedProduct.name}
                                     fill
                                     className="object-cover"
-                                />
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
 
                             <div className="w-full md:w-1/2 p-8 flex flex-col justify-center space-y-4">

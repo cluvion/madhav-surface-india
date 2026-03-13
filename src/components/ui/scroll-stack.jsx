@@ -34,7 +34,7 @@ const Card = ({
             ref={container}
             className='h-screen flex items-center justify-center sticky top-18 md:top-24'
             style={{
-                backgroundImage: `url(${color})`,
+                backgroundImage: `url("${color}")`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
@@ -97,7 +97,7 @@ const Card = ({
                                 fill
                                 className='object-cover rounded-lg drop-shadow-2xl drop-shadow-black/55 '
                                 loading="lazy"
-                            />
+                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-foreground/5" />
                         </motion.div>
                     </div>

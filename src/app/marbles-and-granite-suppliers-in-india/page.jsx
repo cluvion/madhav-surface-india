@@ -4,11 +4,9 @@ import TableSection from "@/components/page/TableSection";
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
 import ScrollStack from '@/components/ui/scroll-stack';
-import { mockProducts } from "@/data/mockProducts";
+import { products } from "@/constants/index";
 import { useState } from "react";
-import Image from "next/image";
 import CtaSection from "@/components/page/CtaSection";
-import ParagraphSection from '@/components/page/ParagraphSection';
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,
@@ -26,11 +24,11 @@ export default function MarblesAndGraniteSuppliersInIndia() {
 
             <PageHeader title="Exotics & Exclusives" path="Exotics & Exclusives" src="/assets/Step7.png" />
 
-            <ScrollStack products={mockProducts} />
+            <ScrollStack products={products} />
             <Section>
                 {/* Project Carousel Section */}
                 <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
-                    {mockProducts.map((product) => (
+                    {products.map((product) => (
                         <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                     ))}
                 </div>

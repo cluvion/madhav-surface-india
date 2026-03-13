@@ -15,7 +15,7 @@ export default function ContactSection() {
                     fill
                     className="object-cover brightness-40"
                     priority
-                />
+                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
 
             <div className="container relative z-9 mx-auto px-4 md:px-6">

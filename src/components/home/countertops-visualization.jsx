@@ -58,7 +58,7 @@ const CountertopsVisualization = () => {
                                 fill
                                 className="w-full h-fit object-cover"
                                 priority
-                            />
+                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/30" />
                         </motion.div>
                     </motion.div>

@@ -17,11 +17,39 @@ export default function Technology() {
     const images = [
         {
             id: 1,
-            image: "/assets/Step4.png",
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/03.webp",
         },
         {
             id: 2,
-            image: "/assets/Step5.png",
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05%20ok.webp",
+        },
+        {
+            id: 3,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05.webp",
+        },
+        {
+            id: 4,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05FF.webp",
+        },
+        {
+            id: 5,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/09JJ.webp",
+        },
+        {
+            id: 6,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/11%20HHH%20(3).webp",
+        },
+        {
+            id: 7,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/11%20HHH%20(5).webp",
+        },
+        {
+            id: 8,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/DJI_0025.webp",
+        },
+        {
+            id: 9,
+            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/DJI_0124.webp",
         },
     ];
 
@@ -60,7 +88,7 @@ export default function Technology() {
 
                 {/* Project Carousel Section */}
                 <div className="relative mt-8 md:mt-16">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
                         {images.map((image) => (
                             <div key={image.id} className="relative aspect-square w-full">
                                 <Image
@@ -68,7 +96,7 @@ export default function Technology() {
                                     alt={`Image ${image.id}`}
                                     fill
                                     className="object-cover"
-                                />
+                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
                         ))}
                     </div>

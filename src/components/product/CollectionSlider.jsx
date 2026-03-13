@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import Section from '../section';
+import { products } from '@/constants/index';
+import ProductCard from '@/components/ui/ProductCard';
 
 const CollectionSlider = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
     <Section>
@@ -15,7 +19,7 @@ const CollectionSlider = () => {
       {/* Project Carousel Section */}
       <div className="relative mt-8 md:mt-16">
         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mockProducts.map((product) => (
+          {products.slice(0, 6).map((product) => (
             <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
           ))}
         </div>

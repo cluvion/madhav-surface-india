@@ -1,10 +1,8 @@
 "use client"
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import { motion } from "motion/react";
 import AnimatedNumber from "@/components/ui/animated-number";
 import Link from "next/link";
 
@@ -84,7 +82,7 @@ export default function AboutSection() {
                                         alt="Luxury Marble Interior"
                                         fill
                                         className="object-cover"
-                                    />
+                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                 </div>
                             </div>
                         </div>
@@ -96,7 +94,7 @@ export default function AboutSection() {
                                 alt="Luxury Marble Interior"
                                 fill
                                 className="object-cover"
-                            />
+                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
                     </div>
                 </div>

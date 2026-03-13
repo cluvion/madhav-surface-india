@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from 'next/navigation';
-import { mockProducts } from '@/data/mockProducts';
+import { products } from "@/constants/index";
 import ProductSection from '@/components/product/ProductSection';
 import Specifications from '@/components/product/Specifications';
 import {
@@ -22,8 +22,8 @@ import { useState } from "react";
 // Main Product Page Component
 const ProductPage = () => {
     const params = useParams();
-    const productId = parseInt(params.id);
-    const product = mockProducts.find(p => p.id === productId);
+    const productId = params.id;
+    const product = products.find(p => String(p.id) === String(productId));
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     if (!product) {
@@ -47,7 +47,7 @@ const ProductPage = () => {
                         alt="Background"
                         className="w-full h-full object-cover"
                         fill
-                    />
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     {/* Optional overlay for better text contrast */}
                     <div className="absolute inset-0 bg-foreground/80"></div>
                 </div>
@@ -96,7 +96,7 @@ const ProductPage = () => {
                 {/* Project Carousel Section */}
                 <div className="relative mt-8 md:mt-16">
                     <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {mockProducts.map((product) => (
+                        {products.map((product) => (
                             <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                         ))}
                     </div>

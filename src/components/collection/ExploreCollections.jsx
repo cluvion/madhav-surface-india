@@ -91,7 +91,7 @@ const ExploreCollections = ({ currentCollection, allCollections }) => {
                     alt={collection.name || 'Collection'}
                     fill
                     className="object-cover"
-                  />
+                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 ) : (
                   <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                     <span className="text-gray-500">No image</span>
@@ -149,7 +149,7 @@ const ExploreCollections = ({ currentCollection, allCollections }) => {
                             alt={collection.name || 'Collection'}
                             fill
                             className="object-cover"
-                          />
+                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         ) : (
                           <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <span className="text-gray-500">No image</span>

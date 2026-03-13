@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Section from "@/components/section";
-import { mockProducts } from "@/data/mockProducts";
+import { products } from "@/constants/index";
 import Image from "next/image";
 import { Search, LayoutGrid, List, Eye, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -14,7 +14,7 @@ export default function ProductSection() {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = mockProducts.filter((product) =>
+    const filteredProducts = products.filter((product) =>
         product.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
@@ -95,7 +95,7 @@ export default function ProductSection() {
                                     alt={selectedProduct.name}
                                     fill
                                     className="object-cover"
-                                />
+                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
 
                             <div className="w-full md:w-1/2 p-8 flex flex-col justify-center space-y-4">
