@@ -15,8 +15,16 @@ export default function ProductCard({ product, onQuickView }) {
                     src={product.image}
                     alt={product.name}
                     fill
+                    className="object-cover scale-[1.3] transition-transform duration-500 group-hover:scale-[1.4]"
+                />
+                {/* Quick View Overlay (Desktop) */}
+                {/* <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                /> */}
                 {/* Quick View Overlay (Desktop) */}
                 <div className="hidden lg:flex absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 justify-center">
                     <Button

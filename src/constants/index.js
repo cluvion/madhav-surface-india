@@ -6,6 +6,8 @@ import { collectionTiles } from './collectionTiles';
 export const products = [
   ...collectionTiles['regular-tiles'],
   ...collectionTiles['granite-slabs'],
+  ...collectionTiles['exotics-exclusive'],
+  ...collectionTiles['granite-cutter-slabs-supplier'],
 ];
 
 

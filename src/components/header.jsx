@@ -78,7 +78,7 @@ export const HeroHeader = ({
                         <div className="flex items-center justify-start flex-shrink-0">
                             <Link href="/">
                                 <Image
-                                    src={"/assets/logo.png"}
+                                    src={isScrolled ? "/assets/logo.png" : "/assets/hero-logo.png"}
                                     width={800}
                                     height={800}
                                     alt="Madhav Surfaces"

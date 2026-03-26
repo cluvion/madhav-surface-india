@@ -20,6 +20,7 @@ const Card = ({
     projects,
     id,
     onOpenSample,
+    zoom
 }) => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -32,14 +33,18 @@ const Card = ({
     return (
         <div
             ref={container}
-            className='h-screen flex items-center justify-center sticky top-18 md:top-24'
-            style={{
-                backgroundImage: `url("${color}")`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-            }}
+            className='h-screen flex items-center justify-center sticky top-18 md:top-24 overflow-hidden'
         >
+            {/* Background Layer with Zoom */}
+            <div 
+                className={`absolute inset-0 w-full h-full transition-transform duration-500 ${zoom || ''}`}
+                style={{
+                    backgroundImage: `url("${color}")`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            />
             {/* Background overlay for better text readability */}
             <div className="absolute inset-0 bg-foreground/20" />
 
@@ -86,19 +91,18 @@ const Card = ({
 
                 {/* Portrait Image - centered */}
                 <div className='w-full flex justify-center order-2 md:order-none mb-6 md:mb-0'>
-                    <div className='w-56 h-80 md:w-80 md:h-[32rem] relative'>
+                    <div className='w-56 h-80 md:w-80 md:h-[32rem] relative drop-shadow-2xl drop-shadow-black/55'>
                         <motion.div
-                            className='rounded-lg overflow-hidden w-full h-full'
-                        // style={{ scale: imageScale }}
+                            className='rounded-lg overflow-hidden w-full h-full relative z-0'
                         >
                             <Image
                                 src={url}
                                 alt={title}
                                 fill
-                                className='object-cover rounded-lg drop-shadow-2xl drop-shadow-black/55 '
+                                className={`object-cover transition-transform duration-500 ${zoom || ''}`}
                                 loading="lazy"
                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                            <div className="absolute inset-0 bg-foreground/5" />
+                            <div className="absolute inset-0 bg-foreground/5 z-10 pointer-events-none" />
                         </motion.div>
                     </div>
                 </div>
@@ -121,7 +125,7 @@ const Card = ({
     );
 };
 
-const ScrollStack = forwardRef(({ products, collection }, ref) => {
+const ScrollStack = forwardRef(({ products, collection, zoom }, ref) => {
     const container = useRef(null);
     const [isSampleOpen, setIsSampleOpen] = useState(false);
     const { scrollYProgress } = useScroll({
@@ -154,6 +158,7 @@ const ScrollStack = forwardRef(({ products, collection }, ref) => {
                                 projects={displayProducts}
                                 id={product.id}
                                 onOpenSample={() => setIsSampleOpen(true)}
+                                zoom={zoom}
                             />
                         );
                     })}

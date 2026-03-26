@@ -1,14 +1,17 @@
 "use client";
 import Section from '@/components/section'
 import PageHeader from '@/components/pageheader'
-import ProductCard from "@/components/ui/ProductCard";
-import { products } from "@/constants/index";
-import { useState } from "react";
+// import ProductCard from "@/components/ui/ProductCard";
+// import { products } from "@/constants/index";
+import { collectionTiles } from "@/constants/collectionTiles";
+// import { useState } from "react";
+import Image from "next/image";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import ApplicationsGridSection from "@/components/page/ApplicationsGridSection";
-import ScrollStack from '@/components/ui/scroll-stack';
+// import ScrollStack from '@/components/ui/scroll-stack';
 import CtaSection from '@/components/page/CtaSection';
 
+// const pageProducts = collectionTiles['granite-cutter-slabs-supplier'];
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,
@@ -19,7 +22,8 @@ import CtaSection from '@/components/page/CtaSection';
 // });
 
 export default function GraniteCutterSlabsSupplier() {
-    const [selectedProduct, setSelectedProduct] = useState(null);
+    // const [selectedProduct, setSelectedProduct] = useState(null);
+    const collectionProducts = collectionTiles['granite-cutter-slabs-supplier'] || [];
 
     return (
         <div className="min-h-screen ">
@@ -39,15 +43,28 @@ export default function GraniteCutterSlabsSupplier() {
                 </div>
             </div>
 
-            <ScrollStack products={products} />
+            {/* <ScrollStack products={pageProducts} /> */}
 
             <Section>
 
 
 
-                <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {products.map((product) => (
-                        <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                    {collectionProducts.map((product) => (
+                        <div key={product.id} className="flex flex-col items-center group pb-4 border-b border-transparent hover:border-primary transition-colors">
+                            <div className="relative w-full aspect-[16/9] mb-4 bg-white overflow-hidden">
+                                <Image
+                                    src={product.image}
+                                    alt={product.name}
+                                    fill
+                                    className="object-contain transition-transform duration-500 group-hover:scale-102"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                />
+                            </div>
+                            <h3 className="text-xl font-medium text-foreground text-center transition-colors">
+                                {product.name}
+                            </h3>
+                        </div>
                     ))}
                 </div>
 

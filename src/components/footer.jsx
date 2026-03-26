@@ -105,7 +105,7 @@ export default function Footer() {
                             aria-label="go home"
                             className="block size-fit">
                             <Image
-                                src="/assets/logo.png"
+                                src="/assets/hero-logo.png"
                                 alt="Logo"
                                 width={1000}
                                 height={1000}
