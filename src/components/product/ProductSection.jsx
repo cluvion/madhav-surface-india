@@ -47,14 +47,16 @@ const ProductSection = ({ product }) => {
         {/* Left: Image */}
         <div className="relative flex justify-center">
           <CometCard>
-            <Image
-              src={product.image}
-              alt={product.name || 'Product'}
-              className="h-full w-full object-cover relative group"
-              width={1000}
-              height={1000}
-              loading="lazy"
-            />
+            <div className="w-full h-full overflow-hidden">
+              <Image
+                src={product.image}
+                alt={product.name || 'Product'}
+                className="h-full w-full object-cover relative group scale-[1.3] md:scale-150" 
+                width={1000}
+                height={1000}
+                loading="lazy"
+              />
+            </div>
           </CometCard>
         </div>
         {/* Right: Product Info */}

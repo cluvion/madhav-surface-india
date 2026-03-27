@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { products } from "@/constants/index";
 import ProductCard from "@/components/ui/ProductCard";
-import { Search, LayoutGrid, List, Eye, X } from "lucide-react";
+import QuickViewModal from "@/components/ui/QuickViewModal";
+import { Search, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
     Select,
@@ -30,6 +31,7 @@ export default function ProductsPage() {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     const filteredProducts = products.filter((product) =>
+        product.collection !== "Granite Cutter Slabs" &&
         product.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
@@ -57,11 +59,11 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="hero-content relative z-10 text-center max-w-4xl mx-auto px-6 space-y-4">
-                    <h1
-                        className="heading font-bold tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  text-white"
-                    >
-                        Products
-                    </h1>
+                        <h1
+                            className="heading font-bold tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white"
+                        >
+                            Products
+                        </h1>
                     <div className="flex justify-center">
                         <Breadcrumb>
                             <BreadcrumbList className="text-background/60">
@@ -78,7 +80,7 @@ export default function ProductsPage() {
                 </div>
             </div>
 
-            <Section >
+            <Section>
                 {/* Controls */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
                     <Select value={sortOption} onValueChange={setSortOption}>
@@ -103,7 +105,7 @@ export default function ProductsPage() {
                     </div>
                     <div className="flex items-center gap-4 text-foreground/50">
                         <span className="text-sm">
-                            Showing 1-{Math.min(sortedProducts.length, sortedProducts.length)} of {sortedProducts.length} results
+                            Showing {sortedProducts.length > 0 ? 1 : 0}-{sortedProducts.length} of {sortedProducts.length} results
                         </span>
                     </div>
 
@@ -124,48 +126,7 @@ export default function ProductsPage() {
             </Section>
 
             {/* Quick View Modal (Reused) */}
-            <AnimatePresence>
-                {selectedProduct && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/60 backdrop-blur-sm p-4"
-                        onClick={() => setSelectedProduct(null)}
-                    >
-                        <motion.div
-                            layoutId={`product-card-${selectedProduct.id}`}
-                            className="bg-card w-full max-w-2xl overflow-hidden rounded-2xl shadow-2xl relative flex flex-col md:flex-row"
-                            onClick={(e) => e.stopPropagation()}
-                        >
-                            <button
-                                className="absolute top-4 right-4 z-10 p-2 bg-foreground/20 rounded-full hover:bg-foreground/40 text-white transition-colors"
-                                onClick={() => setSelectedProduct(null)}
-                            >
-                                <X className="w-5 h-5" />
-                            </button>
-
-                            <div className="w-full md:w-1/2 relative aspect-square md:aspect-auto">
-                                <Image
-                                    src={selectedProduct.image}
-                                    alt={selectedProduct.name}
-                                    fill
-                                    className="object-cover"
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                            </div>
-
-                            <div className="w-full md:w-1/2 p-8 flex flex-col justify-center space-y-4">
-                                <h2 className="text-3xl font-bold font-heading">{selectedProduct.name}</h2>
-                                <p className="text-foreground/50">{selectedProduct.category}</p>
-                                <div className="text-sm text-foreground/80 leading-relaxed">
-                                    <p>Experience the premium quality of {selectedProduct.name}. Perfect for modern interiors and architectural masterpieces.</p>
-                                </div>
-                                <Button className="w-full mt-4">Enquire Now</Button>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
     );
 }

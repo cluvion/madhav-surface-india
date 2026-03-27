@@ -4,6 +4,7 @@ import TableSection from "@/components/page/TableSection";
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
 import ScrollStack from '@/components/ui/scroll-stack';
+import QuickViewModal from '@/components/ui/QuickViewModal';
 import { products } from "@/constants/index";
 import { useState } from "react";
 import CtaSection from "@/components/page/CtaSection";
@@ -34,6 +35,8 @@ export default function MarblesAndGraniteSuppliersInIndia() {
                 </div>
             </Section>
             <CtaSection />
+
+            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
     )
 }

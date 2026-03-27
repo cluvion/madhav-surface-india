@@ -15,6 +15,7 @@ import Image from "next/image"
 import Section from '@/components/section';
 import CtaSection from '@/components/page/CtaSection';
 import ProductCard from "@/components/ui/ProductCard";
+import QuickViewModal from "@/components/ui/QuickViewModal";
 import { useState } from "react";
 
 // import { generateMetadata as generateSEOMetadata, generateProductSchema, generateBreadcrumbSchema } from "@/lib/seo";
@@ -45,7 +46,7 @@ const ProductPage = () => {
                     <Image
                         src={product.image}
                         alt="Background"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover scale-[1.5]"
                         fill
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     {/* Optional overlay for better text contrast */}
@@ -104,6 +105,7 @@ const ProductPage = () => {
             </Section>
 
             <CtaSection />
+            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
 
     );

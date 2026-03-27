@@ -9,6 +9,7 @@ import Image from "next/image";
 import CtaSection from "@/components/page/CtaSection";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import ScrollStack from '@/components/ui/scroll-stack';
+import QuickViewModal from '@/components/ui/QuickViewModal';
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,
@@ -139,6 +140,8 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                 />
             </Section>
             <CtaSection />
+
+            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div >
     )
 }
