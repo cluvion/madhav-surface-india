@@ -2,7 +2,7 @@ import { products } from '@/constants/index';
 import { getAllPostsForSitemapGraphQL } from '@/lib/wordpress-graphql';
 
 export default async function sitemap() {
-  const baseUrl = 'https://www.madhavquartz.com';
+  const baseUrl = 'https://www.madhavmarbles.com';
 
   // Static pages
   const staticPages = [

@@ -11,7 +11,7 @@ export default async function sitemap() {
 
     // Generate sitemap entries for each blog post
     const blogPostEntries = posts.map((post) => ({
-      url: `https://madhavquartz.com/blog/${post.slug}`,
+      url: `https://madhavmarbles.com/blog/${post.slug}`,
       lastModified: new Date(post.modified),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -19,7 +19,7 @@ export default async function sitemap() {
 
     // Add the main blog page
     const blogIndexEntry = {
-      url: 'https://madhavquartz.com/blog',
+      url: 'https://madhavmarbles.com/blog',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
@@ -28,11 +28,11 @@ export default async function sitemap() {
     return [blogIndexEntry, ...blogPostEntries];
   } catch (error) {
     console.error('Error generating blog sitemap:', error);
-    
+
     // Return at least the blog index page if posts fail to load
     return [
       {
-        url: 'https://madhavquartz.com/blog',
+        url: 'https://madhavmarbles.com/blog',
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 0.9,

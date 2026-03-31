@@ -2,7 +2,6 @@
 import Section from '@/components/section'
 import Image from 'next/image';
 import PageHeader from '@/components/pageheader'
-import Carousel from '@/components/page/Carousel'
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,
@@ -15,6 +14,14 @@ import Carousel from '@/components/page/Carousel'
 export default function Technology() {
 
     const images = [
+        {
+            id: 10,
+            image: "/assets/technology/f1-1.png",
+        },
+        {
+            id: 11,
+            image: "/assets/technology/2-1.jpg",
+        },
         {
             id: 1,
             image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/03.webp",

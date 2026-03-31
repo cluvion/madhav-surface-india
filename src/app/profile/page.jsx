@@ -17,24 +17,36 @@ const Profile = () => {
     const images = [
         {
             id: 1,
-            image: "/assets/Step4.png",
-        },
-        {
-            id: 2,
-            image: "/assets/Step5.png",
+            image: "/assets/profile/1-12-600x400.jpg",
         },
         {
             id: 3,
-            image: "/assets/Step6.png",
+            image: "/assets/profile/2-10-600x400.jpg",
         },
         {
             id: 4,
-            image: "/assets/Step4.png",
+            image: "/assets/profile/3-8-600x400.jpg",
         },
         {
             id: 5,
-            image: "/assets/Step7.png",
+            image: "/assets/profile/4-4-600x400.jpg",
         },
+        {
+            id: 6,
+            image: "/assets/profile/5-6-600x400.jpg",
+        },
+        {
+            id: 7,
+            image: "/assets/profile/6-2-600x400.jpg",
+        },
+        {
+            id: 8,
+            image: "/assets/profile/7-1-600x400.jpg",
+        },
+        {
+            id: 9,
+            image: "/assets/profile/8-1-600x400.jpg",
+        }
     ];
 
     return (

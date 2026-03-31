@@ -6,7 +6,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Allow all crawlers to access sitemap
-Sitemap: https://www.madhavquartz.com/sitemap.xml
+Sitemap: https://www.madhavmarbles.com/sitemap.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1

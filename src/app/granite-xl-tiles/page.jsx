@@ -83,14 +83,12 @@ export default function GraniteCalibratedTilesInIndia() {
                         <div className="relative mt-8 md:mt-16">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
                                 {img.map((image) => (
-                                    <div key={image.id} className="relative aspect-square w-full">
+                                    <div key={image.id} className="relative aspect-[3/4] w-full overflow-hiddenbg-neutral-100 group">
                                         <Image
                                             src={image.image}
                                             alt={`Image ${image.id}`}
-                                            // fill
-                                            width={500}
-                                            height={500}
-                                            className="object-contain"
+                                            fill
+                                            className="object-cover object-top group-hover:scale-110 transition-transform duration-500 ease-in-out"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     </div>
                                 ))}

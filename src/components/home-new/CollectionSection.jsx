@@ -13,7 +13,7 @@ const collections = [
     { name: "Granite Cutter Slabs", image: "/assets/collection/granite-cutter-slabs.png", href: "/granite-cutter-slabs-supplier" },
     { name: "Marble | Sandstone | Quartzite", image: "/assets/collection/marble.png", href: "/marble-sandstone-quartzite-exporter-supplier" },
     { name: "Exotics & Exclusives", image: "/assets/collection/exotics.png", href: "/marbles-and-granite-suppliers-in-india" },
-    { name: "Quartz", image: "/assets/collection/quartz.png", href: "https://www.madhavquartz.com" },
+    { name: "Quartz", image: "/assets/collection/quartz.png", href: "https://www.madhavmarbles.com" },
 ];
 
 export default function CollectionSection() {
@@ -98,7 +98,7 @@ export default function CollectionSection() {
                                         alt={item.name}
                                         fill
                                         className="object-cover"
-                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-30" />
 
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-70" />

@@ -58,7 +58,7 @@ const Carousel = ({ images }) => {
                         <div key={item.id} className="flex-[0_0_100%] min-w-0 pl-4 sm:flex-[0_0_50%] lg:flex-[0_0_25%]">
                             <motion.div
                                 layoutId={`card-${item.id}`}
-                                className="group relative aspect-square cursor-pointer overflow-hidden bg-neutral-900"
+                                className="group relative aspect-[4/3] w-full cursor-pointer overflow-hidden bg-transparent"
                                 onClick={() => setSelectedId(item.id)}
                             >
                                 {/* Image Placeholder */}
@@ -66,11 +66,16 @@ const Carousel = ({ images }) => {
                                     src={item.image}
                                     alt={item.title || "Project Image"}
                                     fill
-                                    className="object-cover"
-                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-30" />
+                                    className="object-contain"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                />
+                                {item.title && (
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-30" />
+                                )}
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-70" />
+                                {(item.title || item.location) && (
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-70" />
+                                )}
 
                                 <div className="absolute bottom-0 left-0 w-full p-6 translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
                                     {item.title && (
@@ -137,10 +142,13 @@ const Carousel = ({ images }) => {
                                             src={item.image}
                                             alt={item.title || "Project Image"}
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             priority
-                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                        {(item.title || item.location) && (
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                                        )}
 
                                         {/* Close Button */}
                                         <button

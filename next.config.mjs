@@ -36,12 +36,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'wp.madhavquartz.com',
+        hostname: 'www.madhavmarbles.com',
         pathname: '/wp-content/uploads/**',
       },
       {
         protocol: 'https',
-        hostname: 'madhavquartz.com',
+        hostname: 'madhavmarbles.com',
         pathname: '/wp-content/uploads/**',
       },
     ],

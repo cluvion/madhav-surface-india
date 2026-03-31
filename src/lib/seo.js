@@ -4,8 +4,8 @@ export const siteConfig = {
     name: "Madhav Quartz",
     title: "Madhav Quartz - Premium Engineered Stone & Quartz Countertops",
     description: "Discover premium engineered stone and quartz countertops from Madhav Quartz. Luxury collections including Calacatta, marble-look designs for kitchens, bathrooms, and commercial spaces.",
-    url: "https://www.madhavquartz.com",
-    ogImage: "https://www.madhavquartz.com/assets/logo2.png",
+    url: "https://www.madhavmarbles.com",
+    ogImage: "https://www.madhavmarbles.com/assets/logo2.png",
     keywords: [
         "quartz countertops",
         "engineered stone",
@@ -19,7 +19,7 @@ export const siteConfig = {
         "luxury surfaces"
     ],
     social: {
-        instagram: "https://www.instagram.com/madhavquartz/",
+        instagram: "https://www.instagram.com/madhavmarbles/",
         facebook: "https://www.facebook.com/madhav.quartz/",
         linkedin: "https://www.linkedin.com/company/madhav-quartz/"
     },
@@ -93,7 +93,7 @@ export function generateMetadata({
             title: fullTitle,
             description: fullDescription,
             images: [fullImage],
-            creator: "@madhavquartz"
+            creator: "@madhavmarbles"
         },
         alternates: {
             canonical: fullUrl

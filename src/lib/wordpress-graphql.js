@@ -16,19 +16,19 @@ import {
  */
 function fixContentMediaUrls(content) {
   if (!content) return content;
-  
-  // Replace all instances of madhavquartz.com with wp.madhavquartz.com in media URLs
+
+  // Ensure all media URLs use https://www.madhavmarbles.com
   let fixedContent = content.replace(
-    /https?:\/\/madhavquartz\.com\/wp-content\//g,
-    'https://wp.madhavquartz.com/wp-content/'
+    /https?:\/\/(?:www\.)?madhavmarbles\.com\/wp-content\//g,
+    'https://www.madhavmarbles.com/wp-content/'
   );
-  
-  // Also ensure HTTPS for all WordPress media URLs
+
+  // Fallback for any wp.madhavmarbles.com just in case
   fixedContent = fixedContent.replace(
-    /http:\/\/wp\.madhavquartz\.com\/wp-content\//g,
-    'https://wp.madhavquartz.com/wp-content/'
+    /https?:\/\/wp\.madhavmarbles\.com\/wp-content\//g,
+    'https://www.madhavmarbles.com/wp-content/'
   );
-  
+
   return fixedContent;
 }
 
@@ -41,22 +41,22 @@ function fixContentMediaUrls(content) {
  */
 function getOptimizedImageUrl(imageUrl, width = 800, quality = 75) {
   if (!imageUrl) return '';
-  
+
   // Fix the URL first
   const fixedUrl = fixContentMediaUrls(imageUrl);
-  
+
   // For WordPress images, try to get a specific size if available
-  if (fixedUrl.includes('wp.madhavquartz.com') || fixedUrl.includes('madhavquartz.com')) {
+  if (fixedUrl.includes('madhavmarbles.com')) {
     // WordPress typically has these sizes available
     const sizeMap = {
       150: '150x150',
-      300: '300x200', 
+      300: '300x200',
       400: '400x400',
       600: '600x400',
       768: '768x512',
       1024: '1024x683',
     };
-    
+
     // Find the closest size
     const availableWidth = Object.keys(sizeMap).find(w => parseInt(w) >= width);
     if (availableWidth && sizeMap[availableWidth]) {
@@ -68,7 +68,7 @@ function getOptimizedImageUrl(imageUrl, width = 800, quality = 75) {
       return sizedUrl;
     }
   }
-  
+
   return fixedUrl;
 }
 
@@ -79,14 +79,14 @@ function getOptimizedImageUrl(imageUrl, width = 800, quality = 75) {
  */
 function decodeHtmlEntities(text) {
   if (!text) return text;
-  
+
   // For client-side rendering
   if (typeof window !== 'undefined') {
     const textarea = document.createElement('textarea');
     textarea.innerHTML = text;
     return textarea.value;
   }
-  
+
   // Fallback for server-side rendering
   return text
     .replace(/&amp;/g, '&')
@@ -117,7 +117,7 @@ function formatPostGraphQL(post) {
     slug: post.slug,
     date: post.date,
     modified: post.modified,
-    featuredImage: post.featuredImage?.node?.sourceUrl 
+    featuredImage: post.featuredImage?.node?.sourceUrl
       ? fixContentMediaUrls(post.featuredImage.node.sourceUrl)
       : null,
     author: post.author?.node?.name || 'Madhav Surfaces',
@@ -148,12 +148,12 @@ export async function getTotalPostCount() {
     const data = await executeGraphQLQuery(GET_BLOG_POSTS, { first: 1000 });
     const posts = data.posts?.nodes || [];
     const pageInfo = data.posts?.pageInfo || {};
-    
+
     // If we got less than 1000 and no next page, this is the total
     if (posts.length < 1000 && !pageInfo.hasNextPage) {
       return posts.length;
     }
-    
+
     // Otherwise, estimate based on what we know (fallback)
     return posts.length + (pageInfo.hasNextPage ? 50 : 0); // Conservative estimate
   } catch (error) {
@@ -174,10 +174,10 @@ export async function getBlogPostsGraphQL(first = 12, after = null, search = nul
   try {
     // Limit first to prevent huge responses
     const limitedFirst = Math.min(first, 50);
-    
+
     // Use search query if search term provided
     const query = search ? SEARCH_POSTS : GET_BLOG_POSTS;
-    
+
     const data = await executeGraphQLQuery(query, {
       first: limitedFirst,
       after,
@@ -231,7 +231,7 @@ export async function getBlogPostsGraphQL(first = 12, after = null, search = nul
 export async function getBlogPostBySlugGraphQL(slug) {
   try {
     const data = await executeGraphQLQuery(GET_POST_BY_SLUG, { slug });
-    
+
     if (!data.post) {
       return null;
     }
@@ -251,7 +251,7 @@ export async function getBlogPostBySlugGraphQL(slug) {
 export async function getAllPostSlugsGraphQL(first = 1000) {
   try {
     const data = await executeGraphQLQuery(GET_ALL_POST_SLUGS, { first });
-    
+
     const posts = data.posts?.nodes || [];
     return posts.map(post => post.slug);
   } catch (error) {
@@ -268,7 +268,7 @@ export async function getAllPostSlugsGraphQL(first = 1000) {
 export async function getAllPostsForSitemapGraphQL(first = 1000) {
   try {
     const data = await executeGraphQLQuery(GET_POSTS_FOR_SITEMAP, { first });
-    
+
     const posts = data.posts?.nodes || [];
     return posts.map(post => ({
       slug: post.slug,
@@ -346,10 +346,10 @@ export async function checkWordPressGraphQLHealth() {
  */
 export function cleanExcerpt(excerpt, maxLength = 150) {
   if (!excerpt) return '';
-  
+
   // Remove HTML tags
   const cleanText = excerpt.replace(/<[^>]*>/g, '');
-  
+
   // Remove common WordPress excerpt artifacts
   const cleanedText = cleanText
     .replace(/\[&hellip;\]/g, '...')
@@ -365,8 +365,8 @@ export function cleanExcerpt(excerpt, maxLength = 150) {
   // Find the last space before maxLength to avoid cutting words
   const truncated = cleanedText.substring(0, maxLength);
   const lastSpace = truncated.lastIndexOf(' ');
-  
-  return lastSpace > 0 
+
+  return lastSpace > 0
     ? truncated.substring(0, lastSpace) + '...'
     : truncated + '...';
 }
@@ -378,14 +378,14 @@ export function cleanExcerpt(excerpt, maxLength = 150) {
  */
 export function calculateReadingTime(content) {
   if (!content) return 0;
-  
+
   // Remove HTML tags and count words
   const text = content.replace(/<[^>]*>/g, '');
   const wordCount = text.split(/\s+/).length;
-  
+
   // Average reading speed is 200-250 words per minute
   const readingTime = Math.ceil(wordCount / 225);
-  
+
   return readingTime;
 }
 
@@ -396,7 +396,7 @@ export function calculateReadingTime(content) {
  */
 export function formatDate(dateString) {
   if (!dateString) return '';
-  
+
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
     year: 'numeric',

@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { getOptimizedImageUrl } from '@/lib/wordpress';
 
-export default function WordPressImage({ 
-  src, 
-  alt, 
-  width, 
-  height, 
-  className = '', 
+export default function WordPressImage({
+  src,
+  alt,
+  width,
+  height,
+  className = '',
   fill = false,
   sizes,
   priority = false,
@@ -24,7 +24,7 @@ export default function WordPressImage({
     console.warn(`Failed to load image: ${imgSrc}`);
     setHasError(true);
     setIsLoading(false);
-    
+
     // Try the original WordPress URL as fallback
     if (imgSrc !== src) {
       setImgSrc(src);
@@ -41,7 +41,7 @@ export default function WordPressImage({
   };
 
   // Get optimized URL for WordPress images
-  const optimizedSrc = src && src.includes('madhavquartz.com') 
+  const optimizedSrc = src && src.includes('madhavmarbles.com')
     ? getOptimizedImageUrl(src, width || 800, quality)
     : src;
 
@@ -66,14 +66,14 @@ export default function WordPressImage({
   return (
     <div className={`relative ${fill ? 'w-full h-full' : ''}`}>
       <Image {...imageProps} />
-      
+
       {/* Loading placeholder */}
       {isLoading && (
         <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
           <div className="text-gray-400 text-sm">Loading...</div>
         </div>
       )}
-      
+
       {/* Error state */}
       {hasError && (
         <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">

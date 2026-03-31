@@ -1,7 +1,7 @@
 import { GraphQLClient } from 'graphql-request';
 
 // WordPress GraphQL endpoint
-const GRAPHQL_ENDPOINT = 'https://wp.madhavquartz.com/graphql';
+const GRAPHQL_ENDPOINT = 'https://www.madhavmarbles.com/graphql';
 
 // Create GraphQL client with configuration
 const graphqlClient = new GraphQLClient(GRAPHQL_ENDPOINT, {
@@ -36,37 +36,37 @@ const graphqlClient = new GraphQLClient(GRAPHQL_ENDPOINT, {
  */
 export async function executeGraphQLQuery(query, variables = {}, options = {}) {
   const { retries = 2, timeout = 10000 } = options;
-  
+
   let lastError;
-  
+
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       // Add timeout to the request
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), timeout);
-      
+
       const result = await graphqlClient.request(query, variables, {
         signal: controller.signal,
       });
-      
+
       clearTimeout(timeoutId);
       return result;
-      
+
     } catch (error) {
       lastError = error;
-      
+
       // Log error details
       console.error(`GraphQL Query Attempt ${attempt + 1} Failed:`, {
         error: error.message,
         query: query.slice(0, 100) + '...',
         variables,
       });
-      
+
       // Don't retry on client errors (4xx)
       if (error.response?.status >= 400 && error.response?.status < 500) {
         break;
       }
-      
+
       // Wait before retry (exponential backoff)
       if (attempt < retries) {
         const delay = Math.pow(2, attempt) * 1000; // 1s, 2s, 4s
@@ -74,7 +74,7 @@ export async function executeGraphQLQuery(query, variables = {}, options = {}) {
       }
     }
   }
-  
+
   // All retries failed
   throw new Error(`GraphQL query failed after ${retries + 1} attempts: ${lastError.message}`);
 }
@@ -92,7 +92,7 @@ export async function checkGraphQLHealth() {
         }
       }
     `;
-    
+
     await executeGraphQLQuery(healthQuery, {}, { retries: 0, timeout: 5000 });
     return true;
   } catch (error) {

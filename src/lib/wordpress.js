@@ -1,4 +1,4 @@
-const WORDPRESS_API_URL = 'https://wp.madhavquartz.com/wp-json/wp/v2';
+const WORDPRESS_API_URL = 'https://www.madhavmarbles.com/wp-json/wp/v2';
 
 /**
  * Fetch blog posts from WordPress (optimized for listing)
@@ -10,7 +10,7 @@ export async function getBlogPosts(perPage = 10, page = 1) {
   try {
     // Limit per_page to prevent huge responses
     const limitedPerPage = Math.min(perPage, 20);
-    
+
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?per_page=${limitedPerPage}&page=${page}&_embed`,
       {
@@ -61,7 +61,7 @@ export async function getBlogPostsMinimal(perPage = 12, page = 1) {
   try {
     // Limit per_page to prevent huge responses
     const limitedPerPage = Math.min(perPage, 24);
-    
+
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?per_page=${limitedPerPage}&page=${page}&_fields=id,title,excerpt,slug,date,modified,featured_media,author,categories,tags,link`,
       {
@@ -157,7 +157,7 @@ export async function getBlogPostBySlug(slug) {
     }
 
     const posts = await response.json();
-    
+
     if (posts.length === 0) {
       return null;
     }
@@ -176,12 +176,15 @@ export async function getBlogPostBySlug(slug) {
  */
 function fixMediaUrl(url) {
   if (!url) return null;
-  
-  // Replace madhavquartz.com with wp.madhavquartz.com for media URLs
-  if (url.includes('madhavquartz.com/wp-content/')) {
-    return url.replace('madhavquartz.com', 'wp.madhavquartz.com');
+
+  // Ensure HTTPS for media URLs, rewrite http basic to https www
+  if (url.includes('http://madhavmarbles.com')) {
+    return url.replace('http://madhavmarbles.com', 'https://www.madhavmarbles.com');
   }
-  
+  if (url.includes('http://www.madhavmarbles.com')) {
+    return url.replace('http://www.madhavmarbles.com', 'https://www.madhavmarbles.com');
+  }
+
   return url;
 }
 
@@ -206,19 +209,19 @@ function getFeaturedImageUrl(post) {
  */
 function fixContentMediaUrls(content) {
   if (!content) return content;
-  
-  // Replace all instances of madhavquartz.com with wp.madhavquartz.com in media URLs
+
+  // Ensure all media URLs use https://www.madhavmarbles.com
   let fixedContent = content.replace(
-    /https?:\/\/madhavquartz\.com\/wp-content\//g,
-    'https://wp.madhavquartz.com/wp-content/'
+    /https?:\/\/(?:www\.)?madhavmarbles\.com\/wp-content\//g,
+    'https://www.madhavmarbles.com/wp-content/'
   );
-  
-  // Also ensure HTTPS for all WordPress media URLs
+
+  // Fallback for any wp.madhavmarbles.com just in case
   fixedContent = fixedContent.replace(
-    /http:\/\/wp\.madhavquartz\.com\/wp-content\//g,
-    'https://wp.madhavquartz.com/wp-content/'
+    /https?:\/\/wp\.madhavmarbles\.com\/wp-content\//g,
+    'https://www.madhavmarbles.com/wp-content/'
   );
-  
+
   return fixedContent;
 }
 
@@ -231,22 +234,22 @@ function fixContentMediaUrls(content) {
  */
 function getOptimizedImageUrl(imageUrl, width = 800, quality = 75) {
   if (!imageUrl) return '';
-  
+
   // Fix the URL first
   const fixedUrl = fixContentMediaUrls(imageUrl);
-  
+
   // For WordPress images, try to get a specific size if available
-  if (fixedUrl.includes('wp.madhavquartz.com') || fixedUrl.includes('madhavquartz.com')) {
+  if (fixedUrl.includes('madhavmarbles.com')) {
     // WordPress typically has these sizes available
     const sizeMap = {
       150: '150x150',
-      300: '300x200', 
+      300: '300x200',
       400: '400x400',
       600: '600x400',
       768: '768x512',
       1024: '1024x683',
     };
-    
+
     // Find the closest size
     const availableWidth = Object.keys(sizeMap).find(w => parseInt(w) >= width);
     if (availableWidth && sizeMap[availableWidth]) {
@@ -258,7 +261,7 @@ function getOptimizedImageUrl(imageUrl, width = 800, quality = 75) {
       return sizedUrl;
     }
   }
-  
+
   return fixedUrl;
 }
 
@@ -269,14 +272,14 @@ function getOptimizedImageUrl(imageUrl, width = 800, quality = 75) {
  */
 function decodeHtmlEntities(text) {
   if (!text) return text;
-  
+
   // Use browser's built-in HTML entity decoding
   if (typeof document !== 'undefined') {
     const textarea = document.createElement('textarea');
     textarea.innerHTML = text;
     return textarea.value;
   }
-  
+
   // Fallback for server-side rendering
   return text
     .replace(/&amp;/g, '&')
@@ -322,10 +325,10 @@ function formatPost(post) {
  */
 export function cleanExcerpt(excerpt, maxLength = 150) {
   if (!excerpt) return '';
-  
+
   // Remove HTML tags
   const cleanText = excerpt.replace(/<[^>]*>/g, '');
-  
+
   // Remove common WordPress excerpt artifacts
   const cleanedText = cleanText
     .replace(/\[&hellip;\]/g, '...')
@@ -362,14 +365,14 @@ export function formatDate(dateString) {
  */
 export function calculateReadingTime(content) {
   if (!content) return 0;
-  
+
   // Remove HTML tags and count words
   const text = content.replace(/<[^>]*>/g, '');
   const wordCount = text.split(/\s+/).length;
-  
+
   // Average reading speed is 200-250 words per minute
   const readingTime = Math.ceil(wordCount / 225);
-  
+
   return readingTime;
 }
 
