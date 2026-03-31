@@ -5,7 +5,7 @@ import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
 import ScrollStack from '@/components/ui/scroll-stack';
 import QuickViewModal from '@/components/ui/QuickViewModal';
-import { products } from "@/constants/index";
+import { collectionTiles } from "@/constants/collectionTiles";
 import { useState } from "react";
 import CtaSection from "@/components/page/CtaSection";
 
@@ -19,17 +19,19 @@ import CtaSection from "@/components/page/CtaSection";
 
 export default function MarblesAndGraniteSuppliersInIndia() {
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const collectionProducts = collectionTiles['exotics-exclusive'] || [];
 
     return (
         <div className="">
 
             <PageHeader title="Exotics & Exclusives" path="Exotics & Exclusives" src="/assets/Step7.png" />
 
-            <ScrollStack products={products} />
+            <ScrollStack products={collectionProducts} zoom="scale-[1.3]" />
+
             <Section>
                 {/* Project Carousel Section */}
                 <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
-                    {products.map((product) => (
+                    {collectionProducts.map((product) => (
                         <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                     ))}
                 </div>

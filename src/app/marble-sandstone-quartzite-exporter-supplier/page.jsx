@@ -3,7 +3,7 @@ import Section from '@/components/section'
 import TableSection from "@/components/page/TableSection";
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
-import { collectionTiles } from "@/constants/collectionTiles";
+import { products } from "@/constants/index";
 import { useState } from "react";
 import Image from "next/image";
 import CtaSection from "@/components/page/CtaSection";
@@ -21,7 +21,6 @@ import QuickViewModal from '@/components/ui/QuickViewModal';
 
 export default function MarbleSandstoneQuartziteExporterSupplier() {
     const [selectedProduct, setSelectedProduct] = useState(null);
-    const collectionProducts = collectionTiles['exotics-exclusive'] || [];
 
     return (
         <div className="min-h-screen">
@@ -44,13 +43,13 @@ export default function MarbleSandstoneQuartziteExporterSupplier() {
                 </div>
             </div>
 
-            <ScrollStack products={collectionProducts} zoom="scale-[1.3]" />
+            <ScrollStack products={products} zoom="scale-[1.3]" />
 
             <Section>
                 {/* Project Carousel Section */}
                 <div className="relative mt-8 md:mt-16">
                     <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
-                        {collectionProducts.map((product) => (
+                        {products.map((product) => (
                             <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
                         ))}
                     </div>
