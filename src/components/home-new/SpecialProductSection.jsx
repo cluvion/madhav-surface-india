@@ -76,8 +76,8 @@ export default function SpecialProductSection() {
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
                                             </div>
-                                            <div className="mt-4 text-left border-l-2 border-transparent group-hover:border-[#cda52f] pl-0 group-hover:pl-3 transition-all duration-300">
-                                                <h3 className="text-white text-lg font-medium font-sans group-hover:text-[#cda52f] transition-colors">{item.name}</h3>
+                                            <div className="mt-4 text-left border-l-2 border-transparent group-hover:border-[#0e7337] pl-0 group-hover:pl-3 transition-all duration-300">
+                                                <h3 className="text-white text-lg font-medium font-sans group-hover:text-[#0e7337] transition-colors">{item.name}</h3>
                                             </div>
                                         </Link>
                                     </div>
