@@ -1,0 +1,11 @@
+PAGE: Marbles and Granite Suppliers In India / Exotics & Exclusives (/marbles-and-granite-suppliers-in-india)
+
+[Header / Hero]
+Exotics & Exclusives
+(Path: Exotics & Exclusives)
+
+[ScrollStack Product Display]
+(Products from 'exotics-exclusive' collection rendered in animated scroll stack)
+
+[Product Grid]
+(Products from 'exotics-exclusive' collection displayed in a 4-column grid with quick-view functionality)

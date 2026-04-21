@@ -1,0 +1,19 @@
+PAGE: Products (/products)
+
+[Header / Hero]
+Products
+Home > Products
+
+[Controls / Filters]
+- Sort by: Sort by popularity | Sort by Name (A-Z) | Sort by Name (Z-A)
+- Search: Search products...
+- Results count: Showing X-Y of Z results
+
+[Product Grid]
+(All products displayed in a responsive grid — 1 col on mobile, 2 on sm, 3 on md, 4 on lg)
+(Products filtered by search query; "Granite Cutter Slabs" collection excluded)
+(Each card has quick-view functionality)
+
+[Empty State]
+No products found matching "{searchQuery}"
+(Shown when no products match the search)

@@ -1,0 +1,165 @@
+PAGE: Home (/)
+URL: http://localhost:3000 / https://madhavmarbles.com/
+
+============================
+NAVIGATION BAR
+============================
+Logo: MADHAV — Leaders in quality Natural Stone Surfaces.
+
+Menu Items:
+- Know Us
+  - Profile
+  - Technology
+  - Corporate Film
+- Stone Slabs
+  - Granite Slabs
+  - Granite Cutter Slabs
+  - Marble | Sandstone | Quartzite
+  - Exotics & Exclusives
+  - Quartz
+- Stone Tiles
+  - Regular Tiles
+  - XL Tiles
+- Investors
+- News & Events
+- Blogs
+- Contact
+
+Contact Info (in nav):
+Phone: +91 8875023456
+
+============================
+HERO SECTION
+============================
+Headline: EXQUISITE ARTISTRY IN STONE
+
+Live Stats:
+- 35+ YEARS OF EXPERIENCE
+- 50+ COUNTRIES SERVED
+- 500+ EMPLOYEES WORLDWIDE
+
+Button: Play (video)
+
+============================
+ABOUT US SECTION
+============================
+Label: OUR ABOUT US
+Heading: What Makes Us The Best Marble and Granite Suppliers?
+
+Highlights:
+- 35 YEARS OF EXPERIENCE
+  Legacy of Excellence
+  With over three decades of mastery in the stone industry, Madhav Surfaces has built an enduring reputation for quality, reliability, and craftsmanship.
+
+- MOST SATISFIED CLIENTELE
+  Trusted by Architects & Builders
+  We've earned the confidence of leading architects, designers, and construction firms through our commitment to precision, innovation, and customer satisfaction.
+
+- GLOBAL EXPORTS IN 40+ COUNTRIES
+  Proudly Representing Indian Craftsmanship
+  From India to the world, our premium marble and granite are exported across 40+ countries.
+
+- QUALITY YOU CAN TRUST
+  Certified, Tested, and Reliable
+  Every slab passes rigorous quality checks for durability, color consistency, and finish.
+
+============================
+CHOOSE YOUR STONE SECTION
+============================
+Heading: CHOOSE YOUR STONE
+Description: Beauty from the Earth a collection of timeless elegance and beauty
+
+Stone Types:
+- Travertine
+- Dione Nuvolato
+- Granite
+- Dione White
+- Limestone
+- Marble Aretusa
+
+============================
+PRODUCT SECTION
+============================
+Info: Showing 1-8 of 65 results
+
+Products Listed:
+- Amba White
+- Bengal White
+- Black Forest
+- Black Galaxy
+- Coffee Brown
+- Absolute Black
+- Colombo Juprana
+- Indian Dakota
+
+Button per product: VIEW DETAILS
+
+============================
+OUR STONE COLLECTION SECTION
+============================
+Label: OUR STONE COLLECTION
+Heading: Explore Our Premium Stone Collections
+
+Collection Categories:
+- Granite Slabs
+- Granite Cutter Slabs
+- Marble | Sandstone | Quartzite
+- Exotics & Exclusives
+- Quartz
+
+Button: VIEW ALL PRODUCTS
+
+============================
+TESTIMONIALS SECTION
+============================
+Label: OUR TESTIMONIALS
+Heading: Here's What warm words our clients say
+
+Featured Testimonial:
+"Their Opulence Collection transformed our hotel interiors. The patterns are stunning and truly reflect luxury. Excellent craftsmanship and service."
+— Ananya Iyer, Chennai, India
+
+============================
+CONTACT / COMMON QUESTIONS SECTION
+============================
+Label: COMMON QUESTIONS
+Heading: Come as You are And we Will Take Care of the Rest
+
+CTA: Have Questions? GET IN TOUCH
+
+Form Fields:
+- Enter your name
+- Enter your email
+- Enter your number
+- Project scope
+- Your message here
+
+Button: SEND MESSAGE
+
+============================
+RECENT BLOG SECTION
+============================
+Label: RECENT BLOG
+Heading: Stay Informed With Latest News And Insights
+
+Blog Posts:
+1. KITCHEN MARBLE — Using Marble in Kitchen Design: Elegant and... (Sept 15, 2025)
+2. BATHROOM TILES — Top 5 Bathroom Tile Options for a Stylish... (Sept 15, 2025)
+3. MARBLE TILES — Mixing Marble and Mosaic Tiles: The Perfect... (Sept 15, 2025)
+
+Button: BROWSE ALL
+
+============================
+FOOTER
+============================
+Logo: Madhav
+Summary: Madhav Granite Division focus on rich reserves in South India (Salem, Tamil Nadu).
+
+Quick Links:
+- Know Us: Profile, Technology, Corporate Film
+- Stone Slabs: Granite Slabs, Granite Cutter Slabs, Marble | Sandstone | Quartzite, Exotics & Exclusives, Quartz
+- Stone Tiles: Regular Tiles, XL Tiles
+
+Contact Info:
+Address: 1st Floor, Mumal Towers, 16 Saheli Marg, Udaipur 313001, Rajasthan, India
+Phone: +91 8875023456

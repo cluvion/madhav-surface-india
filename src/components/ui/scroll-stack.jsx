@@ -41,7 +41,7 @@ const Card = ({
                 style={{
                     backgroundImage: `url("${color}")`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: zoom?.includes('object-bottom') ? 'center bottom' : 'center',
                     backgroundRepeat: 'no-repeat'
                 }}
             />

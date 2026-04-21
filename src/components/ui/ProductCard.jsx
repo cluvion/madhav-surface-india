@@ -4,10 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Eye, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function ProductCard({ product, onQuickView }) {
+export default function ProductCard({ product, onQuickView, imageClassName }) {
     return (
         <motion.div
-            layoutId={`product-card-${product.id}`}
             className="flex flex-col relative overflow-hidden"
         >
             <div className="group relative aspect-square overflow-hidden mb-2">
@@ -15,7 +14,7 @@ export default function ProductCard({ product, onQuickView }) {
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover scale-[1.3] transition-transform duration-500 group-hover:scale-[1.4]"
+                    className={imageClassName || "object-cover scale-[1.3] transition-transform duration-500 group-hover:scale-[1.4]"}
                 />
                 {/* Quick View Overlay (Desktop) */}
                 {/* <Image
@@ -38,31 +37,36 @@ export default function ProductCard({ product, onQuickView }) {
                     </Button>
                 </div>
             </div>
-            <div className="text-center space-y-1">
-                <h3 className="font-medium text-lg text-foreground group-hover:text-primary transition-colors">
-                    {product.name}
-                </h3>
-                <p className="text-sm text-foreground/50">{product.category || product.collection}</p>
+
+            {/* Info */}
+            <div className="p-4 flex flex-col gap-3">
+                <div className="text-center space-y-1">
+                    <h3 className="font-medium text-lg text-foreground group-hover:text-primary transition-colors">
+                        {product.name}
+                    </h3>
+                    <p className="text-sm text-foreground/50">{product.category || product.collection}</p>
+                </div>
+
+                {/* Buttons Row */}
+                <div className="flex gap-2 justify-center pt-4">
+                    <Button asChild className="w-full" variant="secondary">
+                        <Link href={`/products/${product.id}`}>
+                            View Details
+                        </Link>
+                    </Button>
+                    {/* Quick View Button (Mobile/Tablet Only) */}
+                    <Button
+                        // variant="outline"
+                        // size="icon"
+                        arrow={false}
+                        className="lg:hidden shrink-0 h-full w-9"
+                        onClick={() => onQuickView(product)}
+                    >
+                        <Eye className="w-4 h-4" />
+                    </Button>
+                </div>
             </div>
 
-            {/* Buttons Row */}
-            <div className="flex gap-2 justify-center pt-4">
-                <Button asChild className="w-full" variant="secondary">
-                    <Link href={`/products/${product.id}`}>
-                        View Details
-                    </Link>
-                </Button>
-                {/* Quick View Button (Mobile/Tablet Only) */}
-                <Button
-                    // variant="outline"
-                    // size="icon"
-                    arrow={false}
-                    className="lg:hidden shrink-0 h-full w-9"
-                    onClick={() => onQuickView(product)}
-                >
-                    <Eye className="w-4 h-4" />
-                </Button>
-            </div>
         </motion.div>
     );
 }

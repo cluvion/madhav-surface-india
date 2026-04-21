@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { products } from "@/constants/index";
 import ProductCard from "@/components/ui/ProductCard";
 import QuickViewModal from "@/components/ui/QuickViewModal";
@@ -30,16 +30,17 @@ export default function ProductsPage() {
     const [sortOption, setSortOption] = useState("popularity");
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter((product) =>
+    const filteredProducts = useMemo(() => products.filter((product) =>
         product.collection !== "Granite Cutter Slabs" &&
+        product.collection !== "Regular Tiles" &&
         product.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    ), [searchQuery]);
 
-    const sortedProducts = [...filteredProducts].sort((a, b) => {
+    const sortedProducts = useMemo(() => [...filteredProducts].sort((a, b) => {
         if (sortOption === "name-asc") return a.name.localeCompare(b.name);
         if (sortOption === "name-desc") return b.name.localeCompare(a.name);
         return 0; // Default popularity (id order)
-    });
+    }), [filteredProducts, sortOption]);
 
     return (
         <div className="min-h-screen">

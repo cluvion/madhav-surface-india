@@ -17,7 +17,10 @@ export default function QuickViewModal({ selectedProduct, onClose }) {
                     onClick={onClose}
                 >
                     <motion.div
-                        layoutId={`product-card-${selectedProduct.id}`}
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.9, opacity: 0 }}
+                        transition={{ type: "spring", duration: 0.3 }}
                         className="bg-card w-full max-w-2xl overflow-hidden rounded-2xl shadow-2xl relative flex flex-col md:flex-row"
                         onClick={(e) => e.stopPropagation()}
                     >
@@ -33,7 +36,7 @@ export default function QuickViewModal({ selectedProduct, onClose }) {
                                 src={selectedProduct.image}
                                 alt={selectedProduct.name}
                                 fill
-                                className="object-cover scale-150"
+                                className="object-cover object-bottom scale-150"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>

@@ -43,22 +43,24 @@ const ProductSection = ({ product }) => {
 
   return (
     <div className="flex items-center justify-center overflow-visible">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
-        {/* Left: Image */}
-        <div className="relative flex justify-center">
-          <CometCard>
-            <div className="w-full h-full overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center w-full">
+        {/* Left: Image — 16:9 landscape */}
+        <div className="w-full">
+          <CometCard className="w-full">
+            {/* aspect-video = 16:9, position relative so fill works */}
+            <div className="relative w-full aspect-video overflow-hidden">
               <Image
                 src={product.image}
                 alt={product.name || 'Product'}
-                className="h-full w-full object-cover relative group scale-[1.3] md:scale-150" 
-                width={1000}
-                height={1000}
+                fill
+                className="object-cover object-bottom scale-[1.3]"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 loading="lazy"
               />
             </div>
           </CometCard>
         </div>
+
         {/* Right: Product Info */}
         <div className="space-y-4 md:space-y-6">
           <div className="text-center md:text-left">
@@ -96,9 +98,9 @@ const ProductSection = ({ product }) => {
               Order Sample
             </Button>
             <Link href={"/contact-us"} className="w-full">
-              <Button 
-              variant={"primary"}
-              className={"w-full sm:w-auto"}
+              <Button
+                variant={"primary"}
+                className={"w-full sm:w-auto"}
               >
                 Contact to Buy
               </Button>

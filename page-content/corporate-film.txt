@@ -1,0 +1,9 @@
+PAGE: Corporate Film (/corporate-film)
+
+[Header / Hero]
+Corporate Film
+(Path: Corporate Film)
+
+[Video Section]
+YouTube Video: https://www.youtube.com/embed/0rNFT79ossE?si=kyASiZhDNgtZIPX8
+Title: YouTube video player

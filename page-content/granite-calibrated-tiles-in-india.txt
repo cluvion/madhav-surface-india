@@ -1,0 +1,14 @@
+PAGE: Granite Calibrated Tiles In India (/granite-calibrated-tiles-in-india)
+
+[Header / Hero]
+Tiles
+(Path: Tiles)
+
+[Main Section]
+TILE
+Granite Calibrated Tiles
+
+Granite is one of the most durable natural stones, renowned for its hardness, durability, and timeless reflective appearance. Calibrated granite tiles have become the industry standard, with precise sizing ensured through the calibration process. These tiles deliver a sophisticated, luxurious, and elegant aesthetic for both floors and walls, offering the authentic look of natural granite stone. Perfect for both indoor and outdoor applications, including kitchens, restrooms, living areas, and commercial spaces, calibrated granite tiles are scratch-resistant, highly durable, and built to last, reducing wear and tear. At Madhav Marbles, one of the top marble manufacturers in India, we offer a wide range of calibrated granite tiles in various sizes, designs, and styles to meet your project requirements. Explore our premium collection today and find the perfect granite tiles to enhance your space.
+
+[Product Grid]
+(Products displayed from the 'regular-tiles' collection — product cards rendered dynamically)

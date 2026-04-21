@@ -14,38 +14,30 @@ import PageHeader from '@/components/pageheader'
 export default function Technology() {
 
     const images = [
-        {
-            id: 10,
-            image: "/assets/technology/f1-1.png",
-        },
-        {
-            id: 11,
-            image: "/assets/technology/2-1.jpg",
-        },
-        {
-            id: 1,
-            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/03.webp",
-        },
+        // {
+        //     id: 1,
+        //     image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/03.webp",
+        // },
         {
             id: 2,
             image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05%20ok.webp",
         },
-        {
-            id: 3,
-            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05.webp",
-        },
-        {
-            id: 4,
-            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05FF.webp",
-        },
-        {
-            id: 5,
-            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/09JJ.webp",
-        },
-        {
-            id: 6,
-            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/11%20HHH%20(3).webp",
-        },
+        // {
+        //     id: 3,
+        //     image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05.webp",
+        // },
+        // {
+        //     id: 4,
+        //     image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05FF.webp",
+        // },
+        // {
+        //     id: 5,
+        //     image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/09JJ.webp",
+        // },
+        // {
+        //     id: 6,
+        //     image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/11%20HHH%20(3).webp",
+        // },
         {
             id: 7,
             image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/11%20HHH%20(5).webp",
@@ -54,10 +46,10 @@ export default function Technology() {
             id: 8,
             image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/DJI_0025.webp",
         },
-        {
-            id: 9,
-            image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/DJI_0124.webp",
-        },
+        // {
+        //     id: 9,
+        //     image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/DJI_0124.webp",
+        // },
     ];
 
     return (
@@ -93,8 +85,123 @@ export default function Technology() {
                     </div>
                 </div>
 
+                    <div className="mt-16">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            {/* Table 1: Granite Tile Plant */}
+                            <div className="bg-white/5 border border-border/50 rounded-2xl p-6 shadow-sm">
+                                <div className="border-b border-border/50 pb-4 mb-4">
+                                    <h3 className="heading text-2xl text-foreground font-medium flex items-center">
+                                        <span className="w-1.5 h-6 bg-primary mr-3 rounded-full"></span>
+                                        Our Granite Tile Plant
+                                    </h3>
+                                </div>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead>
+                                            <tr className="text-foreground/70 border-b border-border/50 text-sm tracking-wider uppercase">
+                                                <th className="py-4 px-2 font-medium">Equipment Type</th>
+                                                <th className="py-4 px-2 font-medium">Company</th>
+                                                <th className="py-4 px-2 font-medium text-center">Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="text-foreground/90 divide-y divide-border/30">
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">M-590 Block Cutter</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">3</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">M-580 Block Cutter</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">4</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Calibration Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Resining Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Grinding & Polishing Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Tile Resin Plant</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            {/* Table 2: Granite Slab Plant */}
+                            <div className="bg-white/5 border border-border/50 rounded-2xl p-6 shadow-sm">
+                                <div className="border-b border-border/50 pb-4 mb-4">
+                                    <h3 className="heading text-2xl text-foreground font-medium flex items-center">
+                                        <span className="w-1.5 h-6 bg-primary mr-3 rounded-full"></span>
+                                        Our Granite Slab Plant
+                                    </h3>
+                                </div>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead>
+                                            <tr className="text-foreground/70 border-b border-border/50 text-sm tracking-wider uppercase">
+                                                <th className="py-4 px-2 font-medium">Equipment Type</th>
+                                                <th className="py-4 px-2 font-medium">Company</th>
+                                                <th className="py-4 px-2 font-medium text-center">Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="text-foreground/90 divide-y divide-border/30">
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Wire Dressing Machines</td>
+                                                <td className="py-4 px-2 text-foreground/70">bidese impianti</td>
+                                                <td className="py-4 px-2 text-center font-bold">3</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Gangsaws</td>
+                                                <td className="py-4 px-2 text-foreground/70">GASPARI MENOTTI</td>
+                                                <td className="py-4 px-2 text-center font-bold">6</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Edge Trimming Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Slab Polishing Lines</td>
+                                                <td className="py-4 px-2 text-foreground/70">breton</td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Resin Line ( Epoxy Line)</td>
+                                                <td className="py-4 px-2 text-foreground/70">S.E.I.</td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Bridge Milling Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">GMM</td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Flaming Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">maema</td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 {/* Project Carousel Section */}
-                <div className="relative mt-8 md:mt-16">
+                <div className="relative mt-8 md:mt-24">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
                         {images.map((image) => (
                             <div key={image.id} className="relative aspect-square w-full">

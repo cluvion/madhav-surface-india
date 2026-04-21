@@ -45,12 +45,20 @@ const links = [
                 href: '/granite-cutter-slabs-supplier',
             },
             {
-                title: 'Marble | Sandstone | Quartzite',
-                href: '/marble-sandstone-quartzite-exporter-supplier',
-            },
-            {
                 title: 'Exotics & Exclusives',
                 href: '/marbles-and-granite-suppliers-in-india',
+            },
+            {
+                title: 'Quartzites',
+                href: '/quartzites-collection',
+            },
+            {
+                title: 'Granite',
+                href: '/granite-collection',
+            },
+            {
+                title: 'Marble',
+                href: '/marble-collection',
             },
             {
                 title: 'Quartz',

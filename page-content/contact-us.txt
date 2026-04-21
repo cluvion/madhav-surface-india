@@ -1,0 +1,38 @@
+PAGE: Contact Us (/contact-us)
+
+[Header / Hero]
+Contact Us
+Home > Contact Us
+
+[Get In Touch Section]
+GET IN TOUCH
+Need Any Marble & Tiles Services Help?
+
+From the moment marble emerges from the earth's embrace, it begins a journey of transformation guided by our innovative techniques and the skilled hands of our artisans who carefully transform the raw stone into exquisite pieces.
+
+Support
++91 8875023456
+madhav@madhavmarbles.com
+
+Address
+1st Floor, Mumal Towers, 16 Saheli Marg, Udaipur 313001, Rajasthan, India
+
+[Map Section]
+(Interactive map rendered by MapSection component)
+
+[FAQ Section]
+HAVE ANY QUESTIONS?
+Frequently Asked Questions
+(FAQ items rendered by Faq component)
+
+Business Hours:
+- Monday - Thursday: 9:00 AM - 6:00 PM
+- Friday: Holiday
+- Saturday - Sunday: 9:00 AM - 6:00 PM
+
+SEO:
+Title: (from pageMetadata.contact.title)
+Description: (from pageMetadata.contact.description)
+Keywords: (from pageMetadata.contact.keywords)
+URL: /contact-us
+Type: website

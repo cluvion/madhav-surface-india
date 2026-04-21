@@ -8,6 +8,9 @@ export const products = [
   ...collectionTiles['granite-slabs'],
   ...collectionTiles['exotics-exclusive'],
   ...collectionTiles['granite-cutter-slabs-supplier'],
+  ...collectionTiles['quartzites'],
+  ...collectionTiles['granite'],
+  ...collectionTiles['marbles'],
 ];
 
 

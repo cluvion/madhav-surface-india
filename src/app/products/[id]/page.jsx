@@ -46,7 +46,7 @@ const ProductPage = () => {
                     <Image
                         src={product.image}
                         alt="Background"
-                        className="w-full h-full object-cover scale-[1.5]"
+                        className="w-full h-full object-cover object-bottom scale-[1.5]"
                         fill
                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     {/* Optional overlay for better text contrast */}

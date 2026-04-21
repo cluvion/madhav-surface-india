@@ -16,6 +16,7 @@ export default function ProductSection() {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     const filteredProducts = products.filter((product) =>
+        product.collection !== "Regular Tiles" &&
         product.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
