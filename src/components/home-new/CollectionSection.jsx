@@ -13,9 +13,9 @@ const collections = [
     { name: "Granite Cutter Slabs", image: "/assets/collection/granite-cutter-slabs.png", href: "/granite-cutter-slabs-supplier" },
     { name: "Exotics & Exclusives", image: "/assets/collection/exotics.png", href: "/marbles-and-granite-suppliers-in-india" },
     { name: "Quartzites", image: "/assets/QUARTZITES/CRYSTALLO WHITE .webp", href: "/quartzites-collection" },
-    { name: "Granite", image: "/assets/GRANITE/SEA PEARL.webp", href: "/granite-collection" },
-    { name: "Marble", image: "/assets/Marbles/STATUARIO EXTRA.webp", href: "/marble-collection" },
-    { name: "Quartz", image: "/assets/collection/quartz.png", href: "https://www.madhavmarbles.com" },
+    // { name: "Granite", image: "/assets/GRANITE/SEA PEARL.webp", href: "/granite-collection" },
+    // { name: "Marble", image: "/assets/Marbles/STATUARIO EXTRA.webp", href: "/marble-collection" },
+    // { name: "Quartz", image: "/assets/collection/quartz.png", href: "https://www.madhavmarbles.com" },
 ];
 
 export default function CollectionSection() {
