@@ -51,7 +51,7 @@ export default async function sitemap() {
 
   // Product pages
   const productPages = products.map(product => ({
-    url: `${baseUrl}/product/${product.id}`,
+    url: `${baseUrl}/products/${product.id}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.8,

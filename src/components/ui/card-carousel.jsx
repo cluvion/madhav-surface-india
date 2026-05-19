@@ -166,7 +166,7 @@ export const CardCarousel = ({
                 return (
                   <SwiperSlide key={index}>
                     {isProduct ? (
-                      <Link href={`/product/${productId}`}>
+                      <Link href={`/products/${productId}`}>
                         {slideContent}
                       </Link>
                     ) : (

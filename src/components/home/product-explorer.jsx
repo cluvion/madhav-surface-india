@@ -493,7 +493,7 @@ const ProductExplorer = () => {
                         text="View Details"
                         variant="transparentBlack"
                         width={"w-full"}
-                        href={`/product/${product.id}`}
+                        href={`/products/${product.id}`}
                       />
                     </div>
                   </motion.div>

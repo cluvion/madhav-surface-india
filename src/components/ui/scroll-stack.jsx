@@ -77,7 +77,7 @@ const Card = ({
                             variant='secondary'
                             className="w-full max-w-56"
                         >
-                            <Link href={`/product/${id}`}>More Details</Link>
+                            <Link href={`/products/${id}`}>More Details</Link>
                         </Button>
                         <Button
                             variant="primary"
@@ -110,7 +110,7 @@ const Card = ({
                 {/* Button - below image on mobile */}
                 <div className='flex-col space-y-2 items-center text-center justify-center md:hidden order-3'>
                     <HoverButton
-                        href={`/product/${id}`}
+                        href={`/products/${id}`}
                         text='More Details'
                         variant='transparent'
                     />

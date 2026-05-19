@@ -99,7 +99,7 @@ const ProductGrid = ({
                 </div>
 
                 <HoverButton
-                  href={`/product/${product.id}`}
+                  href={`/products/${product.id}`}
                   text="More Details"
                   variant="transparentBlack"
                   width={"w-full"}
