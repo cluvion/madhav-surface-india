@@ -3,6 +3,8 @@ import { useParams } from 'next/navigation';
 import { products } from "@/constants/index";
 import ProductSection from '@/components/product/ProductSection';
 import Specifications from '@/components/product/Specifications';
+import ProductDetails from '@/components/product/ProductDetails';
+import ProductDescription from '@/components/product/ProductDescription';
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -84,6 +86,10 @@ const ProductPage = () => {
                 <ProductSection product={product} />
             </div>
 
+            <ProductDescription product={product} />
+
+            <ProductDetails product={product} />
+
             <Specifications product={product} />
 
             <Section>
@@ -103,7 +109,6 @@ const ProductPage = () => {
                     </div>
                 </div>
             </Section>
-
             <CtaSection />
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
