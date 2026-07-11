@@ -2860,8 +2860,8 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       {
         id: 'ee-015',
         name: 'Black Dahlia',
-        image: '/assets/exotic/black-dahlia.jpeg',
-        thumbnailImages: ['/assets/exotic/black-dahlia.jpeg'],
+        image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Black-Dahlia.jpeg',
+        thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Black-Dahlia.jpeg'],
         collection: 'Exotics & Exclusives',
         description: 'Black Dahlia Exotic Stone is also called Exotic Stone to indicate that it is unique compared to other black natural stones. The process it takes to create the black stone naturally, takes several million years. Exotic Stones differ from other natural stones due to their extremely rare formations and consistently unique, visually enticing patterns. Black Dahlia stone is known for its high-contrast veining and stone movement. Because of this, it is a sought after stone for design projects involving high-end hospitality designs, luxury apartments and villas, and high-end commercial architecture. Whether used as Black Dahlia stone countertops, feature walls, or expansive flooring, this exotic black stone for countertops offers both aesthetic excellence and long-term performance. Its ability to complement modern, contemporary, and even classic design themes makes it highly versatile.',
         color: 'Mixed',
@@ -2878,8 +2878,8 @@ The beautiful free-flowing veins and black background of the gorgeous natural Bl
       {
         id: 'ee-016',
         name: 'Forest White',
-        image: '/assets/exotic/forest-white.jpeg',
-        thumbnailImages: ['/assets/exotic/forest-white.jpeg'],
+        image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Forest-White.jpeg',
+        thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Forest-White.jpeg'],
         collection: 'Exotics & Exclusives',
         description: 'Forest White is a durable, premium marble featuring a creamy white background with wavy, greyish-brown streaks and dark grey spots. Renowned for its elegant appearance and high pressure resistance, this long-lasting stone is an architect favorite for high-end countertops, flooring, staircases, and accent walls. Madhav Marble & Granite Ltd. manufactures and supplies this beautiful material in slabs, tiles, and blocks. Contact us for premium quality natural stones.',
         color: 'Mixed',
@@ -2895,8 +2895,8 @@ The beautiful free-flowing veins and black background of the gorgeous natural Bl
       {
         id: 'ee-017',
         name: 'Jaisalmer',
-        image: '/assets/exotic/jaisalmer.jpeg',
-        thumbnailImages: ['/assets/exotic/jaisalmer.jpeg'],
+        image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Jaisalmer.jpeg',
+        thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Jaisalmer.jpeg'],
         collection: 'Exotics & Exclusives',
         description: 'Jaisalmer is a durable, earthy marble with a creamish-peach base, walnut-apricot veins, and subtle grey patches. Highly versatile and pressure-resistant, it is perfect for indoor and outdoor flooring, countertops, and cladding. Madhav Marble & Granite Ltd. supplies this premium stone in custom slabs, tiles, and blocks. Contact us for bulk orders.',
         color: 'Mixed',
@@ -2912,8 +2912,8 @@ The beautiful free-flowing veins and black background of the gorgeous natural Bl
       {
         id: 'ee-018',
         name: 'Nero Oceano',
-        image: '/assets/exotic/nero-oceano.jpeg',
-        thumbnailImages: ['/assets/exotic/nero-oceano.jpeg'],
+        image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Nero-Oceano.jpeg',
+        thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/Nero-Oceano.jpeg'],
         collection: 'Exotics & Exclusives',
         description: 'Nero Oceano is an exclusive black marble featuring parallel, edgy white and grey veins that create a dynamic, high-end look. A favorite among interior designers and architects for luxury commercial and residential projects, it delivers a stunning visual impact when paired with both light tones or sleek, dark elements. Perfect for countertops, backsplashes, vanities, and fireplaces, Madhav Marble & Granite Ltd. provides this premium, durable stone in custom slabs, tiles, and blocks. Contact us for bulk orders.',
         color: 'Mixed',
