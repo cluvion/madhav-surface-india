@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
+import { Slot, Slottable } from "@radix-ui/react-slot"
 import { cva } from "class-variance-authority";
 import { ArrowRight, ChevronsRight } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -42,19 +42,16 @@ function Button({
   const Comp = asChild ? Slot : "button"
 
   return (
-    <div
-      className={cn(buttonVariants({ variant, size, className }),"group")}>
-      <Comp
-        data-slot="button"
-        className="cursor-pointer"
-        {...props}
-      >
-        {props.children}
-      </Comp>
+    <Comp
+      data-slot="button"
+      className={cn(buttonVariants({ variant, size, className }), "group")}
+      {...props}
+    >
+      <Slottable>{props.children}</Slottable>
       {arrow && (
-        <ChevronsRight className="h-4 w-4 transition-transform duration-700 ease-in-out group-hover:translate-x-1" />
+        <ChevronsRight className="h-4 w-4 shrink-0 transition-transform duration-700 ease-in-out group-hover:translate-x-1" />
       )}
-    </div>
+    </Comp>
   );
 }
 

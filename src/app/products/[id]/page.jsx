@@ -5,6 +5,7 @@ import ProductSection from '@/components/product/ProductSection';
 import Specifications from '@/components/product/Specifications';
 import ProductDetails from '@/components/product/ProductDetails';
 import ProductDescription from '@/components/product/ProductDescription';
+import XLTileProductLayout from '@/components/product/XLTileProductLayout';
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -19,8 +20,8 @@ import CtaSection from '@/components/page/CtaSection';
 import ProductCard from "@/components/ui/ProductCard";
 import QuickViewModal from "@/components/ui/QuickViewModal";
 import { useState } from "react";
-
 // import { generateMetadata as generateSEOMetadata, generateProductSchema, generateBreadcrumbSchema } from "@/lib/seo";
+
 
 // Main Product Page Component
 const ProductPage = () => {
@@ -37,6 +38,24 @@ const ProductPage = () => {
                     <p className="text-gray-600">The requested product could not be found.</p>
                 </div>
             </div>
+        );
+    }
+
+    const relatedProducts = products.filter(
+        (p) => p.collection === product.collection && String(p.id) !== String(product.id)
+    );
+
+    // Use custom layout for Granite XL Tiles
+    if (product.collection === 'Granite XL Tiles') {
+        return (
+            <>
+                <XLTileProductLayout 
+                    product={product} 
+                    relatedProducts={relatedProducts} 
+                    setSelectedProduct={setSelectedProduct} 
+                />
+                <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            </>
         );
     }
 
@@ -92,23 +111,25 @@ const ProductPage = () => {
 
             <Specifications product={product} />
 
-            <Section>
-                {/* Section Header */}
-                <div className="text-center md:text-left">
-                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
-                        Related Products
-                    </h2>
-                </div>
-
-                {/* Project Carousel Section */}
-                <div className="relative mt-8 md:mt-16">
-                    <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {products.map((product) => (
-                            <ProductCard key={product.id} product={product} onQuickView={setSelectedProduct} />
-                        ))}
+            {relatedProducts.length > 0 && (
+                <Section>
+                    {/* Section Header */}
+                    <div className="text-center md:text-left">
+                        <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+                            Related Products
+                        </h2>
                     </div>
-                </div>
-            </Section>
+
+                    {/* Project Carousel Section */}
+                    <div className="relative mt-8 md:mt-16">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {relatedProducts.map((relProduct) => (
+                                <ProductCard key={relProduct.id} product={relProduct} onQuickView={setSelectedProduct} />
+                            ))}
+                        </div>
+                    </div>
+                </Section>
+            )}
             <CtaSection />
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>

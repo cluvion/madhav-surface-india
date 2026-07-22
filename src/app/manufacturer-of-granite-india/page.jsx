@@ -67,7 +67,7 @@ export default function ManufacturerOfGraniteIndia() {
             </div>
 
             {/* ScrollStack Section */}
-            <ScrollStack products={pageProducts} />
+            <ScrollStack products={pageProducts} zoom="scale-[1.1]" />
 
             <Section>
                 {/* Project Carousel Section */}

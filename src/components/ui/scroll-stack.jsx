@@ -101,7 +101,8 @@ const Card = ({
                                 fill
                                 className={`object-cover transition-transform duration-500 ${zoom || ''}`}
                                 loading="lazy"
-                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                                sizes="(max-width: 768px) 110vw, (max-width: 1z00px) 50vw, 33vw" 
+                             />
                             <div className="absolute inset-0 bg-foreground/5 z-10 pointer-events-none" />
                         </motion.div>
                     </div>

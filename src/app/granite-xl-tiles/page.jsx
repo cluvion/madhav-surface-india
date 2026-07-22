@@ -2,12 +2,12 @@
 import Section from '@/components/section'
 import PageHeader from '@/components/pageheader'
 import ProductCard from "@/components/ui/ProductCard";
-import { products } from "@/constants/index";
 import { useState } from "react";
-import Image from "next/image";
 import ParagraphSection from '@/components/page/ParagraphSection';
 import ApplicationsGridSection from "@/components/page/ApplicationsGridSection";
 import CtaSection from '@/components/page/CtaSection';
+import QuickViewModal from "@/components/ui/QuickViewModal";
+import { collectionTiles } from "@/constants/collectionTiles";
 
 
 // export const metadata = generateSEOMetadata({
@@ -18,44 +18,7 @@ import CtaSection from '@/components/page/CtaSection';
 //     type: "website"
 // });
 
-const img = [
-    {
-        id: 1,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/BLACK%20GALAXY%201200%20X%20600.webp",
-    },
-    {
-        id: 2,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/CASPIAN%20WHITE%201200%20X%20600.webp",
-    },
-    {
-        id: 3,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/COLOMBO%20JUPRANA%201200%20x%20600.webp",
-    },
-    {
-        id: 4,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/IMPERIAL%20WHITE%201200%20X%20600.webp",
-    },
-    {
-        id: 5,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/IVORY%20BROWN%201200%20X%20600.webp",
-    },
-    {
-        id: 6,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/KASHMIR%20CREAM%201200%20X%20600.webp",
-    },
-    {
-        id: 7,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/MEERA%20WHITE%201200%20X%20600.webp",
-    },
-    {
-        id: 8,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/STEEL%20GREY%20GIANO%201200%20X%20600.webp",
-    },
-    {
-        id: 9,
-        image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Manan%20-%20XL%20tiles%20webp/VISCOUNT%20WHITE%201200%20X%20600.webp",
-    },
-];
+const xlTileProducts = collectionTiles['granite-xl-tiles'] || [];
 
 
 export default function GraniteCalibratedTilesInIndia() {
@@ -82,15 +45,14 @@ export default function GraniteCalibratedTilesInIndia() {
                         <p>Find a diverse collection of exclusive granite XL tiles readily available to export by the leading Granite tiles Suppliers and Exporters. Browse through our range of granite tiles and find the perfect one for your requirements.</p>
                         <div className="relative mt-8 md:mt-16">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
-                                {img.map((image) => (
-                                    <div key={image.id} className="relative aspect-[3/4] w-full overflow-hiddenbg-neutral-100 group">
-                                        <Image
-                                            src={image.image}
-                                            alt={`Image ${image.id}`}
-                                            fill
-                                            className="object-cover object-top group-hover:scale-110 transition-transform duration-500 ease-in-out"
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                                    </div>
+                                {xlTileProducts.map((product) => (
+                                    <ProductCard
+                                        key={product.id}
+                                        product={product}
+                                        onQuickView={setSelectedProduct}
+                                        aspectClassName="aspect-[3/4]"
+                                        imageClassName="object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                                    />
                                 ))}
                             </div>
 
@@ -177,6 +139,8 @@ export default function GraniteCalibratedTilesInIndia() {
                 </div>
             </Section>
             <CtaSection />
+            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
     )
 }
+

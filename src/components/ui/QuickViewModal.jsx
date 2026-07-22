@@ -31,12 +31,12 @@ export default function QuickViewModal({ selectedProduct, onClose }) {
                             <X className="w-5 h-5" />
                         </button>
 
-                        <div className="w-full md:w-1/2 relative aspect-square overflow-hidden bg-muted">
+                        <div className={`w-full md:w-1/2 relative overflow-hidden bg-neutral-100 ${selectedProduct.collection === 'Granite XL Tiles' ? 'aspect-[3/4]' : 'aspect-square'}`}>
                             <Image
                                 src={selectedProduct.image}
                                 alt={selectedProduct.name}
                                 fill
-                                className="object-cover object-bottom scale-150"
+                                className={`object-cover ${selectedProduct.collection === 'Granite XL Tiles' ? 'object-top' : 'object-bottom scale-150'}`}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>
@@ -51,6 +51,7 @@ export default function QuickViewModal({ selectedProduct, onClose }) {
                                 <a href="/contact-us">Enquire Now</a>
                             </Button>
                         </div>
+
                     </motion.div>
                 </motion.div>
             )}

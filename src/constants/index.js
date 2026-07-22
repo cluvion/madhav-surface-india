@@ -11,6 +11,7 @@ export const products = [
   ...(collectionTiles['quartzites'] || []),
   ...(collectionTiles['granite'] || []),
   ...(collectionTiles['marbles'] || []),
+  ...(collectionTiles['granite-xl-tiles'] || []),
 ];
 
 

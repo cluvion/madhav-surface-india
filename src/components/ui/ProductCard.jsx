@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Eye, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function ProductCard({ product, onQuickView, imageClassName }) {
+export default function ProductCard({ product, onQuickView, imageClassName, aspectClassName }) {
     return (
         <motion.div
             className="flex flex-col relative overflow-hidden"
         >
-            <div className="group relative aspect-square overflow-hidden mb-2">
+            <div className={`group relative ${aspectClassName || 'aspect-square'} overflow-hidden mb-2`}>
                 <Image
                     src={product.image}
                     alt={product.name}
@@ -28,12 +28,11 @@ export default function ProductCard({ product, onQuickView, imageClassName }) {
                 <div className="hidden lg:flex absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 justify-center">
                     <Button
                         arrow={false}
-                        size="icon"
                         variant="secondary"
-                        className="p-6 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground"
+                        className="h-14 w-14 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground flex items-center justify-center p-0"
                         onClick={() => onQuickView(product)}
                     >
-                        <Eye className="w-5 h-5 cursor-pointer" />
+                        <Eye className="w-6 h-6 cursor-pointer" />
                     </Button>
                 </div>
             </div>
