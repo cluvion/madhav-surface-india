@@ -2,6 +2,10 @@ import { getBlogPostsGraphQL } from '@/lib/wordpress-graphql';
 import BlogContainer from '@/components/blog/BlogContainer';
 import Image from 'next/image';
 
+// Generate on-demand, not at build time — avoids build failures when WordPress is down
+export const dynamic = 'force-dynamic';
+export const revalidate = 3600; // Cache for 1 hour
+
 export const metadata = {
   title: 'Blog - Madhav Surfaces | Quartz Insights & Design Tips',
   description: 'Discover the latest insights, trends, and expert advice about quartz surfaces, kitchen design, and home improvement from Madhav Surfaces.',
@@ -14,7 +18,16 @@ export const metadata = {
 
 export default async function BlogPage() {
   // Fetch initial blog posts using GraphQL (much smaller response size)
-  const { posts, pagination } = await getBlogPostsGraphQL(12, null);
+  let posts = [];
+  let pagination = {};
+  
+  try {
+    const result = await getBlogPostsGraphQL(12, null);
+    posts = result.posts;
+    pagination = result.pagination;
+  } catch (error) {
+    console.error('Error fetching blog posts:', error);
+  }
 
   return (
     <div >

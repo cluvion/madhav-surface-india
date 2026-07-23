@@ -1,5 +1,8 @@
 import { getAllPostsForSitemapGraphQL } from '@/lib/wordpress-graphql';
 
+// Generate on-demand, not at build time
+export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
 /**
  * Generate sitemap for blog posts using GraphQL
  * This creates a dynamic sitemap that includes all published blog posts

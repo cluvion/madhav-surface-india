@@ -15,18 +15,10 @@ import {
 // Allow pages not generated at build time to be rendered via ISR
 export const dynamicParams = true;
 
-// Generate static params for all blog posts using GraphQL
+// Skip static generation at build time — blog pages are generated on-demand via ISR.
+// This prevents build failures when the WordPress GraphQL endpoint is slow or unavailable.
 export async function generateStaticParams() {
-  try {
-    const slugs = await getAllPostSlugsGraphQL(1000); // Get up to 1000 post slugs
-
-    return slugs.map((slug) => ({
-      slug: slug,
-    }));
-  } catch (error) {
-    console.error('Error generating static params with GraphQL:', error);
-    return [];
-  }
+  return [];
 }
 
 // Generate metadata for each blog post using GraphQL
