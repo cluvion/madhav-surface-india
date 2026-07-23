@@ -12,6 +12,9 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
+// Allow pages not generated at build time to be rendered via ISR
+export const dynamicParams = true;
+
 // Generate static params for all blog posts using GraphQL
 export async function generateStaticParams() {
   try {
@@ -28,41 +31,48 @@ export async function generateStaticParams() {
 
 // Generate metadata for each blog post using GraphQL
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const post = await getBlogPostBySlugGraphQL(slug);
+  try {
+    const { slug } = await params;
+    const post = await getBlogPostBySlugGraphQL(slug);
 
-  if (!post) {
+    if (!post) {
+      return {
+        title: 'Post Not Found - Madhav Surfaces',
+      };
+    }
+
     return {
-      title: 'Post Not Found - Madhav Surfaces',
+      title: `${post.title} - Madhav Surfaces Blog`,
+      description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
+      openGraph: {
+        title: post.title,
+        description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
+        type: 'article',
+        publishedTime: post.date,
+        modifiedTime: post.modified,
+        authors: [post.author],
+        images: post.featuredImage ? [
+          {
+            url: post.featuredImage,
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          }
+        ] : [],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.title,
+        description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
+        images: post.featuredImage ? [post.featuredImage] : [],
+      },
+    };
+  } catch (error) {
+    console.error(`Error generating metadata for slug:`, error);
+    return {
+      title: 'Blog - Madhav Surfaces',
     };
   }
-
-  return {
-    title: `${post.title} - Madhav Surfaces Blog`,
-    description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
-      type: 'article',
-      publishedTime: post.date,
-      modifiedTime: post.modified,
-      authors: [post.author],
-      images: post.featuredImage ? [
-        {
-          url: post.featuredImage,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        }
-      ] : [],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
-      images: post.featuredImage ? [post.featuredImage] : [],
-    },
-  };
 }
 
 export default async function BlogPostPage({ params }) {

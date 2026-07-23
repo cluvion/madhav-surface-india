@@ -35,7 +35,7 @@ const graphqlClient = new GraphQLClient(GRAPHQL_ENDPOINT, {
  * @returns {Promise<Object>} Query result
  */
 export async function executeGraphQLQuery(query, variables = {}, options = {}) {
-  const { retries = 2, timeout = 10000 } = options;
+  const { retries = 2, timeout = 30000 } = options;
 
   let lastError;
 

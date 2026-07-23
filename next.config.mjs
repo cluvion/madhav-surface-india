@@ -50,6 +50,9 @@ const nextConfig = {
     // Increase timeout for external images
     minimumCacheTTL: 60,
   },
+  // Increase timeout for static page generation (default 60s)
+  // Prevents build failures when WordPress GraphQL is slow
+  staticPageGenerationTimeout: 120,
 };
 
 export default nextConfig;
