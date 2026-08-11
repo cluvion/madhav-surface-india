@@ -26,7 +26,7 @@ export default function ProductSection() {
     const mobileProducts = filteredProducts.slice(0, 3);
 
     return (
-        <Section>
+        <Section id="products">
             {/* Header: Controls */}
             <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
                 <div className="flex items-center gap-4 w-full md:w-auto">

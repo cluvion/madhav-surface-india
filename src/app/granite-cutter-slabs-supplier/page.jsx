@@ -96,7 +96,7 @@ export default function GraniteCutterSlabsSupplier() {
                             </li>
                         </ul>
                     }
-                    src="/assets/stones/stone6.png"
+                    src="/images/Stone7.png"
                     alt="Stacked Granite Samples"
                 />
 

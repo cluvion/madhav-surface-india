@@ -124,7 +124,7 @@ export const HeroHeader = ({
                                                 <ul className="grid w-[200px] gap-4">
                                                     <li>
                                                         <NavigationMenuLink asChild>
-                                                            <Link href="/manufacturer-of-granite-india">Granite Slabs</Link>
+                                                            <Link href="/manufacturer-of-granite-india">Granite - South Facility</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
                                                             <Link href="/granite-cutter-slabs-supplier">Granite Cutter Slabs</Link>
@@ -137,7 +137,7 @@ export const HeroHeader = ({
                                                             <Link href="/quartzites-collection">Quartzites</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
-                                                            <Link href="/granite-collection">Granite</Link>
+                                                            <Link href="/granite-collection">Granite - North Facility</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
                                                             <Link href="/marble-collection">Marble</Link>
@@ -411,12 +411,12 @@ export const HeroHeader = ({
 
                                             {activeMobileSection === 'stone-slabs' && (
                                                 <div className="space-y-1 pb-2">
-                                                    <Link href="/manufacturer-of-granite-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite Slabs</Link>
+                                                    <Link href="/manufacturer-of-granite-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite - South Facility</Link>
                                                     <Link href="/granite-cutter-slabs-supplier" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite Cutter Slabs</Link>
 
                                                     <Link href="/marbles-and-granite-suppliers-in-india" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Exotics & Exclusives</Link>
                                                     <Link href="/quartzites-collection" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Quartzites</Link>
-                                                    <Link href="/granite-collection" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite</Link>
+                                                    <Link href="/granite-collection" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Granite - North Facility</Link>
                                                     <Link href="/marble-collection" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Marble</Link>
                                                     <Link href="https://www.madhavquartz.com" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Quartz</Link>
                                                 </div>

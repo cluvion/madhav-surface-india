@@ -124,7 +124,7 @@ export default function MarbleCollection() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
                             <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Kitchen Countertops" width={1000} height={1000} className="object-cover" />
+                                <Image src="/images/kitchen-countertops.png" alt="Kitchen Countertops" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Kitchen Countertops</h3>
@@ -135,7 +135,7 @@ export default function MarbleCollection() {
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
                             <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Flooring" width={1000} height={1000} className="object-cover" />
+                                <Image src="/images/flooring.png" alt="Flooring" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Flooring</h3>
@@ -146,7 +146,7 @@ export default function MarbleCollection() {
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
                             <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Wall Cladding" width={1000} height={1000} className="object-cover" />
+                                <Image src="/images/wall-cladding.png" alt="Wall Cladding" width={1000} height={1000} className="object-cover" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Wall Cladding</h3>

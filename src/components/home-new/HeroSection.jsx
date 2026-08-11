@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function HeroSection() {
     return (
@@ -57,12 +58,14 @@ export default function HeroSection() {
                     </ul>
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-6">
-                        <Button className="w-full sm:w-auto">
-                            Explore Collection
+                        <Button className="w-full sm:w-auto" asChild>
+                            <Link href="#products">Explore Collection</Link>
                         </Button>
-                        <Button variant="secondary" className="w-full sm:w-auto">
-                            Request a Quote
-                        </Button>
+                        {/* <Button variant="secondary" className="w-full sm:w-auto" asChild>
+                            <Link href="/contact">
+                                Request a Quote
+                            </Link>
+                        </Button> */}
                     </div>
                 </motion.div>
             </div>

@@ -6,14 +6,19 @@ import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 
 const SpecialProductSectionData = [
-    { id: 1, name: "Dione White", image: "/assets/Step5.png", href: "/products/dione-white" },
-    { id: 2, name: "Limestone", image: "/assets/Step6.png", href: "/products/limestone" },
-    { id: 3, name: "Marble Aretusa", image: "/assets/Step7.png", href: "/products/marble-aretusa" },
-    { id: 4, name: "Quartz", image: "/assets/Step5.png", href: "/products/quartz" },
-    { id: 5, name: "Dione Spider", image: "/assets/Step6.png", href: "/products/dione-spider" },
-    { id: 6, name: "Travertine", image: "/assets/Step7.png", href: "/products/travertine" },
-    { id: 7, name: "Dione Nuvolato", image: "/assets/Step5.png", href: "/products/dione-nuvolato" },
-    { id: 8, name: "Granite", image: "/assets/Step6.png", href: "/products/granite" },
+    { id: 1, name: "Blue Deep", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/BLUE%20DEEP%20BL%2028847A%20BDL%20109429.webp", href: "/products/ee-001" },
+    { id: 2, name: "Crystalita Blue", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTALITA%20BLUE%20BL%2022640%20%20SL%2051-61.webp", href: "/products/ee-006" },
+    { id: 3, name: "Megma", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MAGMA%20BL%203459%20SL%2029-39.webp", href: "/products/ee-010" },
+    { id: 4, name: "Volupia Maestro", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/VOLUPIA%20MAESTRO%20BL%2028153%20BDL%20114404.webp", href: "/products/ee-013" },
+    { id: 5, name: "Laguna Crystal", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/LAGUNA%20CRYSTAL%20BL%2001-23%20BDL%2011090.webp", href: "/products/ee-009" },
+    { id: 6, name: "Crystal Soulages", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTAL%20SOULAGES%20BL%2028932%20BDL%20112364.webp", href: "/products/ee-005" },
+    { id: 7, name: "Crystallo Classico", image: "/assets/QUARTZITES/CRYSTALLO CLASSICO .webp", href: "/products/qz-001" },
+    { id: 8, name: "Pandora White", image: "/assets/QUARTZITES/PANDORA WHITE.webp", href: "/products/qz-012" },
+    { id: 9, name: "Brown Fantasy", image: "/assets/Marbles/BROWN FANTASY.webp", href: "/products/mb-009" },
+    { id: 10, name: "Panda White", image: "/assets/Marbles/PANDA WHITE.webp", href: "/products/mb-019" },
+    { id: 11, name: "Statuario Extra", image: "/assets/Marbles/STATUARIO EXTRA.webp", href: "/products/mb-024" },
+    { id: 12, name: "Astoria", image: "/assets/granite-slabs/astoria-300x227.jpeg", href: "/products/gs-005" },
+    { id: 13, name: "Colonial White", image: "/assets/granite-cutter-slabs-supplier/COLONIAL-WHITE-1.png", href: "/products/gcss-004" },
 ];
 
 export default function SpecialProductSection() {
@@ -89,7 +94,7 @@ export default function SpecialProductSection() {
                                                 <img
                                                     src={item.image}
                                                     alt={item.name}
-                                                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                                    className="h-full w-full object-cover transition-transform duration-700 ease-out scale-120"
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
                                             </div>

@@ -30,7 +30,7 @@ const points = [
         subtitle: "Precision Technology",
         description:
             "Equipped with eco-friendly gang saws and polishing lines imported directly from Italy for razor-sharp dimensional accuracy and pristine surface gloss.",
-        image: "/assets/Step6.png",
+        image: "/images/sw_1.jpeg",
     },
     {
         number: 3,
@@ -48,7 +48,7 @@ const points = [
         subtitle: "Unmatched Quality",
         description:
             "Every slab undergoes strict multi-point inspections for density, stain resistance, structural integrity, and color uniformity.",
-        image: "/assets/Step7.png",
+        image: "/images/sw_2.jpeg",
     },
 ];
 

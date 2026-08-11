@@ -67,7 +67,7 @@ const Profile = () => {
                         <p>
                             Established as a <strong>100% Export-Oriented Unit, Madhav Marbles &amp; Granite Ltd.</strong> has spent over three decades mastering the art of natural stone processing. From the mineral-rich heartlands of India to luxury spaces around the globe, we bring raw natural beauty to life through precision, passion, and sustainable technology.
                         </p>
-                        
+
                         <div>
                             <h3 className="text-xl font-bold mb-3 text-foreground">Dual-Hub Strategic Advantage</h3>
                             <p className="mb-3">We operate two state-of-the-art facilities positioned right at the source of India&apos;s most prized natural quarries:</p>
@@ -118,7 +118,7 @@ const Profile = () => {
                         <p>
                             From day one, <strong>Madhav Marbles &amp; Granites Ltd.</strong> was built with a singular vision: to bring India&apos;s finest natural stone to the world. Operating as a <strong>100% Export-Oriented Unit since 1989</strong>, we don&apos;t just supply stone—we elevate architectural possibilities.
                         </p>
-                        
+
                         <div>
                             <h3 className="text-xl font-bold mb-4 text-foreground">Why Leading Global Partners Trust Us:</h3>
                             <ul className="space-y-4 ml-2 md:ml-4">
@@ -143,10 +143,101 @@ const Profile = () => {
                     </div>
                 </div>
 
-                {/* Project Carousel Section */}
-                <div className="mt-8 md:mt-16">
-                    <Carousel images={images} />
+                {/* State of the art Italian Machines Table */}
+                <div className="mt-12 md:mt-20">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+                        State of the art Italian Machines
+                    </h3>
+                    <div className="overflow-x-auto">
+                        <table className="w-full border-collapse border border-foreground/20 text-sm md:text-base">
+                            <tbody>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Wire Dressing Machines</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">M-590 Black Cutter</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Gargsaws</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">M-530 Black Cutter</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Edge Trimming Machine</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Calibration Machine</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Slab Polishing Lines</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Resining Machine</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Resin Line Epoxy Line</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Grinding &amp; Polishing Machine</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Bridge Milling Machine</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Tile Resin Plast</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Flaming Machine</td>
+                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
+                {/* Serving the World Table */}
+                <div className="mt-12 md:mt-20">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+                        SERVING THE WORLD:
+                    </h3>
+                    <div className="overflow-x-auto">
+                        <table className="w-full border-collapse border border-foreground/20 text-sm md:text-base">
+                            <tbody>
+                                {[
+                                    ["Albania", "Lebanon", "South Africa"],
+                                    ["Algeria", "Puerto Rico", "United States of America"],
+                                    ["Hungary", "Cyprus", "Germany"],
+                                    ["Argentina", "Libya", "Netherlands"],
+                                    ["Indonesia", "Romania", "Spain"],
+                                    ["Australia", "Czech", "Uruguay"],
+                                    ["Iran", "Lithuania", "Celebrattag-31"],
+                                    ["Austria", "Russia", "Hong Kong"],
+                                    ["Italy", "Switzerland", "New Zealand"],
+                                    ["Bahamas", "Denmark", "Sweden"],
+                                    ["Jordan", "Macedonia", "Vietnam"],
+                                    ["Bulgaria", "Serbia", ""],
+                                    ["Belgium", "Trinidad & Tobago", ""],
+                                    ["Japan", "Egypt", ""],
+                                    ["Bosnia & Herzegovina", "Malaysia", ""],
+                                    ["Kenya", "Singapore", ""],
+                                    ["Nigeria Oman", "Turkey", ""],
+                                    ["Cameroon", "Estonia", ""],
+                                    ["Kosovo", "Maldives", ""],
+                                    ["Palestine", "Slovakia", ""],
+                                    ["Canada", "UAE", ""],
+                                    ["Kuwait", "Finland", ""],
+                                    ["Poland", "Montenegro", ""],
+                                    ["Colombia", "Slovenia", ""],
+                                    ["Latvia", "UK", ""],
+                                    ["Portugal", "France", ""],
+                                    ["Croatia", "Morocco", ""],
+                                ].map((row, i) => (
+                                    <tr key={i}>
+                                        <td className="border border-foreground/20 px-4 py-2 text-foreground font-medium w-1/3">{row[0]}</td>
+                                        <td className="border border-foreground/20 px-4 py-2 text-foreground font-medium w-1/3">{row[1]}</td>
+                                        <td className="border border-foreground/20 px-4 py-2 text-foreground font-medium w-1/3">{row[2]}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                {/* Project Carousel Section */}
+                {/* <div className="mt-8 md:mt-16">
+                    <Carousel images={images} />
+                </div> */}
 
             </Section>
         </div>

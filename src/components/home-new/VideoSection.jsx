@@ -14,7 +14,7 @@ export default function VideoSection() {
             <div className="relative">
                 <div className="relative aspect-[7/3]">
                     <Image
-                        src="/assets/video-bg.png"
+                        src="/images/video_bg.jpeg"
                         alt="Hero Background"
                         width={1920}
                         height={1080}
@@ -22,7 +22,7 @@ export default function VideoSection() {
                         priority
                     />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/40" />
 
                 <div className="z-10 absolute inset-0 flex items-center justify-center px-4 md:px-0">
                     {/* <Video /> */}

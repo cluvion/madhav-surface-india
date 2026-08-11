@@ -108,7 +108,7 @@ const Contact = () => {
           {/* Left Image */}
           <div className="relative aspect-[4/3] lg:aspect-auto h-full min-h-[400px] w-full overflow-hidden bg-neutral-100">
             <Image
-              src="/assets/Step5.png" // Placeholder - adjust as needed
+              src="/images/contact.jpeg" // Placeholder - adjust as needed
               alt="Marble Showroom"
               fill
               className="object-cover object-right"
