@@ -5,7 +5,7 @@ export default function TableSection({
     title = "Granite specifications",
     colors = "black, brown, green, white, and more",
     forms = "Slabs, Tiles, calibrated in Regular and XL tiles",
-    finishes = "polished, flamed, honed, flamed+brushed, giano, leathe",
+    finishes = "polished, flamed, honed, flamed+brushed, giano, leather",
     slabThickness = "(2-12 cm), (2,3,4 cm)",
     tiles = [
         "610 x 305 x 10 mm",

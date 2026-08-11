@@ -59,8 +59,8 @@ export default function TestimonialsSection() {
     }, [currentIndex, testimonials.length]);
 
     return (
-        // <section className="my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14 bg-foreground">
-        <Section>
+        <section className="my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14 bg-foreground">
+            {/* <Section> */}
             {/* Background Text */}
             {/* <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
                 <span className="block text-[20vw] font-bold text-neutral-50" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -81,10 +81,10 @@ export default function TestimonialsSection() {
                     </div>
                     <div className="lg:w-2/3">
                         <div className="text-center md:text-left">
-                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
+                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4 text-white">
                                 <span className="mr-2 text-lg text-primary">¬</span> OUR TESTIMONIALS
                             </span>
-                            <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
+                            <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-white">
                                 Here&apos;s What warm words our clients say
                                 {/* <span className="text-primary "> Testimonials</span> */}
                             </h2>
@@ -154,7 +154,7 @@ export default function TestimonialsSection() {
                                         if (timeoutRef.current) clearTimeout(timeoutRef.current);
                                         setCurrentIndex(i);
                                     }}
-                                    className="bg-foreground cursor-pointer relative block overflow-hidden hover:bg-primary/60"
+                                    className="bg-white/20 cursor-pointer relative block overflow-hidden hover:bg-white/60"
                                     style={{
                                         minWidth: CIRCLE_SIZE,
                                         maxWidth: BAR_WIDTH,
@@ -168,7 +168,7 @@ export default function TestimonialsSection() {
                                             animate={{ width: "100%" }}
                                             exit={{ width: 0 }}
                                             transition={{ duration: DURATION / 1000, ease: "linear" }}
-                                            className="bg-primary absolute top-0 left-0 h-full rounded-full"
+                                            className="bg-white absolute top-0 left-0 h-full rounded-full"
                                         />
                                     )}
                                 </motion.button>
@@ -177,6 +177,7 @@ export default function TestimonialsSection() {
                     </div>
                 </div>
             </div>
-        </Section>
+            {/* </Section> */}
+        </section>
     );
 }

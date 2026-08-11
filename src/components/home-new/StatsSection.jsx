@@ -12,22 +12,22 @@ export default function StatsSection() {
 
     const stats = [
         {
-            number: 35,
+            number: 36,
             suffix: "+",
-            label: "Years of Experience",
-            description: "Crafting premium surfaces with unmatched expertise"
+            label: "Years of Industry Mastery",
+            description: "Over three decades of processing innovation & client trust."
         },
         {
-            number: 50,
+            number: 40,
             suffix: "+",
             label: "Countries Served",
-            description: "Global reach with local craftsmanship"
+            description: "Delivering world-class Indian craftsmanship to global markets."
         },
         {
-            number: 500,
+            number: 160,
             suffix: "+",
-            label: "Stone Varieties",
-            description: "Curated collection from world's finest quarries"
+            label: "Exquisite Stone Varieties",
+            description: "A diverse palette of rare granites, marbles, and engineered quartz."
         }
     ];
     return (
@@ -62,9 +62,9 @@ export default function StatsSection() {
                                 <h3 className="text-sm sm:text-base md:text-xl text-primary-foreground">
                                     {stat.label}
                                 </h3>
-                                {/* <p className="text-muted-foreground leading-relaxed">
-                  {stat.description}
-                </p> */}
+                                <p className="text-muted-foreground leading-relaxed text-sm mt-2">
+                                    {stat.description}
+                                </p>
                             </div>
                         </motion.div>
                     ))}

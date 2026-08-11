@@ -20,19 +20,23 @@ export default function AboutSection() {
                 <div className="w-full lg:w-2/3 space-y-4 md:space-y-8">
                     <div className="text-center md:text-left">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                            <span className="mr-2 text-lg text-primary">¬</span> OUR ABOUT US
+                            <span className="mr-2 text-lg text-primary">¬</span> OUR LEGACY
                         </span>
                         <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground">
-                            Tap Into India&apos;s Prime Manufacturers And Exporters Of Natural Stones
-                            {/* <span className="text-primary "> Manufacturers And Exporters Of Natural Stones</span> */}
+                            36+ Years of Sculpting Elegance From the Earth
                         </h2>
                     </div>
 
 
                     <div className="space-y-6 md:space-y-8 flex flex-col items-center md:items-start">
-                        <p className="text-justify">
-                            With 35 years of excellence in the field of Natural Stone Industry. We are known as the prominent marble and granite suppliers in India and all over the world. Madhav Marbles and Granite Ltd has emerged as the leading processor and exporter of natural stones. The company has extensively expanded itself among top architects, interior designers, and distinctive homeowners seeking outstanding natural stone products. We are an innovative company, established in 1989 to yield unmatched quality and unique design marbles and granites to mark an extensive global presence in the countries like North America, South America, Canada, Europe, Australia, South Africa, Russia, and the Far East. The company operates its Granite Division from South India (Salem, Tamil Nadu), known for its rich reserves for metamorphosed granite. In conformity with its commitment to excellence, the company has installed the most sophisticated and environment-friendly granite processing machinery imported from Italy. If you are looking for the finest collection of natural stone, Madhav Marble & Granite Ltd serves as the clear leader for exporting naturally beautiful stone surfaces.
-                        </p>
+                        <div className="space-y-4 text-justify mb-8 md:mb-12">
+                            <p>
+                                At <strong className="font-semibold text-foreground">Madhav Marbles and Granite Ltd.</strong>, natural stone is more than a material—it is a canvas of natural art and enduring luxury. Since <strong className="font-semibold text-foreground">1989</strong>, we have pioneered the natural stone industry in India, evolving into one of the world&apos;s most trusted processors and exporters of premium marble, granite, quartz, and limestone.
+                            </p>
+                            <p>
+                                Operating from the rich mineral belt of Salem, Tamil Nadu, our facility is equipped with state-of-the-art, eco-friendly Italian processing machinery. Whether you are designing a high-end commercial tower or a bespoke luxury residence, Madhav Surfaces delivers uncompromising craftsmanship, unparalleled texture, and lasting value across six continents.
+                            </p>
+                        </div>
 
                         {/* <ul className="space-y-3">
                                     {[
@@ -66,7 +70,7 @@ export default function AboutSection() {
                                             bounce: 0,
                                             duration: 3000,
                                         }}
-                                        value={inView ? 35 : 0}
+                                        value={inView ? 36 : 0}
                                     />
                                     {/* <span className="text-[150px] font-bold tracking-tight">35</span> */}
                                     <span className="text-[140px] font-bold">+</span>

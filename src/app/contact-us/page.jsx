@@ -42,7 +42,7 @@ const Contact = () => {
             alt="Background"
             className="w-full h-full object-cover"
             fill
-           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           {/* Optional overlay for better text contrast */}
           <div className="absolute inset-0 bg-black/80"></div>
         </div>
@@ -76,12 +76,17 @@ const Contact = () => {
             <span className="mr-2 text-lg text-primary">¬</span> GET IN TOUCH
           </span>
           <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
-            Need Any Marble & Tiles Services Help?
+            Let&apos;s Bring Your Vision to Life in Fine Stone
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 md:gap-16 mt-8">
-            <p className="text-foreground/50 text-sm md:text-base max-w-xl leading-relaxed">
-              From the moment marble emerges from the earth&apos;s embrace, it begins a journey of transformation guided by our innovative techniques and the skilled hands of our artisans who carefully transform the raw stone into exquisite pieces.
-            </p>
+            <div className="text-foreground/50 text-sm md:text-base max-w-4xl leading-relaxed">
+              <p>
+                From the moment a raw block emerges from the earth to the final polish in your space, we guide every step of the journey with precision technology and master craftsmanship.
+              </p>
+              <p className='pt-2'>
+                Whether you need tailored technical advice, container-load pricing, or assistance selecting the perfect marble or tile for your next architectural landmark our natural stone experts are here to help.
+              </p>
+            </div>
             <div className="flex flex-col w-full justify-end sm:flex-row gap-6 sm:gap-12">
               <div>
                 <h3 className="text-lg font-bold text-foreground mb-2">Support</h3>
@@ -107,7 +112,7 @@ const Contact = () => {
               alt="Marble Showroom"
               fill
               className="object-cover object-right"
-             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
 
           {/* Right Form */}

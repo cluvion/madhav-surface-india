@@ -14,6 +14,22 @@ import QuickViewModal from '@/components/ui/QuickViewModal';
 export default function MarbleCollection() {
     const [selectedProduct, setSelectedProduct] = useState(null);
     const collectionProducts = collectionTiles['marbles'] || [];
+    const graniteProducts = collectionTiles['granite'] || [];
+
+    // Specific products to display in the ScrollStack section
+    // Some marble ScrollStack products are stored in the 'granite' collection
+    const scrollStackNames = [
+        'Monalisa',
+        'Marine Black',
+        'Jasper Gold',
+        'Blue Dunes',
+        'Amazon White',
+        'Calacatta D Oro'
+    ];
+    const allSearchable = [...collectionProducts, ...graniteProducts];
+    const scrollStackProducts = scrollStackNames
+        .map(name => allSearchable.find(p => p.name.toLowerCase() === name.toLowerCase()))
+        .filter(Boolean);
 
     return (
         <div className="min-h-screen">
@@ -22,20 +38,51 @@ export default function MarbleCollection() {
 
             <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
                 <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> MARBLE DIVISION
+                    <span className="mr-2 text-lg text-primary">¬</span> PREMIUM MARBLE COLLECTION
                 </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                    Premium Marble Supplier &amp; Exporter – Madhav Marble
+                <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground max-w-5xl">
+                    Transformative Elegance. Precision Engineering. Global Footprint.
                 </h2>
-                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                    <p>Madhav Marbles and Granite Ltd is a renowned Indian marble manufacturer &amp; supplier. We offer a wide range of marbles in various colors, textures, and patterns, crafted with precision and exceptional quality. From <strong><a className="text-primary" href="https://www.madhavmarbles.com/brown-fantasy-marble/">Brown Fantasy</a></strong> to <strong><a className="text-primary" href="https://www.madhavmarbles.com/white-dunes-marble/">White Dunes</a></strong>, we are the leading marble suppliers in India, exporting extensively to the USA and Europe.</p>
-                    <p>Our extensive assortment of marble comes in different forms and finishes. We have established a strong reputation in the industry as the top choice for marble manufacturing and supply. Whether it&apos;s large-scale projects or individual requirements, we cater to clients&apos; unique styles and preferences. Choose Madhav Marbles for superior quality and customer satisfaction in the marble industry.</p>
-                    <h3 className="heading font-thin text-xl md:text-4xl text-foreground">Exclusive Marble Collection From Leading Marble Suppliers</h3>
-                    <p>With the prime marble supplier in India, our global clientele always expects the unparalleled &amp; finest quality of stone solutions. Following are some of the popular marbles that are processed at our state-of-the-art manufacturing unit on a large scale:</p>
+                <div className="flex flex-col space-y-6 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify max-w-5xl">
+                    <p>As one of India&apos;s most trusted marble manufacturers and exporters, <strong>Madhav Marbles and Granite Ltd.</strong> crafts architectural surfaces that redefine luxury. From the breathtaking movement of <a className="text-primary font-medium" href="https://www.madhavmarbles.com/brown-fantasy-marble/">Brown Fantasy</a> to the serene beauty of <a className="text-primary font-medium" href="https://www.madhavmarbles.com/white-dunes-marble/">White Dunes</a>, our collection delivers an exceptional spectrum of colors, textures, and finishes directly to top-tier projects across the USA, Europe, and worldwide.</p>
+                    
+                    <div className="pt-4">
+                        <h3 className="text-xl md:text-2xl font-bold mb-2 flex flex-col md:flex-row md:items-center gap-2 text-foreground">
+                            <span className="text-primary text-2xl hidden md:inline">🏛️</span> Master Craftsmanship Meets Modern Technology
+                        </h3>
+                        <p>Engineered at our high-tech processing facility, every slab of Madhav marble undergoes rigorous calibration and polishing. Whether you are executing a landmark commercial building or a bespoke residential design, our marble delivers uncompromising durability and timeless aesthetic value.</p>
+                    </div>
+
+                    <div className="pt-4">
+                        <h3 className="text-xl md:text-2xl font-bold mb-4 flex flex-col md:flex-row md:items-center gap-2 text-foreground">
+                            <span className="text-primary text-2xl hidden md:inline">🌟</span> Why Global Architects &amp; Designers Trust Madhav Marble:
+                        </h3>
+                        <ul className="space-y-4 text-left ml-2 md:ml-8">
+                            <li className="flex items-start">
+                                <span className="text-primary mr-3 text-lg">■</span>
+                                <p className="mt-1"><strong className="text-foreground">Diverse Palette &amp; Finishes:</strong> Available in rich varieties, custom slab sizes, and tailored finishes (Polished, Honed, Brushed, and Leather).</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-primary mr-3 text-lg">■</span>
+                                <p className="mt-1"><strong className="text-foreground">Unrivaled Dimensional Accuracy:</strong> Cut with extreme precision for seamless installations and minimal edge waste.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-primary mr-3 text-lg">■</span>
+                                <p className="mt-1"><strong className="text-foreground">Versatility at Any Scale:</strong> Perfectly equipped to handle bulk container shipments for large commercial developments as well as specialized custom orders.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="pt-8">
+                        <h3 className="heading font-thin text-2xl md:text-4xl text-foreground flex flex-col md:flex-row md:items-center gap-2">
+                            <span className="text-primary text-3xl hidden md:inline">🌎</span> Explore Our Signature Global Marble Selection
+                        </h3>
+                        <p className="mt-4">Below are some of our most sought-after marble varieties, processed at scale in our state-of-the-art facility to meet international architectural standards:</p>
+                    </div>
                 </div>
             </div>
 
-            <ScrollStack products={collectionProducts} zoom="scale-[1.5] object-bottom" />
+            <ScrollStack products={scrollStackProducts} zoom="scale-[1.5] object-bottom" />
 
             <Section>
                 {/* Product Grid Section */}

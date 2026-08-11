@@ -137,7 +137,7 @@ const ScrollStack = forwardRef(({ products, collection, zoom }, ref) => {
     // Use collection tiles instead of all products
     const displayProducts = collection?.name
         ? getCollectionTileProducts(products || [], collection.name.toLowerCase().replace(/introducing the |\s+/g, '').replace(/collection/, '').trim())
-        : products?.slice(0, 4) || [];
+        : products || [];
 
     return (
         <>
@@ -154,7 +154,7 @@ const ScrollStack = forwardRef(({ products, collection, zoom }, ref) => {
                                 color={product.image}
                                 description={product.description}
                                 progress={scrollYProgress}
-                                range={[i * 0.25, 1]}
+                                range={[i * (1 / displayProducts.length), 1]}
                                 targetScale={targetScale}
                                 projects={displayProducts}
                                 id={product.id}

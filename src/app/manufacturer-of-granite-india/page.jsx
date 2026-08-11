@@ -16,6 +16,23 @@ import QuickViewModal from "@/components/ui/QuickViewModal";
 
 const pageProducts = collectionTiles['granite-slabs'];
 
+// Specific products to display in the ScrollStack section
+const scrollStackNames = [
+    'Vizag Blue',
+    'River White New',
+    'Astoria',
+    'Colonial White',
+    'Viscount Waves',
+    'Steel Grey',
+    'Sapphire Blue',
+    'New Multi Colour',
+    'Multi Color',
+    'Black Galaxy'
+];
+const scrollStackProducts = scrollStackNames
+    .map(name => pageProducts.find(p => p.name.toLowerCase() === name.toLowerCase()))
+    .filter(Boolean);
+
 
 // export const metadata = generateSEOMetadata({
 //     title: pageMetadata.profile.title,
@@ -56,18 +73,18 @@ export default function ManufacturerOfGraniteIndia() {
             </div> */}
             <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
                 <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> GRANITE COLLECTION
+                    <span className="mr-2 text-lg text-primary">¬</span> MADHAV MARBLES &amp; GRANITES
                 </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                    Best Granite Supplier and Manufacturer
+                <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground max-w-5xl">
+                    India&apos;s Premier Manufacturer &amp; Global Exporter of South Indian Granite
                 </h2>
-                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                    <p><strong>Granite</strong> is undoubtedly the premier choice of builders and designers across nations. It is used extensively because of its beauty, toughness, and durability. With India offering over 120 available granite colors, the versatility is unmatched. <strong><a className="text-primary" href="https://www.madhavmarbles.com/">Madhav Marbles and Granites</a></strong> Ltd. is a leading granite supplier with a range of quality granite collections that stays alive over the years. We are one of the best suppliers of granite in India, and pride ourselves for providing outstanding <a className="text-primary" href="https://www.madhavmarbles.com/granite-calibrated-tiles-in-india/"><strong>Calibrated Granite Tiles</strong></a>, <a className="text-primary" href="https://www.madhavmarbles.com/granite-xl-tiles/"><strong>Granite XL Tiles</strong></a>, and other natural stones. </p>
+                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify max-w-5xl">
+                    <p>Operating from the rich geological heartland of <strong>Salem, Tamil Nadu, Madhav Marbles &amp; Granites Ltd.</strong> has been setting the international gold standard for premium natural stone since <strong>1989</strong>. As a leading granite supplier to the <strong>USA, Europe, and over 40 countries worldwide</strong>, we transform earth&apos;s finest raw stone into breathtaking architectural surfaces.</p>
                 </div>
             </div>
 
             {/* ScrollStack Section */}
-            <ScrollStack products={pageProducts} zoom="scale-[1.1]" />
+            <ScrollStack products={scrollStackProducts} zoom="scale-[1.1]" />
 
             <Section>
                 {/* Project Carousel Section */}
@@ -78,10 +95,34 @@ export default function ManufacturerOfGraniteIndia() {
                     ))}
                 </div>
                 <ParagraphSection
-                    title="Madhav Marbles and Granites - Leading Granite Supplier in India"
-                    p1={<>Our natural stone processing unit for granite operates in Salem, Tamil Nadu, famous for ample reserves of metamorphosed <strong>granite stone</strong>. Being the leading granite supplier in USA, we try to be nowhere harsh on the environment, as evidenced by our environment-friendly granite machinery imported directly from Italy. We also supply calibrated granite tiles extensively used to design commercial and residential areas.</>}
-                    p2={<>We offer a range of granite tiles from black to white and from gold to pink. Moreover, we are a leading <strong><a className="text-primary" href="https://www.madhavmarbles.com/madhav-marbles-top-supplier-of-south-indian-granite/">South Indian Granite supplier in USA</a></strong>, and majorly supply premium granite to countries of Germany, Poland, Slovenia, Slovakia, Austria, along with other parts of the world. These granites are unique and famous for their strength and attractive colors. Popular color choices of South Indian granite include Tan Brown Granite, Coffee Brown Granite, River White Granite, and Paradiso Bash Granite.</>}
-                    p3={<>Established in 1989, Madhav Marbles and Granites Ltd. is a prominent granite manufacturer in India and exporter, boasting more than three decades of industry experience. Our spirit of innovation sets us apart, and our commitment to unmatched quality and excellence has helped us build a substantial global presence. Our <strong>granite slabs</strong> and tiles are extensively exported to North America, South America, Canada, Russia, Europe, South Africa, Australia, and the Far East.</>}
+                    title="🍃 Sustainable Innovation & Italian Engineering"
+                    p1={<>
+                        <p className="mb-4">Luxury doesn&apos;t have to come at the environment&apos;s expense. Our Salem facility features state-of-the-art, eco-friendly processing machinery imported directly from Italy—enabling us to produce precision-cut slabs and calibrated granite tiles with minimal environmental impact.</p>
+                        <h3 className="text-xl md:text-2xl font-bold mb-4 mt-8 flex flex-col md:flex-row md:items-center gap-2 text-foreground">
+                            <span className="text-primary text-2xl hidden md:inline">🎨</span> A Spectrum of Colors &amp; Timeless Durability
+                        </h3>
+                        <p className="mb-4">From high-traffic commercial flooring to bespoke residential interiors, our South Indian granite collection is globally celebrated for its extreme structural strength and vibrant, natural pigmentation:</p>
+                        <ul className="space-y-4 text-left ml-2 md:ml-4">
+                            <li className="flex items-start">
+                                <span className="text-primary mr-3 text-lg">■</span>
+                                <p className="mt-1"><strong className="text-foreground">Signature South Indian Shades:</strong> Tan Brown, Coffee Brown, River White, and Paradiso Bash.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-primary mr-3 text-lg">■</span>
+                                <p className="mt-1"><strong className="text-foreground">Full Color Palette:</strong> Classic Blacks, Pristine Whites, Radiant Golds, Soft Pinks, and Exotic Veined Patterns.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-primary mr-3 text-lg">■</span>
+                                <p className="mt-1"><strong className="text-foreground">Product Formats:</strong> Engineered Jumbo Slabs, Cutter Slabs, and High-Precision Calibrated Tiles.</p>
+                            </li>
+                        </ul>
+                    </>}
+                    p2={<>
+                        <h3 className="text-xl md:text-2xl font-bold mb-4 mt-8 flex flex-col md:flex-row md:items-center gap-2 text-foreground">
+                            <span className="text-primary text-2xl hidden md:inline">🌐</span> Worldwide Reach, Trusted Reliability
+                        </h3>
+                        <p>Driven by three decades of continuous innovation, Madhav Surfaces proudly powers landmark projects across North &amp; South America, Canada, Germany, Poland, Slovenia, Slovakia, Austria, Russia, South Africa, Australia, and the Far East.</p>
+                    </>}
                     src="/assets/stones/stone6.png"
                     alt="Stacked Granite Samples"
                 />
@@ -89,7 +130,7 @@ export default function ManufacturerOfGraniteIndia() {
                     footerTitle="Get the Finest Quality Granite From Top Granite Supplier"
                     footerDescription={
                         <p>
-                            Madhav Marbles offers expertise for all your granite needs, whether it’s for construction, design, or renovation projects. Our granite products, regarded as the <a className="text-primary" href="https://www.madhavmarbles.com/"><strong>Best Granite in India</strong></a>, are available in various forms, including slabs and tiles, in multiple sizes, suitable for backsplashes, wall cladding, and granite flooring. With exceptional qualities such as toughness, durability, resistance to heat and cold, and stain resistance, granite is ideal for any project. Madhav Marble prioritizes clients by keeping customer relationships healthy to avoid delays and resolve issues immediately.
+                            Madhav Marbles offers expertise for all your granite needs, whether it&apos;s for construction, design, or renovation projects. Our granite products, regarded as the <a className="text-primary" href="https://www.madhavmarbles.com/"><strong>Best Granite in India</strong></a>, are available in various forms, including slabs and tiles, in multiple sizes, suitable for backsplashes, wall cladding, and granite flooring. With exceptional qualities such as toughness, durability, resistance to heat and cold, and stain resistance, granite is ideal for any project. Madhav Marble prioritizes clients by keeping customer relationships healthy to avoid delays and resolve issues immediately.
                         </p>
                     }
                 />

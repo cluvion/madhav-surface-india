@@ -15,6 +15,19 @@ export default function QuartzitesCollection() {
     const [selectedProduct, setSelectedProduct] = useState(null);
     const collectionProducts = collectionTiles['quartzites'] || [];
 
+    // Specific products to display in the ScrollStack section
+    const scrollStackNames = [
+        'Grey Father',
+        'Mango Fusion',
+        'Majestic Grey',
+        'Crystallo White',
+        'Crystallo Verde',
+        'Crystallo Oro'
+    ];
+    const scrollStackProducts = scrollStackNames
+        .map(name => collectionProducts.find(p => p.name.toLowerCase() === name.toLowerCase()))
+        .filter(Boolean);
+
     return (
         <div className="min-h-screen">
 
@@ -35,7 +48,7 @@ export default function QuartzitesCollection() {
                 </div>
             </div>
 
-            <ScrollStack products={collectionProducts} zoom="scale-[1.5] object-bottom" />
+            <ScrollStack products={scrollStackProducts} zoom="scale-[1.5] object-bottom" />
 
             <Section>
                 {/* Product Grid Section */}

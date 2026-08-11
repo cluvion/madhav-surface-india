@@ -17,58 +17,39 @@ const points = [
     {
         number: 1,
         icon: Award,
-        title: "35 YEARS OF EXPERIENCE",
+        title: "36+ YEARS OF UNMATCHED HERITAGE",
         subtitle: "Legacy of Excellence",
         description:
-            "With over three decades of mastery in the stone industry, Madhav Surfaces has built an enduring reputation for quality, reliability, and craftsmanship.",
-        // image: "/assets/Step5.png",
+            "Over three decades of expertise in selecting raw blocks, precision cutting, and hand-finishing high-grade natural stone.",
         image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/home-webp/IMG_6682.webp",
     },
     {
         number: 2,
-        icon: Users2,
-        title: "MOST SATISFIED CLIENTELE",
-        subtitle: "Trusted by Architects & Builders",
+        icon: Factory,
+        title: "ADVANCED ITALIAN MACHINERY",
+        subtitle: "Precision Technology",
         description:
-            "We’ve earned the confidence of leading architects, designers, and construction firms through our commitment to precision, innovation, and customer satisfaction.",
+            "Equipped with eco-friendly gang saws and polishing lines imported directly from Italy for razor-sharp dimensional accuracy and pristine surface gloss.",
         image: "/assets/Step6.png",
     },
     {
         number: 3,
         icon: Globe2,
-        title: "GLOBAL EXPORTS IN 40+ COUNTRIES",
-        subtitle: "Proudly Representing Indian Craftsmanship",
+        title: "WORLDWIDE EXPORT FOOTPRINT",
+        subtitle: "Global Reliability",
         description:
-            "From India to the world, our premium marble and granite are exported across 40+ countries, bringing natural beauty to luxury spaces globally.",
+            "Seamless supply chain management delivering container loads across North & South America, Europe, Africa, and the Asia-Pacific.",
         image: "/assets/Step4.png",
     },
     {
-        number: 5,
+        number: 4,
         icon: ShieldCheck,
-        title: "QUALITY YOU CAN TRUST",
-        subtitle: "Certified, Tested, and Reliable",
+        title: "STRINGENT QUALITY ASSURANCE",
+        subtitle: "Unmatched Quality",
         description:
-            "Every slab passes rigorous quality checks for durability, color consistency, and finish to ensure only the finest products reach our clients.",
+            "Every slab undergoes strict multi-point inspections for density, stain resistance, structural integrity, and color uniformity.",
         image: "/assets/Step7.png",
     },
-    // {
-    //     number: 4,
-    //     icon: Factory,
-    //     title: "STATE-OF-THE-ART FACILITIES",
-    //     subtitle: "Technology Meets Craftsmanship",
-    //     description:
-    //         "Our advanced manufacturing units are equipped with modern Italian machinery ensuring precision cutting, flawless polishing, and sustainable processing.",
-    //     image: "/assets/Step_4.png",
-    // },
-    // {
-    //     number: 6,
-    //     icon: Gem,
-    //     title: "DIVERSE COLLECTIONS",
-    //     subtitle: "Nature’s Best, Curated for You",
-    //     description:
-    //         "From elegant marbles to robust granites and quartz surfaces, we offer a curated portfolio tailored for every design and architectural vision.",
-    //     image: "/assets/Step_6.png",
-    // },
 ];
 
 export default function ProcessSection() {
@@ -101,12 +82,14 @@ export default function ProcessSection() {
                 <div className="w-full lg:w-2/3">
                     <div className="text-center lg:text-balance md:text-left">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                            <span className="mr-2 text-lg text-primary">¬</span> OUR ABOUT US
+                            <span className="mr-2 text-lg text-primary">¬</span> THE MADHAV ADVANTAGE
                         </span>
                         <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground">
-                            What Makes Us The Best Marble and Granite Suppliers?
-                            {/* <span className="text-primary "> Marble and Granite Suppliers?</span> */}
+                            Unmatched Quality. Precision Technology. Global Reliability.
                         </h2>
+                        <p className="mt-4 text-lg text-foreground/50">
+                            Why leading architects, interior designers, and commercial builders choose Madhav Surfaces:
+                        </p>
                     </div>
                 </div>
             </div>

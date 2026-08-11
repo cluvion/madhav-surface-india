@@ -69,24 +69,30 @@ export default function GraniteCutterSlabsSupplier() {
                 </div>
 
                 <ParagraphSection
-                    title="What Distinguishes Our Granite Cutter Slabs From Others?"
+                    title="What Makes Our Granite Cutter Slabs Superior?"
                     p1={<>
-                        <p>In today’s market, a plethora of brands offer polished and processed granite cutter slabs in both standard and custom sizes, making it understandable to question what sets our offerings apart. The following points highlight the key factors that make our granite slabs one-of-a-kind and demonstrate our unwavering focus on pricing and quality.</p>
-                        <p>Our unique selling proposition comprises of:</p>
+                        <p className="text-foreground font-bold uppercase tracking-widest text-xs mb-2">THE MADHAV MARBLES EDGE</p>
+                        <p>With countless suppliers offering granite slabs in today’s market, why do leading global architects, fabricators, and builders choose <strong className="text-foreground">Madhav Marbles & Granites</strong>?</p>
+                        <p>The answer lies in our relentless commitment to precision engineering, safety, and zero-waste quality standards. Here is what sets our granite cutter slabs apart:</p>
                     </>}
                     p2={
-                        <ul className="space-y-4 list-disc pl-5">
+                        <ul className="space-y-4">
                             <li>
-                                <strong className="text-foreground font-semibold">Thickness Control</strong> – Our granite slabs are available in thicknesses of 2cm and 3cm and are tailored to meet the individual requirements of our valued clients. By leveraging advanced technology, we guarantee meticulous thickness control, ensuring uniformity and consistency from all sides.
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">📏 Millimeter-Precision Thickness Control</strong>
+                                <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Uniformity Guaranteed:</strong> Available in 2cm and 3cm thicknesses (or custom specifications), our slabs undergo advanced automated thickness calibration. You get perfectly uniform thickness from edge to edge with zero warping or taper.</p>
                             </li>
                             <li>
-                                <strong className="text-foreground font-semibold">Polishing Coverage</strong> – Our granite slabs are processed utilizing the latest Italian polishing machinery, offering a diverse range of finishes including polished, flamed, honed, flame+brushed, giano, and leather finishes. This results in a consistent and thorough coverage of polishing on each slab resulting in high gloss levels end-to-end polishing coverage for all.
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">✨ Italian Surface Finishes & High-Gloss Polish</strong>
+                                <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Flawless End-to-End Shine:</strong> Processed on state-of-the-art Italian polishing lines, our slabs achieve industry-leading gloss levels and consistent coverage.</p>
+                                <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Versatile Textures:</strong> Choose from Polished, Flamed, Honed, Flame + Brushed, Giano, and Leather finishes to match any architectural aesthetic.</p>
                             </li>
                             <li>
-                                <strong className="text-foreground font-semibold">Food Grade Epoxy Resins</strong> – Our specially formulated epoxy resins boast exceptional adhesion properties, resulting in a long-lasting and low-maintenance installation. Moreover, the food-grade nature of the resins employed in our processes guarantees the safety and well-being of our clients, as they are free from any harmful substances.
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">🛡️ 100% Non-Toxic, Food-Grade Epoxy Resins</strong>
+                                <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Safe for Kitchens & Living Spaces:</strong> We treat our slabs with specially formulated, non-toxic, food-grade epoxy resins. This deep-penetrating resin enhances structural integrity, prevents staining, and ensures a safe, hygienic surface for food preparation areas.</p>
                             </li>
                             <li>
-                                <strong className="text-foreground font-semibold">Edges</strong> – Our granite cutter slabs are manufactured to exacting standards, ensuring zero losses due to the high accuracy of measurement in the cutting process. Using state-of-the-art machinery with advanced cutting blades, we are able to produce slabs with precise and uniform edges. Our commitment to precision results in a perfect rectangular end product that is tailored to meet your specific application requirements.
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">📐 True 90° Precision Edges (Zero Material Loss)</strong>
+                                <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Maximized Usable Area:</strong> Powered by high-accuracy Italian cutting blades, our cutter slabs feature crisp, exact rectangular geometry and uniform edges—eliminating costly edge trim-offs and maximizing yield for fabricators.</p>
                             </li>
                         </ul>
                     }

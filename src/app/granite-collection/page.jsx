@@ -35,7 +35,7 @@ export default function GraniteCollection() {
                 </div>
             </div>
 
-            <ScrollStack products={collectionProducts} zoom="scale-[1.5] object-bottom" />
+            <ScrollStack products={collectionProducts.slice(0, 4)} zoom="scale-[1.5] object-bottom" />
 
             <Section>
                 {/* Product Grid Section */}

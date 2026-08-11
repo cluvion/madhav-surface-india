@@ -25,7 +25,7 @@ export default function SpecialProductSection() {
             <div className="absolute inset-0 bg-[url('/assets/special-bg.png')] opacity-100 bg-cover bg-center z-0 pointer-events-none" />
             <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none" />
 
-            <div className="space-y-14 md:space-y-24 lg:space-y-36">
+            <div className="space-y-14 md:space-y-24">
                 {/* Content Container */}
                 <div className="relative z-10 container mx-auto px-4 flex-grow flex flex-col lg:flex-row items-center justify-center lg:justify-between h-full">
                     {/* Left Side: Rotating Badge */}
@@ -52,11 +52,28 @@ export default function SpecialProductSection() {
 
                     <div className="text-center text-balance md:text-left md:max-w-5xl flex flex-col justify-center items-start">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4 text-white">
-                            <span className="mr-2 text-lg text-primary">¬</span> Choose Your Stone
+                            <span className="mr-2 text-lg text-primary">¬</span> CURATED COLLECTIONS
                         </span>
                         <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-white">
-                            Beauty from the Earth a collection of timeless elegance and beauty
+                            Timeless Surfaces Sourced Directly from Earth
                         </h2>
+                        <p className="mt-4 text-lg text-white/80">
+                            Discover our handpicked portfolio of natural and engineered stones—engineered by nature, perfected by Madhav:
+                        </p>
+                        <ul className="mt-6 space-y-4 text-left text-white/90">
+                            <li className="flex items-start">
+                                <span className="text-primary mr-2 mt-1">✔</span>
+                                <span><strong>Granite Slabs</strong> — Extremely durable, scratch-resistant, and ideal for high-traffic luxury kitchen countertops and commercial flooring (Absolute Black, Matrix Leather, Amba White).</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-primary mr-2 mt-1">✔</span>
+                                <span><strong>Marble & Limestone</strong> — Elegant veining and soft tones that redefine interior luxury and wall cladding (Dione White, Marble Aretusa, Dione Nuvolato).</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-primary mr-2 mt-1">✔</span>
+                                <span><strong>Travertine & Quartz</strong> — Perfect harmonizations of natural warmth and modern resilience for contemporary architectural surfaces.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 

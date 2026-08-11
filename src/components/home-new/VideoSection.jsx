@@ -1,10 +1,10 @@
 "use client"
 import React from "react";
-import {
-    Video
-} from "@/components/ui/video";
+// import {
+//     Video
+// } from "@/components/ui/video";
 import Image from "next/image";
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
 
 export default function VideoSection() {
     const [isPlaying, setIsPlaying] = React.useState(false);
@@ -45,7 +45,7 @@ export default function VideoSection() {
                                 width="100%"
                                 height="100%"
                                 className="aspect-video w-full rounded-lg shadow-2xl"
-                                src="https://www.youtube.com/embed/XUfgEQyDSZ8?autoplay=1"
+                                src="https://www.youtube.com/embed/0rNFT79ossE?autoplay=1&rel=0"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

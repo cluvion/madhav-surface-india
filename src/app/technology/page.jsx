@@ -58,30 +58,53 @@ export default function Technology() {
             <PageHeader title="Technology" path="Technology" src="/assets/Step7.png" />
 
             <Section>
-                {/* Top Text Section */}
                 <div className="text-center md:text-left">
                     <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
                         <span className="mr-2 text-lg text-primary">¬</span> GLOBAL OPERATIONS
                     </span>
-                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
+                    <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground max-w-4xl">
                         Supplying the World with India&apos;s Finest Stone Surfaces
                     </h2>
-                    <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed">
+                    <div className="flex flex-col space-y-6 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed max-w-5xl">
                         <p>
-                            We have an annual installed capacity of 6,00,000 square meters consisting of 6 Gaspari Ganagsaws, 2 Breton Polishing lines, Maema Flaming machine and Resin Line for Slabs. 6 Padrini Block Cutters, 2 Pedrini Polishing Lines, Pedrini Resin Line for Tiles.
+                            From raw geological mastery to refined architectural surfaces, <strong>Madhav Marbles &amp; Granites Ltd.</strong> bridges the gap between India&apos;s rich quarry reserves and top-tier construction projects across the globe.
                         </p>
-                        <p>
-                            The Marble Division operates from Udaipur (Rajasthan) closest to world famous green marble quarries.
-                        </p>
-                        <p>
-                            The tactical and geographical location of the plants ensure close proximity to the raw materials, Potential to procure good quality raw material has always been one of the prime focus of the company.
-                        </p>
-                        <p>
-                            The company exports its products to North America, South America, Canada, Europe, Australia, South Africa, Russia, and other places.
-                        </p>
-                        <p>
-                            Our team of professionals take client relationship as their top priority which ensures the absence of delays and issues are resolved promptly.
-                        </p>
+
+                        <div>
+                            <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2"><span className="text-primary text-2xl">🏭</span> High-Capacity, World-Class Manufacturing</h3>
+                            <p className="mb-3">Powered by an annual production capacity of <strong>600,000 m²</strong>, our processing plants feature elite Italian machinery engineered for precision cutting and flawless finishes:</p>
+                            <ul className="space-y-2 ml-2 md:ml-4">
+                                <li className="flex items-start">
+                                    <span className="text-primary mr-3 text-lg">■</span>
+                                    <p className="mt-1"><strong className="text-foreground">Slab Processing:</strong> 6 Gaspari Gangsaws, 2 Breton Polishing Lines, Maema Flaming Technology, and Advanced Resin Lines.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="text-primary mr-3 text-lg">■</span>
+                                    <p className="mt-1"><strong className="text-foreground">Tile Processing:</strong> 6 Pedrini Block Cutters, 2 Pedrini Polishing Lines, and Dedicated Resin Systems.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2"><span className="text-primary text-2xl">📍</span> Strategic Proximity to Raw Materials</h3>
+                            <p>
+                                Location is our greatest advantage. Situated in <strong>Udaipur (Rajasthan)</strong>—in the immediate vicinity of world-famous Green Marble reserves—and <strong>Salem (Tamil Nadu)</strong> for granite, our dual manufacturing hubs give us direct, priority access to high-grade raw blocks.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2"><span className="text-primary text-2xl">🌎</span> World-Class Distribution &amp; Frictionless Logistics</h3>
+                            <p className="mb-3">We proudly supply premium stone across major international markets:</p>
+                            <ul className="space-y-2 ml-2 md:ml-4">
+                                <li className="flex items-start">
+                                    <span className="text-primary mr-3 text-lg">■</span>
+                                    <p className="mt-1"><strong className="text-foreground">North &amp; South America | Canada | Europe | Australia | South Africa | Russia &amp; Beyond.</strong></p>
+                                </li>
+                            </ul>
+                            <p className="mt-6">
+                                <strong className="text-foreground">The Madhav Promise:</strong> Our client-first team guarantees proactive communication, zero logistics delays, and seamless execution on every container shipment.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -209,7 +232,7 @@ export default function Technology() {
                                     src={image.image}
                                     alt={`Image ${image.id}`}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover grayscale"
                                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
                         ))}

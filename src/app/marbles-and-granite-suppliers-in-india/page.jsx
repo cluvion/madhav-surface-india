@@ -21,12 +21,26 @@ export default function MarblesAndGraniteSuppliersInIndia() {
     const [selectedProduct, setSelectedProduct] = useState(null);
     const collectionProducts = collectionTiles['exotics-exclusive'] || [];
 
+    // Specific products to display in the ScrollStack section
+    const scrollStackNames = [
+        'Crystalita Blue',
+        'Crystal Soulages',
+        'Fusion',
+        'Maori',
+        'Laguna Crystal',
+        'Volupia Maestro',
+        'Vulkon'
+    ];
+    const scrollStackProducts = scrollStackNames
+        .map(name => collectionProducts.find(p => p.name.toLowerCase() === name.toLowerCase()))
+        .filter(Boolean);
+
     return (
         <div className="">
 
             <PageHeader title="Exotics & Exclusives" path="Exotics & Exclusives" src="/assets/Step7.png" />
 
-            <ScrollStack products={collectionProducts} zoom="scale-[1.3]" />
+            <ScrollStack products={scrollStackProducts} zoom="scale-[1.3]" />
 
             <Section>
                 {/* Project Carousel Section */}

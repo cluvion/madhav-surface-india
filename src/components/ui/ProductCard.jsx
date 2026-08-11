@@ -44,6 +44,11 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                         {product.name}
                     </h3>
                     <p className="text-sm text-foreground/50">{product.category || product.collection}</p>
+                    {product.description && (
+                        <p className="text-sm text-foreground/70 line-clamp-2 mt-2">
+                            {product.description}
+                        </p>
+                    )}
                 </div>
 
                 {/* Buttons Row */}

@@ -38,7 +38,7 @@ export default function Home() {
       <SpecialProductSection />
       {/* <ProjectsSection /> */}
       <ProductSection />
-      <CollectionSection />
+      {/* <CollectionSection /> */}
       <TestimonialsSection />
       {/* <AwardsSection /> */} 
       <ContactSection />
