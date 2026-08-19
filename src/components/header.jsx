@@ -105,10 +105,10 @@ export const HeroHeader = ({
                                                             <Link href="/profile">Profile</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
-                                                            <Link href="/technology">Technology</Link>
+                                                            <Link href="/profile#technology">Technology</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
-                                                            <Link href="/corporate-film">Corporate Film</Link>
+                                                            <Link href="/profile#corporate-film">Corporate Film</Link>
                                                         </NavigationMenuLink>
                                                     </li>
                                                 </ul>
@@ -393,8 +393,8 @@ export const HeroHeader = ({
                                             {activeMobileSection === 'know-us' && (
                                                 <div className="space-y-1 pb-2">
                                                     <Link href="/profile" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Profile</Link>
-                                                    <Link href="/technology" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Technology</Link>
-                                                    <Link href="/corporate-film" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Corporate Film</Link>
+                                                    <Link href="/profile#technology" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Technology</Link>
+                                                    <Link href="/profile#corporate-film" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Corporate Film</Link>
                                                 </div>
                                             )}
                                         </div>

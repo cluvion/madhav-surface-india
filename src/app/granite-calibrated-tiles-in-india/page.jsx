@@ -48,7 +48,7 @@ export default function GraniteCalibratedTilesInIndia() {
                     </div>
                 </div>
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
     )

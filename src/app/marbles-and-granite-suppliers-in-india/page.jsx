@@ -50,7 +50,7 @@ export default function MarblesAndGraniteSuppliersInIndia() {
                     ))}
                 </div>
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
 
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>

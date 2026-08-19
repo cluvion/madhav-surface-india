@@ -122,7 +122,7 @@ export default function GraniteCutterSlabsSupplier() {
                     </div>
                 </div>
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
         </div>
     )
 }

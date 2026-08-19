@@ -28,34 +28,30 @@ export default function HeroSection() {
                 >
                     <div className="mb-6 flex items-center space-x-2">
                         <span className="mr-2 pl-2 text-lg text-primary font-bold">¬</span>
-                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white">
+                        {/* <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white">
                             India's Premier Manufacturer & Exporter of Fine Marble, Granite, and Quartz Slabs.
+                        </span> */}
+                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-white">
+                            MADHAV - NATURAL STONE SINCE 1989
                         </span>
                     </div>
 
                     <h1 className="text-balance heading mb-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-5xl">
-                        Crafting Architectural Masterpieces with <br className="hidden md:block" />
-                        <span className="text-primary">Timeless Natural Stone</span>
+                        {/* Crafting Architectural Masterpieces with <br className="hidden md:block" />
+                        <span className="text-primary">Timeless Natural Stone</span> */}
+                    <span className="text-5xl font-medium leading-tight md:text-6xl lg:text-[5rem]">
+                            Stone, Mastered.
+                        </span>
+                        <br/>
+                        <span className="text-4xl font-medium leading-tight md:text-5xl lg:text-6xl text-primary">
+                            From India. Ready for the world.
+                        </span>
                     </h1>
 
-                    <p className="mb-6 max-w-2xl text-sm md:text-base font-medium text-white/90">
-                        Elevate your architectural and interior spaces with earth’s finest natural stones. Mined with care, processed with advanced Italian technology, and exported across 40+ countries worldwide.
+                    <p className="mb-8 max-w-md text-base md:text-lg font-medium text-white/80 leading-relaxed">
+                        Selected for character. Processed<br className="hidden sm:block" />
+                        with precision. Supplied to the world.
                     </p>
-
-                    <ul className="mb-8 space-y-2 text-sm md:text-base font-medium text-white/90">
-                        <li className="flex items-center space-x-2">
-                            <span className="text-primary">✔</span>
-                            <span>Precision-Engineered Italian Cut Slabs</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                            <span className="text-primary">✔</span>
-                            <span>Sustainably & Ethically Sourced</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                            <span className="text-primary">✔</span>
-                            <span>Trusted by Global Architects & Luxury Builders</span>
-                        </li>
-                    </ul>
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-6">
                         <Button className="w-full sm:w-auto" asChild>

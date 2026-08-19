@@ -138,7 +138,7 @@ export default function GraniteCalibratedTilesInIndia() {
                     <p>Madhav Marbles and Granite Ltd is an experienced supplier, manufacturer, and exporter of XL Granite Tiles, <a className="text-primary" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/"><strong>Granite slabs</strong></a>, and <a className="text-primary" href="https://www.madhavmarbles.com/granite-calibrated-tiles-in-india/"><strong>Regular Calibrated</strong></a> granite tiles in India. We offer a variety of Tiles in different finishes, shades, and dimensions, to suit your needs. Our exclusive collection of tiles comes in a variety of colors, textures, and patterns. We export this collection in various areas and majorly supply to countries of&nbsp; Germany, Poland, Slovenia, Slovakia, Austria, and a few regions of the United States, along with other parts of the world. <a className="text-primary" href="https://www.madhavmarbles.com/reach-us/"><strong>Contact us</strong></a>! <br /><br />Know more about our stone range at<a className="text-primary" href="https://in.linkedin.com/company/madhav-marble-and-granite-ltd-india"> <strong>LinkedIn</strong></a></p>
                 </div>
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
     )

@@ -130,7 +130,7 @@ const ProductPage = () => {
                     </div>
                 </Section>
             )}
-            <CtaSection />
+            {/* <CtaSection /> */}
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div>
 

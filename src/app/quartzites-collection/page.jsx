@@ -142,7 +142,7 @@ export default function QuartzitesCollection() {
                     alt=""
                 />
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
 
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div >

@@ -135,7 +135,7 @@ export default function ManufacturerOfGraniteIndia() {
                     }
                 />
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
             <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </div >
     )

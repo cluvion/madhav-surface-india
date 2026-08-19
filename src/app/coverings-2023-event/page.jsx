@@ -58,7 +58,7 @@ export default function Coverings2023Event() {
                     </div>
                 </div>
             </Section>
-            <CtaSection />
+            {/* <CtaSection /> */}
         </div>
     )
 }

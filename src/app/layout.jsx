@@ -7,6 +7,7 @@ import FloatingContact from "@/components/floating-contact";
 // import CustomCursor from "@/components/custom-cursor";
 import { generateMetadata as generateSEOMetadata, generateOrganizationSchema } from "@/lib/seo";
 import Script from "next/script";
+import CtaSection from "@/components/page/CtaSection";
 
 export const metadata = generateSEOMetadata({});
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
         <FloatingContact />
         {/* <NavbarDemo/> */}
         {children}
+        <CtaSection/>
         <Footer />
         {/* <NewFooter /> */}
       </body>
