@@ -104,7 +104,7 @@ const links = [
 
 export default function Footer() {
     return (
-        <footer className="border-b bg-gradient-to-b from-[#182820] via-[#17271f] to-gray-900 pt-8 sm:pt-12 lg:pt-16 ">
+        <footer className="border-b bg-gradient-to-b from-[#182820] via-[#17271f] to-[#0f1e17] pt-8 sm:pt-12 lg:pt-16 ">
             <div className="mx-auto px-4 sm:px-8 lg:px-16">
                 <div className="grid gap-8 sm:gap-10 lg:gap-12 md:grid-cols-5">
                     <div className="md:col-span-2 space-y-4 sm:space-y-6 flex flex-col items-center md:items-start text-center md:text-left">
@@ -142,7 +142,7 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-                <div className="lg:mt-12 flex flex-wrap items-end justify-center md:justify-between gap-6 border-t py-6">
+                <div className="lg:mt-12 flex flex-wrap items-end justify-center md:justify-between gap-6 border-t border-white/20 py-6">
                     <span className="text-muted-foreground order-last block text-center text-sm md:order-first">Copyright © {new Date().getFullYear()} Madhav Marbles and Granites Ltd. All rights reserved. Powered by <Link href="https://cluvion.com" target="_blank" className="text-primary font-bold">Cluvion</Link>
                     </span>
                     <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">

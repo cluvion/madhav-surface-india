@@ -123,8 +123,8 @@ export default function MarbleCollection() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/images/kitchen-countertops.png" alt="Kitchen Countertops" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/images/kitchen-countertops.png" alt="Kitchen Countertops" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Kitchen Countertops</h3>
@@ -134,8 +134,8 @@ export default function MarbleCollection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/images/flooring.png" alt="Flooring" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/images/flooring.png" alt="Flooring" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Flooring</h3>
@@ -145,8 +145,8 @@ export default function MarbleCollection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/images/wall-cladding.png" alt="Wall Cladding" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/images/wall-cladding.png" alt="Wall Cladding" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Wall Cladding</h3>
@@ -156,8 +156,8 @@ export default function MarbleCollection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step4.png" alt="Vanity Tops" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/assets/Step4.png" alt="Vanity Tops" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Vanity Tops</h3>
@@ -172,7 +172,7 @@ export default function MarbleCollection() {
                     title="Madhav Marble – Best Marble Manufacturer, Supplier, and Distributor"
                     p1={<>Madhav Marble is known for supplying a vast array of marble collections in various sizes, shapes, textures &amp; forms to widely fulfill the client&apos;s expectations. When it comes to manufacturing, we never compromise on quality and strive to deliver the best to our clients. We use modern machinery &amp; equipment to process the marbles &amp; for exceptional finishing that is further used for various construction applications.</>}
                     p2={<>We are the most reputed and trusted marble manufacturers &amp; suppliers in India with unmatchable products. Having 30+ yrs of experience, we are specialists in the competitive market supplying premium marble across different parts of the globe with a variety of patterns &amp; designs that suit the client&apos;s needs &amp; requirements.</>}
-                    src="/assets/Step5.png"
+                    src="/images/contact.jpeg"
                     alt=""
                 />
             </Section>

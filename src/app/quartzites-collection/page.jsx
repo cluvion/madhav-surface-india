@@ -89,8 +89,8 @@ export default function QuartzitesCollection() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Kitchen Countertops" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/images/kitchen-countertops.png" alt="Kitchen Countertops" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Kitchen Countertops</h3>
@@ -100,8 +100,8 @@ export default function QuartzitesCollection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Flooring" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/images/flooring.png" alt="Flooring" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Flooring</h3>
@@ -111,8 +111,8 @@ export default function QuartzitesCollection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Wall Cladding" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/images/wall-cladding.png" alt="Wall Cladding" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Wall Cladding</h3>
@@ -122,8 +122,8 @@ export default function QuartzitesCollection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step4.png" alt="Outdoor Applications" width={1000} height={1000} className="object-cover" />
+                            <div className="relative w-full aspect-square">
+                                <Image src="/assets/Step4.png" alt="Outdoor Applications" fill className="object-cover rounded-md" />
                             </div>
                             <div className="div space-y-1">
                                 <h3 className="text-2xl font-bold text-foreground">Outdoor Applications</h3>
@@ -138,7 +138,7 @@ export default function QuartzitesCollection() {
                     title="Madhav Marble – Best Quartzite Manufacturer, Supplier, and Distributor"
                     p1={<>Madhav Marble is renowned for supplying a vast array of quartzite collections in various sizes, textures &amp; finishes to widely fulfill client expectations. Our modern machinery &amp; equipment ensure exceptional finishing that is further used for various construction applications.</>}
                     p2={<>With 30+ years of experience, we are specialists in supplying premium quartzite across different parts of the globe. Our commitment to quality and customer satisfaction has made us the preferred choice for architects, designers, and builders worldwide.</>}
-                    src="/assets/Step5.png"
+                    src="/images/contact.jpeg"
                     alt=""
                 />
             </Section>

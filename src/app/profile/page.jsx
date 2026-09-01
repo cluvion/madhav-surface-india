@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from 'react';
 import Section from '@/components/section'
 import Image from 'next/image';
 import PageHeader from '@/components/pageheader'
@@ -15,6 +16,34 @@ import Link from 'next/link';
 // });
 
 const Profile = () => {
+    const [activeRegion, setActiveRegion] = useState('Europe');
+
+    const regionsData = [
+        {
+            name: "Americas",
+            countries: ["Argentina", "Bahamas", "Canada", "Colombia", "Puerto Rico", "Trinidad & Tobago", "United States of America", "Uruguay"]
+        },
+        {
+            name: "Europe",
+            countries: ["Albania", "Austria", "Belgium", "Bosnia & Herzegovina", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Hungary", "Italy", "Kosovo", "Latvia", "Lithuania", "Montenegro", "Netherlands", "North Macedonia", "Poland", "Portugal", "Romania", "Russia", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "Turkey", "United Kingdom"]
+        },
+        {
+            name: "Middle East",
+            countries: ["Iran", "Jordan", "Kuwait", "Lebanon", "Oman", "Palestine", "UAE"]
+        },
+        {
+            name: "Africa",
+            countries: ["Algeria", "Cameroon", "Egypt", "Kenya", "Libya", "Morocco", "Nigeria", "South Africa"]
+        },
+        {
+            name: "Asia",
+            countries: ["Hong Kong", "Indonesia", "Japan", "Malaysia", "Maldives", "Singapore", "Vietnam"]
+        },
+        {
+            name: "Oceania",
+            countries: ["Australia", "New Zealand"]
+        }
+    ];
 
     const images = [
         {
@@ -153,17 +182,17 @@ const Profile = () => {
                 </div>
 
                 {/* Technology Section Grid */}
-                <div id="technology" className="mb-32">
+                <div id="technology" className="mb-32 scroll-mt-24 md:scroll-mt-32">
                     <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
-                        THE WORK BEHIND THE SURFACE
+                        TECHNOLOGY & MANUFACTURING
                     </span>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-16">
                         <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground" style={{ fontFamily: "serif" }}>
-                            Technology provides control.<br/>Experience provides judgement.
+                            Precision is built<br/>into the process.
                         </h2>
                         <div className="flex items-end">
                             <p className="text-foreground/70 text-base md:text-lg leading-relaxed max-w-md">
-                                Natural stone cannot be manufactured into uniformity. It must be understood, strengthened and finished with respect for its individual character.
+                                The character comes from nature. Control comes from what happens next. Specialised Italian systems support each stage of cutting, reinforcement, calibration, finishing and inspection.
                             </p>
                         </div>
                     </div>
@@ -171,12 +200,12 @@ const Profile = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border/50 bg-[#f8f7f2]">
                         {/* Grid items */}
                         {[
-                            { num: "01", title: "Selection", desc: "Blocks are evaluated for colour, structure, movement and intended application." },
-                            { num: "02", title: "Cutting", desc: "Selected blocks are transformed into slabs, cutter slabs and tile formats." },
-                            { num: "03", title: "Strengthening", desc: "Resin and reinforcement processes improve stability while respecting the stone." },
-                            { num: "04", title: "Finishing", desc: "Polishing, flaming and specialised treatments shape the final surface." },
-                            { num: "05", title: "Calibration", desc: "Thickness and dimensions are controlled for consistent installation." },
-                            { num: "06", title: "Inspection", desc: "Finished material is reviewed, documented and prepared for dispatch." },
+                            { num: "01", title: "Block Preparation", desc: "Blocks are evaluated for colour, structure, movement and intended application." },
+                            { num: "02", title: "Precision Cutting", desc: "Selected blocks are transformed into slabs, cutter slabs and tile formats." },
+                            { num: "03", title: "Resin & Reinforcement", desc: "Resin and reinforcement processes improve stability while respecting the stone." },
+                            { num: "04", title: "Calibration", desc: "Thickness and dimensions are controlled for consistent installation." },
+                            { num: "05", title: "Surface Finishing", desc: "Polishing, flaming and specialised treatments shape the final surface." },
+                            { num: "06", title: "Final Inspection", desc: "Finished material is reviewed, documented and prepared for dispatch." },
                         ].map((step, index) => (
                             <div key={index} className="border-r border-b border-border/50 p-8 md:p-12 hover:bg-white transition-colors group">
                                 <span className="text-primary font-bold text-xs mb-12 block">{step.num}</span>
@@ -277,92 +306,97 @@ const Profile = () => {
 
 
 
-                {/* State of the art Italian Machines Table */}
-                <div className="mt-12 md:mt-20">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
-                        State of the art Italian Machines
-                    </h3>
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-collapse border border-foreground/20 text-sm md:text-base">
-                            <tbody>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Wire Dressing Machines</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">M-590 Black Cutter</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Gargsaws</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">M-530 Black Cutter</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Edge Trimming Machine</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Calibration Machine</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Slab Polishing Lines</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Resining Machine</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Resin Line Epoxy Line</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Grinding &amp; Polishing Machine</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Bridge Milling Machine</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Tile Resin Plast</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium">Flaming Machine</td>
-                                    <td className="border border-foreground/20 px-4 py-3 text-foreground font-medium"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                {/* Removed old machinery table */}
 
-                {/* Serving the World Table */}
-                <div className="mt-12 md:mt-20">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
-                        SERVING THE WORLD:
-                    </h3>
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-collapse border border-foreground/20 text-sm md:text-base">
-                            <tbody>
-                                {[
-                                    ["Albania", "Lebanon", "South Africa"],
-                                    ["Algeria", "Puerto Rico", "United States of America"],
-                                    ["Hungary", "Cyprus", "Germany"],
-                                    ["Argentina", "Libya", "Netherlands"],
-                                    ["Indonesia", "Romania", "Spain"],
-                                    ["Australia", "Czech", "Uruguay"],
-                                    ["Iran", "Lithuania", "Celebrattag-31"],
-                                    ["Austria", "Russia", "Hong Kong"],
-                                    ["Italy", "Switzerland", "New Zealand"],
-                                    ["Bahamas", "Denmark", "Sweden"],
-                                    ["Jordan", "Macedonia", "Vietnam"],
-                                    ["Bulgaria", "Serbia", ""],
-                                    ["Belgium", "Trinidad & Tobago", ""],
-                                    ["Japan", "Egypt", ""],
-                                    ["Bosnia & Herzegovina", "Malaysia", ""],
-                                    ["Kenya", "Singapore", ""],
-                                    ["Nigeria Oman", "Turkey", ""],
-                                    ["Cameroon", "Estonia", ""],
-                                    ["Kosovo", "Maldives", ""],
-                                    ["Palestine", "Slovakia", ""],
-                                    ["Canada", "UAE", ""],
-                                    ["Kuwait", "Finland", ""],
-                                    ["Poland", "Montenegro", ""],
-                                    ["Colombia", "Slovenia", ""],
-                                    ["Latvia", "UK", ""],
-                                    ["Portugal", "France", ""],
-                                    ["Croatia", "Morocco", ""],
-                                ].map((row, i) => (
-                                    <tr key={i}>
-                                        <td className="border border-foreground/20 px-4 py-2 text-foreground font-medium w-1/3">{row[0]}</td>
-                                        <td className="border border-foreground/20 px-4 py-2 text-foreground font-medium w-1/3">{row[1]}</td>
-                                        <td className="border border-foreground/20 px-4 py-2 text-foreground font-medium w-1/3">{row[2]}</td>
-                                    </tr>
+                {/* Global Reach Section */}
+                <div className="mt-24 md:mt-32 mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+                        {/* Left Side: Title and Stats */}
+                        <div>
+                            <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                                GLOBAL REACH
+                            </span>
+                            <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                                Across markets.<br/>Close to customers.
+                            </h2>
+                            <p className="text-foreground/70 text-base md:text-lg leading-relaxed mb-12">
+                                Since 1989, Madhav has supplied Indian natural stone to customers, programmes and projects across international markets.
+                            </p>
+                            
+                            <div className="flex flex-col mb-12">
+                                <span className="text-7xl md:text-8xl font-light text-primary leading-none mb-2">65</span>
+                                <span className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">International Markets</span>
+                            </div>
+
+                            <Button className="bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-8 py-6 uppercase tracking-wider font-semibold text-xs hidden md:inline-flex">
+                                EXPLORE OUR GLOBAL EXPERIENCE
+                            </Button>
+                        </div>
+                        
+                        {/* Right Side: Interactive Region Selector */}
+                        <div className="flex flex-col bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8 text-center md:text-left">
+                                AMERICAS · EUROPE · MIDDLE EAST · AFRICA · ASIA · OCEANIA
+                            </h3>
+
+                            {/* Desktop/Tablet Tabs */}
+                            <div className="hidden md:flex flex-wrap gap-x-6 gap-y-4 mb-8 border-b border-border/50 pb-2">
+                                {regionsData.map((region) => (
+                                    <button 
+                                        key={region.name}
+                                        onClick={() => setActiveRegion(region.name)}
+                                        className={`text-xs font-bold uppercase tracking-widest pb-2 relative transition-colors ${activeRegion === region.name ? 'text-primary' : 'text-foreground/50 hover:text-foreground'}`}
+                                    >
+                                        {region.name}
+                                        {activeRegion === region.name && (
+                                            <span className="absolute bottom-[-9px] left-0 w-full h-[2px] bg-primary"></span>
+                                        )}
+                                    </button>
                                 ))}
-                            </tbody>
-                        </table>
+                            </div>
+                            
+                            {/* Desktop/Tablet Content */}
+                            <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-y-4 gap-x-2">
+                                {regionsData.find(r => r.name === activeRegion)?.countries.map(country => (
+                                    <div key={country} className="text-sm text-foreground/80 flex items-center">
+                                        <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 opacity-70"></span>
+                                        {country}
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Mobile Accordion */}
+                            <div className="md:hidden flex flex-col space-y-2">
+                                {regionsData.map((region) => (
+                                    <div key={region.name} className="border border-border/50 bg-white rounded-md overflow-hidden">
+                                        <button 
+                                            onClick={() => setActiveRegion(activeRegion === region.name ? '' : region.name)}
+                                            className="w-full flex justify-between items-center text-left font-bold text-xs uppercase tracking-widest p-4 bg-[#f8f7f2] hover:bg-white transition-colors"
+                                        >
+                                            <span className={activeRegion === region.name ? 'text-primary' : 'text-foreground'}>{region.name}</span>
+                                            <span className={`text-primary text-lg font-light transition-transform duration-300 ${activeRegion === region.name ? 'rotate-45' : ''}`}>
+                                                +
+                                            </span>
+                                        </button>
+                                        
+                                        <div className={`transition-all duration-300 ease-in-out ${activeRegion === region.name ? 'max-h-[1000px] opacity-100 p-4 border-t border-border/20' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                                            <div className="grid grid-cols-2 gap-3">
+                                                {region.countries.map(country => (
+                                                    <div key={country} className="text-xs text-foreground/80 flex items-start mt-1">
+                                                        <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-1 flex-shrink-0 opacity-70"></span>
+                                                        <span className="leading-snug">{country}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <Button className="bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-6 py-5 uppercase tracking-wider font-semibold text-xs mt-8 w-full md:hidden">
+                                EXPLORE OUR GLOBAL EXPERIENCE
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
@@ -372,172 +406,101 @@ const Profile = () => {
                     <Carousel images={images} />
                 </div> */}
 
-                {/* Technology Section */}
-                <div  className="pt-16 md:pt-24 mt-16 md:mt-24 border-t border-foreground/10">
-                    <div className="text-center md:text-left">
+                {/* Equipment Section */}
+                <div className="pt-16 md:pt-24 mt-16 md:mt-24 border-t border-foreground/10">
+                    <div className="text-center md:text-left mb-16">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                            <span className="mr-2 text-lg text-primary">¬</span> GLOBAL OPERATIONS
+                            <span className="mr-2 text-lg text-primary">¬</span> OUR EQUIPMENT
                         </span>
                         <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground max-w-4xl">
-                            Supplying the World with India&apos;s Finest Stone Surfaces
+                            Technology selected for the task.
                         </h2>
-                        <div className="flex flex-col space-y-6 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed max-w-5xl">
-                            <p>
-                                From raw geological mastery to refined architectural surfaces, <strong>Madhav Marbles &amp; Granites Ltd.</strong> bridges the gap between India&apos;s rich quarry reserves and top-tier construction projects across the globe.
-                            </p>
+                    </div>
 
-                            <div>
-                                <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2"><span className="text-primary text-2xl">🏭</span> High-Capacity, World-Class Manufacturing</h3>
-                                <p className="mb-3">Powered by an annual production capacity of <strong>600,000 m²</strong>, our processing plants feature elite Italian machinery engineered for precision cutting and flawless finishes:</p>
-                                <ul className="space-y-2 ml-2 md:ml-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                        {/* Slab Processing Panel */}
+                        <div className="group border border-border/50 bg-[#f8f7f2] rounded-lg overflow-hidden flex flex-col">
+                            <div className="relative h-[300px] w-full overflow-hidden">
+                                <Image 
+                                    src="https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05%20ok.webp" 
+                                    alt="Slab Processing" 
+                                    fill 
+                                    className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                                />
+                            </div>
+                            <div className="p-8 md:p-12 flex-grow">
+                                <h3 className="text-2xl font-bold mb-6 text-foreground" style={{ fontFamily: "serif" }}>Slab Processing</h3>
+                                <ul className="space-y-4 text-sm md:text-base text-foreground/80">
                                     <li className="flex items-start">
                                         <span className="text-primary mr-3 text-lg">■</span>
-                                        <p className="mt-1"><strong className="text-foreground">Slab Processing:</strong> 6 Gaspari Gangsaws, 2 Breton Polishing Lines, Maema Flaming Technology, and Advanced Resin Lines.</p>
+                                        <span>Gaspari Menotti Gangsaws</span>
                                     </li>
                                     <li className="flex items-start">
                                         <span className="text-primary mr-3 text-lg">■</span>
-                                        <p className="mt-1"><strong className="text-foreground">Tile Processing:</strong> 6 Pedrini Block Cutters, 2 Pedrini Polishing Lines, and Dedicated Resin Systems.</p>
+                                        <span>Breton Polishing Lines</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-primary mr-3 text-lg">■</span>
+                                        <span>Bidese Impianti Wire Dressing</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-primary mr-3 text-lg">■</span>
+                                        <span>Advanced Resin Lines</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-primary mr-3 text-lg">■</span>
+                                        <span>Maema Flaming Technology</span>
                                     </li>
                                 </ul>
                             </div>
+                        </div>
 
-                            <div>
-                                <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2"><span className="text-primary text-2xl">📍</span> Strategic Proximity to Raw Materials</h3>
-                                <p>
-                                    Location is our greatest advantage. Situated in <strong>Udaipur (Rajasthan)</strong>—in the immediate vicinity of world-famous Green Marble reserves—and <strong>Salem (Tamil Nadu)</strong> for granite, our dual manufacturing hubs give us direct, priority access to high-grade raw blocks.
-                                </p>
+                        {/* Tile Processing Panel */}
+                        <div className="group border border-border/50 bg-[#f8f7f2] rounded-lg overflow-hidden flex flex-col">
+                            <div className="relative h-[300px] w-full overflow-hidden">
+                                <Image 
+                                    src="https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/11%20HHH%20(5).webp" 
+                                    alt="Tile Processing" 
+                                    fill 
+                                    className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                                />
                             </div>
-
-                            <div>
-                                <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2"><span className="text-primary text-2xl">🌎</span> World-Class Distribution &amp; Frictionless Logistics</h3>
-                                <p className="mb-3">We proudly supply premium stone across major international markets:</p>
-                                <ul className="space-y-2 ml-2 md:ml-4">
+                            <div className="p-8 md:p-12 flex-grow">
+                                <h3 className="text-2xl font-bold mb-6 text-foreground" style={{ fontFamily: "serif" }}>Tile Processing</h3>
+                                <ul className="space-y-4 text-sm md:text-base text-foreground/80">
                                     <li className="flex items-start">
                                         <span className="text-primary mr-3 text-lg">■</span>
-                                        <p className="mt-1"><strong className="text-foreground">North &amp; South America | Canada | Europe | Australia | South Africa | Russia &amp; Beyond.</strong></p>
+                                        <span>Pedrini Block Cutters</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-primary mr-3 text-lg">■</span>
+                                        <span>Pedrini Polishing Lines</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-primary mr-3 text-lg">■</span>
+                                        <span>Precision Calibration Machines</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-primary mr-3 text-lg">■</span>
+                                        <span>Dedicated Resining Systems</span>
                                     </li>
                                 </ul>
-                                <p className="mt-6">
-                                    <strong className="text-foreground">The Madhav Promise:</strong> Our client-first team guarantees proactive communication, zero logistics delays, and seamless execution on every container shipment.
-                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="mt-16">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                            {/* Table 1: Granite Tile Plant */}
-                            <div className="bg-white/5 border border-border/50 rounded-2xl p-6 shadow-sm">
-                                <div className="border-b border-border/50 pb-4 mb-4">
-                                    <h3 className="heading text-2xl text-foreground font-medium flex items-center">
-                                        <span className="w-1.5 h-6 bg-primary mr-3 rounded-full"></span>
-                                        Our Granite Tile Plant
-                                    </h3>
-                                </div>
-                                <div className="overflow-x-auto">
-                                    <table className="w-full text-left border-collapse">
-                                        <thead>
-                                            <tr className="text-foreground/70 border-b border-border/50 text-sm tracking-wider uppercase">
-                                                <th className="py-4 px-2 font-medium">Equipment Type</th>
-                                                <th className="py-4 px-2 font-medium">Company</th>
-                                                <th className="py-4 px-2 font-medium text-center">Quantity</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-foreground/90 divide-y divide-border/30">
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">M-590 Block Cutter</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">3</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">M-580 Block Cutter</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">4</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Calibration Machine</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">1</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Resining Machine</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">1</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Grinding & Polishing Machine</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">2</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Tile Resin Plant</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">1</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            {/* Table 2: Granite Slab Plant */}
-                            <div className="bg-white/5 border border-border/50 rounded-2xl p-6 shadow-sm">
-                                <div className="border-b border-border/50 pb-4 mb-4">
-                                    <h3 className="heading text-2xl text-foreground font-medium flex items-center">
-                                        <span className="w-1.5 h-6 bg-primary mr-3 rounded-full"></span>
-                                        Our Granite Slab Plant
-                                    </h3>
-                                </div>
-                                <div className="overflow-x-auto">
-                                    <table className="w-full text-left border-collapse">
-                                        <thead>
-                                            <tr className="text-foreground/70 border-b border-border/50 text-sm tracking-wider uppercase">
-                                                <th className="py-4 px-2 font-medium">Equipment Type</th>
-                                                <th className="py-4 px-2 font-medium">Company</th>
-                                                <th className="py-4 px-2 font-medium text-center">Quantity</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-foreground/90 divide-y divide-border/30">
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Wire Dressing Machines</td>
-                                                <td className="py-4 px-2 text-foreground/70">bidese impianti</td>
-                                                <td className="py-4 px-2 text-center font-bold">3</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Gangsaws</td>
-                                                <td className="py-4 px-2 text-foreground/70">GASPARI MENOTTI</td>
-                                                <td className="py-4 px-2 text-center font-bold">6</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Edge Trimming Machine</td>
-                                                <td className="py-4 px-2 text-foreground/70">Pedrini</td>
-                                                <td className="py-4 px-2 text-center font-bold">2</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Slab Polishing Lines</td>
-                                                <td className="py-4 px-2 text-foreground/70">breton</td>
-                                                <td className="py-4 px-2 text-center font-bold">2</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Resin Line ( Epoxy Line)</td>
-                                                <td className="py-4 px-2 text-foreground/70">S.E.I.</td>
-                                                <td className="py-4 px-2 text-center font-bold">1</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Bridge Milling Machine</td>
-                                                <td className="py-4 px-2 text-foreground/70">GMM</td>
-                                                <td className="py-4 px-2 text-center font-bold">2</td>
-                                            </tr>
-                                            <tr className="hover:bg-muted/30 transition-colors">
-                                                <td className="py-4 px-2 font-medium">Flaming Machine</td>
-                                                <td className="py-4 px-2 text-foreground/70">maema</td>
-                                                <td className="py-4 px-2 text-center font-bold">1</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="mt-20 md:mt-32 text-center max-w-3xl mx-auto flex flex-col items-center">
+                        <h3 className="text-3xl md:text-5xl font-medium leading-[1.2] text-foreground mb-10" style={{ fontFamily: "serif" }}>
+                            Machines provide precision.<br/>
+                            <span className="text-foreground/70">People provide judgement.</span>
+                        </h3>
+                        <Link href="#corporate-film">
+                            <Button className="bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-8 py-6 uppercase tracking-wider font-semibold text-xs transition-transform hover:-translate-y-1">
+                                SEE HOW WE WORK
+                            </Button>
+                        </Link>
                     </div>
+                </div>
 
                     {/* Project Carousel Section */}
                     <div className="relative mt-8 md:mt-24">
@@ -554,54 +517,57 @@ const Profile = () => {
                             ))}
                         </div>
                     </div>
-                </div>
 
                 {/* Corporate Film Section */}
-                <div id="corporate-film" className="pt-16 md:pt-24 mt-16 md:mt-24 border-t border-foreground/10">
-                    <div className="container mx-auto px-4 md:px-6 mb-12">
-                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                             <span className="mr-2 text-lg text-primary">¬</span> MADHAV MARBLES & GRANITES : THE ART & SCIENCE OF NATURAL STONE
-                         </span>
-                         <h2 className="heading font-thin text-[1.6rem] md:text-[3rem] leading-[1.1] mb-6 max-w-4xl text-foreground">
-                             Where Geological Majesty Meets Italian Engineering.
-                         </h2>
-                         <p className="text-foreground/80 mb-8 text-base md:text-lg max-w-4xl text-justify">
-                             Take a behind-the-scenes journey into the heart of India&apos;s premier stone manufacturing powerhouse. Our Corporate Film unveils the journey of raw, unyielding earth transformed into high-grade slabs and tiles exported across 40+ countries.
-                         </p>
-                         
-                         <h3 className="text-xl font-bold mb-4 text-foreground">What You&apos;ll Experience in the Film:</h3>
-                         <ul className="space-y-4 text-foreground/80 text-sm md:text-base max-w-4xl mb-12">
-                             <li className="flex items-start">
-                                 <span className="mr-3 text-lg">⛏️</span>
-                                 <p className="mt-1"><strong className="text-foreground">Direct Quarry Extraction:</strong> Sourcing raw metamorphosed granite from South India and world-famous Green Marble from Udaipur.</p>
-                             </li>
-                             <li className="flex items-start">
-                                 <span className="mr-3 text-lg">⚙️</span>
-                                 <p className="mt-1"><strong className="text-foreground">State-of-the-Art Processing:</strong> High-speed Gaspari Gang-Saws, Breton polishing lines, and Pedrini tile systems in action.</p>
-                             </li>
-                             <li className="flex items-start">
-                                 <span className="mr-3 text-lg">🛡️</span>
-                                 <p className="mt-1"><strong className="text-foreground">Uncompromising Quality Control:</strong> Rigorous testing for density, stain resistance, gloss level, and slab integrity.</p>
-                             </li>
-                             <li className="flex items-start">
-                                 <span className="mr-3 text-lg">🌐</span>
-                                 <p className="mt-1"><strong className="text-foreground">Global Distribution:</strong> Seamless packaging and container shipping to North America, Europe, Australia, and beyond.</p>
-                             </li>
-                         </ul>
-                     </div>
-
-                    <div className="flex items-center justify-center container mx-auto px-4 md:px-6">
-                        <div className="w-full md:w-4/5 lg:w-2/3 aspect-video overflow-hidden rounded-xl shadow-2xl">
-                            <iframe
-                                className="w-full h-full"
-                                src="https://www.youtube.com/embed/0rNFT79ossE?si=kyASiZhDNgtZIPX8"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                            ></iframe>
+                <div id="corporate-film" className="mb-32 scroll-mt-24 md:scroll-mt-32 pt-16 md:pt-24 mt-16 md:mt-24 border-t border-border/50">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                        <div>
+                            <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                                MADHAV MARBLES & GRANITES : THE ART & SCIENCE OF NATURAL STONE
+                            </span>
+                            <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                                Where Geological Majesty Meets Italian Engineering.
+                            </h2>
+                            <p className="text-foreground/70 text-base md:text-lg leading-relaxed">
+                                Take a behind-the-scenes journey into the heart of India&apos;s premier stone manufacturing powerhouse. Our Corporate Film unveils the journey of raw, unyielding earth transformed into high-grade slabs and tiles exported across 40+ countries.
+                            </p>
                         </div>
+                        
+                        <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                                What You&apos;ll Experience in the Film
+                            </h3>
+                            <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Direct Quarry Extraction</strong> Sourcing raw metamorphosed granite from South India and world-famous Green Marble from Udaipur.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">State-of-the-Art Processing</strong> High-speed Gaspari Gang-Saws, Breton polishing lines, and Pedrini tile systems in action.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Uncompromising Quality Control</strong> Rigorous testing for density, stain resistance, gloss level, and slab integrity.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Global Distribution</strong> Seamless packaging and container shipping to North America, Europe, Australia, and beyond.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="w-full aspect-video overflow-hidden shadow-sm border border-border/30 rounded-lg">
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/0rNFT79ossE?si=kyASiZhDNgtZIPX8"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
 
