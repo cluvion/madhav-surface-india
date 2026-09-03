@@ -4,11 +4,11 @@
 import { collectionTiles } from './collectionTiles';
 
 export const products = [
+  ...(collectionTiles['quartzites'] || []),
   ...(collectionTiles['regular-tiles'] || []),
   ...(collectionTiles['granite-slabs'] || []),
   ...(collectionTiles['exotics-exclusive'] || []),
   ...(collectionTiles['granite-cutter-slabs-supplier'] || []),
-  ...(collectionTiles['quartzites'] || []),
   ...(collectionTiles['granite'] || []),
   ...(collectionTiles['marbles'] || []),
   ...(collectionTiles['granite-xl-tiles'] || []),
@@ -61,30 +61,27 @@ export const reviews = [
 
 export const faqData = [
   {
-    id: 'getting-started',
-    question: 'How do I request a sample or get a quote?',
+    id: 'types-of-stone',
+    question: 'What types of natural stone does Madhav Marbles & Granites supply?',
     answer:
-      'To request a sample or receive a quote, visit any product or collection page and click on the “Order Sample” or “Request Quote” buttons. Simply fill out the form and our team will contact you within 24–48 hours.',
+      'We offer an extensive range of premium natural stones, including granite, marble, quartzite, granite slabs, calibrated granite tiles, and large-format granite tiles, available in a variety of colors, patterns, sizes, and finishes.',
   },
-
   {
-    id: 'activities-offered',
-    question: 'What types of surfaces do you offer?',
+    id: 'large-projects',
+    question: 'Do you supply natural stone for large commercial and customized projects?',
     answer:
-      'We specialize in high-performance Quartz, Porcelain, and Fusion surfaces — designed for a wide range of interior and exterior applications. Each surface is engineered for durability, aesthetics, and low maintenance.',
+      'Yes. We cater to residential, commercial, architectural, and large-scale development projects, offering customized sizes, finishes, and quantities based on specific project requirements. Our processing facilities and supply capabilities support both specialized orders and larger-volume requirements.',
   },
-
   {
-    id: 'party-packages',
-    question: 'Do you offer custom solutions or large volume pricing?',
+    id: 'international-export',
+    question: 'Does Madhav Marbles export granite and marble internationally?',
     answer:
-      'Yes. For large-scale projects or custom surface requirements, we offer tailored solutions and pricing. Reach out via our Contact or Quote Request forms, and our sales team will assist you with project-specific options.',
+      'Yes. Madhav Marbles & Granites has an established international presence, supplying natural stone to customers across North America, South America, Canada, Europe, Australia, South Africa, Russia, and the Far East, with exports reaching 40+ countries.',
   },
-
   {
-    id: 'community-engagement',
-    question: 'How can I stay updated on new collections or products?',
+    id: 'request-quotation',
+    question: 'How can I request a quotation or discuss my stone requirement?',
     answer:
-      'Subscribe to our newsletter or follow us on LinkedIn and Instagram for the latest product releases, lookbooks, and design inspiration. Be the first to know when new collections launch or exclusive drops go live.',
+      'Simply contact our team through the Contact Us form and share your requirements, including your company details, location, preferred material, quantity, size, and application. Our team will assist you with suitable stone options and further enquiry details. You can also reach us at madhav@madhavmarbles.com',
   }
 ];

@@ -33,18 +33,53 @@ export default function QuartzitesCollection() {
 
             <PageHeader title="Quartzites Collection" path="Quartzites" src="/assets/Step7.png" />
 
-            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
-                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> QUARTZITE DIVISION
-                </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                    Premium Quartzite Stone Supplier &amp; Exporter – Madhav Marble
-                </h2>
-                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                    <p>Madhav Marbles and Granite Ltd is a leading quartzite supplier, offering an exquisite range of quartzite slabs in various colors, textures, and finishes. Quartzite is a naturally occurring metamorphic stone known for its exceptional hardness, durability, and stunning visual appeal, making it ideal for both residential and commercial applications.</p>
-                    <p>Our quartzite collection features premium selections sourced from the finest quarries. Each slab is meticulously processed at our state-of-the-art manufacturing facility to ensure superior quality, precise thickness control, and flawless finishing. From elegant whites to vibrant blues and golds, our quartzites bring a unique character to every space.</p>
-                    <h3 className="heading font-thin text-xl md:text-4xl text-foreground">Exclusive Quartzite Collection From Leading Stone Suppliers</h3>
-                    <p>With decades of experience in the natural stone industry, our global clientele trusts us for unparalleled quality quartzite solutions. Following are some of the popular quartzites that are processed at our manufacturing unit:</p>
+            <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                    <div>
+                        <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                            PREMIUM QUARTZITE COLLECTION
+                        </span>
+                        <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                            Premium Quartzite Stone Supplier &amp; Exporter – Madhav Marble.
+                        </h2>
+                        <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                            <p>
+                                Madhav and Granite Ltd is a leading quartzite supplier, offering an exquisite range of quartzite slabs in various colors, textures, and finishes. Quartzite is a naturally occurring metamorphic stone known for its exceptional hardness, durability, and stunning visual appeal, making it ideal for both residential and commercial applications.
+                            </p>
+                            <p>
+                                Our quartzite collection features premium selections sourced from the finest quarries. Each slab is meticulously processed at our state-of-the-art manufacturing facility to ensure superior quality, precise thickness control, and flawless finishing. From elegant whites to vibrant blues and golds, our quartzites bring a unique character to every space.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                            WHY GLOBAL ARCHITECTS &amp; DESIGNERS CHOOSE MADHAV MARBLE
+                        </h3>
+                        <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Exquisite Range of Quartzites:</strong> A curated collection of premium quartzite slabs in diverse colors, textures, and finishes to suit a wide range of design preferences.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Superior Quality &amp; Durability:</strong> Naturally hard and highly durable, our quartzites offer excellent resistance to heat, scratches, and wear—perfect for long-lasting performance in any space.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Precision Processing &amp; Global Supply:</strong> Processed with advanced technology for precise thickness, consistency, and flawless finishes. We ensure reliable global supply with secure packaging and timely delivery.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mt-16 max-w-4xl mb-8">
+                    <h3 className="text-3xl md:text-4xl font-medium leading-[1.2] text-foreground mb-6" style={{ fontFamily: "serif" }}>
+                        Exclusive Quartzite Collection From Leading Stone Suppliers
+                    </h3>
+                    <p className="text-foreground/70 text-base md:text-lg leading-relaxed">
+                        With decades of experience in the natural stone industry, our global clientele trusts us for unparalleled quality quartzite solutions. Following are some of the popular quartzites that are processed at our manufacturing unit:
+                    </p>
                 </div>
             </div>
 
@@ -144,7 +179,7 @@ export default function QuartzitesCollection() {
             </Section>
             {/* <CtaSection /> */}
 
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div >
     )
 }

@@ -54,7 +54,7 @@ const ProductPage = () => {
                     relatedProducts={relatedProducts} 
                     setSelectedProduct={setSelectedProduct} 
                 />
-                <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+                {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
             </>
         );
     }
@@ -131,7 +131,7 @@ const ProductPage = () => {
                 </Section>
             )}
             {/* <CtaSection /> */}
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div>
 
     );

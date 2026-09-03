@@ -21,7 +21,7 @@ export default function ProductSection() {
     );
 
     // Desktop: Limit to 8 items
-    const showProducts = filteredProducts.slice(0, 8);
+    const showProducts = filteredProducts.slice(0, 4);
     // Mobile: Limit to 3 items
     const mobileProducts = filteredProducts.slice(0, 3);
 
@@ -70,7 +70,7 @@ export default function ProductSection() {
             </div>
 
             {/* Quick View Modal */}
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </Section>
     );
 }

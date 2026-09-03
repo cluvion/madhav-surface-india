@@ -23,15 +23,44 @@ export default function GraniteCalibratedTilesInIndia() {
 
             <Section>
                 {/* Top Text Section */}
-                <div className="text-center md:text-left">
-                    <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                        <span className="mr-2 text-lg text-primary">¬</span> TILE
-                    </span>
-                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                        Granite Calibrated Tiles
-                    </h2>
-                    <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                        <p>Granite is one of the most durable natural stones, renowned for its hardness, durability, and timeless reflective appearance. Calibrated <a className="text-primary" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/"><strong>granite tiles</strong></a> have become the industry standard, with precise sizing ensured through the calibration process. These tiles deliver a sophisticated, luxurious, and elegant aesthetic for both floors and walls, offering the authentic look of natural granite stone. Perfect for both indoor and outdoor applications, including kitchens, restrooms, living areas, and commercial spaces, calibrated granite tiles are scratch-resistant, highly durable, and built to last, reducing wear and tear. At Madhav Marbles, one of the top marble manufacturers in India, we offer a wide range of calibrated granite tiles in various sizes, designs, and styles to meet your project requirements. Explore our premium collection today and <a className="text-primary" href="https://www.madhavmarbles.com/contact-us/"><strong>find the perfect granite tiles</strong></a> to enhance your space.</p>
+                <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                        <div>
+                            <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                                PREMIUM GRANITE TILE COLLECTION
+                            </span>
+                            <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                                Granite<br/>Calibrated Tiles.
+                            </h2>
+                            <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                                <p>
+                                    Granite is renowned for its exceptional hardness, durability, and timeless natural appearance. Calibrated granite tiles are precisely sized through advanced calibration, delivering consistency, refined aesthetics, and seamless installation for contemporary architectural spaces.
+                                </p>
+                                <p>
+                                    Ideal for floors and walls across residential and commercial environments, these tiles offer excellent resistance to scratches, wear, and everyday use. Madhav offers a diverse collection of calibrated granite tiles in multiple sizes, designs, and styles to meet varied project requirements.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                                WHY CHOOSE MADHAV CALIBRATED GRANITE TILES
+                            </h3>
+                            <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Precision &amp; Consistent Sizing:</strong> Advanced calibration ensures accurate dimensions and uniform thickness for efficient installation and clean, seamless results.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Exceptional Durability &amp; Performance:</strong> Naturally hard, scratch-resistant, and highly durable, granite tiles are built to withstand heavy use with minimal wear and maintenance.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Versatile Indoor &amp; Outdoor Applications:</strong> Suitable for kitchens, restrooms, living areas, commercial spaces, floors, walls, and other demanding architectural applications.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -49,7 +78,7 @@ export default function GraniteCalibratedTilesInIndia() {
                 </div>
             </Section>
             {/* <CtaSection /> */}
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div>
     )
 }

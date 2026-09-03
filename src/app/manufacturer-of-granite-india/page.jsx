@@ -71,15 +71,48 @@ export default function ManufacturerOfGraniteIndia() {
                     />
                 </div>
             </div> */}
-            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
-                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> MADHAV MARBLES &amp; GRANITES
-                </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground max-w-5xl">
-                    India&apos;s Premier Manufacturer &amp; Global Exporter of South Indian Granite
-                </h2>
-                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify max-w-5xl">
-                    <p>Operating from the rich geological heartland of <strong>Salem, Tamil Nadu, Madhav Marbles &amp; Granites Ltd.</strong> has been setting the international gold standard for premium natural stone since <strong>1989</strong>. As a leading granite supplier to the <strong>USA, Europe, and over 40 countries worldwide</strong>, we transform earth&apos;s finest raw stone into breathtaking architectural surfaces.</p>
+            <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                    <div>
+                        <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                            OUR LEGACY. YOUR TRUST.
+                        </span>
+                        <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                            India&apos;s Premier Manufacturer &amp; Global Exporter of South Indian Granite.
+                        </h2>
+                        <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                            <p>
+                                Operating from the rich geological heartland of <strong>Salem, Tamil Nadu, Madhav Marbles &amp; Granites Ltd.</strong> has been setting the international gold standard for premium natural stone since <strong>1989</strong>.
+                            </p>
+                            <p>
+                                As a leading granite supplier to the <strong>USA, Europe, and over 40 countries worldwide</strong>, we transform earth&apos;s finest raw stone into breathtaking architectural surfaces.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                            BUILT ON EXPERIENCE. DRIVEN BY EXCELLENCE.
+                        </h3>
+                        <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Strategic Location Advantage:</strong> Located in Salem, Tamil Nadu—one of India&apos;s most renowned granite belts—ensuring access to an exceptional range of colors, textures, and geological formations.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Legacy of Expertise Since 1989:</strong> Over three decades of industry leadership, innovation, and unwavering commitment to quality have earned us the trust of architects, builders, and importers worldwide.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Global Reach, Local Strength:</strong> Trusted supplier to the USA, Europe, and more than 40 countries, backed by robust production capacity, stringent quality control, and reliable logistics.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Nature. Crafted to Perfection:</strong> We combine advanced technology with skilled craftsmanship to deliver premium granite surfaces that inspire and endure.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -136,7 +169,7 @@ export default function ManufacturerOfGraniteIndia() {
                 />
             </Section>
             {/* <CtaSection /> */}
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div >
     )
 }

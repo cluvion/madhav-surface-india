@@ -94,7 +94,7 @@ const ProductSection = ({ product }) => {
           )}
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button variant={"secondary"}>
+            <Button variant={"secondary"} onClick={() => setIsSampleOpen(true)}>
               Order Sample
             </Button>
             <Link href={"/contact-us"} className="w-full">

@@ -31,18 +31,58 @@ export default function GraniteCalibratedTilesInIndia() {
 
             <Section>
                 {/* Top Text Section */}
-                <div className="text-center md:text-left">
-                    <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                        <span className="mr-2 text-lg text-primary">¬</span> GRANITE XL TILES
-                    </span>
-                    <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                        Large Format Granite Tiles for Luxurious Interiors
-                        {/* <span className="text-primary "> </span> */}
-                    </h2>
-                    <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                        <p>Granite XL tiles are an excellent way to bring the look of natural granite to your space. These Large Granite tiles imitate the pattern of natural stone, leading to adding an air of authenticity to your space. Being the top Granite tiles supplier and exporter we aim to provide versatile and stylish options that best fit flooring and wall cladding panels. We carry a wide selection of granite XL tiles available in four different finishes: Polished, Honed, Flamed, and Leather. These tiles create a luxurious and high-end look that is perfect for any home or commercial space. Madhav Marbles and Granites Ltd is one of the leading Granite tiles suppliers, manufacturers, and exporters of natural stone tiles in India that supply Large granite tiles in the dimensions of 1200*600 mm. With a wide variety of colors, textures, and patterns to choose from, our calibrated granite XL tiles are a perfect fit for any space. If you are looking for high-quality and durable granite tiles, then we have the best to serve you.</p>
-                        <h3 className="heading font-thin text-xl md:text-4xl text-foreground">Exquisite Large Granite Tiles Collection</h3>
-                        <p>Find a diverse collection of exclusive granite XL tiles readily available to export by the leading Granite tiles Suppliers and Exporters. Browse through our range of granite tiles and find the perfect one for your requirements.</p>
+                <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                        <div>
+                            <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                                PREMIUM GRANITE COLLECTION
+                            </span>
+                            <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                                Large Format Granite Tiles for Luxurious Interiors.
+                            </h2>
+                            <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                                <p>
+                                    Granite XL tiles are an excellent way to bring the look of natural granite to your space. These large granite tiles imitate the pattern of natural stone, adding an air of authenticity and timeless beauty to any environment.
+                                </p>
+                                <p>
+                                    As a leading granite tiles supplier and exporter, we offer versatile and stylish solutions ideal for both flooring and wall cladding applications. Our granite XL tiles are available in four premium finishes: Polished, Honed, Flamed, and Leather—designed to create a sophisticated and high-end look for residential and commercial spaces.
+                                </p>
+                                <p>
+                                    Madhav and Granites Ltd is one of India&apos;s trusted granite tiles suppliers, manufacturers, and exporters of natural stone tiles. Our large format granite tiles are available in the dimension of <strong>1200 x 600 mm</strong>, with a wide range of colors, textures, and patterns to suit every design requirement. If you are looking for high-quality, durable, and beautiful granite tiles, we have the perfect solution for your space.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                                WHY GLOBAL ARCHITECTS &amp; DESIGNERS CHOOSE MADHAV MARBLE
+                            </h3>
+                            <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Expansive Format, Seamless Beauty:</strong> Large format granite tiles with minimal joints create a seamless, spacious look with the natural elegance of granite.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Premium Finishes for Every Style:</strong> Choose from Polished, Honed, Flamed, and Leather finishes to achieve the perfect balance of luxury, texture, and performance.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                    <p className="leading-relaxed"><strong className="text-foreground block mb-1">Engineered for Performance &amp; Global Projects:</strong> Calibrated for precision, built for durability, and trusted worldwide for delivering large format granite tiles that elevate residential and commercial interiors.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="mt-16 max-w-4xl mb-8">
+                        <h3 className="text-3xl md:text-4xl font-medium leading-[1.2] text-foreground mb-6" style={{ fontFamily: "serif" }}>
+                            Exquisite Large Granite Tiles Collection
+                        </h3>
+                        <p className="text-foreground/70 text-base md:text-lg leading-relaxed">
+                            Find a diverse collection of exclusive granite XL tiles readily available to export by the leading Granite tiles Suppliers and Exporters. Browse through our range of granite tiles and find the perfect one for your requirements.
+                        </p>
+                    </div>
+                </div>
                         <div className="relative mt-8 md:mt-16">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
                                 {xlTileProducts.map((product) => (
@@ -57,8 +97,6 @@ export default function GraniteCalibratedTilesInIndia() {
                             </div>
 
                         </div>
-                    </div>
-                </div>
 
                 {/* Specifications Table */}
                 <div className="mt-8 md:mt-16">
@@ -112,7 +150,7 @@ export default function GraniteCalibratedTilesInIndia() {
                 <div className="space-y-8 text-justify text-foreground/50 text-sm md:text-base leading-relaxed mt-8 md:mt-16">
                     <div>
                         <h3 className="heading font-thin text-xl md:text-3xl text-foreground mb-3">Granite Tiles For Countertop</h3>
-                        <p>If you&apos;re looking for a luxurious and durable kitchen countertop material that won&apos;t break the bank, then granite xl tiles are a great option! Here at Madhav Marbles and Granites Ltd, the leading Granite tiles supplier in India, have a wide collection of granite stones to choose from.</p>
+                        <p>If you&apos;re looking for a luxurious and durable kitchen countertop material that won&apos;t break the bank, then granite xl tiles are a great option! Here at Madhav and Granites Ltd, the leading Granite tiles supplier in India, have a wide collection of granite stones to choose from.</p>
                     </div>
 
                     <div>
@@ -135,11 +173,11 @@ export default function GraniteCalibratedTilesInIndia() {
                     <h2 className="heading font-thin text-xl md:text-4xl mb-6 text-foreground">
                         Madhav Marble & Granite Ltd – A Leading Granite Tiles Supplier From India
                     </h2>
-                    <p>Madhav Marbles and Granite Ltd is an experienced supplier, manufacturer, and exporter of XL Granite Tiles, <a className="text-primary" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/"><strong>Granite slabs</strong></a>, and <a className="text-primary" href="https://www.madhavmarbles.com/granite-calibrated-tiles-in-india/"><strong>Regular Calibrated</strong></a> granite tiles in India. We offer a variety of Tiles in different finishes, shades, and dimensions, to suit your needs. Our exclusive collection of tiles comes in a variety of colors, textures, and patterns. We export this collection in various areas and majorly supply to countries of&nbsp; Germany, Poland, Slovenia, Slovakia, Austria, and a few regions of the United States, along with other parts of the world. <a className="text-primary" href="https://www.madhavmarbles.com/reach-us/"><strong>Contact us</strong></a>! <br /><br />Know more about our stone range at<a className="text-primary" href="https://in.linkedin.com/company/madhav-marble-and-granite-ltd-india"> <strong>LinkedIn</strong></a></p>
+                    <p>Madhav and Granite Ltd is an experienced supplier, manufacturer, and exporter of XL Granite Tiles, <a className="text-primary" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/"><strong>Granite slabs</strong></a>, and <a className="text-primary" href="https://www.madhavmarbles.com/granite-calibrated-tiles-in-india/"><strong>Regular Calibrated</strong></a> granite tiles in India. We offer a variety of Tiles in different finishes, shades, and dimensions, to suit your needs. Our exclusive collection of tiles comes in a variety of colors, textures, and patterns. We export this collection in various areas and majorly supply to countries of&nbsp; Germany, Poland, Slovenia, Slovakia, Austria, and a few regions of the United States, along with other parts of the world. <a className="text-primary" href="https://www.madhavmarbles.com/reach-us/"><strong>Contact us</strong></a>! <br /><br />Know more about our stone range at<a className="text-primary" href="https://in.linkedin.com/company/madhav-marble-and-granite-ltd-india"> <strong>LinkedIn</strong></a></p>
                 </div>
             </Section>
             {/* <CtaSection /> */}
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div>
     )
 }

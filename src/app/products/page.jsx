@@ -127,7 +127,7 @@ export default function ProductsPage() {
             </Section>
 
             {/* Quick View Modal (Reused) */}
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div>
     );
 }

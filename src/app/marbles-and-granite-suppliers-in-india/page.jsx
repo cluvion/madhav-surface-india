@@ -52,7 +52,7 @@ export default function MarblesAndGraniteSuppliersInIndia() {
             </Section>
             {/* <CtaSection /> */}
 
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div>
     )
 }

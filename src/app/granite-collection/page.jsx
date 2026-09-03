@@ -20,18 +20,53 @@ export default function GraniteCollection() {
 
             <PageHeader title="Granite Collection" path="Granite" src="/assets/Step7.png" />
 
-            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
-                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> GRANITE DIVISION
-                </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                    Premium Granite Stone Supplier &amp; Exporter – Madhav Marble
-                </h2>
-                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                    <p>Madhav Marbles and Granite Ltd is one of India&apos;s premier granite manufacturers &amp; suppliers. We offer a comprehensive range of granite in a multitude of colors, textures, and patterns, meticulously crafted with precision and exceptional quality. From classic blacks and whites to exotic blues and golds, we are the leading granite suppliers in India, exporting extensively to the USA, Europe, and worldwide.</p>
-                    <p>Our extensive assortment of granite comes in various forms and finishes, processed at our state-of-the-art manufacturing facility. We have established a strong reputation in the industry as the top choice for granite manufacturing and supply. Whether it&apos;s large-scale commercial projects or individual residential requirements, we cater to every client&apos;s unique style and preferences.</p>
-                    <h3 className="heading font-thin text-xl md:text-4xl text-foreground">Exclusive Granite Collection From India&apos;s Leading Granite Suppliers</h3>
-                    <p>With decades of experience in the natural stone industry, our global clientele trusts us for the finest quality granite solutions. Following are some of our popular granite varieties processed at our state-of-the-art manufacturing unit:</p>
+            <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                    <div>
+                        <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                            PREMIUM GRANITE COLLECTION
+                        </span>
+                        <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                            Premium Granite Stone Supplier &amp; Exporter – Madhav Marble.
+                        </h2>
+                        <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                            <p>
+                                Madhav and Granite Ltd is one of India&apos;s premier granite manufacturers &amp; suppliers. We offer a comprehensive range of granite in a multitude of colors, textures, and patterns, meticulously crafted with precision and exceptional quality. From classic blacks and whites to exotic blues and golds, we are the leading granite suppliers in India, exporting extensively to the USA, Europe, and worldwide.
+                            </p>
+                            <p>
+                                Our extensive assortment of granite comes in various forms and finishes, processed at our state-of-the-art manufacturing facility. We have established a strong reputation in the industry as the top choice for granite manufacturing and supply. Whether it&apos;s large-scale commercial projects or individual residential requirements, we cater to every client&apos;s unique style and preferences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                            WHY GLOBAL ARCHITECTS &amp; DESIGNERS CHOOSE MADHAV MARBLE
+                        </h3>
+                        <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Wide Range of Granites:</strong> A diverse collection of premium granites in numerous colors, textures, and patterns to suit a wide variety of architectural and design requirements.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Outstanding Quality &amp; Performance:</strong> Our granites are known for their strength, durability, and timeless beauty—ideal for both interior and exterior applications in any environment.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Global Reach, Trusted Expertise:</strong> A trusted supplier to clients across the USA, Europe, and beyond, backed by advanced processing, consistent quality, and reliable global logistics.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mt-16 max-w-4xl mb-8">
+                    <h3 className="text-3xl md:text-4xl font-medium leading-[1.2] text-foreground mb-6" style={{ fontFamily: "serif" }}>
+                        Exclusive Granite Collection From India&apos;s Leading Granite Suppliers
+                    </h3>
+                    <p className="text-foreground/70 text-base md:text-lg leading-relaxed">
+                        With decades of experience in the natural stone industry, our global clientele trusts us for the finest quality granite solutions. Following are some of our popular granite varieties processed at our state-of-the-art manufacturing unit:
+                    </p>
                 </div>
             </div>
 
@@ -131,7 +166,7 @@ export default function GraniteCollection() {
             </Section>
             {/* <CtaSection /> */}
 
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div >
     )
 }

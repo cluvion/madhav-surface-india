@@ -71,31 +71,37 @@ const Contact = () => {
 
       <Section>
         {/* Top Text Section */}
-        <div className="text-center md:text-left">
-          <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-            <span className="mr-2 text-lg text-primary">¬</span> GET IN TOUCH
-          </span>
-          <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-4xl">
-            Let&apos;s Bring Your Vision to Life in Fine Stone
-          </h2>
-          <div className="flex flex-col md:flex-row justify-between items-end gap-8 md:gap-16 mt-8">
-            <div className="text-foreground/50 text-sm md:text-base max-w-4xl leading-relaxed">
-              <p>
-                From the moment a raw block emerges from the earth to the final polish in your space, we guide every step of the journey with precision technology and master craftsmanship.
-              </p>
-              <p className='pt-2'>
-                Whether you need tailored technical advice, container-load pricing, or assistance selecting the perfect marble or tile for your next architectural landmark our natural stone experts are here to help.
-              </p>
-            </div>
-            <div className="flex flex-col w-full justify-end sm:flex-row gap-6 sm:gap-12">
-              <div>
-                <h3 className="text-lg font-bold text-foreground mb-2">Support</h3>
-                <a href="tel:+91" className="text-[#BFA065] font-medium block hover:underline text-lg">+91 8875023456</a>
-                <a href="mailto:madhav@madhavmarbles.com" className="text-foreground/50 text-sm block hover:text-foreground transition-colors">madhav@madhavmarbles.com</a>
+        {/* Top Text Section */}
+        <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+            <div>
+              <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                CONTACT MADHAV
+              </span>
+              <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                Let&apos;s begin with the material.
+              </h2>
+              <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                <p>
+                  Share the stone, format, finish, quantity and destination you have in mind. Our team will help you review suitable materials, current availability and the next steps—clearly and directly.
+                </p>
+                <p className="text-xs font-bold uppercase tracking-[0.1em] text-foreground pt-2">
+                  PROJECTS · DISTRIBUTION PROGRAMMES · CONTAINER REQUIREMENTS
+                </p>
               </div>
-              <div>
-                <h3 className="text-lg font-bold text-foreground mb-2">Address</h3>
-                <p className="text-foreground/50 text-sm md:max-w-[200px]">
+            </div>
+
+            <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg flex flex-col sm:flex-row gap-12 justify-between items-start">
+              <div className="space-y-4">
+                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">Enquiries</h3>
+                <div>
+                  <a href="tel:+918875023456" className="text-primary font-medium block hover:underline text-lg">+91 88750 23456</a>
+                  <a href="mailto:madhav@madhavmarbles.com" className="text-foreground/70 text-sm block hover:text-foreground transition-colors mt-1">madhav@madhavmarbles.com</a>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">Address</h3>
+                <p className="text-foreground/70 text-sm leading-relaxed max-w-[200px]">
                   1st Floor, Mumal Towers, 16 Saheli Marg, Udaipur 313001, Rajasthan, India
                 </p>
               </div>

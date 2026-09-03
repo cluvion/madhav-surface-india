@@ -182,7 +182,7 @@ export default function MarbleCollection() {
             </Section>
             {/* <CtaSection /> */}
 
-            <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} />
+            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
         </div >
     )
 }

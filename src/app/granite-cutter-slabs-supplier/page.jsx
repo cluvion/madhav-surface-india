@@ -30,16 +30,50 @@ export default function GraniteCutterSlabsSupplier() {
 
             <PageHeader title="Granite Cutter Slabs" path="Granite Cutter Slabs" src="/assets/Step7.png" />
 
-            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
-                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> GRANITE COLLECTION
-                </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[4rem] leading-[1.1] text-foreground max-w-5xl">
-                    Granite Cutter Slabs Manufacturer and Global Supplier
-                </h2>
-                <div className="flex flex-col space-y-4 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                    <p>Madhav Marbles &amp; Granites is a distinguished manufacturer and supplier of granite cutter slabs in the highly competitive global industry. Our commitment to maintaining superior standards and exceeding the expectations of our discerning clients sets us apart from our competitors. Utilizing state-of-the-art machinery, we meticulously create a unique and refined selection of granite cutter slabs that are suitable for both commercial and residential use. Our granite cutter slabs are characterized by a range of exceptional features, which firmly establish our position as the premier provider of such products in India.</p>
-                    <p>Having honed our skills and built a reputation for delivering an exceptional <strong><a className="text-primary" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/">range of granite slabs</a></strong> over the years, Madhav Marbles &amp; Granites has established a formidable presence in the granite cutter slabs market. Our unwavering commitment to quality, prompt delivery, and unparalleled customer satisfaction has set us apart and elevated our offerings. Our exclusive collection of granite cutter slabs is a testament to our expertise, presenting a diverse array of color options and embodying our hallmark of excellence.</p>
+            <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                    <div>
+                        <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                            PREMIUM GRANITE SOLUTIONS
+                        </span>
+                        <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                            Granite Cutter Slabs Manufacturer and Global Supplier.
+                        </h2>
+                        <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                            <p>
+                                Madhav &amp; Granites is a distinguished manufacturer and supplier of granite cutter slabs in the highly competitive global industry. Our commitment to maintaining superior standards and exceeding the expectations of our discerning clients sets us apart from our competitors.
+                            </p>
+                            <p>
+                                Utilizing state-of-the-art machinery, we meticulously create a unique and refined selection of granite cutter slabs that are suitable for both commercial and residential use. Our granite cutter slabs are characterized by a range of exceptional features, which firmly establish our position as the premier provider of such products in India.
+                            </p>
+                            <p>
+                                Having honed our skills and built a reputation for delivering an exceptional <strong><a className="text-primary hover:underline" href="https://www.madhavmarbles.com/manufacturer-of-granite-india/">range of granite slabs</a></strong> over the years, Madhav &amp; Granites has established a formidable presence in the granite cutter slabs market. Our unwavering commitment to quality, prompt delivery, and unparalleled customer satisfaction has set us apart and elevated our offerings.
+                            </p>
+                            <p>
+                                Our exclusive collection of granite cutter slabs is a testament to our expertise, presenting a diverse array of color options and embodying our hallmark of excellence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                            WHY GLOBAL ARCHITECTS &amp; DESIGNERS CHOOSE MADHAV MARBLE
+                        </h3>
+                        <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Premium Quality &amp; Superior Standards:</strong> Manufactured using advanced technology and stringent quality control processes to ensure consistency, strength, and long-lasting performance.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Wide Range of Colors &amp; Finishes:</strong> A curated selection of granite cutter slabs in diverse colors, patterns, and finishes to suit varied architectural and design requirements.</p>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Reliable Global Supply &amp; Service:</strong> Trusted by clients worldwide for our timely delivery, competitive pricing, and customer-centric approach that ensures complete satisfaction at every stage.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -71,8 +105,8 @@ export default function GraniteCutterSlabsSupplier() {
                 <ParagraphSection
                     title="What Makes Our Granite Cutter Slabs Superior?"
                     p1={<>
-                        <p className="text-foreground font-bold uppercase tracking-widest text-xs mb-2">THE MADHAV MARBLES EDGE</p>
-                        <p>With countless suppliers offering granite slabs in today’s market, why do leading global architects, fabricators, and builders choose <strong className="text-foreground">Madhav Marbles & Granites</strong>?</p>
+                        <p className="text-foreground font-bold uppercase tracking-widest text-xs mb-2">THE Madhav EDGE</p>
+                        <p>With countless suppliers offering granite slabs in today’s market, why do leading global architects, fabricators, and builders choose <strong className="text-foreground">Madhav & Granites</strong>?</p>
                         <p>The answer lies in our relentless commitment to precision engineering, safety, and zero-waste quality standards. Here is what sets our granite cutter slabs apart:</p>
                     </>}
                     p2={
@@ -113,7 +147,7 @@ export default function GraniteCutterSlabsSupplier() {
                 />
                 <div className="mt-8 md:mt-16 space-y-6 text-center md:text-left">
                     <h2 className="heading font-thin text-2xl md:text-4xl mb-6">
-                        Get Superior Quality and Tailored Granite Cutter Slabs from Premier Granite Provider - Madhav Marbles
+                        Get Superior Quality and Tailored Granite Cutter Slabs from Premier Granite Provider - Madhav
                     </h2>
                     <div className="text-foreground/70 text-base md:text-lg leading-relaxed space-y-4 text-justify">
                         <p>

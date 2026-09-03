@@ -9,7 +9,7 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
         <motion.div
             className="flex flex-col relative overflow-hidden"
         >
-            <div className={`group relative ${aspectClassName || 'aspect-square'} overflow-hidden mb-2`}>
+            <Link href={`/products/${product.id}`} className={`group relative ${aspectClassName || 'aspect-square'} overflow-hidden mb-2 block`}>
                 <Image
                     src={product.image}
                     alt={product.name}
@@ -25,21 +25,24 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 /> */}
                 {/* Quick View Overlay (Desktop) */}
-                <div className="hidden lg:flex absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 justify-center">
+                {/* <div className="hidden lg:flex absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 justify-center">
                     <Button
                         arrow={false}
                         variant="secondary"
                         className="h-14 w-14 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground flex items-center justify-center p-0"
-                        onClick={() => onQuickView(product)}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            onQuickView(product);
+                        }}
                     >
                         <Eye className="w-6 h-6 cursor-pointer" />
                     </Button>
-                </div>
-            </div>
+                </div> */}
+            </Link>
 
             {/* Info */}
             <div className="p-4 flex flex-col gap-3">
-                <div className="text-center space-y-1">
+                <Link href={`/products/${product.id}`} className="text-center space-y-1 block">
                     <h3 className="font-medium text-lg text-foreground group-hover:text-primary transition-colors">
                         {product.name}
                     </h3>
@@ -49,7 +52,7 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                             {product.description}
                         </p>
                     )}
-                </div>
+                </Link>
 
                 {/* Buttons Row */}
                 <div className="flex gap-2 justify-center pt-4">
@@ -59,7 +62,7 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                         </Link>
                     </Button>
                     {/* Quick View Button (Mobile/Tablet Only) */}
-                    <Button
+                    {/* <Button
                         // variant="outline"
                         // size="icon"
                         arrow={false}
@@ -67,7 +70,7 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                         onClick={() => onQuickView(product)}
                     >
                         <Eye className="w-4 h-4" />
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
 
