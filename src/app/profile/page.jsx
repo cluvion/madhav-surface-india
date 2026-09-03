@@ -489,6 +489,146 @@ const Profile = () => {
                         </div>
                     </div>
 
+ <div className="mt-16">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            {/* Table 1: Granite Tile Plant */}
+                            <div className="bg-white/5 border border-border/50 rounded-2xl p-6 shadow-sm">
+                                <div className="border-b border-border/50 pb-4 mb-4">
+                                    <h3 className="heading text-2xl text-foreground font-medium flex items-center">
+                                        <span className="w-1.5 h-6 bg-primary mr-3 rounded-full"></span>
+                                        Our Granite Tile Plant
+                                    </h3>
+                                </div>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead>
+                                            <tr className="text-foreground/70 border-b border-border/50 text-sm tracking-wider uppercase">
+                                                <th className="py-4 px-2 font-medium">Equipment Type</th>
+                                                <th className="py-4 px-2 font-medium">Company</th>
+                                                <th className="py-4 px-2 font-medium text-center">Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="text-foreground/90 divide-y divide-border/30">
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">M-590 Block Cutter</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">3</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">M-580 Block Cutter</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">4</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Calibration Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Resining Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Grinding & Polishing Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Tile Resin Plant</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            {/* Table 2: Granite Slab Plant */}
+                            <div className="bg-white/5 border border-border/50 rounded-2xl p-6 shadow-sm">
+                                <div className="border-b border-border/50 pb-4 mb-4">
+                                    <h3 className="heading text-2xl text-foreground font-medium flex items-center">
+                                        <span className="w-1.5 h-6 bg-primary mr-3 rounded-full"></span>
+                                        Our Granite Slab Plant
+                                    </h3>
+                                </div>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead>
+                                            <tr className="text-foreground/70 border-b border-border/50 text-sm tracking-wider uppercase">
+                                                <th className="py-4 px-2 font-medium">Equipment Type</th>
+                                                <th className="py-4 px-2 font-medium">Company</th>
+                                                <th className="py-4 px-2 font-medium text-center">Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="text-foreground/90 divide-y divide-border/30">
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Wire Dressing Machines</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/bidese-impianti.png" alt="bidese impianti" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">3</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Gangsaws</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/gaspari-menotti.png" alt="GASPARI MENOTTI" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">6</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Edge Trimming Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/PEDRINI.png" alt="Pedrini" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Slab Polishing Lines</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/breton.png" alt="breton" width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Resin Line ( Epoxy Line)</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/SEI.png" alt="S.E.I." width={100} height={30} className="object-contain h-12 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Bridge Milling Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">GMM</td>
+                                                <td className="py-4 px-2 text-center font-bold">2</td>
+                                            </tr>
+                                            <tr className="hover:bg-muted/30 transition-colors">
+                                                <td className="py-4 px-2 font-medium">Flaming Machine</td>
+                                                <td className="py-4 px-2 text-foreground/70">
+                                                    <Image src="/assets/profile-logo/maema.png" alt="maema" width={100} height={30} className="object-contain h-8 w-auto" />
+                                                </td>
+                                                <td className="py-4 px-2 text-center font-bold">1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div className="mt-20 md:mt-32 text-center max-w-3xl mx-auto flex flex-col items-center">
                         <h3 className="text-3xl md:text-5xl font-medium leading-[1.2] text-foreground mb-10" style={{ fontFamily: "serif" }}>
                             Machines provide precision.<br/>

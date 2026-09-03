@@ -36,49 +36,53 @@ export default function MarbleCollection() {
 
             <PageHeader title="Marble Collection" path="Marble" src="/assets/Step7.png" />
 
-            <div className="py-8 md:py-12 lg:py-14 container mx-auto px-4 md:px-6 text-center md:text-left">
-                <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4">
-                    <span className="mr-2 text-lg text-primary">¬</span> PREMIUM MARBLE COLLECTION
-                </span>
-                <h2 className="heading font-thin text-[1.6rem] md:text-[3.5rem] leading-[1.1] text-foreground max-w-5xl">
-                    Transformative Elegance. Precision Engineering. Global Footprint.
-                </h2>
-                <div className="flex flex-col space-y-6 mt-8 text-foreground/50 text-sm md:text-base leading-relaxed text-justify max-w-5xl">
-                    <p>As one of India&apos;s most trusted marble manufacturers and exporters, <strong>Madhav Marbles and Granite Ltd.</strong> crafts architectural surfaces that redefine luxury. From the breathtaking movement of <a className="text-primary font-medium" href="https://www.madhavmarbles.com/brown-fantasy-marble/">Brown Fantasy</a> to the serene beauty of <a className="text-primary font-medium" href="https://www.madhavmarbles.com/white-dunes-marble/">White Dunes</a>, our collection delivers an exceptional spectrum of colors, textures, and finishes directly to top-tier projects across the USA, Europe, and worldwide.</p>
-                    
-                    <div className="pt-4">
-                        <h3 className="text-xl md:text-2xl font-bold mb-2 flex flex-col md:flex-row md:items-center gap-2 text-foreground">
-                            <span className="text-primary text-2xl hidden md:inline">🏛️</span> Master Craftsmanship Meets Modern Technology
-                        </h3>
-                        <p>Engineered at our high-tech processing facility, every slab of Madhav marble undergoes rigorous calibration and polishing. Whether you are executing a landmark commercial building or a bespoke residential design, our marble delivers uncompromising durability and timeless aesthetic value.</p>
+            <div className="pt-16 md:pt-24 pb-8 container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                    <div>
+                        <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                            PREMIUM MARBLE COLLECTION
+                        </span>
+                        <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                            Master Craftsmanship, Advanced Technology.
+                        </h2>
+                        <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+                            <p>
+                                At Madhav Marble &amp; Granite Ltd, advanced technology and skilled craftsmanship come together to deliver superior natural stone solutions. Every marble slab is processed at our state-of-the-art facility and subjected to stringent calibration, finishing, and polishing standards to ensure exceptional quality, consistency, and durability.
+                            </p>
+                            <p>
+                                Whether for landmark commercial developments or bespoke residential projects, our marble is engineered to meet demanding architectural requirements while delivering enduring aesthetic appeal and long-term performance.
+                            </p>
+                        </div>
                     </div>
 
-                    <div className="pt-4">
-                        <h3 className="text-xl md:text-2xl font-bold mb-4 flex flex-col md:flex-row md:items-center gap-2 text-foreground">
-                            <span className="text-primary text-2xl hidden md:inline">🌟</span> Why Global Architects &amp; Designers Trust Madhav Marble:
+                    <div className="bg-[#f8f7f2] p-8 md:p-12 shadow-sm border border-border/30 rounded-lg">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground mb-8">
+                            Why Global Architects &amp; Designers Choose Madhav Marble
                         </h3>
-                        <ul className="space-y-4 text-left ml-2 md:ml-8">
+                        <ul className="space-y-6 text-foreground/80 text-sm md:text-base">
                             <li className="flex items-start">
-                                <span className="text-primary mr-3 text-lg">■</span>
-                                <p className="mt-1"><strong className="text-foreground">Diverse Palette &amp; Finishes:</strong> Available in rich varieties, custom slab sizes, and tailored finishes (Polished, Honed, Brushed, and Leather).</p>
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Extensive Range of Colors &amp; Finishes:</strong> A diverse selection of marble varieties, available in customized slab dimensions and premium finishes including Polished, Honed, Brushed, and Leather.</p>
                             </li>
                             <li className="flex items-start">
-                                <span className="text-primary mr-3 text-lg">■</span>
-                                <p className="mt-1"><strong className="text-foreground">Unrivaled Dimensional Accuracy:</strong> Cut with extreme precision for seamless installations and minimal edge waste.</p>
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Precision &amp; Dimensional Consistency:</strong> Advanced processing technology ensures exceptional dimensional accuracy, enabling seamless installation, precise alignment, and optimized material utilization.</p>
                             </li>
                             <li className="flex items-start">
-                                <span className="text-primary mr-3 text-lg">■</span>
-                                <p className="mt-1"><strong className="text-foreground">Versatility at Any Scale:</strong> Perfectly equipped to handle bulk container shipments for large commercial developments as well as specialized custom orders.</p>
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0 opacity-70"></span>
+                                <p className="leading-relaxed"><strong className="text-foreground block mb-1">Scalable Supply Capabilities:</strong> From large-volume container shipments for major commercial projects to specialized custom orders, our robust processing and logistics capabilities ensure reliable supply at every scale.</p>
                             </li>
                         </ul>
                     </div>
-
-                    <div className="pt-8">
-                        <h3 className="heading font-thin text-2xl md:text-4xl text-foreground flex flex-col md:flex-row md:items-center gap-2">
-                            <span className="text-primary text-3xl hidden md:inline">🌎</span> Explore Our Signature Global Marble Selection
-                        </h3>
-                        <p className="mt-4">Below are some of our most sought-after marble varieties, processed at scale in our state-of-the-art facility to meet international architectural standards:</p>
-                    </div>
+                </div>
+                
+                <div className="mt-16 max-w-4xl mb-8">
+                    <h3 className="text-3xl md:text-4xl font-medium leading-[1.2] text-foreground mb-6" style={{ fontFamily: "serif" }}>
+                        Explore Our Signature Global Marble Collection
+                    </h3>
+                    <p className="text-foreground/70 text-base md:text-lg leading-relaxed">
+                        Discover a curated selection of our most sought-after marble varieties, processed using advanced technology and stringent quality standards to meet the evolving requirements of architects, designers, developers, and international buyers.
+                    </p>
                 </div>
             </div>
 

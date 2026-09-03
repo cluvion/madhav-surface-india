@@ -1,9 +1,9 @@
 // SEO utility functions and constants for Madhav Quartz website
 
 export const siteConfig = {
-    name: "Madhav Quartz",
-    title: "Madhav Quartz - Premium Engineered Stone & Quartz Countertops",
-    description: "Discover premium engineered stone and quartz countertops from Madhav Quartz. Luxury collections including Calacatta, marble-look designs for kitchens, bathrooms, and commercial spaces.",
+    name: "Madhav Marbles",
+    title: "Madhav Marbles - Premium Marble & Granite",
+    description: "Discover premium engineered stone and quartz countertops from Madhav Marbles. Luxury collections including Calacatta, marble-look designs for kitchens, bathrooms, and commercial spaces.",
     url: "https://www.madhavmarbles.com",
     ogImage: "https://www.madhavmarbles.com/assets/logo2.png",
     keywords: [
@@ -24,7 +24,7 @@ export const siteConfig = {
         linkedin: "https://www.linkedin.com/company/madhav-quartz/"
     },
     business: {
-        name: "Madhav Quartz",
+        name: "Madhav Marbles",
         type: "Stone Fabricator",
         description: "Premium engineered stone and quartz countertop manufacturer specializing in luxury surfaces for residential and commercial applications.",
         foundingDate: "2010",
@@ -250,7 +250,7 @@ export const collectionMetadata = {
 export const pageMetadata = {
     home: {
         title: "Madhav Surfaces - Premium Quartz Countertops & Engineered Stone",
-        description: "Discover premium quartz countertops and engineered stone surfaces from Madhav Quartz. Luxury collections for kitchens, bathrooms, and commercial spaces.",
+        description: "Discover premium quartz countertops and engineered stone surfaces from Madhav Marbles. Luxury collections for kitchens, bathrooms, and commercial spaces.",
         keywords: ["quartz countertops", "engineered stone", "premium surfaces", "kitchen countertops", "bathroom countertops"]
     },
     about: {
