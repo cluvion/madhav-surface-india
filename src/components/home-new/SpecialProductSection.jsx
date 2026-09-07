@@ -55,7 +55,7 @@ export default function SpecialProductSection() {
                         </div>
                     </div>
 
-                    <div className="text-center text-balance md:text-left md:max-w-5xl flex flex-col justify-center items-start">
+                    <div className="text-center text-balance md:text-left md:max-w-5xl flex flex-col justify-center md:items-start items-center pt-8 md:pt-0">
                         <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest mb-4 text-white">
                             <span className="mr-2 text-lg text-primary">¬</span> CURATED COLLECTIONS
                         </span>

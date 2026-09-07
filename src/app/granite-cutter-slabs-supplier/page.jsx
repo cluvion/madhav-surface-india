@@ -112,20 +112,20 @@ export default function GraniteCutterSlabsSupplier() {
                     p2={
                         <ul className="space-y-4">
                             <li>
-                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">📏 Millimeter-Precision Thickness Control</strong>
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">Millimeter-Precision Thickness Control</strong>
                                 <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Uniformity Guaranteed:</strong> Available in 2cm and 3cm thicknesses (or custom specifications), our slabs undergo advanced automated thickness calibration. You get perfectly uniform thickness from edge to edge with zero warping or taper.</p>
                             </li>
                             <li>
-                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">✨ Italian Surface Finishes & High-Gloss Polish</strong>
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">Italian Surface Finishes & High-Gloss Polish</strong>
                                 <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Flawless End-to-End Shine:</strong> Processed on state-of-the-art Italian polishing lines, our slabs achieve industry-leading gloss levels and consistent coverage.</p>
                                 <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Versatile Textures:</strong> Choose from Polished, Flamed, Honed, Flame + Brushed, Giano, and Leather finishes to match any architectural aesthetic.</p>
                             </li>
                             <li>
-                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">🛡️ 100% Non-Toxic, Food-Grade Epoxy Resins</strong>
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">100% Non-Toxic, Food-Grade Epoxy Resins</strong>
                                 <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Safe for Kitchens & Living Spaces:</strong> We treat our slabs with specially formulated, non-toxic, food-grade epoxy resins. This deep-penetrating resin enhances structural integrity, prevents staining, and ensures a safe, hygienic surface for food preparation areas.</p>
                             </li>
                             <li>
-                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">📐 True 90° Precision Edges (Zero Material Loss)</strong>
+                                <strong className="text-foreground font-semibold text-lg flex items-center gap-2">True 90° Precision Edges (Zero Material Loss)</strong>
                                 <p className="mt-1 pl-7 text-foreground/80"><strong className="text-foreground">Maximized Usable Area:</strong> Powered by high-accuracy Italian cutting blades, our cutter slabs feature crisp, exact rectangular geometry and uniform edges—eliminating costly edge trim-offs and maximizing yield for fabricators.</p>
                             </li>
                         </ul>

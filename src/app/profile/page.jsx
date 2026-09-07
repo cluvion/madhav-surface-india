@@ -101,7 +101,7 @@ const Profile = () => {
             {/* <PageHeader title="Profile" path="Profile" src="/assets/Step7.png" /> */}
 
 {/* New Hero Section */}
-            <div className="relative min-h-[90vh] w-full flex items-center justify-start bg-gray-100 overflow-hidden">
+            <div className="relative min-h-[90vh] w-full flex flex-col justify-center md:flex-row md:items-center md:justify-start bg-gray-100 overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
                         src="https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/technology/05%20ok.webp"
@@ -114,30 +114,30 @@ const Profile = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/80"></div>
                 </div>
                 {/* Overlay card */}
-                <div className="relative z-10 w-full max-w-2xl bg-[#f8f7f2] p-8 md:p-16 md:ml-12 lg:ml-24 shadow-2xl mt-24">
-                    <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
+                <div className="relative z-10 w-[92%] sm:w-full max-w-xl bg-[#f8f7f2] p-6 md:p-10 mx-auto md:mx-0 md:ml-12 lg:ml-24 shadow-2xl mt-16 md:mt-24 mb-12 md:mb-0">
+                    <span className="inline-flex items-center text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 md:mb-6">
                         THE MADHAV STORY
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-medium leading-[1.1] text-foreground mb-8" style={{ fontFamily: "serif" }}>
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium leading-[1.1] text-foreground mb-4 md:mb-6" style={{ fontFamily: "serif" }}>
                         Since 1989.<br/>Still moving forward.
                     </h1>
-                    <p className="text-foreground/70 text-base md:text-lg mb-8 leading-relaxed">
+                    <p className="text-foreground/80 text-sm md:text-base mb-6 md:mb-8 leading-relaxed">
                         What began with a belief in the potential of Indian natural stone has grown into a manufacturing and export business serving customers across global markets.
                     </p>
-                    <p className="text-primary font-bold text-xs uppercase tracking-wider mb-8">
+                    <p className="text-primary font-bold text-[10px] md:text-xs uppercase tracking-wider mb-6 md:mb-8">
                         From India. Ready for the world.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Button className="bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-8 py-6 uppercase tracking-wider font-semibold text-xs">
-                            EXPLORE OUR CAPABILITIES
+                    <div className="flex flex-col sm:flex-row gap-3 w-full">
+                        <Button className="w-full sm:w-auto bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
+                            EXPLORE OUR CAPABILITIES <span className="text-xs leading-none">&raquo;</span>
                         </Button>
-                        <Button variant="outline" className="border-foreground text-foreground hover:bg-foreground/5 rounded-none px-8 py-6 uppercase tracking-wider font-semibold text-xs">
-                            WATCH OUR FILM
+                        <Button variant="outline" className="w-full sm:w-auto border-foreground text-foreground hover:bg-foreground/5 rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
+                            WATCH OUR FILM <span className="text-xs leading-none">&raquo;</span>
                         </Button>
                     </div>
                 </div>
                 {/* Discover Our Story */}
-                <div className="absolute bottom-8 right-8 text-white text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
+                <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 text-white text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 z-10">
                     DISCOVER OUR STORY <span className="text-lg">↓</span>
                 </div>
             </div>
