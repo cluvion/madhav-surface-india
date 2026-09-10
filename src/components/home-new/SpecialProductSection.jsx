@@ -94,7 +94,7 @@ export default function SpecialProductSection() {
                                                 <img
                                                     src={item.image}
                                                     alt={item.name}
-                                                    className="h-full w-full object-cover transition-transform duration-700 ease-out scale-120"
+                                                    className="h-full w-full object-cover object-bottom transition-transform duration-700 ease-out scale-[1.35]"
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
                                             </div>

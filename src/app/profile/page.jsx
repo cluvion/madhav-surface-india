@@ -129,10 +129,10 @@ const Profile = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 w-full">
                         <Button className="w-full sm:w-auto bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
-                            EXPLORE OUR CAPABILITIES <span className="text-xs leading-none">&raquo;</span>
+                            EXPLORE OUR CAPABILITIES
                         </Button>
                         <Button variant="outline" className="w-full sm:w-auto border-foreground text-foreground hover:bg-foreground/5 rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
-                            WATCH OUR FILM <span className="text-xs leading-none">&raquo;</span>
+                            WATCH OUR FILM
                         </Button>
                     </div>
                 </div>

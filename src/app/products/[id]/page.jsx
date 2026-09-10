@@ -109,7 +109,7 @@ const ProductPage = () => {
 
             <ProductDetails product={product} />
 
-            <Specifications product={product} />
+            {/* <Specifications product={product} /> */}
 
             {relatedProducts.length > 0 && (
                 <Section>
