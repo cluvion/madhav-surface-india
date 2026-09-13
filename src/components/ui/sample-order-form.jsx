@@ -12,12 +12,12 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import CountryCode from '@/components/ui/country-code';
 
-const SampleOrderForm = ({ isOpen, onClose }) => {
+const SampleOrderForm = ({ isOpen, onClose, preSelectedProductId }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    countryCode: '+968',
+    countryCode: '+49',
     category: '',
     company: '',
     address: '',
@@ -25,6 +25,18 @@ const SampleOrderForm = ({ isOpen, onClose }) => {
     message: '',
     projectType: 'residential'
   });
+
+  // When the form opens with a pre-selected product, add it to selectedProducts
+  useEffect(() => {
+    if (isOpen && preSelectedProductId) {
+      setFormData(prev => ({
+        ...prev,
+        selectedProducts: prev.selectedProducts.includes(preSelectedProductId)
+          ? prev.selectedProducts
+          : [preSelectedProductId, ...prev.selectedProducts]
+      }));
+    }
+  }, [isOpen, preSelectedProductId]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -88,7 +100,7 @@ const SampleOrderForm = ({ isOpen, onClose }) => {
         name: '',
         email: '',
         phone: '',
-        countryCode: '+968',
+        countryCode: '+49',
         category: '',
         company: '',
         address: '',
@@ -112,7 +124,12 @@ const SampleOrderForm = ({ isOpen, onClose }) => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className="fixed inset-0 bg-foreground/50 z-[100] flex items-center justify-center p-4 "
-        onClick={onClose}
+        onClick={(e) => {
+          // Only close if clicking exactly on the backdrop, not on portaled dropdown content
+          if (e.target === e.currentTarget) {
+            onClose();
+          }
+        }}
       >
         <motion.div
           initial={{ scale: 0.9, opacity: 0, y: 20 }}
@@ -190,7 +207,7 @@ const SampleOrderForm = ({ isOpen, onClose }) => {
                         <SelectTrigger className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20 w-full">
                           <SelectValue placeholder="Select Category" />
                         </SelectTrigger>
-                        <SelectContent className="bg-white border-border z-[80]" >
+                        <SelectContent className="bg-white border-border z-[200]" >
                           <SelectItem value="Home owner" className="text-foreground">Home owner</SelectItem>
                           <SelectItem value="Architect" className="text-foreground">Architect</SelectItem>
                           <SelectItem value="Interior Designer" className="text-foreground">Interior Designer</SelectItem>
@@ -212,7 +229,7 @@ const SampleOrderForm = ({ isOpen, onClose }) => {
                           label=""
                           placeholder="Code"
                           // buttonClassName="bg-muted border-border text-foreground hover:bg-muted focus-visible:border-primary focus-visible:ring-ring/20"
-                          contentClassName="z-[80]"
+                          contentClassName="z-[200]"
                         />
                         <Input
                           type="tel"
@@ -249,7 +266,7 @@ const SampleOrderForm = ({ isOpen, onClose }) => {
                         <SelectTrigger className="text-foreground focus-visible:border-muted focus-visible:ring-ring/20 w-full">
                           <SelectValue placeholder="Select Project Type" />
                         </SelectTrigger>
-                        <SelectContent className="bg-white border-border z-[80]">
+                        <SelectContent className="bg-white border-border z-[200]">
                           <SelectItem value="residential" className="text-foreground">Residential</SelectItem>
                           <SelectItem value="commercial" className="text-foreground">Commercial</SelectItem>
                           <SelectItem value="hospitality" className="text-foreground">Hospitality</SelectItem>

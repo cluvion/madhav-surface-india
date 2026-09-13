@@ -140,11 +140,27 @@ const XLTileProductLayout = ({ product, relatedProducts, setSelectedProduct }) =
                     </h2>
 
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 mb-16">
+                        {product.length && (
+                        <div className="flex flex-col gap-2">
+                            <Maximize className="w-8 h-8 text-gray-700" strokeWidth={1.5} />
+                            <span className="font-semibold text-gray-900">Length</span>
+                            <span className="text-gray-600 text-sm">{product.length}</span>
+                        </div>
+                        )}
+                        {product.height && (
+                        <div className="flex flex-col gap-2">
+                            <Maximize className="w-8 h-8 text-gray-700" strokeWidth={1.5} />
+                            <span className="font-semibold text-gray-900">Height</span>
+                            <span className="text-gray-600 text-sm">{product.height}</span>
+                        </div>
+                        )}
+                        {!product.length && !product.height && (
                         <div className="flex flex-col gap-2">
                             <Maximize className="w-8 h-8 text-gray-700" strokeWidth={1.5} />
                             <span className="font-semibold text-gray-900">Dimension</span>
                             <span className="text-gray-600 text-sm">{product.dimensions || '1200*600 mm'}</span>
                         </div>
+                        )}
                         <div className="flex flex-col gap-2">
                             <Layers className="w-8 h-8 text-gray-700" strokeWidth={1.5} />
                             <span className="font-semibold text-gray-900">Material</span>
@@ -201,7 +217,7 @@ const XLTileProductLayout = ({ product, relatedProducts, setSelectedProduct }) =
                 )}
             </div>
 
-            <SampleOrderForm isOpen={isSampleOpen} onClose={() => setIsSampleOpen(false)} />
+            <SampleOrderForm isOpen={isSampleOpen} onClose={() => setIsSampleOpen(false)} preSelectedProductId={product.id} />
         </div>
     );
 };

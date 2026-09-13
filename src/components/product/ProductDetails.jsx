@@ -53,17 +53,43 @@ const ProductDetails = ({ product }) => {
                         <span className="font-medium text-gray-900">{product.thickness || "18mm, 20mm, 30mm (Customizable)"}</span>
                     </div>
 
-                    {/* Dimensions */}
+                    {/* Length */}
+                    {product.length && (
+                    <div className="flex flex-col border-b border-gray-100 pb-3">
+                        <span className="text-sm text-gray-500 mb-1">Length</span>
+                        <span className="font-medium text-gray-900">{product.length}</span>
+                    </div>
+                    )}
+
+                    {/* Height */}
+                    {product.height && (
+                    <div className="flex flex-col border-b border-gray-100 pb-3">
+                        <span className="text-sm text-gray-500 mb-1">Height</span>
+                        <span className="font-medium text-gray-900">{product.height}</span>
+                    </div>
+                    )}
+
+                    {/* Standard Dimensions */}
+                    {product.standardDimensions && (
+                    <div className="flex flex-col border-b border-gray-100 pb-3 md:col-span-2">
+                        <span className="text-sm text-gray-500 mb-1">Standard Dimensions</span>
+                        <span className="font-medium text-gray-900">{product.standardDimensions}</span>
+                    </div>
+                    )}
+
+                    {/* Dimensions (fallback for other collections) */}
+                    {!product.length && !product.height && product.dimensions && (
                     <div className="flex flex-col border-b border-gray-100 pb-3">
                         <span className="text-sm text-gray-500 mb-1">Standard Dimensions</span>
-                        <span className="font-medium text-gray-900">{product.dimensions || "3000mm x 1500mm / Cut to Size"}</span>
+                        <span className="font-medium text-gray-900">{product.dimensions}</span>
                     </div>
+                    )}
 
                     {/* Origin */}
-                    <div className="flex flex-col border-b border-gray-100 pb-3">
+                    {/* <div className="flex flex-col border-b border-gray-100 pb-3">
                         <span className="text-sm text-gray-500 mb-1">Origin</span>
                         <span className="font-medium text-gray-900">{product.origin || "India"}</span>
-                    </div>
+                    </div> */}
                 </div>
                 
                 {/* Tags */}

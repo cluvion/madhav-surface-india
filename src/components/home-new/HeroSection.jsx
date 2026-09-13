@@ -11,7 +11,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-[url('/assets/bg.webp')] bg-cover bg-center opacity-100" />
             {/* <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/70" /> */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/0 to-black/0" />
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/30" />
             {/* <Image
                 src="/assets/bg.webp"
                 alt="Hero Background"
@@ -43,7 +43,7 @@ export default function HeroSection() {
                             Stone, Mastered.
                         </span>
                         <br/>
-                        <span className="text-4xl font-medium leading-tight md:text-5xl lg:text-6xl text-primary">
+                        <span className="text-4xl font-medium leading-tight md:text-5xl lg:text-6xl text-white">
                             From India. Ready for the world.
                         </span>
                     </h1>

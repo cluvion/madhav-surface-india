@@ -108,7 +108,7 @@ const ProductSection = ({ product }) => {
           </div>
         </div>
       </div>
-      <SampleOrderForm isOpen={isSampleOpen} onClose={() => setIsSampleOpen(false)} />
+      <SampleOrderForm isOpen={isSampleOpen} onClose={() => setIsSampleOpen(false)} preSelectedProductId={product.id} />
     </div>
   );
 };

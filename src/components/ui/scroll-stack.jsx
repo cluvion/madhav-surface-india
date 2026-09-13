@@ -129,6 +129,7 @@ const Card = ({
 const ScrollStack = forwardRef(({ products, collection, zoom }, ref) => {
     const container = useRef(null);
     const [isSampleOpen, setIsSampleOpen] = useState(false);
+    const [sampleProductId, setSampleProductId] = useState(null);
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ['start start', 'end end'],
@@ -158,14 +159,17 @@ const ScrollStack = forwardRef(({ products, collection, zoom }, ref) => {
                                 targetScale={targetScale}
                                 projects={displayProducts}
                                 id={product.id}
-                                onOpenSample={() => setIsSampleOpen(true)}
+                                onOpenSample={() => {
+                                    setSampleProductId(product.id);
+                                    setIsSampleOpen(true);
+                                }}
                                 zoom={zoom}
                             />
                         );
                     })}
                 </section>
             </main>
-            <SampleOrderForm isOpen={isSampleOpen} onClose={() => setIsSampleOpen(false)} />
+            <SampleOrderForm isOpen={isSampleOpen} onClose={() => { setIsSampleOpen(false); setSampleProductId(null); }} preSelectedProductId={sampleProductId} />
         </>
     );
 });

@@ -1,11 +1,59 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import Section from "../section";
 
+const initialFormData = {
+  name: '',
+  email: '',
+  phone: '',
+  projectScope: '',
+  message: ''
+};
+
 export default function ContactSection() {
+    const [formData, setFormData] = useState(initialFormData);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formUrl =
+            'https://docs.google.com/forms/d/e/1FAIpQLScc8OjjDyskQtzlB-6gePmyF-68I2PZAopa2R7xRKIpb_Kuzw/formResponse';
+
+        const formDataPayload = new FormData();
+        formDataPayload.append('entry.698176508', formData.name);
+        formDataPayload.append('entry.1954099121', formData.email);
+        formDataPayload.append('entry.554263998', '+91'); // Defaulting country code
+        formDataPayload.append('entry.1603549671', formData.phone);
+        formDataPayload.append('entry.1780075820', formData.message);
+        formDataPayload.append('entry.1568563042', formData.projectScope);
+
+        try {
+            await fetch(formUrl, {
+                method: 'POST',
+                body: formDataPayload,
+                mode: 'no-cors'
+            });
+
+            alert('Form submitted successfully!');
+            setFormData(initialFormData);
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('There was an error submitting the form. Please try again.');
+        }
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
     return (
         // <section className="relative my-8 md:my-12 lg:my-14 py-8 md:py-12 lg:py-14">
         <Section>
@@ -58,16 +106,24 @@ export default function ContactSection() {
                             </h2>
                         </div>
 
-                        <form className="space-y-8 mt-8 md:mt-16">
+                        <form className="space-y-8 mt-8 md:mt-16" onSubmit={handleSubmit}>
                             <div className="grid gap-8 md:grid-cols-2">
                                 <div className="space-y-2">
                                     <Input
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
                                         className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-white placeholder:text-neutral-400 font-light text-white"
                                         placeholder="Enter your name"
                                     />
                                 </div>
                                 <div className="space-y-2">
                                     <Input
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
                                         className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-white placeholder:text-neutral-400 font-light text-white"
                                         type="email"
                                         placeholder="Enter your email"
@@ -78,6 +134,10 @@ export default function ContactSection() {
                             <div className="grid gap-8 md:grid-cols-2">
                                 <div className="space-y-2">
                                     <Input
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        required
                                         className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-white placeholder:text-neutral-400 font-light text-white"
                                         type="tel"
                                         placeholder="Enter your number"
@@ -85,6 +145,10 @@ export default function ContactSection() {
                                 </div>
                                 <div className="space-y-2">
                                     <Input
+                                        name="projectScope"
+                                        value={formData.projectScope}
+                                        onChange={handleChange}
+                                        required
                                         className="border-0 border-b border-neutral-200 px-0 rounded-none focus-visible:ring-0 focus-visible:border-white placeholder:text-neutral-400 font-light text-white"
                                         placeholder="Project scope"
                                     />
@@ -93,12 +157,16 @@ export default function ContactSection() {
 
                             <div className="space-y-2">
                                 <Textarea
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
                                     className="min-h-[50px] border-0 border-b border-neutral-200 px-0 rounded-none resize-none focus-visible:ring-0 focus-visible:border-white placeholder:text-neutral-400 font-light text-white"
                                     placeholder="Your message here"
                                 />
                             </div>
                             <div className="flex justify-center lg:justify-start">
-                                <Button>
+                                <Button type="submit">
                                     SEND MESSAGE
                                 </Button>
                             </div>

@@ -46,7 +46,7 @@ export default function CtaSection() {
                                 Start an Enquiry
                             </Button>
                         </Link>
-                        <Link href="/products" className="w-full">
+                        {/* <Link href="/products" className="w-full">
                             <Button 
                                 variant="outline" 
                                 arrow={false} 
@@ -54,7 +54,7 @@ export default function CtaSection() {
                             >
                                 View Ready Stock
                             </Button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

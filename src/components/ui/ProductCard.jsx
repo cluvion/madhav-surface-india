@@ -14,7 +14,7 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                     src={product.image}
                     alt={product.name}
                     fill
-                    className={imageClassName || "object-cover scale-[1.3] transition-transform duration-500 group-hover:scale-[1.4]"}
+                    className={imageClassName || "object-cover object-bottom scale-[1.4] transition-transform duration-500 group-hover:scale-[1.45]"}
                 />
                 {/* Quick View Overlay (Desktop) */}
                 {/* <Image
@@ -48,7 +48,7 @@ export default function ProductCard({ product, onQuickView, imageClassName, aspe
                     </h3>
                     <p className="text-sm text-foreground/50">{product.category || product.collection}</p>
                     {product.description && (
-                        <p className="text-sm text-foreground/70 line-clamp-2 mt-2">
+                        <p className="text-sm text-foreground/70 line-clamp-1 mt-2">
                             {product.description}
                         </p>
                     )}

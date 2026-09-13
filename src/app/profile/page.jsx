@@ -128,11 +128,11 @@ const Profile = () => {
                         From India. Ready for the world.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 w-full">
-                        <Button className="w-full sm:w-auto bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
-                            EXPLORE OUR CAPABILITIES
+                        <Button asChild className="w-full sm:w-auto bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
+                            <Link href="#technology">EXPLORE OUR CAPABILITIES</Link>
                         </Button>
-                        <Button variant="outline" className="w-full sm:w-auto border-foreground text-foreground hover:bg-foreground/5 rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
-                            WATCH OUR FILM
+                        <Button asChild variant="outline" className="w-full sm:w-auto border-foreground text-foreground hover:bg-foreground/5 rounded-none px-5 py-5 uppercase tracking-widest font-bold text-[10px] md:text-[11px] flex items-center justify-center gap-2">
+                            <Link href="#corporate-film">WATCH OUR FILM</Link>
                         </Button>
                     </div>
                 </div>
@@ -173,11 +173,11 @@ const Profile = () => {
                                 Every block is naturally different. The standards applied to its selection, processing and presentation should not be. From first evaluation to final packing, our work combines material judgement, production discipline and clear communication.
                             </p>
                         </div>
-                        <div className="mt-12">
+                        {/* <div className="mt-12">
                             <Link href="#technology" className="text-primary font-bold text-xs uppercase tracking-widest border-b-2 border-primary pb-1 hover:text-primary/80 hover:border-primary/80 transition-colors">
                                 SEE HOW WE WORK
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -327,10 +327,10 @@ const Profile = () => {
                                 <span className="text-7xl md:text-8xl font-light text-primary leading-none mb-2">65</span>
                                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">International Markets</span>
                             </div>
-
+{/* 
                             <Button className="bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-8 py-6 uppercase tracking-wider font-semibold text-xs hidden md:inline-flex">
                                 EXPLORE OUR GLOBAL EXPERIENCE
-                            </Button>
+                            </Button> */}
                         </div>
                         
                         {/* Right Side: Interactive Region Selector */}
@@ -634,11 +634,11 @@ const Profile = () => {
                             Machines provide precision.<br/>
                             <span className="text-foreground/70">People provide judgement.</span>
                         </h3>
-                        <Link href="#corporate-film">
+                        {/* <Link href="#corporate-film">
                             <Button className="bg-[#0b5e47] hover:bg-[#0b5e47]/90 text-white rounded-none px-8 py-6 uppercase tracking-wider font-semibold text-xs transition-transform hover:-translate-y-1">
                                 SEE HOW WE WORK
                             </Button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
 

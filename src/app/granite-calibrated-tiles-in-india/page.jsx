@@ -2,19 +2,13 @@
 import Section from '@/components/section'
 import PageHeader from '@/components/pageheader'
 import { collectionTiles } from "@/constants/collectionTiles";
-import { useState } from "react";
-import CtaSection from '@/components/page/CtaSection';
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Eye } from "lucide-react";
 import Link from "next/link";
-import QuickViewModal from "@/components/ui/QuickViewModal";
 
 const pageProducts = collectionTiles['regular-tiles'];
 
 export default function GraniteCalibratedTilesInIndia() {
-    const [selectedProduct, setSelectedProduct] = useState(null);
 
     return (
         <div className="min-h-screen overflow-hidden">
@@ -71,29 +65,20 @@ export default function GraniteCalibratedTilesInIndia() {
                             <TileCard
                                 key={product.id}
                                 product={product}
-                                onQuickView={setSelectedProduct}
                             />
                         ))}
                     </div>
                 </div>
             </Section>
-            {/* <CtaSection /> */}
-            {/* <QuickViewModal selectedProduct={selectedProduct} onClose={() => setSelectedProduct(null)} /> */}
+
         </div>
     )
 }
 
-function TileCard({ product, onQuickView }) {
+function TileCard({ product }) {
     return (
-        <motion.div
-            layoutId={`tile-card-${product.id}`}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
-            className="group flex flex-col overflow-hidden"
-        >
-            {/* Image container — natural size, no zoom, no fill */}
+        <Link href={`/products/${product.id}`} className="group flex flex-col overflow-hidden cursor-pointer">
+            {/* Image container */}
             <div className="relative w-full bg-muted flex items-center justify-center overflow-hidden">
                 <Image
                     src={product.image}
@@ -103,18 +88,6 @@ function TileCard({ product, onQuickView }) {
                     className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 />
-                {/* Quick View overlay button (desktop) */}
-                <div className="hidden lg:flex absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 justify-center">
-                    <Button
-                        arrow={false}
-                        size="icon"
-                        variant="secondary"
-                        className="p-6 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground"
-                        onClick={() => onQuickView(product)}
-                    >
-                        <Eye className="w-5 h-5" />
-                    </Button>
-                </div>
             </div>
 
             {/* Info */}
@@ -128,22 +101,11 @@ function TileCard({ product, onQuickView }) {
 
                 {/* Buttons */}
                 <div className="flex gap-2 justify-center pt-4">
-                    <Button asChild className="w-full" variant="secondary">
-                        <Link href={`/products/${product.id}`}>
-                            View Details
-                        </Link>
-                    </Button>
-                    {/* Quick View — mobile/tablet only */}
-                    <Button
-                        arrow={false}
-                        size="sm"
-                        className="lg:hidden shrink-0 h-full w-9"
-                        onClick={() => onQuickView(product)}
-                    >
-                        <Eye className="w-4 h-4" />
+                    <Button className="w-full" variant="secondary">
+                        View Details
                     </Button>
                 </div>
             </div>
-        </motion.div>
+        </Link>
     );
 }

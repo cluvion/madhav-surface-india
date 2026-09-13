@@ -4,1170 +4,6 @@
 const BASE_URL = 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master';
 
 export const collectionTiles = {
-  //   'regular-tiles': [
-  //     {
-  //       id: 'rt-001',
-  //       name: 'Amba White',
-  //       image: '/assets/regular-tiles/AMBAWHITE-1.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/AMBAWHITE-1.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'A classic and versatile white granite featuring delicate grey and black speckles, perfect for creating bright, elegant spaces.',
-  //       longDescription: `Amba White is an elegant premium quality Indian granite renowned for its crisp white background adorned with beautiful grey and black speckles. This exquisite natural stone brings a sense of light and spaciousness to any environment.\n\nMined and processed with state-of-the-art technology, Amba White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.\n\nWhether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Amba White granite delivers both aesthetic appeal and long-lasting performance.`,
-  //       color: 'White',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India',
-  //       tags: ['granite', 'natural', 'premium', 'white', 'durable']
-  //     },
-  //     {
-  //       id: 'rt-002',
-  //       name: 'Bengal White',
-  //       image: '/assets/regular-tiles/BENGALWHITE-1.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/BENGALWHITE-1.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Bengal White is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Bengal White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Bengal White delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-003',
-  //       name: 'Black Forest',
-  //       image: '/assets/regular-tiles/BLACKFOREST-1.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/BLACKFOREST-1.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Black Forest is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Black Forest offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Black Forest delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-004',
-  //       name: 'Black Galaxy',
-  //       image: '/assets/regular-tiles/BLACKGALAXY.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/BLACKGALAXY.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Black Galaxy is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Black Galaxy offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Black Galaxy delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-005',
-  //       name: 'Coffee Brown',
-  //       image: '/assets/regular-tiles/COFFEEBROWN.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/COFFEEBROWN.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Coffee Brown is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Coffee Brown offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Coffee Brown delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-006',
-  //       name: 'Absolute Black',
-  //       image: '/assets/regular-tiles/absolute-black-1.png',
-  //       thumbnailImages: ['/assets/regular-tiles/absolute-black-1.png'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Absolute Black is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Absolute Black offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Absolute Black delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-007',
-  //       name: 'Colombo Juprana',
-  //       image: '/assets/regular-tiles/colombo-juprana.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/colombo-juprana.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Colombo Juprana is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Colombo Juprana offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Colombo Juprana delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-008',
-  //       name: 'Indian Dakota',
-  //       image: '/assets/regular-tiles/indian-dakota.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/indian-dakota.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Indian Dakota is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Indian Dakota offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Indian Dakota delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-009',
-  //       name: 'Ivory Brown',
-  //       image: '/assets/regular-tiles/ivorybrown.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/ivorybrown.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Ivory Brown is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Ivory Brown offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Ivory Brown delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-010',
-  //       name: 'Ivory Fantasy',
-  //       image: '/assets/regular-tiles/ivoryfantasy.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/ivoryfantasy.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Ivory Fantasy is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Ivory Fantasy offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Ivory Fantasy delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-011',
-  //       name: 'Kashmir Cream',
-  //       image: '/assets/regular-tiles/kashmir-cream.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/kashmir-cream.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Kashmir Cream is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Kashmir Cream offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Kashmir Cream delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-012',
-  //       name: 'Kashmir White',
-  //       image: '/assets/regular-tiles/kashmir-white.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/kashmir-white.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Kashmir White is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Kashmir White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Kashmir White delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-013',
-  //       name: 'Multi Color',
-  //       image: '/assets/regular-tiles/multi-color.png',
-  //       thumbnailImages: ['/assets/regular-tiles/multi-color.png'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Multi Color is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Multi Color offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Multi Color delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-014',
-  //       name: 'New Kashmir Cream',
-  //       image: '/assets/regular-tiles/new-kashmir-cream-calibrated-tiles.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/new-kashmir-cream-calibrated-tiles.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `New Kashmir Cream is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, New Kashmir Cream offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, New Kashmir Cream delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-015',
-  //       name: 'Paradiso Bash',
-  //       image: '/assets/regular-tiles/paradiso-bash.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/paradiso-bash.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Paradiso Bash is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Paradiso Bash offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Paradiso Bash delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-016',
-  //       name: 'Paradiso Classic',
-  //       image: '/assets/regular-tiles/paradiso-classic1.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/paradiso-classic1.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Paradiso Classic is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Paradiso Classic offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Paradiso Classic delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-017',
-  //       name: 'Steel Grey',
-  //       image: '/assets/regular-tiles/steel-grey.png',
-  //       thumbnailImages: ['/assets/regular-tiles/steel-grey.png'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Steel Grey is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Steel Grey offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Steel Grey delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-018',
-  //       name: 'Tan Brown',
-  //       image: '/assets/regular-tiles/tan-brown.png',
-  //       thumbnailImages: ['/assets/regular-tiles/tan-brown.png'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Tan Brown is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Tan Brown offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Tan Brown delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'rt-019',
-  //       name: 'Viscount White Tiles',
-  //       image: '/assets/regular-tiles/viscount-white-tiles.jpg',
-  //       thumbnailImages: ['/assets/regular-tiles/viscount-white-tiles.jpg'],
-  //       collection: 'Regular Tiles',
-  //       description: 'Premium natural granite tile.',
-  //       tags: ['granite', 'natural', 'premium'],
-
-  //       longDescription: `Viscount White Tiles is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Viscount White Tiles offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Viscount White Tiles delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       color: 'Various',
-  //       finish: 'Polished',
-  //       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     }
-  //   ],
-
-  "regular-tiles": [
-    {
-      "id": "rt-001",
-      "name": "Amba White",
-      "image": "/assets/regular-tiles/AMBAWHITE-1.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/AMBAWHITE-1.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A classic and versatile white granite featuring delicate grey and black speckles, perfect for creating bright, elegant spaces.",
-      "longDescription": "Amba White is an elegant premium quality Indian granite renowned for its crisp white background adorned with beautiful grey and black speckles. This exquisite natural stone brings a sense of light and spaciousness to any environment.\n\nMined and processed with state-of-the-art technology, Amba White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.\n\nWhether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Amba White granite delivers both aesthetic appeal and long-lasting performance.",
-      "color": "White",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "Rajasthan, India",
-      "tags": ["granite", "natural", "premium", "white", "durable"]
-    },
-    {
-      "id": "rt-002",
-      "name": "Coffee Brown",
-      "image": "/assets/regular-tiles/COFFEEBROWN.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/COFFEEBROWN.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A rich, deeply textured dark brown granite infused with chocolate, black, and coffee-toned minerals for a sophisticated warmth.",
-      "longDescription": "Coffee Brown is a highly sought-after Indian granite featuring a deep, dark brown backdrop beautifully interlaced with black, coffee, and chocolate-toned minerals. It lends an air of understated luxury, structure, and intense depth to architectural spaces.\n\nCrafted with advanced calibration, this granite provides uniform consistency and superior surface resilience, protecting against scratches and heat. Its warm, dark spectrum effortlessly complements wooden cabinetry, sleek metal accents, and bright modern interiors alike.",
-      "color": "Brown",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "brown", "durable"]
-    },
-    {
-      "id": "rt-003",
-      "name": "Bengal White",
-      "image": "/assets/regular-tiles/BENGALWHITE-1.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/BENGALWHITE-1.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A clean and luminous white granite displaying uniform crystalline patterns and soft grey specks.",
-      "longDescription": "Bengal White granite is characterized by its bright white background baseline layered with fine, well-balanced distribution of dark grey and deep pinhead minerals. It offers a pristine, minimalist surface ideal for brightening spaces with high-end style.\n\nHighly valued for commercial installations and premium home layouts, it guarantees long-term durability with very minimal maintenance required, standing strong against daily wear.",
-      "color": "White",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "white", "durable"]
-    },
-    {
-      "id": "rt-004",
-      "name": "Black Forest",
-      "image": "/assets/regular-tiles/BLACKFOREST-1.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/BLACKFOREST-1.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A dramatic black granite accented with striking, unpredictable sweeping veins of white and silver crystalline rivers.",
-      "longDescription": "Black Forest granite captures a bold, dramatic aesthetic. Its deep black core acts as a canvas for stark, fluid white and silver veins running across the tiles, mimicking a natural wild woodland setting.\n\nIt serves as an excellent feature-wall stone or primary floor surface, making an unforgettable statement in luxury lobbies, high-profile offices, and executive washrooms.",
-      "color": "Black",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "black", "durable"]
-    },
-    {
-      "id": "rt-005",
-      "name": "Black Galaxy",
-      "image": "/assets/regular-tiles/BLACKGALAXY.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/BLACKGALAXY.jpg"],
-      "collection": "Regular Tiles",
-      "description": "An iconic rich black granite glittering with brilliant golden and metallic bronzite flecks resembling a starlit night sky.",
-      "longDescription": "Black Galaxy is a globally famous premium granite featuring a dark black background peppered with shining, reflective metallic flecks. The golden speckles glint under direct lighting, bringing unparalleled luxury to any space.\n\nPerfect for high-end accent walls, upscale kitchen surfaces, and luxury entryways, it brings exceptional density and structural integrity alongside its striking appearance.",
-      "color": "Black",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "black", "durable"]
-    },
-    {
-      "id": "rt-006",
-      "name": "Indian Dakota",
-      "image": "/assets/regular-tiles/indian-dakota.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/indian-dakota.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A deeply rich and uniform dark brown granite accented with micro-crystalline structures for subtle textural depth.",
-      "longDescription": "Indian Dakota granite showcases a beautifully stable dark mahogany-to-brownish background. It delivers a deeply consistent structure with micro-crystalline flecks that present a balanced look across large floor spaces.\n\nIts excellent thermal resistance and structural density make it an absolute favorite for outdoor terraces, courtyard paths, and busy high-traffic residential areas.",
-      "color": "Brown",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "India",
-      "tags": ["granite", "natural", "premium", "brown", "durable"]
-    },
-    {
-      "id": "rt-007",
-      "name": "Colombo Juparana",
-      "image": "/assets/regular-tiles/colombo-juprana.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/colombo-juprana.jpg"],
-      "collection": "Regular Tiles",
-      "description": "An exotic swirling blend of soft pink, grey, and cream wavy patterns presenting artistic, fluid movement.",
-      "longDescription": "Colombo Juparana is a dynamic natural stone displaying an intricate mixture of wave-like bands in soft pinks, light greys, and muted cream tones. It is renowned for its organic movement, ensuring no two tiles look identical.\n\nThis artistic stone is heavily utilized to form feature walls, sweeping entryways, and expressive design borders that call for a classic look with natural energy.",
-      "color": "Pink",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "exotic", "durable"]
-    },
-    {
-      "id": "rt-008",
-      "name": "Ivory Fantasy",
-      "image": "/assets/regular-tiles/ivoryfantasy.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/ivoryfantasy.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A cream-colored granite displaying subtle pinkish swirls and soft amber hues that soften any interior.",
-      "longDescription": "Ivory Fantasy brings an inviting warmth with its beige and ivory foundation, decorated with gentle, flowing streaks of sand, peach, and soft charcoal minerals. It offers a bright finish without the stark coldness of solid white stones.\n\nBecause of its capacity to blend into warm design themes, it is frequently chosen for luxury bathrooms, resort flooring, and modern residential kitchens.",
-      "color": "Cream",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "cream", "durable"]
-    },
-    {
-      "id": "rt-009",
-      "name": "Kashmir White",
-      "image": "/assets/regular-tiles/kashmir-white.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/kashmir-white.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A refined, famous white-to-grey granite with dark burgundy granulates scattered elegantly across its surface.",
-      "longDescription": "Kashmir White is an elite, highly recognized Indian granite. It features a predominantly snowy-white background layered with soft grey clouds and unique, dark crimson or burgundy flecks that dot the stone.\n\nIts bright aesthetic makes it standard for large corporate office flooring, retail storefronts, and contemporary open-concept residential spaces.",
-      "color": "White",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "white", "durable"]
-    },
-    {
-      "id": "rt-010",
-      "name": "Ivory Brown",
-      "image": "/assets/regular-tiles/ivorybrown.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/ivorybrown.jpg"],
-      "collection": "Regular Tiles",
-      "description": "An attractive earthy stone combining cream and light brown bands with subtle hints of grey.",
-      "longDescription": "Ivory Brown granite provides a balanced neutral palette. It balances sandy beige colors with sweeping bands of light walnut brown, establishing a comforting, grounded feel in open architectural designs.\n\nIt is exceptionally hard-wearing, ensuring it holds its high-shine polish even when subjected to intense traffic in public plazas or active households.",
-      "color": "Cream",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "cream", "durable"]
-    },
-    {
-      "id": "rt-011",
-      "name": "Absolute Black",
-      "image": "/assets/regular-tiles/absolute-black-1.png",
-      "thumbnailImages": ["/assets/regular-tiles/absolute-black-1.png"],
-      "collection": "Regular Tiles",
-      "description": "A perfectly solid, deep black granite providing unmatched depth and a stark, highly reflective mirror finish.",
-      "longDescription": "Absolute Black granite is the ultimate deep dark stone, prized globally for its consistent monochrome tone without major veining. When polished, it acts like a dark mirror, producing incredible contrast against lighter materials.\n\nIt stands as the benchmark choice for luxury vanity tops, clean geometric flooring layouts, and high-contrast commercial accents.",
-      "color": "Black",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "black", "durable"]
-    },
-    {
-      "id": "rt-012",
-      "name": "Kashmir Cream",
-      "image": "/assets/regular-tiles/kashmir-cream.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/kashmir-cream.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A soothing, sandy-cream granite interspersed with rich hazelnut specs and delicate undertones.",
-      "longDescription": "Kashmir Cream granite presents a warm, soft aesthetic. Its baseline consists of light warm beige and cream, enriched by deep brown-gold accents and sparse garnet freckling.\n\nThis material is perfect for creating welcoming atmospheres in commercial hotel receptions, high-traffic home kitchens, and comforting bath spaces.",
-      "color": "Cream",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "cream", "durable"]
-    },
-    {
-      "id": "rt-013",
-      "name": "Multi Color",
-      "image": "/assets/regular-tiles/multi-color.png",
-      "thumbnailImages": ["/assets/regular-tiles/multi-color.png"],
-      "collection": "Regular Tiles",
-      "description": "A striking granite featuring a dark bold blend of red, black, and dark grey veins swirling together.",
-      "longDescription": "Multi Color granite showcases a brilliant, dynamic mix of dark brick-red tones running alongside grey and deep black veins. This vibrant stone adds instant architectural intrigue to any layout.\n\nIts rich color palette masks dust and wear exceptionally well, making it perfect for main entry walkways, external cladding projects, and public pathways.",
-      "color": "Multicolor",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "multicolor", "durable"]
-    },
-    {
-      "id": "rt-014",
-      "name": "Paradiso Bash",
-      "image": "/assets/regular-tiles/paradiso-bash.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/paradiso-bash.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A sophisticated fusion of violet, grey, and brown waves that form a striking contemporary design.",
-      "longDescription": "Paradiso Bash granite displays an alluring mix of purplish-violet waves, dark charcoal, and muddy-brown minerals. The shifting structure creates an outstanding focal point in any modern design setting.\n\nIt offers extreme structural density and weather resistance, functioning beautifully for indoor accents and exterior architectural facades.",
-      "color": "Multicolor",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "violet", "durable"]
-    },
-    {
-      "id": "rt-015",
-      "name": "Paradiso Classic",
-      "image": "/assets/regular-tiles/paradiso-classic1.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/paradiso-classic1.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A classic violet-blue cloud pattern granite filled with rich swirls of grey and silver particles.",
-      "longDescription": "Paradiso Classic granite features an intricate, fine-grain cloud formation composed of soft purplish-blue and deep grey tones. Its serene yet complex design brings timeless elegance wherever it is installed.\n\nThis material is highly recommended for wide flooring layouts, ornate fireplace surrounds, and corporate office elevator walls.",
-      "color": "Multicolor",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "violet", "durable"]
-    },
-    {
-      "id": "rt-016",
-      "name": "Steel Grey",
-      "image": "/assets/regular-tiles/steel-grey.png",
-      "thumbnailImages": ["/assets/regular-tiles/steel-grey.png"],
-      "collection": "Regular Tiles",
-      "description": "A sleek, industrial-grade grey granite showcasing light silver clusters set inside a dark charcoal background.",
-      "longDescription": "Steel Grey is a universally preferred low-variation granite displaying a dark grey base adorned with bright, pearlescent silver mineral patterns. It effortlessly projects a modern, industrial, or minimalist tone.\n\nIts low-porosity surface makes it highly resistant to stains and acidic substances, making it a reliable choice for commercial kitchen installations and public bathroom counters.",
-      "color": "Grey",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "grey", "durable"]
-    },
-    {
-      "id": "rt-017",
-      "name": "Viscount White",
-      "image": "/assets/regular-tiles/viscount-white-tiles.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/viscount-white-tiles.jpg"],
-      "collection": "Regular Tiles",
-      "description": "A stunning, highly artistic white-grey granite filled with dynamic, sweeping black waves.",
-      "longDescription": "Viscount White granite is widely celebrated for its bold, dramatic marble-like movement. Striking waves of dark grey and pitch black flow naturally over a light grey-and-white background.\n\nBecause of its breathtaking movement patterns, it is a premier option for waterfall island countertops, main accent backsplashes, and luxury lobby installations.",
-      "color": "White",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "white", "durable"]
-    },
-    {
-      "id": "rt-018",
-      "name": "New Kashmir Cream",
-      "image": "/assets/regular-tiles/new-kashmir-cream-calibrated-tiles.jpg",
-      "thumbnailImages": ["/assets/regular-tiles/new-kashmir-cream-calibrated-tiles.jpg"],
-      "collection": "Regular Tiles",
-      "description": "An upgraded, highly uniform cream granite offering minimal color variation for clean, modern aesthetics.",
-      "longDescription": "New Kashmir Cream offers a modern update to traditional cream stones, featuring a more uniform distribution of sandy tones and light speckles. It reduces erratic variations across large installations.\n\nIt is ideally designed for vast commercial properties, outdoor shopping plazas, and streamlined kitchen floor concepts.",
-      "color": "Cream",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "cream", "durable"]
-    },
-    {
-      "id": "rt-019",
-      "name": "Tan Brown",
-      "image": "/assets/regular-tiles/tan-brown.png",
-      "thumbnailImages": ["/assets/regular-tiles/tan-brown.png"],
-      "collection": "Regular Tiles",
-      "description": "A popular, dark granite filled with large, distinct dark-red and tan-brown crystalline minerals.",
-      "longDescription": "Tan Brown granite features a deep black background prominently embedded with sizable, rounded mineral crystals of rich chestnut brown and dark brick-red. It delivers a solid, stately look.\n\nIts incredible hardness makes it highly resistant to heavy foot traffic, outdoor freeze-thaw cycles, and heavy kitchen cooking use.",
-      "color": "Brown",
-      "finish": "Polished",
-      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "Cut to Size / Random Slabs (up to 3200mm x 1800mm)",
-      "origin": "South India",
-      "tags": ["granite", "natural", "premium", "brown", "durable"]
-    }
-  ],
-
-  //   'granite-slabs': [
-  //     {
-  //       id: 'gs-001',
-  //       name: 'Absolute Black',
-  //       image: `/assets/granite-slabs/absolute-black-3.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/absolute-black-3.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'The definitive jet-black granite slab for premium installations.',
-  //       color: 'Black',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['black', 'granite', 'absolute'],
-
-  //       longDescription: `Absolute Black is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Absolute Black offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Absolute Black delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-002',
-  //       name: 'Black Pearl',
-  //       image: `/assets/granite-slabs/black-pearl.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/black-pearl.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Black Pearl granite slab with iridescent mineral highlights.',
-  //       color: 'Black',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['black', 'granite', 'pearl'],
-
-  //       longDescription: `Black Pearl is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Black Pearl offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Black Pearl delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-003',
-  //       name: 'Blue Pearl',
-  //       image: `/assets/granite-slabs/bluepearl.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/bluepearl.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Striking Blue Pearl granite slab with labradorite shimmer.',
-  //       color: 'Blue',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['blue', 'granite', 'pearl'],
-
-  //       longDescription: `Blue Pearl is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Blue Pearl offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Blue Pearl delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-004',
-  //       name: 'Coffee Brown',
-  //       image: `/assets/granite-slabs/coffee-brown-granite.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/coffee-brown-granite.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Rich Coffee Brown granite slab for warm interiors.',
-  //       color: 'Brown',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['brown', 'granite', 'coffee'],
-
-  //       longDescription: `Coffee Brown is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Coffee Brown offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Coffee Brown delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-005',
-  //       name: 'Ivory Brown',
-  //       image: `/assets/granite-slabs/ivory-brown-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/ivory-brown-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Warm Ivory Brown granite slab with natural elegance.',
-  //       color: 'Brown',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['ivory', 'brown', 'granite'],
-
-  //       longDescription: `Ivory Brown is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Ivory Brown offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Ivory Brown delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-006',
-  //       name: 'Kashmir Cream',
-  //       image: `/assets/granite-slabs/kashmir-cream-1-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/kashmir-cream-1-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Kerala\'s finest Kashmir Cream granite slab.',
-  //       color: 'Cream',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['cream', 'granite', 'kashmir'],
-
-  //       longDescription: `Kashmir Cream is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Kashmir Cream offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Kashmir Cream delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-007',
-  //       name: 'Kuppam Green',
-  //       image: `/assets/granite-slabs/kappam-green-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/kappam-green-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Vibrant Kuppam Green granite slab with distinctive hue.',
-  //       color: 'Green',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['green', 'granite', 'kuppam'],
-
-  //       longDescription: `Kuppam Green is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Kuppam Green offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Kuppam Green delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-008',
-  //       name: 'Multi Colour',
-  //       image: `/assets/granite-slabs/multi-color-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/multi-color-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Bold multi-colour granite slab for expressive design.',
-  //       color: 'Multi',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['multicolour', 'granite', 'vibrant'],
-
-  //       longDescription: `Multi Colour is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Multi Colour offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Multi Colour delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-009',
-  //       name: 'New Kashmir Cream',
-  //       image: `/assets/granite-slabs/new-kashmir-cream-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/new-kashmir-cream-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Updated Kashmir Cream granite slab with enhanced finish.',
-  //       color: 'Cream',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring'],
-  //       tags: ['cream', 'granite', 'kashmir'],
-
-  //       longDescription: `New Kashmir Cream is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, New Kashmir Cream offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, New Kashmir Cream delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-010',
-  //       name: 'New Kashmir White',
-  //       image: `/assets/granite-slabs/new-kashmir-white.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/new-kashmir-white.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'New Kashmir White granite slab with pure bright finish.',
-  //       color: 'White',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['white', 'granite', 'kashmir'],
-
-  //       longDescription: `New Kashmir White is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, New Kashmir White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, New Kashmir White delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-011',
-  //       name: 'New Meera White (Close Up)',
-  //       image: `/assets/granite-slabs/meera-white-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/meera-white-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Close-up view of New Meera White granite slab.',
-  //       color: 'White',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring'],
-  //       tags: ['white', 'granite', 'meera'],
-
-  //       longDescription: `New Meera White (Close Up) is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, New Meera White (Close Up) offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, New Meera White (Close Up) delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-012',
-  //       name: 'New Meera White',
-  //       image: `${BASE_URL}/Granite-Slabs/NEW%20MEERA%20WHITE%20104%2C3CM%2C30.webp`,
-  //       thumbnailImages: [`${BASE_URL}/Granite-Slabs/NEW%20MEERA%20WHITE%20104%2C3CM%2C30.webp`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Full slab view of New Meera White granite.',
-  //       color: 'White',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring'],
-  //       tags: ['white', 'granite', 'meera'],
-
-  //       longDescription: `New Meera White is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, New Meera White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, New Meera White delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-013',
-  //       name: 'New Meera White 91',
-  //       image: `${BASE_URL}/Granite-Slabs/NEW MEERA WHITE 91,3CM,10 CLOSE UP.webp`,
-  //       thumbnailImages: [`${BASE_URL}/Granite-Slabs/NEW MEERA WHITE 91,3CM,10 CLOSE UP.webp`],
-  //       collection: 'Granite Slabs',
-  //       description: 'New Meera White granite slab, variety 91.',
-  //       color: 'White',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring'],
-  //       tags: ['white', 'granite', 'meera'],
-
-  //       longDescription: `New Meera White 91 is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, New Meera White 91 offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, New Meera White 91 delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-014',
-  //       name: 'Paradiso Bash',
-  //       image: `/assets/granite-slabs/paradiso-bash-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/paradiso-bash-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Paradiso Bash granite slab with rich purple undertones.',
-  //       color: 'Purple',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['purple', 'granite', 'paradiso'],
-
-  //       longDescription: `Paradiso Bash is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Paradiso Bash offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Paradiso Bash delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-015',
-  //       name: 'Paradiso Classic',
-  //       image: `/assets/granite-slabs/Paradiso-Classic-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/Paradiso-Classic-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Paradiso Classic granite slab with signature veining.',
-  //       color: 'Purple',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['purple', 'granite', 'classic'],
-
-  //       longDescription: `Paradiso Classic is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Paradiso Classic offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Paradiso Classic delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-016',
-  //       name: 'Sapphire Blue',
-  //       image: `/assets/granite-slabs/bluepearl.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/bluepearl.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Deep Sapphire Blue granite slab for elegant installations.',
-  //       color: 'Blue',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['blue', 'granite', 'sapphire'],
-
-  //       longDescription: `Sapphire Blue is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Sapphire Blue offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Sapphire Blue delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-017',
-  //       name: 'Silver Waves',
-  //       image: `${BASE_URL}/Granite-Slabs/SILVER WAVES 112,3CM,25 CLOSE UP.webp`,
-  //       thumbnailImages: [`${BASE_URL}/Granite-Slabs/SILVER WAVES 112,3CM,25 CLOSE UP.webp`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Silver Waves granite slab with shimmering wave patterns.',
-  //       color: 'Grey',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['silver', 'grey', 'granite'],
-
-  //       longDescription: `Silver Waves is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Silver Waves offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Silver Waves delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-018',
-  //       name: 'Steel Grey',
-  //       image: `/assets/granite-slabs/steel-grey-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/steel-grey-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Sleek Steel Grey granite slab for contemporary spaces.',
-  //       color: 'Grey',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['grey', 'granite', 'steel'],
-
-  //       longDescription: `Steel Grey is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Steel Grey offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Steel Grey delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-019',
-  //       name: 'Tan Brown',
-  //       image: `/assets/granite-slabs/tan-brown-1.jpeg`,
-  //       thumbnailImages: [`/assets/granite-slabs/tan-brown-1.jpeg`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Warm Tan Brown granite slab with natural earthy tones.',
-  //       color: 'Brown',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['brown', 'granite', 'tan'],
-
-  //       longDescription: `Tan Brown is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Tan Brown offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Tan Brown delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //     {
-  //       id: 'gs-020',
-  //       name: 'Viscount White',
-  //       image: `${BASE_URL}/Granite-Slabs/VISCOUNT WHITE 1024,2CM,55 CLOSE UP.webp`,
-  //       thumbnailImages: [`${BASE_URL}/Granite-Slabs/VISCOUNT WHITE 1024,2CM,55 CLOSE UP.webp`],
-  //       collection: 'Granite Slabs',
-  //       description: 'Viscount White granite slab with flowing crystalline patterns.',
-  //       color: 'White',
-  //       finish: 'Polished',
-  //       useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //       tags: ['white', 'grey', 'granite'],
-
-  //       longDescription: `Viscount White is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Viscount White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Viscount White delivers both aesthetic appeal and long-lasting performance.`,
-
-  //       thickness: '18mm - 20mm',
-  //       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //       origin: 'Rajasthan, India'
-  //     },
-  //   ],
 
   "granite-slabs": [
     {
@@ -1182,9 +18,10 @@ export const collectionTiles = {
       "useCase": ["Countertops", "Flooring", "Wall Cladding"],
       "tags": ["black", "granite", "absolute"],
       "longDescription": "Absolute Black is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment. Mined and processed with state-of-the-art technology, Absolute Black offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects. Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Absolute Black delivers both aesthetic appeal and long-lasting performance.",
-      "thickness": "2 CM - 20 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "thickness": "'20 mm to 200 mm and more',",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1199,9 +36,10 @@ export const collectionTiles = {
       "useCase": ["Countertops", "Flooring", "Wall Cladding"],
       "tags": ["white", "granite", "amba"],
       "longDescription": " Mined from the Southern part of the country, Amba White is a versatile granite stone that has brown speckles and grey veins splattered all over the white-colored background stone. Its elegant look along with its high powering characteristics like durability and resistance to wear is what makes it a perfect choice for commercial and residential projects. Amba white granite stone can be integrated into interior and exterior spaces like flooring, countertops, wall claddings, vanity tops, basins, stairs, and more. Madhav Marbles and Granite Ltd is a leading exporter and supplier of natural stones in the market and provides you with a wide range of natural stones. Our stones are available in tiles, blocks, slabs and can be customized into dimensions according to the customer's requirements. Buy Amba White Granite from Madhav Marbles and Granite Ltd.",
-      "thickness": "2 CM - 20 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "Rajasthan, India",
+      "thickness": "'20 mm to 200 mm and more',",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1216,9 +54,10 @@ export const collectionTiles = {
       "useCase": ["Countertops", "Flooring", "Wall Cladding"],
       "tags": ["black", "granite", "matrix", "leather"],
       "longDescription": " Matrix Leather Granite is a dark grey background with lighter gray veins that give it dimension and flow. It is a granite with a leather finish natural volcanic lava look, thus used in kitchens and restrooms due to its durability. This tough granite is also ideal for flooring, fire surround, cladding walls, riser steps and many more. Its leathered texture suits both contemporary and traditional designs. Due to its extreme durability and temperature resistance, Matrix Leather Granite is excellent for outdoor applications such as monuments, sculptures, landscaping, wall cladding, and fountains. Its versatility makes it a top choice for architects, builders, and designers. For the best quality leather finish granite in various colors, sizes, and thicknesses, contact Madhav Marble & Granite Ltd.",
-      "thickness": "2 CM - 20 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "thickness": "'20 mm to 200 mm and more',",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1233,9 +72,10 @@ export const collectionTiles = {
       "useCase": ["Countertops", "Flooring", "Wall Cladding"],
       "tags": ["blue", "granite", "amadeus"],
       "longDescription": "Quarried from India, Amadeus blue granite stone is a versatile stone that has heavy black swirls and irregular beautiful purple flowery pattern all over it. The beautiful color pattern of the Amadeus blue granite can bring a modern aesthetic appeal to any interior or exterior place it's incorporated. Whether it's a commercial project or a residential one, this highly durable Amadeus blue granite can go for all the applications like flooring, countertops, stone pathways, backsplashes, vanity tops, fireplaces, etc. At Madhav Marbles and Granite Ltd, we provide a great range of granite stone in slabs, tiles, blocks cut to sizes, and many different finishes like polished, unpolished, honed, matte, flamed, etc. Get your natural stone requirements fulfilled with the best natural stone exporters and suppliers.",
-      "thickness": "2 CM - 20 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "thickness": "'20 mm to 200 mm and more',",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1250,9 +90,10 @@ export const collectionTiles = {
       "useCase": ["Countertops", "Flooring", "Wall Cladding"],
       "tags": ["gold", "granite", "astoria"],
       "longDescription": "Astoria granite is an Indian granite with darker veins of chocolate and gray color spread over a beautiful deep cream background. This granite is in high demand in the global and domestic markets for its stunning irregular and wavy pattern. The stone provides a perfect base to create soothing and stylish indoor and outdoor spaces. Owing to its extreme durability, builders, and designers, prefer to use this for both residential and commercial applications. Astoria granite is best when paired with neutral-colored walls and can also be used as kitchen countertops, kitchen islands, backsplashes, flooring, and more. This Granite is available in slabs and tiles of multiple ranges of thicknesses, sizes, and finishes only at one of the best manufacturers and exporters of granite, Madhav Marbles And Granites Ltd. at the most competitive prices. Contact us today to learn more about the granite price for your project needs.",
-      "thickness": "2 CM - 20 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "thickness": "'20 mm to 200 mm and more',",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1268,8 +109,9 @@ export const collectionTiles = {
       "tags": ["blue", "granite", "bross"],
       "longDescription": " Bros blue is a one of a kind granite stone that can surely take your interiors and exterior spaces to a new class. The stone has an exquisite dark blue color along with light bluish veins spread over it. Extracted from the Andhra Pradesh region of India, this stone is a preferable choice among architects. This stone can be used for many commercial and residential applications like countertops, mosaics, fireplaces, stone pathways, vanity tops, basins, floorings, restroom vanities, etc. Madhav Marbles and Granites Ltd., one of the best granite stone exporters and suppliers, provides you with a wide range of granite stone in slabs and tiles of multiple ranges of thicknesses, sizes, and finishes.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1285,8 +127,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "galaxy"],
       "longDescription": " Black galaxy granite is an Indian natural stone renowned for its black color with small gold or white flecks, making it a popular choice for both indoor and outdoor decoration. Its uniformity and ability to reflect light improve several areas, including worktops, sinks, vanity tops, kitchen counters, table tops, countertops, backsplashes, floors, structures. Black Galaxy Granite with its rich appearance and high resistance to abrasion is popular in many countries of the world such as Germany, Austria, Slovakia, Slovenia, USA etc. It is made in slabs or tiles of several sizes since it is a very sturdy material that does not need much care and can be used in refined projects for its interiors. Madhav Marbles & Granite Ltd. offers premium Black Galaxy Granite at the most competitive prices.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1302,8 +145,9 @@ export const collectionTiles = {
       "tags": ["blue", "granite", "oceano"],
       "longDescription": " An exquisite Indian granite, Blue Oceano has a cream background with blue and dark grey color speckles spread in a wave pattern, making it resemble the ocean. It consists of red dots that give this granite a pop of color, enhancing its functionality and hence making it a highlighting element of any place. Due to this color scheme, it could be used for both interior and exterior applications, especially for flooring, wall cladding, vanity tops, countertops, backsplashes, staircases,s and many more. Granite has the quality of being moisture-resistant and stain-resistant, which makes it appropriate for places like the kitchen and restrooms. It can withstand extreme weather conditions, so it is an apt stone for outdoor application. You can avail of this premium quality stone in the form of blocks, slabs, and tiles from Madhav Marble & Granite Ltd. We are among the top granite suppliers and exporters of natural stones from India.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1319,8 +163,9 @@ export const collectionTiles = {
       "tags": ["blue", "granite", "pearl"],
       "longDescription": " Blue pearl granite is one kind of natural stone that has an irregular scattering of black and white patches over a shiny blue surface. What makes this stone a prominent choice for building materials is its dazzling appearance that gives any space a brand-new refreshing look. The stone naturally comes with ample benefits i.e. low porosity level, extreme durability, high compressive strength, stain resistance, frost-free, and more. Blue pearl granite is highly recommended for flooring, wall cladding, kitchen countertops, backsplashes, Islands, Vanity tops, step risers, and window/door sills. Due to its extreme robustness, It can also be installed in external hard landscaping areas. At Madhav Marble & Granite Ltd., blue pearl granite is available in blocks, slabs, tiles, and cut-to-sizes. We are the best granite supplier and exporter in India, providing you with stones in a wide range of colors, designs, dimensions, and thicknesses. We serve customers in the US, Germany, Austria, Slovenia, and Slovakia. Contact us today and get premium quality material at the most reasonable prices. Blue Pearl Granite is a premium natural stone admired for its stunning blue - grey background, shimmering silver crystals, and elegant appearance. The unique reflective pattern of this granite creates a luxurious look that enhances both modern and traditional architectural spaces. Known for its durability, strength, and timeless beauty, Blue Pearl Granite is a preferred choice among architects, designers, builders, and homeowners worldwide. Whether you are designing a luxurious kitchen, elegant flooring, commercial interiors, or premium architectural projects, Blue Pearl Granite offers the perfect combination of style and performance. Its attractive crystal texture and long - lasting durability make it an excellent choice for residential and commercial applications. Blue Pearl Granite is widely used for granite countertops, flooring, wall cladding, staircases, and decorative surfaces. With its beautiful blue tones and natural shine, this premium granite stone adds sophistication and value to any space.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1336,8 +181,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "bianco", "antico"],
       "longDescription": " Bianco Antico Granite is a white and gray granite with touches of lighter grey, white and brown speckles. It also has crystal-like structures scattered throughout the stone, giving the surface an overall shine and luxurious appearance. This pattern gives it a beautiful and elegant look. In addition to applying in interior spaces such as accent walls, countertops, kitchen islands, fireplaces, backsplashes, and floors, Bianco Artico can be used in exterior properties as well. It is great for usage in exteriors as landscaping and wall cladding. This natural stone comes with various benefits like low porosity level, weather resistance, high compressive strength, stain resistance, and more. At Madhav Marble & Granite Ltd., this granite stone can be availed in various finishes like polished, leather, honed, flamed, etc. depending on the application requirements. We are a well-known natural stone exporter and supplier in India, with stones available in the form of slabs and tiles of various colors, patterns, sizes, and thicknesses at the best competitive price range. Contact us today for premium quality materials.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1353,8 +199,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "pearl"],
       "longDescription": " Black pearl is one of the popular black granites, known for its elegant looks and perfect finish. The stone has a unique pattern of silver metallic flakes spread over its black backdrop. Due to its beautiful design palette, it can be paired with light-colored interiors to give a perfect contrast in looks. Characteristics like low water absorption, extreme hardness, and high compressive strength make it an ideal choice for indoor and outdoor applications hence, it can be used for designing modern granite floor tiles, wall cladding, kitchen countertops, and vanities. Depending on the usage, black pearl granite can take multiple finishes like polished, flamed, bush hammered, leather, etc. We at Madhav Marble & Granite Ltd., are a leading manufacturer and supplier of the Black Pearl Granite in granite tile, and slabs. When it comes to granite products, we have tiles and slabs and they come in different colors, sizes, and finishes. Our export destinations include Germany, the United States, Austria, Slovakia, and Slovenia. Get in touch with us now to experience high-quality stone at a reasonable price!",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1370,8 +217,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "bengal"],
       "longDescription": " Bengal White Granite is one of the most timeless natural stones with a tranquil white background and faint waves of grey. The soothing base color of Bengal White Granite is highly preferred across the spectrum of defined design styles and decor schemes, from modern to classic. Bengal White White Granite is premium grade and most sought after for its ability to lighten the look of a room. It is not overpowering to the eye and achieves an overall balance and a refined appearance. The Bengal White Granite, or simply, White Granite, is incredibly durable. Bengal White Granite is often used for countertops in kitchens as it combines timeless elegance with strength needed for everyday use. The stone is completely stain resistant, withstands heat, and keeps its polished shine for years. This stone, with its refined subtle character, embodies sophistication, and is a perfect choice for all countertops including kitchens, living spaces, and highly used commercial areas. Bengal White Granite is crafted to calm the chaos of everyday use. More than a surface, it is an investment piece to capture beauty.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1387,8 +235,9 @@ export const collectionTiles = {
       "tags": ["cream", "granite", "colonial"],
       "longDescription": " An elegant creamy base with flecks of gold, brown and rust, is a defining characteristic of one of our exotic stones, Colonial Cream Granite. Extracted from the southern part of India, the stone comes in a range of colors like white, gold, and cream. The distinctive design palette with creamish background and versatility in shades produce a unique appearance that makes it perfect for all types of building applications. The stone is ideal for flooring, tabletops, wall cladding and kitchen countertops, kitchen islands, backsplashes and vanity tops, and etc. Colonial Cream granite tile has become one of the preferred choices for most builders and landscape contractors for designing interiors and exterior spaces. This granite has a low porosity level and does not require much maintenance. Madhav Marble & Granite Ltd. is one of the pioneer suppliers of Colonial Cream Granite around the globe, exporting high-quality materials in slabs, tiles, and cut-to-sizes. Enquire now to get the best quality materials from an esteemed Granite exporter in India, serving locations including Germany, the US, Austria, Slovakia, and Slovenia.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1404,8 +253,9 @@ export const collectionTiles = {
       "tags": ["brown", "granite", "coffee"],
       "longDescription": " Coffee Brown Granite stone features a beautiful brown background with crystal-like coffee and chocolate hues throughout. Its durability, scratch resistance, and timeless appeal make it ideal for both commercial and residential projects. Architects use it for countertops, flooring, wall cladding, and stairs due to its versatile design. As a leading natural stone exporter and supplier, Madhav Marbles And Granites Ltd offers a wide range of granite and other natural stones in various finishes, available as tiles, blocks, and cut-to-size. Get in touch today to explore our collection!",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1421,8 +271,9 @@ export const collectionTiles = {
       "tags": ["red", "granite", "copper"],
       "longDescription": " Copper Red is an Indian Granite with a combination of red, grey and brown color speckles. The amalgamation of all these shades gives it a copper-like look. It is suitable for both indoor and outdoor usage. This stone comes to another level when applied outdoors as it creates a balanced look along with enhancing the overall appearance of the space. Granite is a durable natural stone, resistant to weather and moisture, so it is an apt stone for landscaping, wall cladding, flooring, sculptures, staircases, etc. Copper Red Granite is a preferable choice for builders and designers when they want to create a modern rustic look. This stone is available in multiple finishes like polished, leather, honed, flamed, piano, etc., according to application and building requirements. Madhav Marble & Granite Ltd. provides granite stone in the form of slabs, blocks, and tiles and has an extensive range with ample of colors, patterns, and sizes. Madhav Marble & Granite Ltd., the top granite supplier in India, offers slabs, blocks, and tiles in various colors and sizes. Contact us now for bulk exports. Serving Germany, the US, Austria, Slovakia, and Slovenia.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1438,8 +289,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "colonial"],
       "longDescription": " Amongst the wide collection of white granites, Colonial White granite has its own relevance which symbolizes purity and peace. The stone makes a big difference when it comes to updating your interior aesthetics. Ideal for both business and residential use, this Colonial White Granite looks best when combined with dark-toned kitchen cabinets. Whether used as kitchen countertops, backsplashes, white granite flooring, or for another purpose, colonial white makes a remarkable choice amongst other white granite stones. This stone is mined in India and is one of the most beautiful types of stone to be used on the walls and floors as well as on the exterior. Available in different sizes and finishes, get the Colonial White granite only at Madhav Marble & Granite Ltd., a leading natural stone supplier that deals in supplying a wide variety of granite tiles and slabs. Enquire to get the quote today! ",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1455,8 +307,9 @@ export const collectionTiles = {
       "tags": ["cream", "granite", "imperial"],
       "longDescription": " Imperial Cream Granite from Madhav Marble & Granite Ltd. is a stunning natural stone, featuring a captivating blend of grey and brown veins against a deep cream background. Ideal for enhancing dark-colored interiors and exteriors, this granite creates a tranquil atmosphere. Offering unparalleled elegance and durability, Imperial Cream Granite is non-porous and highly resistant to dirt, stains, and scratches. It is versatile in its ability to take on multiple finishes, with its polished surface adding a touch of sophistication to floors and walls. As a leading natural stone manufacturer in India, Madhav Marble & Granite Ltd. offers Imperial Cream Granite in custom-sized tiles and slabs of various thicknesses and dimensions. Perfect for applications such as cladding, kitchen backdrops, countertops, kitchen islands, table tops, vanity tops, and stairs, this Indian granite is renowned for its quality and aesthetic appeal. Reach out to us for more information. We proudly serve clients in Germany, US, Austria, Slovakia, and Slovenia, providing our premium natural stone products at competitive prices.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1472,8 +325,9 @@ export const collectionTiles = {
       "tags": ["gold", "granite", "imperial"],
       "longDescription": " Imperial Gold Granite is simple yet elegant looking Indian granite. The stone features a shade of gold and yellow background with a glorious pattern of grey and pink veins and small flecks of golden color. Imperial Gold easily blends under both contemporary and modern interiors due to its magnificent look and beautiful texture. The stone has a low water absorption rate and is highly resistant to scratches, and extreme climate conditions. Imperial gold granite is suitable for both high-end residential and commercial applications that range from customizing kitchen countertops, granite floor tiles, wall cladding, and fountains, to other decorative possibilities. Given a fine finish, this gold granite can give your space a class-apart look. Imperial gold granite is now available at the most prominent supplier of granite, Madhav Marble & Granites Ltd. We process granite into slabs and tiles of different sizes, thicknesses, and finishes and keep a heavy stock. Reach out to us and get the best quotations for your requirements. Buy Imperial Gold Granite today from the leading natural stone supplier in India, Madhav Marble & Granites Ltd.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1489,8 +343,9 @@ export const collectionTiles = {
       "tags": ["gold", "granite", "kashmir"],
       "longDescription": " Kashmir Gold Granite is one of the hardest granite mined from India that contains a creamy grey background with a unique pattern of brown and grey flecks and veining. The high strength, excellent finish, and stunning design make it an ideal choice for indoor and outdoor applications. Kashmir Gold Granite can add elegance to any space if installed as flooring, counters for kitchen and restroom areas, and wall cladding applications. For many homeowners Kashmir Gold has become the most popular choice for kitchen countertops, backsplashes, and kitchen islands, because of its elegant design and long-lastingness. We can process this granite into slabs and tiles of various finishes, dimensions & thickness. At Madhav Marble & Granite Ltd., we deal in tailor-made products to fulfill the client's requirements. Being a leading supplier of granites, we process quality granite stones using advanced production techniques. Our stones are available in blocks, slabs, tiles, and cut-to sizes. Enquire us today for any bulk requirements.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1506,8 +361,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "kashmir"],
       "longDescription": " Kashmir White Granite has a fusion of grey and light-colored golden veins with an irregular scattering of purple speckles over a bright white background. The exquisite pattern of Kashmir White can impart a sense of calmness to any interiors and exteriors. This white granite stone easily blends with contemporary and traditional spaces. The granite is durable, robust, stain and weather-resistant, hence it can be used as wall cladding, flooring, countertops, vanity tops, stairs, monuments, etc. Madhav Marble & Granite Ltd., one of the reputed stone suppliers, deals in supplying premium-quality white granite at affordable prices. Our stones are available in blocks, slabs, and tiles.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1522,9 +378,10 @@ export const collectionTiles = {
       "useCase": ["Countertops", "Flooring", "Wall Cladding"],
       "tags": ["white", "granite", "tiffone"],
       "longDescription": " Found in India, Bianco Tiffone is a one-of-a-kind granite stone that adds luxury and sophistication to any space. The exquisite black granite with heavy white patches exudes richness wherever it's incorporated. Highly demanded for outdoor and indoor applications such as countertops, flooring, stairs, fireplace walls, stone pathways, wall claddings, and window sills, this versatile stone is perfect for both commercial and residential projects. Discover a wide range of top-quality granite and other natural stones from Madhav Marbles And Granites Ltd., one of the most prominent natural stone exporters and suppliers. We offer granites in slabs, blocks, and tiles in various colors, finishes, and dimensions. Contact us today to transform your space with the elegance of Bianco Tiffone. The striking Bianco Tiffone granite with Black and White contrasts is also complemented with multiple and bold white veining. The combos of Bianco Tiffone granite with other stone and surfaces or within a space creates a sense of bold luxury and a strong interior within any premium architectural installation. The varying boldness of the patters within the Bianco Tiffone granite shows the diversity within the linear patters which adds charm and elegance to any contour or linear forms. Bianco Tiffone granite is widely known for its strength and durability. This granite does not only look good, it is functional, and reliable, and a space with it won't require an upgrade or replacement for an extended period of time. Bianco Tiffone granite is also very low maintenance which leads to long term investment for any space.",
-      "thickness": "2 CM - 20 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "thickness": "'20 mm to 200 mm and more',",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1540,8 +397,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "mist"],
       "longDescription": " Mist black is that one granite stone for those who like to add the touch of the black color in their stying. This is a prominent granite stone which is primarily black in color but has got a few patches and speckle of green tint over the black. This granite is very popular because of its color and it can be installed both on rooms with light or dark shades. This can act as kitchen or restroom countertops, vanity tops, interior or exterior flooring, backsplash, fountains, windowsills, stone pathways, stairs, fireplaces, etc. When it comes to the finishing of this stone, some of the finishing that are offered by Madhav Marbles And Granites Ltd. include polished, leather, honed, Giano, flamed, flamed and brushed. We work with different types of granites and other natural stones. Our granite products include tiles, slabs and blocks of granite stones.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1557,8 +415,9 @@ export const collectionTiles = {
       "tags": ["multicolor", "granite", "red"],
       "longDescription": " Quarried in India, multicolor red granite is considered to be one of the most popular granites in the red color category. The stone has a stunning red background along with a beautiful amalgamation of tiny black dots and grey swirls spread on the surface. The high durability, robustness and astounding beauty of this granite make it a preferred choice for all wall cladding applications, facades, flooring and designing kitchen counters, vanity tops, etc. Due to its ability to take multiple surface finishes multicolor red is highly used as granite floor tiles. This stone adds a glamorous look when paired with light colored interiors and exteriors. Being one of the top manufacturers and suppliers of granite, we are at Madhav Marble and Granite Ltd. offers you multicolor red granite in the form of slabs, cut to sizes, and tiles of multiple dimensions. Our stones are available in polished and unpolished forms. Enquire us today and get the best quotations.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1574,8 +433,9 @@ export const collectionTiles = {
       "tags": ["cream", "granite", "brown"],
       "longDescription": " With the idea to create a contemporary, exclusive and luxurious space, Ivory brown granite is the most preferred stone by architects and interior designers over other brown granite. Ivory Brown has a beige base with reddish-brown streaks over it. This stone is especially preferred to use as kitchen countertops, interior walls, and floor applications, etc. Quarried from the mines located in India, this stone is durable in nature and known for its utmost qualities. Madhav marble and granite Ltd is the leading manufacturer, supplier, and exporter of Ivory Brown Granite in India and around the world. We export quality products in different finishes and sizes. Get Ivory Brown granite tiles and slabs today!",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1591,8 +451,9 @@ export const collectionTiles = {
       "tags": ["red", "granite", "bordeaux", "exotic"],
       "longDescription": " Parana Bordeaux is a scintillating granite with a creamish golden background and a perfect blend of deep red and maroon swirly waves with a tint of grey. It has a variation of dark grey and brown flakes that provides this stone with a noticeable look. With a variety of uses, this granite is best for indoor application, both for commercial and residential purposes. Perfect for kitchen countertops, fireplace surrounds, staircases, table tops, office lobbies or even great hall flooring. It is recommended for both interior and exterior projects including landscaping, flooring, outdoor countertops, wall cladding, sculptures and much more. In addition to installation versatility, it is a natural stone with various qualities such as stain and moisture resistance, the ability to withstand tough weather conditions, and is a long-lasting material. Avail Parana Bordeaux granite in premium quality from Madhav Marble & Granite Ltd., well known natural stone manufacturers and suppliers in the global market. We provide stones in form of slabs, tiles, blocks, and varied cut sizes, dimensions and finishes.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1608,8 +469,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "pebble"],
       "longDescription": " Pebble White granite has a white colour background with streaks of black and grey. This pattern is present all over the stone surface. Despite its busy design the white undertone highlights well and gives this stone a smooth and shiny appearance. With its fine and distinctive look, this stone has a personality of its own that enhances the overall ambience of the space where applied. It uplifts the visual of any space especially when incorporated with white and lighter tones, creating a clean, minimalistic, and brighter look.  It serves multiple purposes such as countertops, tabletops, restroom areas, staircases, bath vanities, shower surrounds and many more. Whereas when used outdoors, this stone acts as a decorative element and perfect stone for landscaping. We at Madhav Marble & Granite Ltd. manufacture and supply the finest quality Pebble White granite which is available in the form of blocks, slabs and tiles. We also have stones in varied sizes, dimensions, thicknesses and finishes",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1625,8 +487,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "imperial"],
       "longDescription": " Imperial white granite is a white stone that has partly light patches of pink and grey that enhances its attractiveness for construction activities. This is due to the physical and chemical characteristics it possess which has deemed it worthy to be used for both residential and commercial purposes. This granite comes in different sizes and sealers and is one of the most popular shades of white called imperial white that can be used in many interior design like in kitchen for countertops , walls, stairs, and floorings to give the room an appealing look. Madhav Marbles & Granite Ltd, a leading manufacturer in India, supplies both Imperial White Granite and Colonial White Granite for export. We exclusively cater as the distributor and supplier of White granite for many countries over plus forty countries worldwide and offer Slabs, Tiles, as well as other cut sizes of Imperial White Granite wholesale. Enquire now!",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1642,8 +505,9 @@ export const collectionTiles = {
       "tags": ["red", "granite", "imperial"],
       "longDescription": " New Imperial Red granite is a beautiful natural stone consisting of deep red, brown and black granules. It has a brown colour base with large red and peach color speckles that defines and elevates this stone's physical appearance. This stone adds variety and perfection to your residential and commercial design projects. After installation, its simplicity and elegance are the reason behind its popularity in the market among builders, designer,s and architects. A material with extreme durability, and perfect to use as countertops, kitchen islands, backsplashes, flooring, accent walls, table tops, staircase, step risers, fireplace surrounds, sculptures, designer terraces and much more. Madhav Marble & Granite Ltd. has the best collection of premium quality granite and other natural stones and New Imperial Red is available in the form of slabs, blocks, and tiles. We also provide various dimensions and finishes like polished, leather, honed, flamed, giano, as per the building and customer requirements.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1659,8 +523,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "kashmir"],
       "longDescription": " Among the wide variety of granite stones, the new Kashmir white granite marks endless possibilities in creating demanding decors, for both indoors and outdoors. Heavily employed in residential and commercial applications, the New Kashmir White Granite is used as kitchen countertops, vanity tops, paving stones, backsplashes, and more. This White Granite stone is a fine to medium-grained, dark white to light grey stone that merely provides an even smoother surface finish when installed in any space. Madhav marble and granite being the top granite suppliers in India aim at providing this high-quality stone in a finished and polished state of granite tiles, or slabs in abundant variety. Enquire now to get into its details.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1676,8 +541,9 @@ export const collectionTiles = {
       "tags": ["cream", "granite", "royal"],
       "longDescription": " An absolute Indian Granite, Royal Ivory has a white background with cream colour waves stretched across the stone. It consists of tiny brown and white sugar like particles providing the stone with a unique shimmer. Along with this, it also features deep brown deposits that add contrast to its overall appearance. With this minimal design and white hue, it makes any space appear bigger and brighter. Royal Ivory is an appropriate stone for a variety of applications especially interiors such as kitchen island, backsplashes, tabletops, windowsills, staircases, flooring, bath vanities, etc. Granite unlike other natural stones is comparatively high in strength, durability, is stain and weather-resistant, has a low porosity level, hence is a suitable stone for outdoors too. For example as pillars, fountains, landscaping, sculptures, monuments, carved structures, etc. This granite is available in the form of blocks, slabs and tiles of various thicknesses, dimensions, and finishes. Madhav Marble & Granite Ltd. is a leading supplier and processor of Indian granites and provides products at competitive prices.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1693,8 +559,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "river"],
       "longDescription": " Let enrich your interiors with the sparkle of white granite by creating a welcoming aura. Construct with gray veining with small deep burgundy flecks over it, the River white granite is a durable stone that amplifies the overall look when installed in both interiors or exteriors of any space. Available in form of both white granite tiles and slabs it can be used as granite kitchen countertops, backsplashes, flooring, paving stone, and more. Madhav marble and granite Ltd is one of the foremost exporters of granite in India, exports quality granite tiles and slabs across 40+ countries. Being in the industry for over 31 years, our product promises desired quality that lasts for years.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1710,8 +577,9 @@ export const collectionTiles = {
       "tags": ["cream", "granite", "kashmir"],
       "longDescription": " A durable granite stone recommended for kitchen countertops or restroom vanity tops. The new Kashmir Cream granite is a cream-colored stone with grey and light pink lines over it. This remarkable granite stands out in front of other granite stones and is stain-resistant, easy-to-maintain, and durable in nature. This all makes it a perfect choice for kitchen countertops, wall cladding, flooring and so on. Madhav Marble & Granite Ltd is a leading granite supplier, offers the New Kashmir Cream Granite in custom slabs and tiles. Available in both raw and finished state, get this stone today at great prices from the top exporters of granite in India.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1727,8 +595,9 @@ export const collectionTiles = {
       "tags": ["brown", "granite", "tan"],
       "longDescription": "Tan Brown features a stable black background paired with large chestnut crystals, providing a solid, hard-wearing choice for busy spaces.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1744,8 +613,9 @@ export const collectionTiles = {
       "tags": ["grey", "granite", "thunder"],
       "longDescription": " Thunder Cloud is a unique and mesmerizing granite stone with a grey undertone. Its surface consists of dark grey and white wave-like patterns with tiny black granules. This stone has a striking and astounding appearance that makes it a perfect addition for the place it is installed hence could be used as bath vanity tops, kitchen countertops, tabletops, fireplaces, staircase, wall cladding, pavements, monuments, and more. For achieving a high-end and stylish look, pair it with darker colour elements such as black kitchen cabinets or to create an elegant and soft look add some lighter shades like white and cream. Thunder Cloud Granite has many properties like stain resistance, low porosity level, could withstand tough weather conditions and long-lasting material. At Madhav Marble & Granite Ltd. we deal in high-quality products manufactured and processed with advanced technology. You can get granite stone in the form of blocks, slabs and tiles, also in various sizes and finishes.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1761,8 +631,9 @@ export const collectionTiles = {
       "tags": ["multicolor", "granite", "red"],
       "longDescription": " New Multi Color granite is a magnificent granite product featuring the mixture of red, dark brown, black and tones of grey. This beautiful color combination is adorned in a curly wave pattern providing the stone movement and depth. The astonishing appearance and mesmerizing texture of this granite adds to its functionality, hence making it suitable for a number of applications such as kitchen islands, countertops, flooring, bath vanity tops, fireplace surrounds, bar counters, shelves, staircases, landscaping, fountains, and a lot more. Being a natural stone with utmost durability and strength, New Multi Color granite is a preferable choice of builders, designers and architects for both commercial and residential construction projects. Here at Madhav Marble & Granite Ltd., this granite stone is available in the form of slabs, tiles, blocks and various finishes like polished, leather, honed, flamed, etc. in order to match individual needs. We provide bulk exports across the globe. Contact us for further information and enquiries.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1778,8 +649,9 @@ export const collectionTiles = {
       "tags": ["gold", "granite", "colonial"],
       "longDescription": " Colonial Dream is a popular granite from India. It consists of a yellowish cream background along with dark brown deposits and tiny light brown speckles spread all over the stone surface. With this alluring look, it adds character to any space wherever installed. Beyond the beauty this stone has, it is also a very durable material and has other properties of a granite stone such as being stain resistant, resistant to moisture and extreme weather conditions, and has high compressive strength. With all these factors, it stands up well against all the daily wear and tears. This granite is perfect for interior spaces and could be installed as countertops, tabletops, accent walls, staircases, window sills, flooring, bathroom vanities, or outdoors as landscaping, wall cladding, designer terraces, etc. To get the finest quality Colonial Dream granite contact Madhav Marble & Granite Ltd. who are among the top suppliers and manufacturers of granite and other natural stones from India.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1795,8 +667,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "aviva"],
       "longDescription": " A natural stone with a subtle look, Aviva White has a white color background with grey and black color spots spread all over the stone. It consists of beige color splashes that add a different hue to this monochromatic tone. With this minimal design pattern and white shade, it makes any space appear bigger and brighter. This color palette makes Aviva White an appropriate stone for multiple usage especially indoors as a kitchen island, backsplashes, tabletop, windowsills, staircases, flooring, bath vanities, etc. Due to its high durability, stain and weather resistance, low water absorption level and high compressive strength, it is a suitable stone for outdoors too. For example as sculptures, monuments, pillars, fountains, and could be used to create beautiful designs and carved structures. This granite is available in the form of blocks, slabs and tiles of various thicknesses, dimensions, and finishes. Madhav Marble & Granite Ltd. is a leading supplier and processor of Indian granites and provides products at competitive prices.",
       "thickness": "20mm, 30mm",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1812,8 +685,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "impala"],
       "longDescription": " Regal Black Impala is a granite stone found in the southern part of India. This Indian granite comes in a deep black colour background with some little flecks spread all over the stone. This stone is highly demanded for its rich black colour and its high powering characteristics like high strength and durability, frost resistance, stain resistance and many other features. With Regal Black Impala granite stone you can definitely bring a feel of elegance and luxury to your interior and exterior spaces. Use this stone as flooring, wall claddings, kitchen countertops, stone pavements, monuments, fireplaces etc. Get Regal Black Impala granite and many other top-quality natural stones from the leading exporters of natural stone, Madhav Marbles And Granites Ltd. Our natural stone range includes marble stones, granites, sandstones and quartzites. Our granite is available in tiles, slabs, block, and cut to sizes.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1829,8 +703,9 @@ export const collectionTiles = {
       "tags": ["grey", "granite", "steel"],
       "longDescription": "Steel Grey Granite features a beautiful mixture of dark and grey shades, which contributes to upscaling the look of any space they are placed in. This Grey Granite is highly durable in nature and contains good composite strength which makes it highly popular to use as kitchen countertops, vanity tops, flooring, and more. The stone requires low maintenance and each of its aspects makes your establishment reflect pure luxury and coziness. Madhav marble and granite ltd is the leading manufacturer, supplier, and exporter of Steel Grey Granite and exports Steel Grey Granite tiles, slabs all over the world. Whether it is interiors or exteriors, the granite tiles shine with their own light and enlighten the whole space.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1846,8 +721,9 @@ export const collectionTiles = {
       "tags": ["blue", "granite", "sapphire"],
       "longDescription": "Sapphire Blue granite has a dark blue colour with brown and black flakes. It consists of an intricate pattern and flakes of milky grey and white colour, giving this stone an attractive and unique visual. To increase its variety of usage, pair it with darker elements like black in space or add some contrast with lighter shades such as cream and beige. It's a gorgeous natural stone with an exquisite shine and fits well in its surrounding, wherever applied. It will work well as kitchen countertops, bath vanities, shower surrounds, tabletop, fountains, pavements, etc. Sapphire Blue granite is a natural stone with ample qualities like low water absorption, stain resistance, ability to resist extreme environments, and long lastingness. You can purchase this granite stone in top-notch quality from Madhav Marble & Granite Ltd., available in the form of blocks, slabs and tiles. We are among the top granite suppliers and exporters of natural stones from India.",
       "thickness": "15mm, 18mm, 20mm",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1863,8 +739,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "meera"],
       "longDescription": " Embossed with black dots, grey flecks, and lines on the white surface, the New Meera White Granite is perfect to use as kitchen countertops, exterior – interior wall and floor applications, fountains, pool, and wall capping, stairs, window sills, and other design projects. Suitable for both interior and exterior applications, the New Meera White granite is durable, dense, hard, and creates an aesthetic appeal to any space, when installed. Acclaimed as architectural rock, this stone is widely popular amongst homeowners and architects. Madhav Marble and Granite Ltd is a rich exporter and supplier of new Meera white granite tiles and slabs in India. Explore its range of white granite tiles and slabs today! ",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1880,8 +757,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "meera"],
       "longDescription": "Madhav Marbles is the leading supplier and Processor of this granite, We can supply you any quantity of this material, this material is available with us in ready stock. We can offer you this material at best competitive price. We request you to please visit our Factory for any of your requirement of this granite , you can also get in touch with us by filling the form at our contact us page. We look forward to receive your valuable inquiry regarding any of your projects for this granite.",
       "thickness": "2cm – 20cm",
-      "dimensions": "305 x 305 x 10 mm, 610 x 305 x 10 mm, 600 x 400 x 10 mm, 400 x 400 x 10 mm, 457 x 457 x 12 mm, 600 x 600 x 12 mm, 305 x FL x 15 mm, 400 x FL x 15 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1897,8 +775,9 @@ export const collectionTiles = {
       "tags": ["green", "granite", "kuppam"],
       "longDescription": "A green-colored stone that comprises white swirls and lining patterns gives a striking look to your design space when installed. Kuppam Green Granite is one of the well-known building materials that are available in both raw and well-finished states. The stone makes a perfect blend when put in a combination of light-coloured stone and is extensively demanded to be used as kitchen countertops, backsplashes, and flooring.  Kuppam Green granite stone is durable and its scratch-resistant properties make it an appropriate selection for domestic purposes also. Get the Kuppam green stone from the prime suppliers of granite in India – Madhav Marble & Granite Ltd at a highly competitive price range. Being the leading distributors of granite in India, we believe in supplying quality products worldwide.",
       "thickness": "15mm, 18mm, 20mm",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1914,8 +793,9 @@ export const collectionTiles = {
       "tags": ["cream", "granite", "kashmir"],
       "longDescription": " Kashmir Cream is a popular granite stone from India. It has a cream background with peach colour waves. A variation of dark grey granules is also present that are spread all over the stone. The amalgamation of varied shades gives this stone a soft sand look and beautiful movement. Kashmir Cream granite is a stone that has natural strength and a tough surface that could withstand extreme temperatures, hence a suitable stone for both indoor and outdoor usage. Whether apply it as countertops, backsplashes, shower surrounds, staircases, accent walls in your space interiors, or use it as landscaping, fountains, sculptures for outdoors. This granite has an impactful but soft and subtle look and blends perfectly with other elements and colours, maximizing the ambience of the entire space. Purchase fine grade of Kashmir Cream granite from Madhav Marble & Granite Ltd. We are among the top natural stone suppliers from India having an extensive range of granite stones in various colours, patterns, sizes and finishes provided as per requirements.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1931,8 +811,9 @@ export const collectionTiles = {
       "tags": ["gold", "granite", "prada"],
       "longDescription": " Prada Gold is an alluring granite quarried in South India. It is a beautiful stone with a combination of golden and peach background along with grey veins that gives this stone a pleasant flow. On having a closer look one can see black colour spots spread in an uneven pattern over the stone. This granite has a luxurious appearance and is perfect for residential and commercial places like hotels, restaurants, showrooms, where it will definitely lay a splendid impression. In addition to its beauty, Prada Gold is a durable, weather-resistant, stain-resistant and long-lasting natural stone. It is a fabulous granite stone for kitchen countertops, backsplashes, bath vanities, accent walls, fireplace surrounds, flooring, landscaping, stone benches and much more. We provide this stone in the form of slabs, blocks and tiles and in different cut sizes, dimensions and thicknesses. If you are looking for a granite product that is best in quality and colour, contact Madhav Marble & Granite Ltd., who are leading manufacturers and exporters of granite from India.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1948,8 +829,9 @@ export const collectionTiles = {
       "tags": ["green", "granite", "emerald"],
       "longDescription": " Emerald Pearl HQ is one of the most common and known choices of granite colours in the market. It has a striking dark green color background with light green, silver and white chip-like speckles. With its unique and distinctive look, this stone has a personality of its own that enhances the overall ambience of the space where applied. It uplifts the appearance of any space, especially when used as countertops, tabletops, restroom areas, staircases, and many more. Whereas when used outdoors, this stone acts as a decorative element and adds a touch of glamour to the area. Apart from its beauty, Emerald Pearl HQ Granite has many qualities like stain resistance, low water absorption level, resistance to extreme weather conditions and long lasting material. All these properties make it a popular choice of builders, designers and architects. At Madhav Marble & Granite Ltd. we deal in premium quality products manufactured and processed with advanced technology. Our stones are available in blocks, slabs and tiles form, also in various sizes and thicknesses.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1965,8 +847,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "thunder"],
       "longDescription": "Thunder White brings bold marble-like movement with the superior durability of natural granite.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1982,8 +865,9 @@ export const collectionTiles = {
       "tags": ["blue", "granite", "vizag"],
       "longDescription": " Vizag Blue consists of infinite blue shades that give this granite an enticing appearance and a crystalline beauty. Its colour is somewhere between blue and violet with a gentle wave pattern that adds flow and movement to this stone. This stone's high resistance power makes it suitable for busy areas like kitchens, restrooms, living rooms, etc. Its excellent strength and durability make it the perfect material for applying in both indoor and outdoor areas. When paired with lighter tones like cream and white, Vizag Blue creates an elegant and sophisticated look. In more bold combinations with colours like black and charcoal, the result is graceful and stylish with great aesthetic power. The stone could be availed in the form of tiles, slabs and blocks. Here at Madhav Marble & Granite Ltd., we have a wide collection of granites available in many colours, sizes, thicknesses and finishes. We are among the prime suppliers and manufacturers in the natural stone industry. Enquire for more details and information.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -1999,8 +883,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "viscount", "waves"],
       "longDescription": " The white-coloured granite tiles embossed with grey waves add an adequate look to any space when installed. Also known as Madanapalli White India and Viscount White Granite, the stone creates an exotic look while used on flooring, on kitchen countertops, tabletops, granite wall cladding, and more. This white granite tile is extremely popular and is mostly preferred to be used by homeowners and builders. Suitable for both interior and exterior purposes, this is the most durable stone that does not require much maintenance. Madhav marble and granite Ltd. being one of the leading manufacturers, suppliers of Viscount Waves Granite tile, exports White Granite to over 40 countries across the world. To get the slabs, tiles and other cut sizes of Granite, enquire us today. Viscount Waves Granite is top - quality white granite with striking natural grey wave - like patterns against a soft white background.This natural flow of the stone produces a sophisticated, contemporary appearance, making it suitable for modern interiors and architecture. Madanapalli White Granite, also known as Viscount White Granite, is a much - desired, long - lasting stone that can be used for many projects, including flooring, kitchen countertops, wall coverings, and tabletops.Whatever your project may be, the use of this stone will enhance the decor of that project with its elegant and clean look. Because of its incredible durability and low maintenance, this stone has numerous applications for residential use and / or commercial use and can be utilised in both interior and exterior applications.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2016,8 +901,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "spice"],
       "longDescription": "Spice Black Granite is fine to medium-grained stone, with an undertone of dark grey, visible fine black veins, and lighter inclusions. It also consists of tiny white crystals spread unevenly over the surface that gives it a glimpse of shine. This Indian granite is popular in the international market for its stunning visual. For people who want to give their spaces a high-end and luxurious look, Spice Black granite is the best choice. When incorporated with lighter and white tones, this black granite provides a sense of versatility and could be added in variant styles like modern, contemporary, traditional and rustic both for interiors or exteriors. Madhav Marble & Granite Ltd. is the Granite Supplier and manufacturer of the best quality stones in India. Our stones are durable, long-lasting, and are available in different sizes, dimensions, thicknesses, and finishes such as polished, flamed, honed, leather, giano, and brushed. To purchase the product or for more information and details, contact us. ",
       "thickness": "Standard slab sizes are available",
-      "dimensions": "15mm, 18mm, 20mm, 30mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2033,8 +919,9 @@ export const collectionTiles = {
       "tags": ["multicolor", "granite", "violet"],
       "longDescription": "This magnificent natural granite showcases an eye-catching combination of dark brown, black, and copper hues flowing together in intricate swirling patterns. The stone's unique movement and rich color variations create a bold, sophisticated look that instantly elevates the aesthetic appeal of any interior or exterior space. Each slab possesses its own distinct character, making every installation truly one of a kind. Renowned for its superior strength and durability, this granite is highly resistant to scratches, heat, moisture, and daily wear, making it suitable for a wide range of applications.It is widely used for kitchen countertops, island tops, vanity tops, flooring, wall cladding, staircases, fireplace surrounds, tabletops, and architectural accents.Its robust composition also makes it an excellent choice for exterior facades, landscaping features, and other outdoor installations. The stone's dramatic swirling texture adds depth and elegance to contemporary, modern, and traditional design schemes alike. Easy to maintain and built to withstand the test of time, this granite offers the perfect combination of beauty, functionality, and long-term value. Whether incorporated into luxury homes, hotels, offices, or commercial projects, it delivers a timeless and impressive natural stone finish.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2050,8 +937,9 @@ export const collectionTiles = {
       "tags": ["pink", "granite", "juparana"],
       "longDescription": "Indian Juparana is a pink color granite and a popular one for its alluring design. It has a multi-colour shade that mainly consists of pink and grey hues and darker grey color particles spread in a beautiful swirling pattern. Quarried in the southern region of India, this gorgeous granite is on-demand in the global market. Its bewitching and elegant appearance provides a base for building other elements in a space and a preferable choice for commercial and residential usage. The granite stone features multiple applications and could be used as kitchen countertops, working stations, backsplashes, staircases, bath vanities and tiles, flooring, and many more. In comparison to other natural stones, it has a low porosity level and could withstand harsh temperatures, hence apt for outdoors. We at Madhav Marble & Granite Ltd. manufacture and export the finest quality Indian Juparana granite which is available in the form of blocks, tiles and slabs. We also have stones in varied sizes, dimensions and finishes. ",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2067,8 +955,9 @@ export const collectionTiles = {
       "tags": ["pink", "granite", "juparana"],
       "longDescription": "This exquisite natural granite showcases a captivating combination of brown, grey, and charcoal hues intertwined with graceful flowing veins and wave-like patterns. The unique movement across the surface creates a dynamic visual appeal, giving every slab a distinctive character and luxurious finish. Its earthy color palette complements a wide variety of architectural and interior design styles, from contemporary to traditional. Renowned for its exceptional strength and durability, this granite is suitable for both residential and commercial projects.It is widely used for flooring, wall cladding, kitchen countertops, vanity tops, staircases, facades, tabletops, and outdoor landscaping applications.The stone's resistance to scratches, heat, moisture, and weathering ensures long-lasting performance even in high-traffic areas. The natural texture and rich patterning make it a preferred choice for creating elegant interiors and striking exterior spaces.Whether installed in living rooms, kitchens, bathrooms, office buildings, hotels, or outdoor patios, this granite delivers a perfect balance of beauty, functionality, and durability.Its low maintenance requirements and timeless appearance make it a valuable investment for any construction or renovation project.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2084,8 +973,9 @@ export const collectionTiles = {
       "tags": ["gold", "granite", "colonial"],
       "longDescription": " Colonial Gold Granite is a premium natural stone quarried in India, renowned for its elegant appearance and outstanding durability. Featuring a beautiful creamy gray background enriched with subtle brown and gray flecks, intricate veining, and natural patterns, this granite adds warmth and sophistication to any residential or commercial space. Its timeless color palette makes it a versatile choice for a wide range of architectural and interior design applications.Colonial Gold Granite is extensively used for flooring, kitchen countertops, vanity tops, wall cladding, backsplashes, staircases, and decorative features.Thanks to its exceptional strength, weather resistance, and low maintenance requirements, it is equally suitable for outdoor installations such as patios, facades, pathways, and landscaping projects. The natural beauty of Colonial Gold Granite complements both traditional and contemporary design styles, creating a luxurious and welcoming atmosphere.Its hard - wearing surface resists scratches, stains, and daily wear, ensuring long - lasting performance and aesthetic appeal.Whether used indoors or outdoors, Colonial Gold Granite delivers a perfect combination of elegance, functionality, and enduring value.",
       "thickness": " 2, 3,4,5…..20 cm ",
-      "dimensions": "305 x 305 x 10 mm, 610 x 305 x 10 mm, 600 x 400 x 10 mm, 400 x 400 x 10 mm, 457 x 457 x 12 mm, 600 x 600 x 12 mm, 305 x FL x 15 mm, 400 x FL x 15 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2101,8 +991,9 @@ export const collectionTiles = {
       "tags": ["green", "granite", "hassan"],
       "longDescription": " One of the most unique green granite stones, Hassan green granite has a stunning greenish-black background with a myriad combination of tiny green and black specks over it. The stone provides a mesmerizing look to the interiors if installed as a flooring and wall cladding application. The richness of color and elegant texture make Hassan Green Granite a perfect pick for customizing kitchen countertops, vanity tops, and stone crafts. Due to its extreme durability, long-lastingness, and dirt-resistant features, it is also preferred for outdoor spaces. Being a pioneer distributor of Indian Granites, we at Madhav Marble & Granite Ltd offer you the stone in multiple ranges of dimensions, colors, and finishes. ",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2118,8 +1009,9 @@ export const collectionTiles = {
       "tags": ["blue", "granite", "himalayan"],
       "longDescription": " Himalayan Blue is a granite stone extracted from the Southern part of India. With the background of light blue color, this stone has a beautiful surface with orange swirls and streaks. These waves provide certain motion and depth to the stone, hence enhancing its visuality. Install this stone in your commercial and residential properties to create a luxurious and appealing look. Whether used in indoor spaces as kitchen countertops, restroom vanities, tabletops, staircases, fireplace, or outdoor areas as wall cladding, fountains, sculptures, landscaping, etc. Along with its stunning appearance, Himalayan Blue is a granite stone with ample features like stain resistance, weatherproof, low porosity level, and extreme durability. Bring this granite stone to create architectural masterpieces. Madhav Marble & Granite Ltd. has the best collection of premium quality natural stones and this granite stone is available in the form of slabs, blocks, and tiles. We also provide various dimensions and finishes as per the design and customer requirements.",
       "thickness": " 15mm, 18mm, 20mm, 30mm ",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2135,8 +1027,9 @@ export const collectionTiles = {
       "tags": ["multicolor", "granite", "aurora"],
       "longDescription": "Quarried in the southern part of India, Indian Aurora granite stone is one of the most unique stones that has a reddish-brown base and over that it has some dark coloured waves and swirls of red and brown colours. This south Indian granite is highly demanded all around the globe. It has many indoor and outdoor applications like countertops, floorings, mosaics, monuments, fountains, exterior-interior wall claddings, pools, fireplaces etc. This granite stone is available with multiple finishing options like Polished, leather, honed, Giano, Flamed, flamed and brushed at one of the most trusted natural stone exporters and suppliers in the market, Madhav Marbles And Granites Ltd. Our granites are also available in slabs, blocks and tiles.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2152,8 +1045,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "forest"],
       "longDescription": " Black Forest is a granite stone that features an irregular veining of white and creamish colored spread over its stunning black surface. It has a unique sparkling reflection that makes it appear three-dimensional. With a striking appearance, this granite stone is an ideal choice and a stylish complement for modern and contemporary interiors. Despite its intricate design and pattern, Black Forest merges well with the surroundings without overpowering other elements. Owing to its uniqueness and extreme durability, builders and designers prefer to use this for both residential and commercial applications like kitchen countertops, tabletops, bathroom vanities, flooring, fireplace surrounds, staircases, designer terraces, fountains, etc. Here at Madhav Marble & Granite Ltd., this granite stone is available in various finishes like polished, leather, honed, flamed, and giano. We are well-known manufacturers and suppliers of granite and have stones available in various colors, patterns, sizes, and thicknesses at the best competitive price range. ",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2169,8 +1063,9 @@ export const collectionTiles = {
       "tags": ["black", "granite", "bengal"],
       "longDescription": " Bengal Black Granite is a high-quality Asian black granite with a lot of character because of its deep black color with airy white specking that captures your eye. With the right character, this granite is the best option for any design and brings high-end modern, contemporary, and traditional design. Durability, low maintenance, and versatility of Bengal Black Granite make this stone a preferred choice for flooring, wall cladding, countertops, and exterior applications in any residential and commercial projects.The beautiful appearance and glossy finish of this stone make it the most preferred choice amongst homeowners and architects. Madhav Marble & Granite Ltd is a prominent supplier of natural stones in India. Its collection of black granite tiles and slabs are available in a variety of finishes that give each material a very personal aspect. ",
       "thickness": " 610 × 305 × 10 mm, 600 × 400 × 15 mm, 400 × 400 × 15 mm, 600 × 300 × 20 mm, 600 × 600 × 20 mm, 610 × 610 × 15 mm, 305 × 305 × 10 mm",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India"
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
     },
     {
       "id": "gs-060",
@@ -2185,8 +1080,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "andromeda"],
       "longDescription": "The Andromeda White granite available at Madhav Marble features an impressive surface that boasts a mixture of black, beige, brown, and golden specks on a shining white background. Another amazing aspect of this type of granite is its ability to provide a serene or peaceful feel. If used as outdoor wall construction and for flooring and pathways, it gives your space a welcoming feel. However, it has a sleek appearance, coupled with high strength characteristics and resistance to severe fluctuations in the climate, most construction companies recommend it for use in commercial and residential structures formations. Depending on the usages, this granite takes multiple finishes. Polished Andromeda white granite works well on kitchen countertops, vanity tops, backsplashes, kitchen island, and more. Extracted and processed in India this stone is available in the form of blocks, slabs, and tiles at Madhav Marble & Granite Ltd., the best granite manufacturer, and supplier. We provide premium quality granites in multiple dimensions, thicknesses, and finishes, contact Madhav Marble & Granite Ltd.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2202,8 +1098,9 @@ export const collectionTiles = {
       "tags": ["white", "granite", "moon"],
       "longDescription": "The exquisite moon white granite stone is there to strike the interest of every architect who loves using white granite stones. The granite has heavy veins of grey with some wine coloured fleckings over the creamy base of the stone. This white granite is extremely durable, hard and resistant to heat and moisture which makes it suitable for both interior and exterior uses. Incorporate this south Indian granite stone as countertops, vanity tops, indoor or outdoor wall claddings, basins, step risers, window sills, mosaics etc. Madhav Marbles And Granites Ltd. is a prominent Marble Granite Company. We provide different granite and marbles finishes such as Polished, leather, honed, Giano, Flamed, flamed and brushed. For any bulk requirements, contact us and get assured of the best quality product at the most competitive price.",
       "thickness": "2 CM - 12 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "India"
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
     },
     {
       "id": "gs-062",
@@ -2218,8 +1115,9 @@ export const collectionTiles = {
       "tags": ["multicolor", "granite", "violet"],
       "longDescription": "A stone with a smooth texture and elegant finish, Paradiso classic is a dark color granite widely praised for uniformity and optimum compressive strength. Suitable to use for interior or exterior applications this granite stone is available in shades of brown and gray colors with wavy patterns of white, black, and gold colors over the dark base. This granite is generally used in kitchen areas, as vanity tops, and flooring, perfect to use for commercial and domestic purposes. Madhav Marble and Granite Ltd, is a leading granite exporter, who deals in supplying natural stone in its raw and finished state. Explore our range of Paradiso Classic granite tiles and slabs today!",
       "thickness": "15mm, 18mm, 20mm, Other custom thicknesses upon request",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm ",
-      "origin": "South India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     },
     {
@@ -2235,323 +1133,12 @@ export const collectionTiles = {
       "tags": ["black", "granite", "titanium", "exotic"],
       "longDescription": "Black titanium granite is a luxurious natural stone that features a beautiful black background with white swirls running all over it. Its stunning movement is eye-catching and adds a touch of luxury and elegance to any space it is used in. Titanium granite is available in slabs and tiles and can be used for kitchen countertops, bathrooms, flooring, backsplashes, interior and exterior walls, fountains, and many more. This versatile natural stone complements any space used, whether commercial or personal. With a wide selection of products available on the market, it can be tough to decide which is best for your needs. If you're looking for high-quality titanium granite, then you've come to the right place! At Madhav Marbles and Granites, Our team of experts is here to help you make the best decision for your needs. Get in touch with us today and we'll get you started on finding your perfect match.",
       "thickness": "2, 3, 4 CM",
-      "dimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
-      "origin": "India",
+      "length": "260 to 350 cm",
+      "height": "120 to 205 cm",
+      
       "packaging": "To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching."
     }
   ],
-
-  // 'exotics-exclusive':
-  // [
-  //   {
-  //     id: 'ee-001',
-  //     name: 'Blue Deep',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/BLUE%20DEEP%20BL%2028847A%20BDL%20109429.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/BLUE%20DEEP%20BL%2028847A%20BDL%20109429.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Blue Deep exotic surface.',
-  //     color: 'Blue',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['blue', 'exotic'],
-
-  //     longDescription: `Blue Deep is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Blue Deep offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Blue Deep delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-002',
-  //     name: 'Brilliant Grey Honed',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/BRILLIANT%20GREY%20Honed%20BL%2081-21%20BDL%209429.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/BRILLIANT%20GREY%20Honed%20BL%2081-21%20BDL%209429.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Brilliant Grey Honed exotic surface.',
-  //     color: 'Grey',
-  //     finish: 'Honed',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['grey', 'exotic'],
-
-  //     longDescription: `Brilliant Grey Honed is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Brilliant Grey Honed offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Brilliant Grey Honed delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-003',
-  //     name: 'Calacata Matarazzo Honed',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CALACATA%20MATARAZZO%20Honed%20BL%2009-22%20BDL%2010423.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CALACATA%20MATARAZZO%20Honed%20BL%2009-22%20BDL%2010423.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Calacata Matarazzo Honed exotic surface.',
-  //     color: 'White',
-  //     finish: 'Honed',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['white', 'exotic'],
-
-  //     longDescription: `Calacata Matarazzo Honed is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Calacata Matarazzo Honed offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Calacata Matarazzo Honed delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-004',
-  //     name: 'Cristal Cartier',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRISTAL%20CARTIER%20BL%20122%20BDL%209576.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRISTAL%20CARTIER%20BL%20122%20BDL%209576.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Cristal Cartier exotic surface.',
-  //     color: 'Grey',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['grey', 'exotic'],
-
-  //     longDescription: `Cristal Cartier is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Cristal Cartier offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Cristal Cartier delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-005',
-  //     name: 'Crystal Soulages',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTAL%20SOULAGES%20BL%2028932%20BDL%20112364.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTAL%20SOULAGES%20BL%2028932%20BDL%20112364.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Crystal Soulages exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Crystal Soulages is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Crystal Soulages offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Crystal Soulages delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-006',
-  //     name: 'Crystalita Blue',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTALITA%20BLUE%20BL%2022640%20%20SL%2051-61.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTALITA%20BLUE%20BL%2022640%20%20SL%2051-61.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Crystalita Blue exotic surface.',
-  //     color: 'Blue',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['blue', 'exotic'],
-
-  //     longDescription: `Crystalita Blue is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Crystalita Blue offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Crystalita Blue delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-007',
-  //     name: 'Fusion',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/FUSION%20BL%2027715%20BDL%20114171.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/FUSION%20BL%2027715%20BDL%20114171.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Fusion exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Fusion is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Fusion offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Fusion delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-008',
-  //     name: 'Hypnose',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/HYPNOSE%20%20BL%2027992%20BDL%20106874.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/HYPNOSE%20%20BL%2027992%20BDL%20106874.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Hypnose exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Hypnose is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Hypnose offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Hypnose delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-009',
-  //     name: 'Laguna Crystal',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/LAGUNA%20CRYSTAL%20BL%2001-23%20BDL%2011090.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/LAGUNA%20CRYSTAL%20BL%2001-23%20BDL%2011090.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Laguna Crystal exotic surface.',
-  //     color: 'Grey',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['grey', 'exotic'],
-
-  //     longDescription: `Laguna Crystal is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Laguna Crystal offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Laguna Crystal delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-010',
-  //     name: 'Magma',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MAGMA%20BL%203459%20SL%2029-39.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MAGMA%20BL%203459%20SL%2029-39.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Magma exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Magma is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Magma offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Magma delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-011',
-  //     name: 'Maori',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MAORI%20BL%2021694%20BDL%201564334.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MAORI%20BL%2021694%20BDL%201564334.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Maori exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Maori is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Maori offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Maori delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-012',
-  //     name: 'Mirage Crystal Leather',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MIRAGE%20CRYSTAL%20Leather%20BL%20467%20BDL%209414.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/MIRAGE%20CRYSTAL%20Leather%20BL%20467%20BDL%209414.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Mirage Crystal Leather exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Leather',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Mirage Crystal Leather is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Mirage Crystal Leather offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Mirage Crystal Leather delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-013',
-  //     name: 'Volupia Maestro',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/VOLUPIA%20MAESTRO%20BL%2028153%20BDL%20114404.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/VOLUPIA%20MAESTRO%20BL%2028153%20BDL%20114404.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Volupia Maestro exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Volupia Maestro is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Volupia Maestro offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Volupia Maestro delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  //   {
-  //     id: 'ee-014',
-  //     name: 'Vulkon',
-  //     image: 'https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/VULKON%20BL%2029619%20BDL%20113977.webp',
-  //     thumbnailImages: ['https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/VULKON%20BL%2029619%20BDL%20113977.webp'],
-  //     collection: 'Exotics & Exclusives',
-  //     description: 'Vulkon exotic surface.',
-  //     color: 'Mixed',
-  //     finish: 'Polished',
-  //     useCase: ['Countertops', 'Flooring', 'Wall Cladding'],
-  //     tags: ['mixed', 'exotic'],
-
-  //     longDescription: `Vulkon is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
-
-  // Mined and processed with state-of-the-art technology, Vulkon offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.
-
-  // Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Vulkon delivers both aesthetic appeal and long-lasting performance.`,
-
-  //     thickness: '18mm - 20mm',
-  //     dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-  //     origin: 'Rajasthan, India'
-  //   },
-  // ],
 
   'exotics-exclusive':
     [
@@ -2569,9 +1156,9 @@ export const collectionTiles = {
 
         longDescription: `Blue Deep is an elegant premium quality natural stone renowned for its aesthetic appeal. This exquisite natural stone brings a sense of light and spaciousness to any environment.
 Mined and processed with state-of-the-art technology, Blue Deep offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects. Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Blue Deep delivers both aesthetic appeal and long-lasting performance.`,
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-002',
@@ -2591,9 +1178,9 @@ Mined and processed with state-of-the-art technology, Brilliant Grey Honed offer
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Brilliant Grey Honed delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-003',
@@ -2613,9 +1200,9 @@ Mined and processed with state-of-the-art technology, Calacata Matarazzo Honed o
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Calacata Matarazzo Honed delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-004',
@@ -2635,9 +1222,9 @@ Mined and processed with state-of-the-art technology, Cristal Cartier offers exc
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Cristal Cartier delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-005',
@@ -2657,9 +1244,9 @@ Mined and processed with state-of-the-art technology, Crystal Soulages offers ex
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Crystal Soulages delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-006',
@@ -2679,9 +1266,9 @@ Mined and processed with state-of-the-art technology, Crystalita Blue offers exc
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Crystalita Blue delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-007',
@@ -2701,9 +1288,9 @@ Mined and processed with state-of-the-art technology, Fusion offers exceptional 
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Fusion delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-008',
@@ -2723,9 +1310,9 @@ Mined and processed with state-of-the-art technology, Hypnose offers exceptional
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Hypnose delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-009',
@@ -2745,9 +1332,9 @@ Mined and processed with state-of-the-art technology, Laguna Crystal offers exce
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Laguna Crystal delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-010',
@@ -2767,9 +1354,9 @@ Mined and processed with state-of-the-art technology, Magma offers exceptional d
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Magma delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-011',
@@ -2789,9 +1376,9 @@ Mined and processed with state-of-the-art technology, Maori offers exceptional d
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Maori delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-012',
@@ -2811,9 +1398,9 @@ Mined and processed with state-of-the-art technology, Mirage Crystal Leather off
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Mirage Crystal Leather delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-013',
@@ -2833,9 +1420,9 @@ Mined and processed with state-of-the-art technology, Volupia Maestro offers exc
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Volupia Maestro delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-014',
@@ -2853,9 +1440,9 @@ Mined and processed with state-of-the-art technology, Vulkon offers exceptional 
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Vulkon delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-015',
@@ -2873,7 +1460,7 @@ The beautiful Black Dahlia Exotic Stone features a lovely natural design consist
 The beautiful free-flowing veins and black background of the gorgeous natural Black Dahlia stone have a pattern that is different for each stone. This means that for every stone, each design is unique and will ensure that the project has an exclusive design. The stone’s natural movement will also come to life when used with linear designs, when used in combination with deviations, and also with large design surfaces. This stone will add a balancing touch of elegance and sophistication to any high-end luxury commercial or residential environment.`,
         thickness: '20mm – 30mm, Custom',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'ee-016',
@@ -2889,7 +1476,7 @@ The beautiful free-flowing veins and black background of the gorgeous natural Bl
         longDescription: `Forest White is a marble stone with astonishing beauty. It consists of a creamy white background with greyish brown streaks and veins spread in more of a wavy fashion and also has dark grey spots along with these waves. This pattern gives the stone an exclusive and outstanding look and elevates the appearance of any place where installed. Owing to its graceful pattern and characteristics this marble is a popular choice among architects and designers for building stylish and high-end projects. Along with its visual appeal, this natural stone is highly durable, long-lasting and could resist immense pressure. All these properties make Forest White marble perfect material for use as countertops, staircases, flooring, accent walls, fireplaces, sculptures, fountains, decoratives, and many more applications. You can avail of this marble in premium quality from Madhav Marble & Granite Ltd. We are one of the leading manufacturers and suppliers of natural stones and process stones in the form of slabs, tiles and blocks.`,
         thickness: '2cm – 3cm',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India',
+        
         packaging: 'To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching. '
       },
       {
@@ -2906,7 +1493,7 @@ The beautiful free-flowing veins and black background of the gorgeous natural Bl
         longDescription: `Jaisalmer is an adorable marble stone with a creamish peach colour base. It features an amalgamation of walnut and apricot shade veins with irregularly distributed mild grey patches spread all over the surface. These beautiful tones and composite pattern gives this stone a natural and earthy look which makes this stone applicable for both indoors and outdoors. Owing to its versatility this stone can be used to adorn kitchen islands, fireplaces, flooring, tabletops, vanity tops, shower surrounds, staircases, stone pillars, and for many other applications. Along with its astonishing appearance, this natural stone is extremely durable and could resist high compression. At Madhav Marble & Granite Ltd., we provide you with the best quality Jaisalmer marble in the form of slabs, tiles and blocks in various cut sizes, thicknesses, dimensions and finishes. We are among renowned suppliers and exporters of natural stones. Contact for enquiries and bulk requirements.`,
         thickness: '2cm – 3cm',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India',
+        
         packaging: 'To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching. '
       },
       {
@@ -2923,7 +1510,7 @@ The beautiful free-flowing veins and black background of the gorgeous natural Bl
         longDescription: `Nero Oceano is an exclusive black colour marble featuring a beautiful pattern. It consists of a deep black base with edgy white and grey veins arranged parallelly, this stone a dynamic flow. This natural stone is known for its high-end look and uplifts the ambience of any place where installed. When combined with light and white hues, it creates an elegant and clean look and when used in all-black theme or with shiny and dark elements, provides a luxurious impact. It is a popular choice of black stone among interior designers, builders and architects for both commercial and residential projects. You can use it as backsplashes, vanity tops, kitchen countertops, bathtub surrounds, fireplaces, sculptures, stone pillars, decorative pieces, and a lot more. Avail Nero Oceano marble in premium quality from Madhav Marble & Granite Ltd. We provide stones in the form of slabs, tiles and blocks in various sizes, finishes and thicknesses. Explore more varieties and contact for bulk requirements.`,
         thickness: '2cm – 3cm',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India',
+        
         packaging: 'To ensure a protective packaging for our slabs, thin plastic sheets are placed between every slab so as to protect them from scratches and other damages. Gangsaw and cutter slabs are packed in well fumigated wooden trays before dispatching. '
       },
     ],
@@ -2948,9 +1535,9 @@ Mined and processed with state-of-the-art technology, Bengal White offers except
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Bengal White delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-002',
@@ -2970,9 +1557,9 @@ Mined and processed with state-of-the-art technology, Black Mariance offers exce
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Black Mariance delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-003',
@@ -2992,9 +1579,9 @@ Mined and processed with state-of-the-art technology, Coffee Brown offers except
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Coffee Brown delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-004',
@@ -3014,9 +1601,9 @@ Mined and processed with state-of-the-art technology, Colonial White offers exce
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Colonial White delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-005',
@@ -3036,9 +1623,9 @@ Mined and processed with state-of-the-art technology, Imperial Gold offers excep
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Imperial Gold delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-006',
@@ -3058,9 +1645,9 @@ Mined and processed with state-of-the-art technology, Kingfisher Blue offers exc
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Kingfisher Blue delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-007',
@@ -3080,9 +1667,9 @@ Mined and processed with state-of-the-art technology, Nova Black offers exceptio
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Nova Black delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-008',
@@ -3102,9 +1689,9 @@ Mined and processed with state-of-the-art technology, Romantic Red offers except
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Romantic Red delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-009',
@@ -3124,9 +1711,9 @@ Mined and processed with state-of-the-art technology, Spice Black offers excepti
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Spice Black delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-010',
@@ -3146,9 +1733,9 @@ Mined and processed with state-of-the-art technology, Thunder White offers excep
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Thunder White delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-011',
@@ -3168,9 +1755,9 @@ Mined and processed with state-of-the-art technology, Titanium offers exceptiona
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Titanium delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
       {
         id: 'gcss-012',
@@ -3190,9 +1777,9 @@ Mined and processed with state-of-the-art technology, Viscount White offers exce
 
 Whether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Viscount White delivers both aesthetic appeal and long-lasting performance.`,
 
-        thickness: '18mm - 20mm',
+        thickness: '20 mm to 200 mm and more',
         dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-        origin: 'Rajasthan, India'
+        
       },
     ],
 
@@ -3215,9 +1802,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-002',
@@ -3237,9 +1824,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-003',
@@ -3259,9 +1846,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-004',
@@ -3281,9 +1868,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-005',
@@ -3303,9 +1890,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-006',
@@ -3325,9 +1912,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-007',
@@ -3347,9 +1934,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-008',
@@ -3369,9 +1956,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-009',
@@ -3391,9 +1978,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-010',
@@ -3413,9 +2000,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-011',
@@ -3435,9 +2022,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-012',
@@ -3457,9 +2044,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'qz-013',
@@ -3479,9 +2066,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
   ],
 
@@ -3504,9 +2091,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-002',
@@ -3526,9 +2113,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-003',
@@ -3548,9 +2135,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-004',
@@ -3570,9 +2157,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-005',
@@ -3592,9 +2179,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-006',
@@ -3614,9 +2201,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-007',
@@ -3636,9 +2223,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-008',
@@ -3658,9 +2245,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-009',
@@ -3680,9 +2267,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-010',
@@ -3702,9 +2289,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-011',
@@ -3724,9 +2311,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-012',
@@ -3746,9 +2333,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-013',
@@ -3768,9 +2355,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-014',
@@ -3790,9 +2377,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-015',
@@ -3812,9 +2399,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-016',
@@ -3834,9 +2421,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-017',
@@ -3856,9 +2443,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-018',
@@ -3878,9 +2465,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-019',
@@ -3900,9 +2487,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-020',
@@ -3922,9 +2509,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-021',
@@ -3944,9 +2531,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-022',
@@ -3966,9 +2553,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-023',
@@ -3988,9 +2575,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-024',
@@ -4010,9 +2597,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-025',
@@ -4032,9 +2619,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-026',
@@ -4054,9 +2641,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-027',
@@ -4076,9 +2663,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'gr-028',
@@ -4098,9 +2685,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
   ],
 
@@ -4123,9 +2710,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-002',
@@ -4145,9 +2732,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-003',
@@ -4167,9 +2754,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-004',
@@ -4189,9 +2776,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-005',
@@ -4211,9 +2798,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-006',
@@ -4233,9 +2820,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-007',
@@ -4255,9 +2842,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-008',
@@ -4277,9 +2864,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-009',
@@ -4299,9 +2886,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-010',
@@ -4321,9 +2908,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-011',
@@ -4343,9 +2930,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-012',
@@ -4365,9 +2952,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-013',
@@ -4387,9 +2974,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-014',
@@ -4409,9 +2996,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-015',
@@ -4431,9 +3018,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-016',
@@ -4453,9 +3040,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-017',
@@ -4475,9 +3062,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-018',
@@ -4497,9 +3084,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-019',
@@ -4519,9 +3106,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-020',
@@ -4541,9 +3128,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-021',
@@ -4563,9 +3150,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-022',
@@ -4585,9 +3172,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-023',
@@ -4607,9 +3194,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-024',
@@ -4629,9 +3216,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-025',
@@ -4651,9 +3238,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
     {
       id: 'mb-026',
@@ -4673,10 +3260,317 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       color: 'Various',
       finish: 'Polished',
       useCase: ['Flooring', 'Wall Cladding', 'Countertops', 'Staircases'],
-      thickness: '18mm - 20mm',
+      thickness: '20 mm to 200 mm and more',
       dimensions: 'Cut to Size / Random Slabs (up to 3200mm x 1800mm)',
-      origin: 'Rajasthan, India'
+      
     },
+  ],
+
+  "regular-tiles": [
+    {
+      "id": "rt-001",
+      "name": "Amba White",
+      "image": "/assets/regular-tiles/AMBAWHITE-1.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/AMBAWHITE-1.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A classic and versatile white granite featuring delicate grey and black speckles, perfect for creating bright, elegant spaces.",
+      "longDescription": "Amba White is an elegant premium quality Indian granite renowned for its crisp white background adorned with beautiful grey and black speckles. This exquisite natural stone brings a sense of light and spaciousness to any environment.\n\nMined and processed with state-of-the-art technology, Amba White offers exceptional durability and resistance to wear, making it an ideal choice for high-traffic areas. Its neutral palette allows it to seamlessly integrate with both traditional and contemporary design schemes, providing a timeless canvas for your interior or exterior projects.\n\nWhether you are looking to install stunning kitchen countertops, durable flooring, or elegant wall cladding, Amba White granite delivers both aesthetic appeal and long-lasting performance.",
+      "color": "White",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "white", "durable"]
+    },
+    {
+      "id": "rt-002",
+      "name": "Coffee Brown",
+      "image": "/assets/regular-tiles/COFFEEBROWN.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/COFFEEBROWN.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A rich, deeply textured dark brown granite infused with chocolate, black, and coffee-toned minerals for a sophisticated warmth.",
+      "longDescription": "Coffee Brown is a highly sought-after Indian granite featuring a deep, dark brown backdrop beautifully interlaced with black, coffee, and chocolate-toned minerals. It lends an air of understated luxury, structure, and intense depth to architectural spaces.\n\nCrafted with advanced calibration, this granite provides uniform consistency and superior surface resilience, protecting against scratches and heat. Its warm, dark spectrum effortlessly complements wooden cabinetry, sleek metal accents, and bright modern interiors alike.",
+      "color": "Brown",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "brown", "durable"]
+    },
+    {
+      "id": "rt-003",
+      "name": "Bengal White",
+      "image": "/assets/regular-tiles/BENGALWHITE-1.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/BENGALWHITE-1.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A clean and luminous white granite displaying uniform crystalline patterns and soft grey specks.",
+      "longDescription": "Bengal White granite is characterized by its bright white background baseline layered with fine, well-balanced distribution of dark grey and deep pinhead minerals. It offers a pristine, minimalist surface ideal for brightening spaces with high-end style.\n\nHighly valued for commercial installations and premium home layouts, it guarantees long-term durability with very minimal maintenance required, standing strong against daily wear.",
+      "color": "White",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "white", "durable"]
+    },
+    {
+      "id": "rt-004",
+      "name": "Black Forest",
+      "image": "/assets/regular-tiles/BLACKFOREST-1.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/BLACKFOREST-1.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A dramatic black granite accented with striking, unpredictable sweeping veins of white and silver crystalline rivers.",
+      "longDescription": "Black Forest granite captures a bold, dramatic aesthetic. Its deep black core acts as a canvas for stark, fluid white and silver veins running across the tiles, mimicking a natural wild woodland setting.\n\nIt serves as an excellent feature-wall stone or primary floor surface, making an unforgettable statement in luxury lobbies, high-profile offices, and executive washrooms.",
+      "color": "Black",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "black", "durable"]
+    },
+    {
+      "id": "rt-005",
+      "name": "Black Galaxy",
+      "image": "/assets/regular-tiles/BLACKGALAXY.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/BLACKGALAXY.jpg"],
+      "collection": "Regular Tiles",
+      "description": "An iconic rich black granite glittering with brilliant golden and metallic bronzite flecks resembling a starlit night sky.",
+      "longDescription": "Black Galaxy is a globally famous premium granite featuring a dark black background peppered with shining, reflective metallic flecks. The golden speckles glint under direct lighting, bringing unparalleled luxury to any space.\n\nPerfect for high-end accent walls, upscale kitchen surfaces, and luxury entryways, it brings exceptional density and structural integrity alongside its striking appearance.",
+      "color": "Black",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "black", "durable"]
+    },
+    {
+      "id": "rt-006",
+      "name": "Indian Dakota",
+      "image": "/assets/regular-tiles/indian-dakota.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/indian-dakota.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A deeply rich and uniform dark brown granite accented with micro-crystalline structures for subtle textural depth.",
+      "longDescription": "Indian Dakota granite showcases a beautifully stable dark mahogany-to-brownish background. It delivers a deeply consistent structure with micro-crystalline flecks that present a balanced look across large floor spaces.\n\nIts excellent thermal resistance and structural density make it an absolute favorite for outdoor terraces, courtyard paths, and busy high-traffic residential areas.",
+      "color": "Brown",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "brown", "durable"]
+    },
+    {
+      "id": "rt-007",
+      "name": "Colombo Juparana",
+      "image": "/assets/regular-tiles/colombo-juprana.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/colombo-juprana.jpg"],
+      "collection": "Regular Tiles",
+      "description": "An exotic swirling blend of soft pink, grey, and cream wavy patterns presenting artistic, fluid movement.",
+      "longDescription": "Colombo Juparana is a dynamic natural stone displaying an intricate mixture of wave-like bands in soft pinks, light greys, and muted cream tones. It is renowned for its organic movement, ensuring no two tiles look identical.\n\nThis artistic stone is heavily utilized to form feature walls, sweeping entryways, and expressive design borders that call for a classic look with natural energy.",
+      "color": "Pink",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "exotic", "durable"]
+    },
+    {
+      "id": "rt-008",
+      "name": "Ivory Fantasy",
+      "image": "/assets/regular-tiles/ivoryfantasy.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/ivoryfantasy.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A cream-colored granite displaying subtle pinkish swirls and soft amber hues that soften any interior.",
+      "longDescription": "Ivory Fantasy brings an inviting warmth with its beige and ivory foundation, decorated with gentle, flowing streaks of sand, peach, and soft charcoal minerals. It offers a bright finish without the stark coldness of solid white stones.\n\nBecause of its capacity to blend into warm design themes, it is frequently chosen for luxury bathrooms, resort flooring, and modern residential kitchens.",
+      "color": "Cream",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "cream", "durable"]
+    },
+    {
+      "id": "rt-009",
+      "name": "Kashmir White",
+      "image": "/assets/regular-tiles/kashmir-white.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/kashmir-white.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A refined, famous white-to-grey granite with dark burgundy granulates scattered elegantly across its surface.",
+      "longDescription": "Kashmir White is an elite, highly recognized Indian granite. It features a predominantly snowy-white background layered with soft grey clouds and unique, dark crimson or burgundy flecks that dot the stone.\n\nIts bright aesthetic makes it standard for large corporate office flooring, retail storefronts, and contemporary open-concept residential spaces.",
+      "color": "White",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "white", "durable"]
+    },
+    {
+      "id": "rt-010",
+      "name": "Ivory Brown",
+      "image": "/assets/regular-tiles/ivorybrown.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/ivorybrown.jpg"],
+      "collection": "Regular Tiles",
+      "description": "An attractive earthy stone combining cream and light brown bands with subtle hints of grey.",
+      "longDescription": "Ivory Brown granite provides a balanced neutral palette. It balances sandy beige colors with sweeping bands of light walnut brown, establishing a comforting, grounded feel in open architectural designs.\n\nIt is exceptionally hard-wearing, ensuring it holds its high-shine polish even when subjected to intense traffic in public plazas or active households.",
+      "color": "Cream",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "cream", "durable"]
+    },
+    {
+      "id": "rt-011",
+      "name": "Absolute Black",
+      "image": "/assets/regular-tiles/absolute-black-1.png",
+      "thumbnailImages": ["/assets/regular-tiles/absolute-black-1.png"],
+      "collection": "Regular Tiles",
+      "description": "A perfectly solid, deep black granite providing unmatched depth and a stark, highly reflective mirror finish.",
+      "longDescription": "Absolute Black granite is the ultimate deep dark stone, prized globally for its consistent monochrome tone without major veining. When polished, it acts like a dark mirror, producing incredible contrast against lighter materials.\n\nIt stands as the benchmark choice for luxury vanity tops, clean geometric flooring layouts, and high-contrast commercial accents.",
+      "color": "Black",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "black", "durable"]
+    },
+    {
+      "id": "rt-012",
+      "name": "Kashmir Cream",
+      "image": "/assets/regular-tiles/kashmir-cream.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/kashmir-cream.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A soothing, sandy-cream granite interspersed with rich hazelnut specs and delicate undertones.",
+      "longDescription": "Kashmir Cream granite presents a warm, soft aesthetic. Its baseline consists of light warm beige and cream, enriched by deep brown-gold accents and sparse garnet freckling.\n\nThis material is perfect for creating welcoming atmospheres in commercial hotel receptions, high-traffic home kitchens, and comforting bath spaces.",
+      "color": "Cream",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "cream", "durable"]
+    },
+    {
+      "id": "rt-013",
+      "name": "Multi Color",
+      "image": "/assets/regular-tiles/multi-color.png",
+      "thumbnailImages": ["/assets/regular-tiles/multi-color.png"],
+      "collection": "Regular Tiles",
+      "description": "A striking granite featuring a dark bold blend of red, black, and dark grey veins swirling together.",
+      "longDescription": "Multi Color granite showcases a brilliant, dynamic mix of dark brick-red tones running alongside grey and deep black veins. This vibrant stone adds instant architectural intrigue to any layout.\n\nIts rich color palette masks dust and wear exceptionally well, making it perfect for main entry walkways, external cladding projects, and public pathways.",
+      "color": "Multicolor",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "multicolor", "durable"]
+    },
+    {
+      "id": "rt-014",
+      "name": "Paradiso Bash",
+      "image": "/assets/regular-tiles/paradiso-bash.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/paradiso-bash.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A sophisticated fusion of violet, grey, and brown waves that form a striking contemporary design.",
+      "longDescription": "Paradiso Bash granite displays an alluring mix of purplish-violet waves, dark charcoal, and muddy-brown minerals. The shifting structure creates an outstanding focal point in any modern design setting.\n\nIt offers extreme structural density and weather resistance, functioning beautifully for indoor accents and exterior architectural facades.",
+      "color": "Multicolor",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "violet", "durable"]
+    },
+    {
+      "id": "rt-015",
+      "name": "Paradiso Classic",
+      "image": "/assets/regular-tiles/paradiso-classic1.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/paradiso-classic1.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A classic violet-blue cloud pattern granite filled with rich swirls of grey and silver particles.",
+      "longDescription": "Paradiso Classic granite features an intricate, fine-grain cloud formation composed of soft purplish-blue and deep grey tones. Its serene yet complex design brings timeless elegance wherever it is installed.\n\nThis material is highly recommended for wide flooring layouts, ornate fireplace surrounds, and corporate office elevator walls.",
+      "color": "Multicolor",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "violet", "durable"]
+    },
+    {
+      "id": "rt-016",
+      "name": "Steel Grey",
+      "image": "/assets/regular-tiles/steel-grey.png",
+      "thumbnailImages": ["/assets/regular-tiles/steel-grey.png"],
+      "collection": "Regular Tiles",
+      "description": "A sleek, industrial-grade grey granite showcasing light silver clusters set inside a dark charcoal background.",
+      "longDescription": "Steel Grey is a universally preferred low-variation granite displaying a dark grey base adorned with bright, pearlescent silver mineral patterns. It effortlessly projects a modern, industrial, or minimalist tone.\n\nIts low-porosity surface makes it highly resistant to stains and acidic substances, making it a reliable choice for commercial kitchen installations and public bathroom counters.",
+      "color": "Grey",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "grey", "durable"]
+    },
+    {
+      "id": "rt-017",
+      "name": "Viscount White",
+      "image": "/assets/regular-tiles/viscount-white-tiles.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/viscount-white-tiles.jpg"],
+      "collection": "Regular Tiles",
+      "description": "A stunning, highly artistic white-grey granite filled with dynamic, sweeping black waves.",
+      "longDescription": "Viscount White granite is widely celebrated for its bold, dramatic marble-like movement. Striking waves of dark grey and pitch black flow naturally over a light grey-and-white background.\n\nBecause of its breathtaking movement patterns, it is a premier option for waterfall island countertops, main accent backsplashes, and luxury lobby installations.",
+      "color": "White",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "white", "durable"]
+    },
+    {
+      "id": "rt-018",
+      "name": "New Kashmir Cream",
+      "image": "/assets/regular-tiles/new-kashmir-cream-calibrated-tiles.jpg",
+      "thumbnailImages": ["/assets/regular-tiles/new-kashmir-cream-calibrated-tiles.jpg"],
+      "collection": "Regular Tiles",
+      "description": "An upgraded, highly uniform cream granite offering minimal color variation for clean, modern aesthetics.",
+      "longDescription": "New Kashmir Cream offers a modern update to traditional cream stones, featuring a more uniform distribution of sandy tones and light speckles. It reduces erratic variations across large installations.\n\nIt is ideally designed for vast commercial properties, outdoor shopping plazas, and streamlined kitchen floor concepts.",
+      "color": "Cream",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "cream", "durable"]
+    },
+    {
+      "id": "rt-019",
+      "name": "Tan Brown",
+      "image": "/assets/regular-tiles/tan-brown.png",
+      "thumbnailImages": ["/assets/regular-tiles/tan-brown.png"],
+      "collection": "Regular Tiles",
+      "description": "A popular, dark granite filled with large, distinct dark-red and tan-brown crystalline minerals.",
+      "longDescription": "Tan Brown granite features a deep black background prominently embedded with sizable, rounded mineral crystals of rich chestnut brown and dark brick-red. It delivers a solid, stately look.\n\nIts incredible hardness makes it highly resistant to heavy foot traffic, outdoor freeze-thaw cycles, and heavy kitchen cooking use.",
+      "color": "Brown",
+      "finish": "Polished",
+      "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
+      "tags": ["granite", "natural", "premium", "brown", "durable"]
+    }
   ],
 
   "granite-xl-tiles": [
@@ -4691,9 +3585,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "Black",
       "finish": "Polished",
       "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "South India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "black", "xl-tiles", "durable"]
     },
     {
@@ -4707,9 +3601,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "White",
       "finish": "Polished",
       "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "Rajasthan, India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "white", "xl-tiles", "durable"]
     },
     {
@@ -4723,9 +3617,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "Black",
       "finish": "Polished",
       "useCase": ["Flooring", "Wall Cladding", "Countertops", "Kitchen Islands", "Vanity Tops", "Backsplashes", "Window Sills", "Step Risers"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "South India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "black", "xl-tiles", "durable"]
     },
     {
@@ -4739,9 +3633,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "White",
       "finish": "Polished",
       "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "South India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "white", "xl-tiles", "durable"]
     },
     {
@@ -4755,9 +3649,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "Brown",
       "finish": "Polished",
       "useCase": ["Interior Walls", "Flooring", "Wall Cladding", "Countertops"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "South India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "brown", "xl-tiles", "durable"]
     },
     {
@@ -4771,9 +3665,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "Cream",
       "finish": "Polished",
       "useCase": ["Flooring", "Backsplashes", "Shower Surroundings", "Staircases", "Accent Walls", "Landscaping", "Fountains", "Sculptures"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "South India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "cream", "xl-tiles", "durable"]
     },
     {
@@ -4787,9 +3681,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "White",
       "finish": "Polished",
       "useCase": ["Flooring", "Wall Cladding", "Countertops", "Staircases"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "Rajasthan, India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "white", "xl-tiles", "durable"]
     },
     {
@@ -4803,9 +3697,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "Grey",
       "finish": "Polished",
       "useCase": ["Wall Cladding", "Flooring", "Step Risers", "Kitchen Countertops"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "South India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "grey", "xl-tiles", "durable"]
     },
     {
@@ -4819,9 +3713,9 @@ Whether you are looking to install stunning kitchen countertops, durable floorin
       "color": "White",
       "finish": "Polished",
       "useCase": ["Flooring", "Wall Cladding", "Countertops"],
-      "thickness": "18mm - 20mm",
-      "dimensions": "1200 x 600mm",
-      "origin": "Rajasthan, India",
+      "thickness": "1 cm, 1.5 cm, 1.8 cm, 2 cm",
+      "standardDimensions": "610 x 305 x 10 mm, 600 x 400 x 15 mm, 400 x 400 x 15 mm, 600 x 300 x 20 mm, 600 x 600 x 20 mm, 610 x 610 x 15 mm, 305 x 305 x 10 mm",
+      
       "tags": ["granite", "natural", "premium", "white", "xl-tiles", "durable"]
     }
   ],

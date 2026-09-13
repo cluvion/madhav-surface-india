@@ -12,13 +12,13 @@ const SpecialProductSectionData = [
     { id: 4, name: "Volupia Maestro", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/VOLUPIA%20MAESTRO%20BL%2028153%20BDL%20114404.webp", href: "/products/ee-013" },
     { id: 5, name: "Laguna Crystal", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/LAGUNA%20CRYSTAL%20BL%2001-23%20BDL%2011090.webp", href: "/products/ee-009" },
     { id: 6, name: "Crystal Soulages", image: "https://cdn.jsdelivr.net/gh/VipulSoniwork/madhav-surface-india-assets@master/Exotics-Exclusives/CRYSTAL%20SOULAGES%20BL%2028932%20BDL%20112364.webp", href: "/products/ee-005" },
-    { id: 7, name: "Crystallo Classico", image: "/assets/QUARTZITES/CRYSTALLO CLASSICO .webp", href: "/products/qz-001" },
     { id: 8, name: "Pandora White", image: "/assets/QUARTZITES/PANDORA WHITE.webp", href: "/products/qz-012" },
     { id: 9, name: "Brown Fantasy", image: "/assets/Marbles/BROWN FANTASY.webp", href: "/products/mb-009" },
-    { id: 10, name: "Panda White", image: "/assets/Marbles/PANDA WHITE.webp", href: "/products/mb-019" },
-    { id: 11, name: "Statuario Extra", image: "/assets/Marbles/STATUARIO EXTRA.webp", href: "/products/mb-024" },
     { id: 12, name: "Astoria", image: "/assets/granite-slabs/astoria-300x227.jpeg", href: "/products/gs-005" },
-    { id: 13, name: "Colonial White", image: "/assets/granite-cutter-slabs-supplier/COLONIAL-WHITE-1.png", href: "/products/gcss-004" },
+    { id: 7, name: "Crystallo Classico", image: "/assets/QUARTZITES/CRYSTALLO CLASSICO .webp", href: "/products/qz-001" },
+    { id: 10, name: "Panda White", image: "/assets/Marbles/PANDA WHITE.webp", href: "/products/mb-019" },
+    { id: 11, name: "Statuario Extra", image: "/images/STATUARIO EXTRA.webp", href: "/products/mb-024" },
+    { id: 13, name: "Colonial White", image: "/images/COLONIAL-WHITE-1.webp", href: "/products/gcss-004" },
 ];
 
 export default function SpecialProductSection() {
@@ -63,7 +63,7 @@ export default function SpecialProductSection() {
                             Timeless Surfaces Sourced Directly from Earth
                         </h2>
                         <p className="mt-4 text-lg text-white/80">
-                            Discover our handpicked portfolio of natural and engineered stones—engineered by nature, perfected by Madhav:
+                            Discover our handpicked portfolio of natural stones—engineered by nature, perfected by Madhav:
                         </p>
                         <ul className="mt-6 space-y-4 text-left text-white/90">
                             <li className="flex items-start">
@@ -94,7 +94,7 @@ export default function SpecialProductSection() {
                                                 <img
                                                     src={item.image}
                                                     alt={item.name}
-                                                    className="h-full w-full object-cover object-bottom transition-transform duration-700 ease-out scale-[1.35]"
+                                                    className="h-full w-full object-cover object-bottom transition-transform duration-700 ease-out scale-[1.4]"
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
                                             </div>
