@@ -25,9 +25,7 @@ export const metadata = generateSEOMetadata({
   type: "website"
 });
 const businessHours = [
-  { day: 'Monday - Thursday', hours: '9:00 AM - 6:00 PM' },
-  { day: 'Friday', hours: 'Holiday' },
-  { day: 'Saturday - Sunday', hours: '9:00 AM - 6:00 PM' }
+  { day: 'Monday - Sunday', hours: 'Open · Closes 7:00 PM' }
 ]
 
 const Contact = () => {
@@ -102,7 +100,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">Address</h3>
                 <p className="text-foreground/70 text-sm leading-relaxed max-w-[200px]">
-                  1st Floor, Mumal Towers, 16 Saheli Marg, Udaipur 313001, Rajasthan, India
+                  Check, post, Thoppur, Thoppur T.Kanigarahalli, Tamil Nadu 636352
                 </p>
               </div>
             </div>

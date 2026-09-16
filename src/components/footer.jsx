@@ -83,11 +83,11 @@ const links = [
         group: 'Contact Us',
         items: [
             {
-                title: '1st Floor, Mumal Towers, 16 Saheli Marg, Udaipur 313001, Rajasthan, India',
-                href: 'https://maps.app.goo.gl/HeiSwFk5y6CwE4dD9',
+                title: 'Check, post, Thoppur, Thoppur T.Kanigarahalli, Tamil Nadu 636352',
+                href: 'https://maps.app.goo.gl/9Bb3JmJYYYtAmu9k9',
             },
             {
-                title: '+91 8875023456',
+                title: '+91 88750 23456',
                 href: 'tel:+918875023456',
             },
             // {

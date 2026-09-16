@@ -199,9 +199,10 @@ const CTAQuoteSection = () => {
                   {/* Submit Button */}
                   <motion.button
                     type="submit"
+                    disabled={!formData.name.trim() || !formData.email.trim() || !formData.projectType}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-4 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground py-4 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center gap-2"
                   >
                     Get My Free Quote
                     <ArrowRight className="w-5 h-5" />

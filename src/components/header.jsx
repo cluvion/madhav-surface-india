@@ -250,7 +250,7 @@ export const HeroHeader = ({
 
                             {/* Location / Where to Buy */}
                             <a
-                                href="https://maps.app.goo.gl/HeiSwFk5y6CwE4dD9"
+                                href="https://maps.app.goo.gl/9Bb3JmJYYYtAmu9k9"
                                 target="_blank"
                                 className={cn(
                                     "flex items-center rounded-lg transition-all duration-300 hover:scale-110",

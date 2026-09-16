@@ -109,58 +109,58 @@ export default function GraniteCollection() {
                     <p className="text-foreground/50 text-sm md:text-base leading-relaxed mb-8 text-justify">
                         Granites from Madhav Marble and Granite are used for numerous applications like structural and decorative purposes and are available in various sizes in the form of slabs. The areas of application include:
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Kitchen Countertops" width={1000} height={1000} className="object-cover" />
-                            </div>
-                            <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-foreground">Kitchen Countertops</h3>
-                                <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                                    Granite countertops are the gold standard for kitchen surfaces. Their exceptional heat resistance, scratch resistance, and wide range of colors make them the perfect choice for both modern and traditional kitchens. Get them today from Madhav Marble.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Flooring" width={1000} height={1000} className="object-cover" />
-                            </div>
-                            <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-foreground">Flooring</h3>
-                                <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                                    Granite flooring is synonymous with elegance and durability. From light-colored floors to dark-colored floor options, Madhav Marble has the finest quality granite for every application.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step5.png" alt="Wall Cladding" width={1000} height={1000} className="object-cover" />
-                            </div>
-                            <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-foreground">Wall Cladding</h3>
-                                <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                                    Granite wall cladding offers both distinguished appearance and exceptional durability, making it an excellent choice for interior and exterior wall applications.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                            <div className="relative ">
-                                <Image src="/assets/Step4.png" alt="Vanity Tops" width={1000} height={1000} className="object-cover" />
-                            </div>
-                            <div className="div space-y-1">
-                                <h3 className="text-2xl font-bold text-foreground">Vanity Tops</h3>
-                                <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
-                                    Granite is an outstanding material for vanity tops in residential and commercial projects. With a variety of shades available &amp; dynamic surface patterns, the stone of Madhav Marble collectively exhibits elegance and durability.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                            <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+                                                <div className="relative w-full aspect-square">
+                                                    <Image src="/images/kitchen-countertops.png" alt="Kitchen Countertops" fill className="object-cover rounded-md" />
+                                                </div>
+                                                <div className="div space-y-1">
+                                                    <h3 className="text-2xl font-bold text-foreground">Kitchen Countertops</h3>
+                                                    <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
+                                                        Marble countertops come in a variety of colors, patterns &amp; veins ranging from white to brown and add a distinct character to your space. Also, the longevity and the sense of additional value make marble the best choice for countertops. Get them today from the leading marble supplier – Madhav Marble.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+                                                <div className="relative w-full aspect-square">
+                                                    <Image src="/images/flooring.png" alt="Flooring" fill className="object-cover rounded-md" />
+                                                </div>
+                                                <div className="div space-y-1">
+                                                    <h3 className="text-2xl font-bold text-foreground">Flooring</h3>
+                                                    <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
+                                                        None of us can deny the natural &amp; elegant appeal of marble flooring. From light-colored floors to dark-colored floor options, Madhav Marble has got everything of the best quality.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+                                                <div className="relative w-full aspect-square">
+                                                    <Image src="/images/wall-cladding.png" alt="Wall Cladding" fill className="object-cover rounded-md" />
+                                                </div>
+                                                <div className="div space-y-1">
+                                                    <h3 className="text-2xl font-bold text-foreground">Wall Cladding</h3>
+                                                    <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
+                                                        Apart from its distinguished appearance, it is highly durable making marble as a wall cladding an excellent choice.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+                                                <div className="relative w-full aspect-square">
+                                                    <Image src="/assets/Step4.png" alt="Vanity Tops" fill className="object-cover rounded-md" />
+                                                </div>
+                                                <div className="div space-y-1">
+                                                    <h3 className="text-2xl font-bold text-foreground">Vanity Tops</h3>
+                                                    <p className="text-foreground/50 text-sm md:text-base leading-relaxed text-justify">
+                                                        Marble is a fairly popular material for vanity tops in residential apartments as well as in commercial projects. With a variety of shades available &amp; dynamic surface patterns in the form of waves, flecks &amp; streaks, the stone of Madhav Marble collectively exhibits elegance and naturality.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                 </div>
                 <ParagraphSection
                     title="Madhav Marble – Best Granite Manufacturer, Supplier, and Distributor"
                     p1={<>Madhav Marble is known for supplying a vast array of granite collections in various sizes, shapes, textures &amp; forms. When it comes to manufacturing, we never compromise on quality and strive to deliver the best. We use modern machinery &amp; equipment for exceptional finishing that is further used for various construction applications.</>}
                     p2={<>With 30+ years of experience, we are specialists in the competitive market supplying premium granite across different parts of the globe with a variety of patterns &amp; designs that suit every client&apos;s needs &amp; requirements.</>}
-                    src="/assets/Step5.png"
+                    src="/images/contact.jpeg"
                     alt=""
                 />
             </Section>

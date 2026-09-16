@@ -29,14 +29,14 @@ export const siteConfig = {
         description: "Premium engineered stone and quartz countertop manufacturer specializing in luxury surfaces for residential and commercial applications.",
         foundingDate: "2010",
         address: {
-            streetAddress: "",
-            addressLocality: "",
-            addressRegion: "",
-            postalCode: "",
+            streetAddress: "Check, post, Thoppur, Thoppur T.Kanigarahalli",
+            addressLocality: "Thoppur",
+            addressRegion: "Tamil Nadu",
+            postalCode: "636352",
             addressCountry: "IN"
         },
         contactPoint: {
-            telephone: "",
+            telephone: "+918875023456",
             contactType: "customer service",
             availableLanguage: ["English", "Hindi"]
         }

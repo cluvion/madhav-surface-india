@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-[100dvh] md:h-screen w-full overflow-hidden bg-foreground text-white flex flex-col justify-center sm:justify-end">
+        <section className="relative md:min-h-[100dvh] md:h-screen w-full overflow-hidden bg-foreground text-white flex flex-col justify-center sm:justify-end pt-28 pb-8 md:pt-0 md:pb-0">
             {/* Background with overlay */}
             <div className="absolute inset-0 bg-[url('/assets/bg.webp')] bg-cover bg-center opacity-100" />
             {/* <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/70" /> */}
@@ -26,7 +26,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="max-w-6xl"
                 >
-                    <div className="mb-6 flex items-center space-x-2">
+                    <div className="mb-3 md:mb-6 flex items-center space-x-2">
                         <span className="mr-2 pl-2 text-lg text-primary font-bold">¬</span>
                         {/* <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white">
                             India's Premier Manufacturer & Exporter of Fine Marble, Granite, and Quartz Slabs.
@@ -36,24 +36,24 @@ export default function HeroSection() {
                         </span>
                     </div>
 
-                    <h1 className="text-balance heading mb-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-5xl">
+                    <h1 className="text-balance heading mb-2 md:mb-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-5xl">
                         {/* Crafting Architectural Masterpieces with <br className="hidden md:block" />
                         <span className="text-primary">Timeless Natural Stone</span> */}
-                    <span className="text-5xl font-medium leading-tight md:text-6xl lg:text-[5rem]">
+                    <span className="text-3xl font-medium leading-tight md:text-6xl lg:text-[5rem]">
                             Stone, Mastered.
                         </span>
                         <br/>
-                        <span className="text-4xl font-medium leading-tight md:text-5xl lg:text-6xl text-white">
+                        <span className="text-2xl font-medium leading-tight md:text-5xl lg:text-6xl text-white">
                             From India. Ready for the world.
                         </span>
                     </h1>
 
-                    <p className="mb-8 max-w-md text-base md:text-lg font-medium text-white/80 leading-relaxed">
+                    <p className="mb-4 md:mb-8 max-w-md text-sm md:text-lg font-medium text-white/80 leading-relaxed">
                         Selected for character. Processed<br className="hidden sm:block" />
                         with precision. Supplied to the world.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-6">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-3 md:mt-6">
                         <Button className="w-full sm:w-auto" asChild>
                             <Link href="#products">Explore Collection</Link>
                         </Button>

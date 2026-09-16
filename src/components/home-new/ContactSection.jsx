@@ -85,7 +85,7 @@ export default function ContactSection() {
                             </div>
                             <div className="flex items-center gap-3">
                                 <span className="text-primary text-xl">📍</span>
-                                <span><strong>Location:</strong> Salem, Tamil Nadu, India | Worldwide Distribution</span>
+                                <span><strong>Location:</strong> Check, post, Thoppur, Thoppur T.Kanigarahalli, Tamil Nadu 636352 | Worldwide Distribution</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <span className="text-primary text-xl">✉️</span>
@@ -166,7 +166,10 @@ export default function ContactSection() {
                                 />
                             </div>
                             <div className="flex justify-center lg:justify-start">
-                                <Button type="submit">
+                                <Button 
+                                    type="submit"
+                                    disabled={!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.projectScope.trim() || !formData.message.trim()}
+                                >
                                     SEND MESSAGE
                                 </Button>
                             </div>

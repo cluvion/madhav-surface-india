@@ -131,12 +131,12 @@ const ComprehensiveFooter = () => {
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                   <span className="text-muted-foreground">
-                    123 Stone Avenue, Marble District, NY 10001
+                    Check, post, Thoppur, Thoppur T.Kanigarahalli, Tamil Nadu 636352
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-muted-foreground">1-800-MADHAV (623-4281)</span>
+                  <span className="text-muted-foreground">+91 88750 23456</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
@@ -144,7 +144,7 @@ const ComprehensiveFooter = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-muted-foreground">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
+                  <span className="text-muted-foreground">Open · Closes 7 pm</span>
                 </div>
               </div>
 
@@ -276,7 +276,7 @@ const ComprehensiveFooter = () => {
               <div className="text-center">
                 <MapPin className="w-12 h-12 mx-auto mb-4" />
                 <p>Interactive Map</p>
-                <p className="text-sm">123 Stone Avenue, Marble District, NY 10001</p>
+                <p className="text-sm">Check, post, Thoppur, Thoppur T.Kanigarahalli, Tamil Nadu 636352</p>
               </div>
             </div>
           </div>

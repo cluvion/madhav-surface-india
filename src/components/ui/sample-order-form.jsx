@@ -327,7 +327,14 @@ const SampleOrderForm = ({ isOpen, onClose, preSelectedProductId }) => {
                 >
                   <Button
                     type="submit"
-                    disabled={formData.selectedProducts.length === 0}
+                    disabled={
+                      formData.selectedProducts.length === 0 ||
+                      !formData.name.trim() ||
+                      !formData.email.trim() ||
+                      !formData.phone.trim() ||
+                      !formData.category ||
+                      !formData.address.trim()
+                    }
                     className="w-full bg-primary hover:bg-primary/90 disabled:bg-primary/20 disabled:text-white disabled:cursor-not-allowed text-primary-foreground font-semibold py-4 px-6 transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
@@ -335,9 +342,9 @@ const SampleOrderForm = ({ isOpen, onClose, preSelectedProductId }) => {
                   </Button>
                 </motion.div>
 
-                {formData.selectedProducts.length === 0 && (
+                {(formData.selectedProducts.length === 0 || !formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.category || !formData.address.trim()) && (
                   <p className="text-sm text-foreground/50 text-center">
-                    Please select at least one product to order samples
+                    Please fill in all required fields and select at least one product
                   </p>
                 )}
               </form>
