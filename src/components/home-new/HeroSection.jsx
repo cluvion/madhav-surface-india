@@ -26,19 +26,14 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="max-w-6xl"
                 >
-                    <div className="mb-3 md:mb-6 flex items-center space-x-2">
-                        <span className="mr-2 pl-2 text-lg text-primary font-bold">¬</span>
-                        {/* <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white">
-                            India's Premier Manufacturer & Exporter of Fine Marble, Granite, and Quartz Slabs.
-                        </span> */}
-                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-white">
+                    <div className="mb-3 md:mb-6 flex items-center">
+                        <span className="mr-2 text-lg text-primary font-bold">¬</span>
+                        <span className="inline-flex items-center text-[10px] sm:text-xs font-bold uppercase tracking-wider md:tracking-[0.2em] text-white">
                             MADHAV - NATURAL STONE SINCE 1989
                         </span>
                     </div>
 
                     <h1 className="text-balance heading mb-2 md:mb-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-5xl">
-                        {/* Crafting Architectural Masterpieces with <br className="hidden md:block" />
-                        <span className="text-primary">Timeless Natural Stone</span> */}
                     <span className="text-3xl font-medium leading-tight md:text-6xl lg:text-[5rem]">
                             Stone, Mastered.
                         </span>
@@ -49,19 +44,14 @@ export default function HeroSection() {
                     </h1>
 
                     <p className="mb-4 md:mb-8 max-w-md text-sm md:text-lg font-medium text-white/80 leading-relaxed">
-                        Selected for character. Processed<br className="hidden sm:block" />
+                        Selected for character. Processed <br />
                         with precision. Supplied to the world.
                     </p>
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-3 md:mt-6">
-                        <Button className="w-full sm:w-auto" asChild>
+                        <Button className="w-fit sm:w-auto" asChild>
                             <Link href="#products">Explore Collection</Link>
                         </Button>
-                        {/* <Button variant="secondary" className="w-full sm:w-auto" asChild>
-                            <Link href="/contact">
-                                Request a Quote
-                            </Link>
-                        </Button> */}
                     </div>
                 </motion.div>
             </div>
