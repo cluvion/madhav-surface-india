@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import NewFooter from "@/components/home-new/NewFooter";
 // import NavbarDemo from "@/components/header1";
 import FloatingContact from "@/components/floating-contact";
+import PopupImage from "@/components/PopupImage";
 // import CustomCursor from "@/components/custom-cursor";
 import { generateMetadata as generateSEOMetadata, generateOrganizationSchema } from "@/lib/seo";
 import Script from "next/script";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
         {/* <CustomCursor /> */}
         <HeroHeader />
         <FloatingContact />
+        <PopupImage />
         {/* <NavbarDemo/> */}
         {children}
         <CtaSection/>
