@@ -33,20 +33,42 @@ export default function HeroSection() {
                         </span>
                     </div>
 
-                    <h1 className="text-balance heading mb-2 md:mb-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-5xl">
-                    <span className="text-3xl font-medium leading-tight md:text-6xl lg:text-[5rem]">
-                            Stone, Mastered.
+                    {/* Mobile heading */}
+                    <h1 className="heading mb-1 md:hidden max-w-5xl">
+                        <span className="text-[1.35rem] font-bold leading-tight block">
+                            Natural Stone.
                         </span>
-                        <br/>
-                        <span className="text-2xl font-medium leading-tight md:text-5xl lg:text-6xl text-white">
+                        <span className="text-[1.35rem] font-light leading-tight block text-white/90">
+                            Global Possibilities.
+                        </span>
+                        <span className="text-sm font-medium leading-tight block mt-1 text-white">
                             From India. Ready for the world.
                         </span>
                     </h1>
 
-                    <p className="mb-4 md:mb-8 max-w-md text-sm md:text-lg font-medium text-white/80 leading-relaxed">
+                    {/* Desktop heading */}
+                    <h1 className="text-balance heading mb-4 hidden md:block text-5xl font-bold leading-tight lg:text-6xl max-w-5xl">
+                        <span className="font-medium leading-tight md:text-6xl lg:text-[5rem]">
+                            Stone, Mastered.
+                        </span>
+                        <br/>
+                        <span className="font-medium leading-tight md:text-5xl lg:text-6xl text-white">
+                            From India. Ready for the world.
+                        </span>
+                    </h1>
+
+                    {/* Mobile description */}
+                    <p className="mb-4 md:hidden max-w-md text-xs font-medium text-white/80 leading-relaxed">
                         Selected for character. Processed <br />
                         with precision. Supplied to the world.
                     </p>
+
+                    {/* Desktop description */}
+                    <p className="mb-8 hidden md:block max-w-md text-lg font-medium text-white/80 leading-relaxed">
+                        Selected for character. Processed <br />
+                        with precision. Supplied to the world.
+                    </p>
+
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-3 md:mt-6">
                         <Button className="w-fit sm:w-auto" asChild>
