@@ -9,7 +9,7 @@ import ProjectsSection from "@/components/home-new/ProjectsSection";
 import TestimonialsSection from "@/components/home-new/TestimonialsSection";
 import AwardsSection from "@/components/home-new/AwardsSection";
 import ContactSection from "@/components/home-new/ContactSection";
-import BlogSection from "@/components/home-new/BlogSection";
+// import BlogSection from "@/components/home-new/BlogSection";
 import ProductSection from "@/components/home-new/ProductSection";
 import StoneOverlays from "@/components/home-new/StoneOverlays";
 
@@ -43,7 +43,7 @@ export default function Home() {
       <TestimonialsSection />
       {/* <AwardsSection /> */} 
       <ContactSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       {/* <CtaSection/> */}
     </main>
   );

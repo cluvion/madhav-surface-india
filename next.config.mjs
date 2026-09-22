@@ -46,7 +46,7 @@ const nextConfig = {
       },
     ],
     // Add fallback for WordPress images
-    unoptimized: false,
+    unoptimized: true,
     // Increase timeout for external images
     minimumCacheTTL: 60,
   },

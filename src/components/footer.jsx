@@ -13,20 +13,20 @@ const links = [
             },
             {
                 title: 'Technology',
-                href: '/technology',
+                href: '/profile#technology',
             },
             {
                 title: 'Corporate Film',
-                href: '/corporate-film',
+                href: "/profile#corporate-film",
             },
             {
                 title: 'News & Events',
                 href: '/coverings-2023-event',
             },
-            {
-                title: 'Blogs',
-                href: '/blog',
-            },
+            // {
+            //     title: 'Blogs',
+            //     href: '/blog',
+            // },
             {
                 title: 'Contact',
                 href: '/contact-us',

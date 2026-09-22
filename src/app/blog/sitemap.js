@@ -1,45 +1,45 @@
-import { getAllPostsForSitemapGraphQL } from '@/lib/wordpress-graphql';
+// Blog sitemap — COMMENTED OUT
+// This sitemap is temporarily disabled.
 
-// Generate on-demand, not at build time
-export const dynamic = 'force-dynamic';
-export const revalidate = 3600;
-/**
- * Generate sitemap for blog posts using GraphQL
- * This creates a dynamic sitemap that includes all published blog posts
- */
-export default async function sitemap() {
-  try {
-    // Fetch all posts for sitemap using GraphQL (much more efficient than REST)
-    const posts = await getAllPostsForSitemapGraphQL(1000);
-
-    // Generate sitemap entries for each blog post
-    const blogPostEntries = posts.map((post) => ({
-      url: `https://madhavmarbles.com/blog/${post.slug}`,
-      lastModified: new Date(post.modified),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    }));
-
-    // Add the main blog page
-    const blogIndexEntry = {
-      url: 'https://madhavmarbles.com/blog',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    };
-
-    return [blogIndexEntry, ...blogPostEntries];
-  } catch (error) {
-    console.error('Error generating blog sitemap:', error);
-
-    // Return at least the blog index page if posts fail to load
-    return [
-      {
-        url: 'https://madhavmarbles.com/blog',
-        lastModified: new Date(),
-        changeFrequency: 'daily',
-        priority: 0.9,
-      },
-    ];
-  }
+export default function sitemap() {
+  return [];
 }
+
+// --- Original code commented out below ---
+// import { getAllPostsForSitemapGraphQL } from '@/lib/wordpress-graphql';
+//
+// export const dynamic = 'force-dynamic';
+// export const revalidate = 3600;
+//
+// export default async function sitemap() {
+//   try {
+//     const posts = await getAllPostsForSitemapGraphQL(1000);
+//
+//     const blogPostEntries = posts.map((post) => ({
+//       url: `https://madhavmarbles.com/blog/${post.slug}`,
+//       lastModified: new Date(post.modified),
+//       changeFrequency: 'weekly',
+//       priority: 0.8,
+//     }));
+//
+//     const blogIndexEntry = {
+//       url: 'https://madhavmarbles.com/blog',
+//       lastModified: new Date(),
+//       changeFrequency: 'daily',
+//       priority: 0.9,
+//     };
+//
+//     return [blogIndexEntry, ...blogPostEntries];
+//   } catch (error) {
+//     console.error('Error generating blog sitemap:', error);
+//
+//     return [
+//       {
+//         url: 'https://madhavmarbles.com/blog',
+//         lastModified: new Date(),
+//         changeFrequency: 'daily',
+//         priority: 0.9,
+//       },
+//     ];
+//   }
+// }

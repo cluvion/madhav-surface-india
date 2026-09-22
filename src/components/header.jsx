@@ -226,9 +226,9 @@ export const HeroHeader = ({
                                 {/* <Link href="/about-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     About
                                 </Link> */}
-                                <Link href="/blog" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
+                                {/* <Link href="/blog" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     Blogs
-                                </Link>
+                                </Link> */}
                                 <Link href="/contact-us" className={`px-2 sm:px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-300 font-medium text-sm sm:text-base ${isScrolled ? "text-foreground" : "text-white"}`}>
                                     Contact
                                 </Link>
@@ -355,14 +355,14 @@ export const HeroHeader = ({
                             <span className="leading-none text-[10px]">Contact</span>
                         </Link>
 
-                        {/* Blog */}
-                        <Link
+                        {/* Blog - commented out */}
+                        {/* <Link
                             href="/blog"
                             className="flex flex-col items-center justify-center p-2 text-xs text-gray-600 hover:text-foreground hover:bg-gray-50 transition-colors duration-200"
                         >
                             <PenTool className="w-4 h-4 mb-1" />
                             <span className="leading-none text-[10px]">Blog</span>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
 

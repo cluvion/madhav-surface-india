@@ -1,111 +1,120 @@
-import { getBlogPostBySlugGraphQL, getAllPostSlugsGraphQL } from '@/lib/wordpress-graphql';
-import BlogPost from '@/components/blog/BlogPost';
+// Blog post page — COMMENTED OUT
+// This page is temporarily disabled.
+// To re-enable, restore the original content of this file from git history.
+
 import { notFound } from 'next/navigation';
-import { HeroHeader } from '@/components/header';
-import { HomeIcon } from "lucide-react"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
 
-// Allow pages not generated at build time to be rendered via ISR
-export const dynamicParams = true;
-
-// Skip static generation at build time — blog pages are generated on-demand via ISR.
-// This prevents build failures when the WordPress GraphQL endpoint is slow or unavailable.
-export async function generateStaticParams() {
-  return [];
+export default function BlogPostPage() {
+  notFound();
 }
 
-// Generate metadata for each blog post using GraphQL
-export async function generateMetadata({ params }) {
-  try {
-    const { slug } = await params;
-    const post = await getBlogPostBySlugGraphQL(slug);
+// Enable ISR (kept for when blog is re-enabled)
+// export const revalidate = 3600;
 
-    if (!post) {
-      return {
-        title: 'Post Not Found - Madhav Surfaces',
-      };
-    }
-
-    return {
-      title: `${post.title} - Madhav Surfaces Blog`,
-      description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
-      openGraph: {
-        title: post.title,
-        description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
-        type: 'article',
-        publishedTime: post.date,
-        modifiedTime: post.modified,
-        authors: [post.author],
-        images: post.featuredImage ? [
-          {
-            url: post.featuredImage,
-            width: 1200,
-            height: 630,
-            alt: post.title,
-          }
-        ] : [],
-      },
-      twitter: {
-        card: 'summary_large_image',
-        title: post.title,
-        description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
-        images: post.featuredImage ? [post.featuredImage] : [],
-      },
-    };
-  } catch (error) {
-    console.error(`Error generating metadata for slug:`, error);
-    return {
-      title: 'Blog - Madhav Surfaces',
-    };
-  }
-}
-
-export default async function BlogPostPage({ params }) {
-  const { slug } = await params;
-  const post = await getBlogPostBySlugGraphQL(slug);
-
-  if (!post) {
-    notFound();
-  }
-
-  return (
-    <div>
-      <HeroHeader forceScrolled={true} />
-      <div className="min-h-screen mt-20 md:mt-16" data-light-bg>
-        <div className="absolute md:top-25 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-2 md:py-6">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/">
-                  <HomeIcon size={16} aria-hidden="true" />
-                  <span className="sr-only">Home</span>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator> / </BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator> / </BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbPage>{post.title}</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </div>
-        <main className="container max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-12">
-          <BlogPost post={post} />
-        </main>
-      </div>
-    </div>
-  );
-}
-
-// Enable ISR (Incremental Static Regeneration)
-export const revalidate = 3600; // Revalidate every hour
+// --- Original code commented out below ---
+// import { getBlogPostBySlugGraphQL, getAllPostSlugsGraphQL } from '@/lib/wordpress-graphql';
+// import BlogPost from '@/components/blog/BlogPost';
+// import { notFound } from 'next/navigation';
+// import { HeroHeader } from '@/components/header';
+// import { HomeIcon } from "lucide-react"
+// import {
+//   Breadcrumb,
+//   BreadcrumbItem,
+//   BreadcrumbLink,
+//   BreadcrumbList,
+//   BreadcrumbPage,
+//   BreadcrumbSeparator,
+// } from "@/components/ui/breadcrumb"
+//
+// export const dynamicParams = true;
+//
+// export async function generateStaticParams() {
+//   return [];
+// }
+//
+// export async function generateMetadata({ params }) {
+//   try {
+//     const { slug } = await params;
+//     const post = await getBlogPostBySlugGraphQL(slug);
+//
+//     if (!post) {
+//       return {
+//         title: 'Post Not Found - Madhav Surfaces',
+//       };
+//     }
+//
+//     return {
+//       title: `${post.title} - Madhav Surfaces Blog`,
+//       description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
+//       openGraph: {
+//         title: post.title,
+//         description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
+//         type: 'article',
+//         publishedTime: post.date,
+//         modifiedTime: post.modified,
+//         authors: [post.author],
+//         images: post.featuredImage ? [
+//           {
+//             url: post.featuredImage,
+//             width: 1200,
+//             height: 630,
+//             alt: post.title,
+//           }
+//         ] : [],
+//       },
+//       twitter: {
+//         card: 'summary_large_image',
+//         title: post.title,
+//         description: post.excerpt ? post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160) : post.title,
+//         images: post.featuredImage ? [post.featuredImage] : [],
+//       },
+//     };
+//   } catch (error) {
+//     console.error(`Error generating metadata for slug:`, error);
+//     return {
+//       title: 'Blog - Madhav Surfaces',
+//     };
+//   }
+// }
+//
+// export default async function BlogPostPage({ params }) {
+//   const { slug } = await params;
+//   const post = await getBlogPostBySlugGraphQL(slug);
+//
+//   if (!post) {
+//     notFound();
+//   }
+//
+//   return (
+//     <div>
+//       <HeroHeader forceScrolled={true} />
+//       <div className="min-h-screen mt-20 md:mt-16" data-light-bg>
+//         <div className="absolute md:top-25 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-2 md:py-6">
+//           <Breadcrumb>
+//             <BreadcrumbList>
+//               <BreadcrumbItem>
+//                 <BreadcrumbLink href="/">
+//                   <HomeIcon size={16} aria-hidden="true" />
+//                   <span className="sr-only">Home</span>
+//                 </BreadcrumbLink>
+//               </BreadcrumbItem>
+//               <BreadcrumbSeparator> / </BreadcrumbSeparator>
+//               <BreadcrumbItem>
+//                 <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+//               </BreadcrumbItem>
+//               <BreadcrumbSeparator> / </BreadcrumbSeparator>
+//               <BreadcrumbItem>
+//                 <BreadcrumbPage>{post.title}</BreadcrumbPage>
+//               </BreadcrumbItem>
+//             </BreadcrumbList>
+//           </Breadcrumb>
+//         </div>
+//         <main className="container max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-12">
+//           <BlogPost post={post} />
+//         </main>
+//       </div>
+//     </div>
+//   );
+// }
+//
+// export const revalidate = 3600;
