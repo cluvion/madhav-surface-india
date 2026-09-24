@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <section className="relative md:min-h-[100dvh] md:h-screen w-full overflow-hidden bg-foreground text-white flex flex-col justify-center sm:justify-end pt-28 pb-8 md:pt-0 md:pb-0">
+        <section className="relative min-h-[45dvh] md:min-h-[100dvh] md:h-screen w-full overflow-hidden bg-foreground text-white flex flex-col justify-end sm:justify-end pt-28 pb-8 md:pt-0 md:pb-0">
             {/* Background with overlay */}
             <div className="absolute inset-0 bg-[url('/assets/bg.webp')] bg-cover bg-center opacity-100" />
             {/* <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/70" /> */}
@@ -35,13 +35,13 @@ export default function HeroSection() {
 
                     {/* Mobile heading */}
                     <h1 className="heading mb-1 md:hidden max-w-5xl">
-                        <span className="text-[1.35rem] font-bold leading-tight block">
+                        <span className="text-[1.15rem] font-bold leading-tight block">
                             Natural Stone.
                         </span>
-                        <span className="text-[1.35rem] font-light leading-tight block text-white/90">
+                        <span className="text-[1.15rem] font-light leading-tight block text-white/90">
                             Global Possibilities.
                         </span>
-                        <span className="text-sm font-medium leading-tight block mt-1 text-white">
+                        <span className="text-xs font-medium leading-tight block mt-1 text-white">
                             From India. Ready for the world.
                         </span>
                     </h1>
@@ -58,10 +58,10 @@ export default function HeroSection() {
                     </h1>
 
                     {/* Mobile description */}
-                    <p className="mb-4 md:hidden max-w-md text-xs font-medium text-white/80 leading-relaxed">
+                    {/* <p className="mb-4 md:hidden max-w-md text-[11px] font-medium text-white/80 leading-relaxed">
                         Selected for character. Processed <br />
                         with precision. Supplied to the world.
-                    </p>
+                    </p> */}
 
                     {/* Desktop description */}
                     <p className="mb-8 hidden md:block max-w-md text-lg font-medium text-white/80 leading-relaxed">
