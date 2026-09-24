@@ -35,13 +35,13 @@ export default function HeroSection() {
 
                     {/* Mobile heading */}
                     <h1 className="heading mb-1 md:hidden max-w-5xl">
-                        <span className="text-[1.15rem] font-bold leading-tight block">
+                        <span className="text-[0.95rem] font-bold leading-tight block">
                             Natural Stone.
                         </span>
-                        <span className="text-[1.15rem] font-light leading-tight block text-white/90">
+                        <span className="text-[0.95rem] font-light leading-tight block text-white/90">
                             Global Possibilities.
                         </span>
-                        <span className="text-xs font-medium leading-tight block mt-1 text-white">
+                        <span className="text-[10px] font-medium leading-tight block mt-1 text-white">
                             From India. Ready for the world.
                         </span>
                     </h1>
@@ -51,7 +51,7 @@ export default function HeroSection() {
                         <span className="font-medium leading-tight md:text-6xl lg:text-[5rem]">
                             Stone, Mastered.
                         </span>
-                        <br/>
+                        <br />
                         <span className="font-medium leading-tight md:text-5xl lg:text-6xl text-white">
                             From India. Ready for the world.
                         </span>
@@ -71,8 +71,10 @@ export default function HeroSection() {
 
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-3 md:mt-6">
-                        <Button className="w-fit sm:w-auto" asChild>
-                            <Link href="#products">Explore Collection</Link>
+                        <Button className="w-fit sm:w-auto h-8 md:h-10 px-3 md:px-4" asChild>
+                            <Link href="#products" className="text-[8px]">
+                                Explore Collection
+                            </Link>
                         </Button>
                     </div>
                 </motion.div>
