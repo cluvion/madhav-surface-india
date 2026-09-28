@@ -36,18 +36,15 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
+          {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-LKJCW8CSBW');
-          `}
+            gtag('config', 'G-LKJCW8CSBW');`}
         </Script>
-
         {/* <CustomCursor /> */}
         <HeroHeader />
         <FloatingContact />
-        <PopupImage />
+        {/* <PopupImage /> */}
         {/* <NavbarDemo/> */}
         {children}
         <CtaSection/>
