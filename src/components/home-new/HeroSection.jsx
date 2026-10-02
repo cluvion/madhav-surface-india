@@ -35,13 +35,10 @@ export default function HeroSection() {
 
                     {/* Mobile heading */}
                     <h1 className="heading mb-1 md:hidden max-w-5xl">
-                        <span className="text-[0.95rem] font-bold leading-tight block">
-                            Natural Stone.
+                        <span className="text-[0.95rem] font-medium leading-tight block">
+                            Stone, Mastered.
                         </span>
-                        <span className="text-[0.95rem] font-light leading-tight block text-white/90">
-                            Global Possibilities.
-                        </span>
-                        <span className="text-[10px] font-medium leading-tight block mt-1 text-white">
+                        <span className="text-[14px] font-medium leading-tight block text-white">
                             From India. Ready for the world.
                         </span>
                     </h1>
