@@ -214,6 +214,9 @@ export const HeroHeader = ({
                                                         <NavigationMenuLink asChild>
                                                             <Link href="/regulation-46-62-2">Regulation 46 & 62</Link>
                                                         </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/memorandum-and-articles-of-association">Memorandum and Articles of Association</Link>
+                                                        </NavigationMenuLink>
                                                     </li>
                                                 </ul>
                                             </NavigationMenuContent>
@@ -474,6 +477,7 @@ export const HeroHeader = ({
 
                                                     <Link href="/code-of-conduct-and-policies" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Code of Conduct and Policies</Link>
                                                     <Link href="/regulation-46-62-2" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Regulation 46 & 62</Link>
+                                                    <Link href="/memorandum-and-articles-of-association" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Memorandum and Articles of Association</Link>
                                                 </div>
                                             )}
                                         </div>

@@ -3,6 +3,34 @@ import InvestorDocuments from '@/components/investor-documents';
 
 const documents = [
     {
+        title: "Annual Report 2025-2026",
+        fileId: "1FPzrdYxkoZzeVhq9-gwVv1Paj2iyYt5v",
+    },
+    {
+        title: "Annual Report 2024-2025",
+        fileId: "1-5yvIsNfGVK_tC5e5oCMkqDN65AK5ZOr",
+    },
+    {
+        title: "Annual Report 2023-2024",
+        fileId: "1EXjF1gPt2UBtGSrEuVHlkmtM0Sn4S5fL",
+    },
+    {
+        title: "Annual Report 2022-2023",
+        fileId: "1g7YbcUFYTDGJK4sPOJJ9qQ777jqfNpxq",
+    },
+    {
+        title: "Annual Report 2021-2022",
+        fileId: "1napGLdKP8MDQxGifww1pn5M4hS1o7ojb",
+    },
+    {
+        title: "Annual Report 2020-2021",
+        fileId: "1s1TvDXAnoy1d3TWgRyxHFLe23ckOco0r",
+    },
+    {
+        title: "Annual Report 2018-2019",
+        fileId: "1ouB7LZagZIBcC56C3lKH4Aqd3u3GMoYr",
+    },
+    {
         title: "Annual Report 2017-2018",
         fileId: "1Q1YEBjL5qaXF3zVvv7JFZ-MAZYXNhiW_",
     },
