@@ -206,7 +206,7 @@ export const HeroHeader = ({
                                                             <Link href="/corporate-announcements-outcome-of-agm">Corporate Announcements - Outcome Of AGM</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
-                                                            <Link href="/corporate-announcements-postal-ballot">Corporate Announcements - Postal Ballot</Link>
+                                                            <Link href="/corporate-announcements-postal-ballot">Corporate Announcements - EGM and Postal Ballot</Link>
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
                                                             <Link href="/code-of-conduct-and-policies">Code of Conduct and Policies</Link>
@@ -216,6 +216,9 @@ export const HeroHeader = ({
                                                         </NavigationMenuLink>
                                                         <NavigationMenuLink asChild>
                                                             <Link href="/memorandum-and-articles-of-association">Memorandum and Articles of Association</Link>
+                                                        </NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/composition-of-board-and-committees">Composition of Board and Committees</Link>
                                                         </NavigationMenuLink>
                                                     </li>
                                                 </ul>
@@ -471,13 +474,14 @@ export const HeroHeader = ({
                                                             <Link href="/corporate-announcements-eogm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">EOGM</Link>
                                                             <Link href="/corporate-announcements-notice-of-general-meetings" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Notice of General Meetings</Link>
                                                             <Link href="/corporate-announcements-outcome-of-agm" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Outcome Of AGM</Link>
-                                                            <Link href="/corporate-announcements-postal-ballot" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Postal Ballot</Link>
+                                                            <Link href="/corporate-announcements-postal-ballot" onClick={() => setExpandedSubmenu(null)} className="block px-4 py-1 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">EGM and Postal Ballot</Link>
                                                         </div>
                                                     </div>
 
                                                     <Link href="/code-of-conduct-and-policies" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Code of Conduct and Policies</Link>
                                                     <Link href="/regulation-46-62-2" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Regulation 46 & 62</Link>
                                                     <Link href="/memorandum-and-articles-of-association" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Memorandum and Articles of Association</Link>
+                                                    <Link href="/composition-of-board-and-committees" onClick={() => setExpandedSubmenu(null)} className="block px-8 py-2 text-sm text-gray-600 hover:text-foreground hover:bg-gray-50 rounded-lg transition-colors">Composition of Board and Committees</Link>
                                                 </div>
                                             )}
                                         </div>
